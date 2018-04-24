@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <org.tensorflow.demo.font.MaterialDesignIconsTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/material_icon_favorite"
+                android:textColor="@color/colorAccent"
+                android:textSize="40dp" />
+
+            <org.tensorflow.demo.font.RobotoTextView
+                android:id="@+id/dialog_universal_warning_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:typeface="robotoBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="22dp"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:paddingTop="22dp" >
+
+            <org.tensorflow.demo.font.RobotoTextView
+                android:id="@+id/dialog_universal_warning_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:text="@string/rate_msg"
+                android:textColor="@color/main_color_grey_600"
+                android:textSize="14sp"
+                app:typeface="robotoRegular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <org.tensorflow.demo.font.RobotoTextView
+                android:id="@+id/dialog_universal_warning_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/selector_dialog_warning"
+                android:gravity="center"
+                android:minWidth="64dp"
+                android:padding="8dp"
+                android:text="@string/no"
+                android:textColor="@color/main_color_600"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+
+            <org.tensorflow.demo.font.RobotoTextView
+                android:id="@+id/dialog_universal_warning_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/selector_dialog_warning"
+                android:gravity="center"
+                android:minWidth="64dp"
+                android:padding="8dp"
+                android:text="@string/yes"
+                android:textColor="@color/main_color_600"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,569 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12
+INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12
+INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12
+MERGED from [com.android.support:multidex:1.0.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/5db32585974fd9ebf2ecf0fdb89cfd97/AndroidManifest.xml:16:1-19:12
+MERGED from [org.tensorflow:tensorflow-android:1.8.0-rc1] /home/ihab/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.8.0-rc1.aar/01518d6b99713cb989fad535398ed52d/AndroidManifest.xml:2:1-8:12
+MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-storage:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/783a4b0e6ef37a94bdc6c7a2f2c8f3d8/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/c760847d313bc3a783faa2dc35238824/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-firestore:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-firestore-12.0.0.aar/02446a6170c71f493fdeb638bffbbcbc/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-core:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/ef4af0e913d7ee328a3cc6a76a9f100e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:17:1-54:12
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/f2344f40ed0765312aa8b1df74792550/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/42957bc2601c56a08b883e1237b53a11/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/a73ce36a60c124b3b1790474ecf50c5e/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6aec00cc84d33efca756f9cda978c1bb/AndroidManifest.xml:17:1-31:12
+MERGED from [com.github.markushi:circlebutton:1.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/circlebutton-1.1.aar/e43ac59bbae7bc185997ee3f655c2ffc/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ihab/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5588f84881469fc21830ac8f82b8237b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:2:1-18:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.firebase:firebase-auth-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-12.0.0.aar/c881ab225849a5dfd12abba27e8082e4/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.0.aar/c2a4bfe19d4e6a261ff38a24e11a7105/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-storage-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.0.aar/131cdf48e37499de49c5d0ff38e97a0f/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.0.aar/9c62523dd3898b291bd0b2131a806e07/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.0.aar/0656a6f49825af3fb1886c61117933f8/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.0.aar/16876e45860857ead7dfd5920df85c05/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.0.aar/1a71779eec9d1e81eb470bb71ae596d4/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.0.aar/347cfafbad9a0287a3cf9e9e5006d715/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-iid-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.0.aar/5b9eb08e8f8b51d332d31010b661fdb2/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-storage-common-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.0.aar/b3821449ba08b67c2d4908342f8b2a52/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-12.0.0.aar/cc5135faf314579cd28ea669b4cbb61b/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-analytics-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.0.aar/77c772bf915da36c1d7ed59edde7f169/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.0.aar/1c02a1a3d85f87995e244d5be942722d/AndroidManifest.xml:2:1-8:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:17:1-30:12
+INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12
+INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12
+	package
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:4:5-34
+	android:versionName
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:6:5-28
+		INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml
+		INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:5:2-25
+		INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml
+		INJECTED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:8:5-65
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:11:5-65
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:8:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:9:5-60
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:9:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:10:5-70
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:10:19-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:12:5-71
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:13:5-71
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:12:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:23:5-67
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:12:5-67
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:14:22-64
+uses-sdk
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:16:5-18:41
+MERGED from [com.android.support:multidex:1.0.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/5db32585974fd9ebf2ecf0fdb89cfd97/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/5db32585974fd9ebf2ecf0fdb89cfd97/AndroidManifest.xml:18:5-42
+MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/783a4b0e6ef37a94bdc6c7a2f2c8f3d8/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/783a4b0e6ef37a94bdc6c7a2f2c8f3d8/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/c760847d313bc3a783faa2dc35238824/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/c760847d313bc3a783faa2dc35238824/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-firestore-12.0.0.aar/02446a6170c71f493fdeb638bffbbcbc/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-firestore-12.0.0.aar/02446a6170c71f493fdeb638bffbbcbc/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/ef4af0e913d7ee328a3cc6a76a9f100e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/ef4af0e913d7ee328a3cc6a76a9f100e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/f2344f40ed0765312aa8b1df74792550/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/f2344f40ed0765312aa8b1df74792550/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/42957bc2601c56a08b883e1237b53a11/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/42957bc2601c56a08b883e1237b53a11/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/a73ce36a60c124b3b1790474ecf50c5e/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/a73ce36a60c124b3b1790474ecf50c5e/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6aec00cc84d33efca756f9cda978c1bb/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6aec00cc84d33efca756f9cda978c1bb/AndroidManifest.xml:21:5-23:54
+MERGED from [com.github.markushi:circlebutton:1.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/circlebutton-1.1.aar/e43ac59bbae7bc185997ee3f655c2ffc/AndroidManifest.xml:7:5-44
+MERGED from [com.github.markushi:circlebutton:1.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/circlebutton-1.1.aar/e43ac59bbae7bc185997ee3f655c2ffc/AndroidManifest.xml:7:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ihab/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5588f84881469fc21830ac8f82b8237b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ihab/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5588f84881469fc21830ac8f82b8237b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:7:5-9:41
+MERGED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:20:5-22:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:18:9-38
+	android:minSdkVersion
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:17:9-35
+application
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:20:5-75:19
+MERGED from [org.tensorflow:tensorflow-android:1.8.0-rc1] /home/ihab/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.8.0-rc1.aar/01518d6b99713cb989fad535398ed52d/AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.8.0-rc1] /home/ihab/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.8.0-rc1.aar/01518d6b99713cb989fad535398ed52d/AndroidManifest.xml:5:5-6:19
+MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:11:5-17:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:29:5-20
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-core:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/ef4af0e913d7ee328a3cc6a76a9f100e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.0.aar/ef4af0e913d7ee328a3cc6a76a9f100e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/42957bc2601c56a08b883e1237b53a11/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/42957bc2601c56a08b883e1237b53a11/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6aec00cc84d33efca756f9cda978c1bb/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6aec00cc84d33efca756f9cda978c1bb/AndroidManifest.xml:25:5-29:19
+MERGED from [com.github.markushi:circlebutton:1.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/circlebutton-1.1.aar/e43ac59bbae7bc185997ee3f655c2ffc/AndroidManifest.xml:9:5-20
+MERGED from [com.github.markushi:circlebutton:1.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/circlebutton-1.1.aar/e43ac59bbae7bc185997ee3f655c2ffc/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ihab/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5588f84881469fc21830ac8f82b8237b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ihab/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5588f84881469fc21830ac8f82b8237b/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.firebase:firebase-auth-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-12.0.0.aar/c881ab225849a5dfd12abba27e8082e4/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-auth-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-12.0.0.aar/c881ab225849a5dfd12abba27e8082e4/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.0.aar/c2a4bfe19d4e6a261ff38a24e11a7105/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.0.aar/c2a4bfe19d4e6a261ff38a24e11a7105/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.0.aar/131cdf48e37499de49c5d0ff38e97a0f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.0.aar/131cdf48e37499de49c5d0ff38e97a0f/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.0.aar/9c62523dd3898b291bd0b2131a806e07/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.0.aar/9c62523dd3898b291bd0b2131a806e07/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.0.aar/0656a6f49825af3fb1886c61117933f8/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-license-12.0.0.aar/0656a6f49825af3fb1886c61117933f8/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.0.aar/16876e45860857ead7dfd5920df85c05/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-12.0.0.aar/16876e45860857ead7dfd5920df85c05/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.0.aar/1a71779eec9d1e81eb470bb71ae596d4/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.0.aar/1a71779eec9d1e81eb470bb71ae596d4/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.0.aar/347cfafbad9a0287a3cf9e9e5006d715/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-12.0.0.aar/347cfafbad9a0287a3cf9e9e5006d715/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-iid-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.0.aar/5b9eb08e8f8b51d332d31010b661fdb2/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-iid-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.0.aar/5b9eb08e8f8b51d332d31010b661fdb2/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-common-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.0.aar/b3821449ba08b67c2d4908342f8b2a52/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-storage-common-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.0.aar/b3821449ba08b67c2d4908342f8b2a52/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-12.0.0.aar/cc5135faf314579cd28ea669b4cbb61b/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-license-12.0.0.aar/cc5135faf314579cd28ea669b4cbb61b/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.0.aar/77c772bf915da36c1d7ed59edde7f169/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-12.0.0.aar/77c772bf915da36c1d7ed59edde7f169/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.0.aar/1c02a1a3d85f87995e244d5be942722d/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-12.0.0.aar/1c02a1a3d85f87995e244d5be942722d/AndroidManifest.xml:5:5-6:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:21:9-41
+	android:icon
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:22:9-45
+	android:allowBackup
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:20:18-44
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:23:3-34
+activity#org.tensorflow.demo.DialogRateActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:24:9-32:20
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:25:13-49
+	android:label
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:26:13-44
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:24:19-53
+activity#org.tensorflow.demo.DetectorActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:33:9-35:20
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:34:13-49
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:33:19-51
+activity#org.tensorflow.demo.SplashScreensActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:37:4-45:20
+	android:label
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:38:16-42
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:39:16-59
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:37:14-51
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:40:13-44:29
+action#android.intent.action.MAIN
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:43:17-77
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:43:27-74
+activity#org.tensorflow.demo.CallMVActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:47:9-49:58
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:48:13-43
+activity#org.tensorflow.demo.CallVolActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:50:9-52:58
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:52:13-56
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:51:13-44
+activity#org.tensorflow.demo.LoginActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:53:9-56:58
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:55:13-49
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:56:13-56
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:54:13-42
+activity#org.tensorflow.demo.RegisterActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:57:9-60:58
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:59:13-49
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:60:13-56
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:58:13-45
+activity#org.tensorflow.demo.BenevoleActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:62:9-66:70
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:64:13-49
+	android:windowSoftInputMode
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:66:13-67
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:65:13-48
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:63:13-45
+activity#org.tensorflow.demo.MenuActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:67:9-71:70
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:69:13-49
+	android:windowSoftInputMode
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:71:13-67
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:70:13-48
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:68:13-41
+activity#org.tensorflow.demo.VideoActivity
+ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:72:3-74:58
+	android:screenOrientation
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:73:13-49
+	android:theme
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:74:13-56
+	android:name
+		ADDED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:72:13-61
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/ihab/git/AngelEyes/android/AndroidManifest.xml:3:1-77:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
+ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:12:9-16:66
+	android:label
+		ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:15:13-29
+	android:exported
+		ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:16:13-63
+	android:name
+		ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/523468a988b181470bd9f90e085cf7e2/AndroidManifest.xml:13:13-86
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/d53c6ba6fb3a491bccbb5f34b7388e83/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/22ebd5bede6b6f175e642382ed075de7/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/7114a9c643a01640d710333383745886/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/4121cdaf4c19f115f5592931b384a73d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/47872a7b64037d1ca43638fd894158f4/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c079f561998cd96aba2470be20a307ca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b4f952f497b347d59b3465a08cc454b0/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/AndroidManifest.xml:26:9-47
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5fa30c25113b11bb818b5ff942a498b9/AndroidManifest.xml:24:13-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:29:13-82
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:31:13-33:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:31:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:32:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/AndroidManifest.xml:32:25-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/AndroidManifest.xml:24:13-79
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:25:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:28:9-32:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:30:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:29:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:33:9-41:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:36:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:37:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:34:13-100
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:38:13-40:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:39:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:43:9-46:40
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:34:9-37:40
+MERGED from [com.google.firebase:firebase-analytics-impl:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/b463cb293ab615f06a0dcea4e70d219e/AndroidManifest.xml:34:9-37:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:45:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:44:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:47:9-51:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:49:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:50:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/44f2f20f01662ba445213966f832ab80/AndroidManifest.xml:48:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:29:9-63
+permission#org.tensorflow.demo.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:32:22-76
+uses-permission#org.tensorflow.demo.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:32:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:35:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:38:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:36:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:39:13-43:29
+intent-filter#com.google.android.c2dm.intent.RECEIVE+org.tensorflow.demo
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:39:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:40:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:40:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:42:27-58
+category#org.tensorflow.demo
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:42:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:51:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/560cd406793ca3f5f17d9dd2e0da3b85/AndroidManifest.xml:54:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:8:9-12:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:11:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/1ca76eb86a1989f53755a70d8bcbd336/AndroidManifest.xml:9:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:14:22-77
+uses-permission#android.permission.BLUETOOTH
+ADDED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:15:22-65
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from [com.opentok.android:opentok-android-sdk:2.13.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/f6afb8e443110b0cbff35a99d3688696/AndroidManifest.xml:16:22-72
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/24de03c875c2f6f0e1ac8560d450b6e1/AndroidManifest.xml:26:13-58

@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/ihab/git/AngelEyes/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+            "map": [
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/cdeeab454931d071747f544f97ad9b19/res/values-zh-rCN/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "209",
+                        "endColumns": "96",
+                        "endOffsets": "305"
+                    },
+                    "to": {
+                        "startLines": "39",
+                        "startColumns": "4",
+                        "startOffsets": "4227",
+                        "endColumns": "100",
+                        "endOffsets": "4323"
+                    }
+                },
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/05de26659a2672dfca42f72e16af5cbe/res/values-zh-rCN/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "157",
+                        "endOffsets": "408"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "2944",
+                        "endColumns": "157",
+                        "endOffsets": "3097"
+                    }
+                },
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/7f6b94d7d24d5198846c461a353adff0/res/values-zh-rCN/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "249,348,509,622,722,886,1000,1128,1245,1412,1511,1672,1785,1948,2082,2164,2247",
+                        "endColumns": "98,160,112,99,163,113,127,116,166,98,160,112,162,133,81,82,98",
+                        "endOffsets": "347,508,621,721,885,999,1127,1244,1411,1510,1671,1784,1947,2081,2163,2246,2345"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,28,30,31,32,33,34,35,36,37,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1924,2027,2188,2305,2409,2573,2691,2823,3102,3269,3372,3533,3650,3813,3951,4037,4124",
+                        "endColumns": "102,160,116,103,163,117,131,120,166,102,160,116,162,137,85,86,102",
+                        "endOffsets": "2022,2183,2300,2404,2568,2686,2818,2939,3264,3367,3528,3645,3808,3946,4032,4119,4222"
+                    }
+                },
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/6edf2d3225d3ddb662856f8dff956613/res/values-zh-rCN/values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,258,381,476,576,658,755,861,937,1013,1091,1187,1283,1378,1475,1570,1668,1780,1874,1952",
+                        "endColumns": "95,106,122,94,99,81,96,105,75,75,77,95,95,94,96,94,97,111,93,77,100",
+                        "endOffsets": "146,253,376,471,571,653,750,856,932,1008,1086,1182,1278,1373,1470,1565,1663,1775,1869,1947,2048"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,40,41",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,201,308,431,526,626,708,805,911,987,1063,1141,1237,1333,1428,1525,1620,1718,1830,4328,4406",
+                        "endColumns": "95,106,122,94,99,81,96,105,75,75,77,95,95,94,96,94,97,111,93,77,100",
+                        "endOffsets": "196,303,426,521,621,703,800,906,982,1058,1136,1232,1328,1423,1520,1615,1713,1825,1919,4401,4502"
+                    }
+                }
+            ]
+        }
+    ]
+}

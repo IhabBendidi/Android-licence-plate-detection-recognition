@@ -1,0 +1,4 @@
+#Tue Apr 24 18:39:01 WEST 2018
+base.0=/home/ihab/git/AngelEyes/android/gradleBuild/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

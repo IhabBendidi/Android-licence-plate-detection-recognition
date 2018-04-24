@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Button related styles -->
+    <style name="ButtonStyle" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">9dp</item>
+        <item name="typeface">robotoMedium</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

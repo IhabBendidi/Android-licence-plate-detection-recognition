@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--tenserflow-->
+	<string name="description_info">Info</string>
+    <string name="request_permission">Cet exemple nécessite une autorisation de caméra.</string>
+    <string name="camera_error">Cet appareil ne supporte pas Camera2 API.</string>
+    <!---->
+    <!--myapp-->
+    <string name="app_name">Angel Eyes</string>
+    <array name="users_v">
+        <item>Bénévole</item>
+    </array>
+
+    <!--App Butons text-->
+    <string name="blind_btn">Malvoyant</string>
+    <string name="volunteer_btn">Bénévole</string>
+    <string name="ai_btn">IA</string>
+    <string name="welcome">Bienvenue!</string>
+    <string name="home_msg">Bienvenue à angel eyes,              Si vous êtes malvoyant, veuillez dire yes</string>
+    <string name="menu_msg">pour un appel vidéo dire right,             pour le service d\'intelligence artificielle dire lefft</string>
+    <string name="calling">Appel</string>
+    <string name="username">Nom D\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="confirm_password">Confirme le mot de passe</string>
+    <string name="confirm_password_failed">Mot de pas incorrect</string>
+    <string name="error_field_required">Champ vide</string>
+    <string name="email">E-mail</string>
+    <string name="your_email">Votre e-mail</string>
+    <string name="login">Se connecter</string>
+    <string name="logout">Déconnecter</string>
+    <string name="register">S\'inscrire</string>
+    <string name="tab_about">à propos</string>
+    <string name="tab_offer">Offers</string>
+    <string name="tab_gift">Cadeaux</string>
+    <string name="volunteer_added">Volontaire ajouté</string>
+    <string name="login_failed">Échec de la connexion</string>
+    <string name="login_succed">Connexion réussie</string>
+    <string name="register_failed">Inscription échoué</string>
+    <string name="register_succed">Inscription réussie</string>
+    <string name="detector_error">Le classificateur n\'a pas pu être initialisé</string>
+    <string name="detector_msg1">Angel Eyes vocal initialisé</string>
+    <string name="detector_msg2">Angel Eyes vocal initialisé</string>
+    <string name="done">TERMINÉ</string>
+    <string name="error">ERREUR</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="no">Non</string>
+    <string name="yes">Oui</string>
+    <string name="rate">Dialog Rate</string>
+    <string name="rate_msg">êtes-vous satisfaits ?</string>
+    <string name="about_text">Angel eyes a pour but de soutenir les non voyants et de leur donner la capacité de vivre avec plus d\'indépendance, et leur donner la confiance en soi nécessaire pour gérer l\'inconnu. Soyeux les yeux de leurs anges guardiens !</string>
+    
+    <!--/myapp-->
+    <string name="fontello_drag_and_drop">&#xe988;</string>
+
+    <!-- Material Design Icons -->
+    <string name="material_icon_favorite">&#xe9b6;</string>
+    <string name="material_icon_like">&#xeb03;</string>
+    <string name="material_icon_message">&#xea12;</string>
+    <string name="material_icon_star_outline">&#xeade;</string>
+    <string name="material_icon_share">&#xeac0;</string>
+
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="lorem_ipsum_short">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+
+    <string name="rationale_video_app">Cette app doit avoir accès à votre caméra et à votre micro pour pouvoir effectuer des appels vidéo</string>
+    <string name="rationale_ask_again">Cette app peut ne pas fonctionner correctement sans les autorisations demandées. Ouvrez l\'écran des paramètres de l\'app pour modifier les autorisations de l\'app.</string>
+    <string name="title_settings_dialog">Autorisations requises</string>
+    <string name="setting">Paramètres</string>
+    <string name="buttonText">Cliquez pour commencer s\'il vous plaît</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+
+</resources>

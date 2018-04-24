@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--tenserflow-->
+	<string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <!---->
+    <!--myapp-->
+    <string name="app_name">Angel Eyes</string>
+    <array name="users_v">
+        <item>Voulenter</item>
+    </array>
+
+    <!--App Butons text-->
+    <string name="blind_btn">Visually impaired</string>
+    <string name="volunteer_btn">I am a Volunteer</string>
+    <string name="ai_btn">AI</string>
+    <string name="welcome">Welcome!</string>
+    <string name="home_msg">Welcome to angel eyes,              if you are a Visually impaired please say yes</string>
+    <string name="menu_msg">for video call say up,             for artificial intelligence Service say down</string>
+    <string name="calling">Calling...</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Your Password</string>
+    <string name="confirm_password_failed">Password error</string>
+    <string name="error_field_required">empty field</string>
+    <string name="email">E-mail</string>
+    <string name="your_email">Your e-mail</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="tab_about">About</string>
+    <string name="tab_offer">Offers</string>
+    <string name="tab_gift">Gifts</string>
+    <string name="volunteer_added">Volunteer Added</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="login_succed">Login Succed</string>
+    <string name="register_failed">Register Failed</string>
+    <string name="register_succed">Register Succed</string>
+    <string name="detector_error">Classifier could not be initialized</string>
+    <string name="detector_msg1">Angel Eyes vocal feedback initialized</string>
+    <string name="detector_msg2">Angel Eyes vocal feedback shutting down</string>
+    <string name="done">DONE</string>
+    <string name="error">ERROR</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="rate">Dialog Rate</string>
+    <string name="rate_msg">Are you satisfied?</string>
+    <string name="about_text">Angel eyes aims to empower visually impaired people to live more independently, and have more self confidence in their ability of dealing with the unknown. Let\'s help them have their own guarding angel eyes !</string>
+
+    <!--/myapp-->
+    <string name="fontello_drag_and_drop">&#xe988;</string>
+    <string name="fontello_heart_empty">&#xe9b5;</string>
+
+    <!-- Material Design Icons -->
+    <string name="material_icon_favorite">&#xe9b6;</string>
+    <string name="material_icon_like">&#xeb03;</string>
+    <string name="material_icon_message">&#xea12;</string>
+    <string name="material_icon_star_outline">&#xeade;</string>
+    <string name="material_icon_share">&#xeac0;</string>
+
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="lorem_ipsum_short">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+
+    <string name="rationale_video_app">This app needs access to your camera and mic so you can perform video calls</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="setting">Settings</string>
+    <string name="buttonText">Click to begin please</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+
+</resources>
