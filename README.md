@@ -16,7 +16,7 @@ This application is also made to be controlled by blind people vocally through k
 
 ### Project Full Presentation:
 
-You can find the project's detailled presentation in full  [here](). Note that it is fully in french. An english version is coming soon.
+You can find the project's detailled presentation in full  [here](https://github.com/IhabBendidi/AngelEyes/blob/master/Rapport%20AngelEyes.pdf). Note that it is fully in french. An english version is coming soon.
 
 ### Testing the Application : 
 
