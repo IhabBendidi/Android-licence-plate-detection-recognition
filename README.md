@@ -20,7 +20,7 @@ You can find the project's detailled presentation in full  [here](). Note that i
 
 ### Testing the Application : 
 
-You can test the application by downloading the APK through this [link]() and installing it on your android device.
+You can test the application by downloading the APK through this [link](https://github.com/IhabBendidi/AngelEyes/blob/master/gradleBuild/outputs/apk/debug/android-debug.apk) and installing it on your android device.
 
 ### Compiling Source Code : 
 
