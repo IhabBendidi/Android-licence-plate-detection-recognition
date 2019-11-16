@@ -1,4 +1,4 @@
-#Sat Nov 16 19:14:27 CET 2019
+#Sat Nov 16 22:55:19 CET 2019
 base.0=/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

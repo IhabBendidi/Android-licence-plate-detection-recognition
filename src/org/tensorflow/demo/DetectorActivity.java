@@ -115,7 +115,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
    * match the input size of each model used!
    */
 
-  private static final int TF_OD_API_INPUT_SIZE = 300;
+  private static final int TF_OD_API_INPUT_SIZE = 480;
   private static final String TF_OD_API_MODEL_FILE =
       "file:///android_asset/detect_plate.pb";
   //private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco_labels_list.txt";

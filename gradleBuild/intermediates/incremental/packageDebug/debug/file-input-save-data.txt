@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Nov 16 19:14:30 CET 2019
+#Sat Nov 16 22:55:21 CET 2019
 2.base=/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/mergeJniLibs/debug/0
 5.set=NATIVE_RESOURCE
 0.path=detect_plate.pb
