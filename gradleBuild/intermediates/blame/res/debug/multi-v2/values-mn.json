@@ -77,71 +77,37 @@
             "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
             "map": [
                 {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/bce290d91481c25014472c7efb0e1781/res/values-mn/values.xml",
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/3a628c59898ec005f33d3b9f8cea23ce/res/values-mn/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "323,608,743,932,1066,1195,1403,1611,1739,1916,2037,2210,2332,2471,2649,2804,2967,3101,3258,3404,3684,3809,3918,4117,4248,4448,4587,4785,4876,4968",
+                        "endColumns": "284,134,188,133,128,207,207,127,176,120,172,121,138,177,154,162,133,156,145,279,124,108,198,130,199,138,197,90,91,105",
+                        "endOffsets": "603,738,927,1061,1190,1398,1606,1734,1911,2032,2205,2327,2466,2644,2799,2962,3096,3253,3399,3679,3804,3913,4112,4243,4443,4582,4780,4871,4963,5069"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,390,525,714,848,977,1185,1393,1521,1698,1819,1992,2114,2253,2431,2586,2749,2883,3040,3442,3722,3847,3956,4155,4286,4486,4625,4823,4914,5006",
+                        "endColumns": "284,134,188,133,128,207,207,127,176,120,172,121,138,177,154,162,133,156,145,279,124,108,198,130,199,138,197,90,91,105",
+                        "endOffsets": "385,520,709,843,972,1180,1388,1516,1693,1814,1987,2109,2248,2426,2581,2744,2878,3035,3181,3717,3842,3951,4150,4281,4481,4620,4818,4909,5001,5107"
+                    }
+                },
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.0.0.aar/4d39bb4c900c732764193a813222cb9b/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "208",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "10",
                         "startColumns": "4",
-                        "startOffsets": "1271",
-                        "endColumns": "208",
-                        "endOffsets": "1475"
-                    }
-                },
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/aee2018c60db358d945b8755b8263adb/res/values-mn/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,353,542,672,777,973,1097,1252,1387,1590,1695,1894,2021,2221,2415,2502,2590",
-                        "endColumns": "107,188,129,104,195,123,154,134,202,104,198,126,199,193,86,87,101",
-                        "endOffsets": "352,541,671,776,972,1096,1251,1386,1589,1694,1893,2020,2220,2414,2501,2589,2691"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,406,540,649,845,973,1132,1480,1683,1792,1991,2122,2322,2520,2611,2703",
-                        "endColumns": "111,188,133,108,195,127,158,138,202,108,198,130,199,197,90,91,105",
-                        "endOffsets": "212,401,535,644,840,968,1127,1266,1678,1787,1986,2117,2317,2515,2606,2698,2804"
-                    }
-                },
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/a5ea6069d542c86c047e72e963dc9f9b/res/values-mn/values-mn.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startOffsets": "325",
+                        "endColumns": "255",
+                        "endOffsets": "576"
                     },
                     "to": {
                         "startLines": "21",
                         "startColumns": "4",
-                        "startOffsets": "2913",
-                        "endColumns": "100",
-                        "endOffsets": "3009"
-                    }
-                },
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/b47d4c59bfb2b29b568ca77ba1a9e628/res/values-mn/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2809",
-                        "endColumns": "103",
-                        "endOffsets": "2908"
+                        "startOffsets": "3186",
+                        "endColumns": "255",
+                        "endOffsets": "3437"
                     }
                 }
             ]

@@ -77,71 +77,37 @@
             "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml",
             "map": [
                 {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/aee2018c60db358d945b8755b8263adb/res/values-mr/values.xml",
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.0.0.aar/4d39bb4c900c732764193a813222cb9b/res/values-mr/values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,351,547,669,779,983,1102,1236,1358,1567,1673,1855,1977,2175,2354,2440,2532",
-                        "endColumns": "105,195,121,109,203,118,133,121,208,105,181,121,197,178,85,91,105",
-                        "endOffsets": "350,546,668,778,982,1101,1235,1357,1566,1672,1854,1976,2174,2353,2439,2531,2637"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,215,411,537,651,855,978,1116,1444,1653,1763,1945,2071,2269,2452,2542,2638",
-                        "endColumns": "109,195,125,113,203,122,137,125,208,109,181,125,197,182,89,95,109",
-                        "endOffsets": "210,406,532,646,850,973,1111,1237,1648,1758,1940,2066,2264,2447,2537,2633,2743"
-                    }
-                },
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/a5ea6069d542c86c047e72e963dc9f9b/res/values-mr/values-mr.xml",
-                    "from": {
-                        "startLines": "2",
+                        "startLines": "4",
                         "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startOffsets": "325",
+                        "endColumns": "236",
+                        "endOffsets": "557"
                     },
                     "to": {
                         "startLines": "21",
                         "startColumns": "4",
-                        "startOffsets": "2852",
-                        "endColumns": "100",
-                        "endOffsets": "2948"
+                        "startOffsets": "3135",
+                        "endColumns": "236",
+                        "endOffsets": "3367"
                     }
                 },
                 {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/bce290d91481c25014472c7efb0e1781/res/values-mr/values.xml",
+                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/3a628c59898ec005f33d3b9f8cea23ce/res/values-mr/values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "201",
-                        "endOffsets": "448"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "323,582,709,905,1031,1155,1360,1569,1692,1878,1996,2164,2285,2414,2602,2752,2925,3056,3230,3353,3601,3721,3834,4019,4148,4349,4485,4671,4761,4857",
+                        "endColumns": "258,126,195,125,123,204,208,122,185,117,167,120,128,187,149,172,130,173,122,247,119,112,184,128,200,135,185,89,95,109",
+                        "endOffsets": "577,704,900,1026,1150,1355,1564,1687,1873,1991,2159,2280,2409,2597,2747,2920,3051,3225,3348,3596,3716,3829,4014,4143,4344,4480,4666,4756,4852,4962"
                     },
                     "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1242",
-                        "endColumns": "201",
-                        "endOffsets": "1439"
-                    }
-                },
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/b47d4c59bfb2b29b568ca77ba1a9e628/res/values-mr/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2748",
-                        "endColumns": "103",
-                        "endOffsets": "2847"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,364,491,687,813,937,1142,1351,1474,1660,1778,1946,2067,2196,2384,2534,2707,2838,3012,3372,3620,3740,3853,4038,4167,4368,4504,4690,4780,4876",
+                        "endColumns": "258,126,195,125,123,204,208,122,185,117,167,120,128,187,149,172,130,173,122,247,119,112,184,128,200,135,185,89,95,109",
+                        "endOffsets": "359,486,682,808,932,1137,1346,1469,1655,1773,1941,2062,2191,2379,2529,2702,2833,3007,3130,3615,3735,3848,4033,4162,4363,4499,4685,4775,4871,4981"
                     }
                 }
             ]

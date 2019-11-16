@@ -6,8 +6,4 @@
     <style name="TextAppearance.AppCompat.Notification.Media"/>
     <style name="TextAppearance.AppCompat.Notification.Time.Media"/>
     <style name="TextAppearance.AppCompat.Notification.Title.Media"/>
-    <style name="TextAppearance.Compat.Notification.Info.Media"/>
-    <style name="TextAppearance.Compat.Notification.Media"/>
-    <style name="TextAppearance.Compat.Notification.Time.Media"/>
-    <style name="TextAppearance.Compat.Notification.Title.Media"/>
 </resources>
