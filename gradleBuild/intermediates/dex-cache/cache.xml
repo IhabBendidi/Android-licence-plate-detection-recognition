@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.0.aar/bce290d91481c25014472c7efb0e1781/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="acaecf3acc212bf268723a6c6c0a4a97749b6842">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.1.0/166ae4e6acd03b7bbebe221ffa54bc039fece1b9/google-services-3.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="166ae4e6acd03b7bbebe221ffa54bc039fece1b9">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/circlebutton-1.1.aar/ea2fe326a90bb764244b457c64927400/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/ihabgit/AngelEyes/libs/universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/508b2d0190d65902866090f74e4d35d4/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/e411d9da1bad9196592a3be279afeeab/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="86dece71c9b7f237db7d4bed4549d53d9f45cf53">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-firestore-12.0.0.aar/ca0a37a623308bdb3fc10a8b9ec14b69/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3c60f431d85e35ec2314bf14ffd495cba9147673">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/easypermissions-0.4.0.aar/59becf7609b958c180919303dbb702fa/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="870ce856ec2f776985b61dbbf0df0db9fe6df78b">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/648d09ca1d074fa81ba830c2b72e339c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.2/20f6463eb19ac61960c5d91a094c2f4f0727dc2e/okhttp-2.7.2.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="20f6463eb19ac61960c5d91a094c2f4f0727dc2e">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/5182d23827ae38d645b3487ac65219d7/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/ihabgit/AngelEyes/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.0.aar/8c91aa0ff7abf43870f4b64d1c56c251/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="96681d4226b125924e1eb4bd7249de1ea9ad0e30">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/eb26e7f5e04a877535fc8a07199ebc31/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/af6d13fe598c3ec00c865b3072b2cea5/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.0.aar/54d971faa8a3ffa723492340a99a0146/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4fa17733a0a99c4cddabc2d915acff64e76c12d3">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b017326235a0d421d0a856f82b8f5bd3/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/6c1dc63b72c3970ca7dcc17563eda8af/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/238ba8e01fc7cadf0350a15c58715c7f/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="451af2ad49edf153d78e47183443159ba173d6d0">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.0.aar/6998e8d9d7d332b8abe2a7b7ad9d5cb8/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2f18008389774d810ecdad87bff839c65f784f8e">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.0.2/b9cd8fc6bd15cb915735d34535db30ece0c44603/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-12.0.0.aar/7e89fc5261aad49e8355a36d875a0826/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="951ba77bf5849f84afd04a3e56e1b163b79ce2a9">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/opentok-android-sdk-2.13.0.aar/e411d9da1bad9196592a3be279afeeab/jars/libs/libjingle_peerconnection_java.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="41a571a5712899cb359373bced270cc43a9773a2">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/ihabgit/AngelEyes/libs/listviewanimations_lib-manipulation_3.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="63737e512fcd9e0ebe9bcd0bb375c2dded74116f">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-12.0.0.aar/9a6eaebbf5becc518cca5b54f107646b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6b7acc7cd4d5fbe2d702574c97c0277a10df0a62">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.0.aar/aee2018c60db358d945b8755b8263adb/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b669797c26467f53a8fce750f74f2853c7fb5939">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.0.aar/c76ee47883cc137ee81784b0fbb3fbac/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="103622b68c89bf6f2cd33b944cfc71ba8adf9eac">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.0.aar/81d52ee5a997c49687e798a30e5a255d/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5a97a29bc68d1725b7a29f85176147d6dc73e038">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/900f14d7a3fb236c65c1615cab117888/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.0.aar/b47d4c59bfb2b29b568ca77ba1a9e628/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5dde87cdade8033e7558ef8789178540acd46ef9">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/ihabgit/AngelEyes/libs/listviewanimations_lib-core_3.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f3f9629b068554d8513a2aaf34418171bf430851">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/tensorflow-android-1.13.1.aar/70f09589b937907a6905261164481436/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="745ef452dfbdad09e34d11a379b386582d83dce1">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/firebase-auth-12.0.0.aar/5392ffd218db7b35dbdde98fba54dfb5/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e5938c442edeb4a3602f3e3ebc274342aee1107d">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.1.aar/8740aa4c88a54e88718d2e059c988ce2/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/a5ea6069d542c86c047e72e963dc9f9b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.0.aar/193a2a986b0acd0c98850e778c334b39/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="801ee1436d056ff4bac3f70f5f1ae3aa571c0899">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/fc90c7d7f24b3107b7800f3c1b33f630/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/ihabgit/AngelEyes/libs/listviewanimations_lib-core-slh_3.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a4fe703aabd23e8c287c90396514418119109dd1">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ihab/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/0c88141cd044e56ffffd9c7e370f0431/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/transforms/preDex/release/32.jar" />
+    </item>
+
+</items>

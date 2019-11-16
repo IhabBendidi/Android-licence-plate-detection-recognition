@@ -21,22 +21,21 @@
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
 		android:theme="@style/AppTheme"><!--android:theme="@style/MaterialTheme"-->
-        <activity android:name=".DialogRateActivity"
+        <!--<activity android:name=".DetectorActivity"
             android:screenOrientation="portrait"
             android:label="Angel EyesDilog">
-            <!--intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter-->
+            </intent-filter>
         </activity>
         <activity android:name=".DetectorActivity"
             android:screenOrientation="portrait">
-        </activity>
+        </activity-->
 
-		 <activity android:name=".SplashScreensActivity"
-               android:label="Angel Eyes"
-               android:theme="@style/AppTheme.NoActionBar">
+		 <activity android:name=".DetectorActivity"
+               android:label="Angel Eyes Detector">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

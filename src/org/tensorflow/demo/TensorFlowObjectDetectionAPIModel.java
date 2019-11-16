@@ -51,26 +51,24 @@ public class TensorFlowObjectDetectionAPIModel implements Classifier {
    *
    * @param assetManager The asset manager to be used to load assets.
    * @param modelFilename The filepath of the model GraphDef protocol buffer.
-   * @param labelFilename The filepath of label file for classes.
    */
   public static Classifier create(
       final AssetManager assetManager,
       final String modelFilename,
-      final String labelFilename,
       final int inputSize) throws IOException {
     final TensorFlowObjectDetectionAPIModel d = new TensorFlowObjectDetectionAPIModel();
 
-    InputStream labelsInput = null;
-    String actualFilename = labelFilename.split("file:///android_asset/")[1];
-    labelsInput = assetManager.open(actualFilename);
-    BufferedReader br = null;
-    br = new BufferedReader(new InputStreamReader(labelsInput));
-    String line;
-    while ((line = br.readLine()) != null) {
-      LOGGER.w(line);
-      d.labels.add(line);
-    }
-    br.close();
+    //InputStream labelsInput = null;
+    //String actualFilename = labelFilename.split("file:///android_asset/")[1];
+    //labelsInput = assetManager.open(actualFilename);
+    //BufferedReader br = null;
+    //br = new BufferedReader(new InputStreamReader(labelsInput));
+    //String line;
+    //while ((line = br.readLine()) != null) {
+    //  LOGGER.w(line);
+     // d.labels.add(line);
+    //}
+    //br.close();
 
 
     d.inferenceInterface = new TensorFlowInferenceInterface(assetManager, modelFilename);
@@ -155,8 +153,9 @@ public class TensorFlowObjectDetectionAPIModel implements Classifier {
     Trace.beginSection("fetch");
     outputLocations = new float[MAX_RESULTS * 4];
     outputScores = new float[MAX_RESULTS];
-    outputClasses = new float[MAX_RESULTS];
+    outputClasses = new float [MAX_RESULTS];
     outputNumDetections = new float[1];
+    //Float[][][] mb = new Float[1][100][100];
     inferenceInterface.fetch(outputNames[0], outputLocations);
     inferenceInterface.fetch(outputNames[1], outputScores);
     inferenceInterface.fetch(outputNames[2], outputClasses);
@@ -171,7 +170,7 @@ public class TensorFlowObjectDetectionAPIModel implements Classifier {
               @Override
               public int compare(final Recognition lhs, final Recognition rhs) {
                 // Intentionally reversed to put high confidence at the head of the queue.
-                return Float.compare(rhs.getConfidence(), lhs.getConfidence());
+                return Float.compare(rhs.getScore(), lhs.getScore());
               }
             });
 
@@ -184,7 +183,7 @@ public class TensorFlowObjectDetectionAPIModel implements Classifier {
               outputLocations[4 * i + 3] * inputSize,
               outputLocations[4 * i + 2] * inputSize);
       pq.add(
-          new Recognition("" + i, labels.get((int) outputClasses[i]), outputScores[i], detection));
+          new Recognition(detection, outputScores[i], outputClasses[i]));
     }
 
     final ArrayList<Recognition> recognitions = new ArrayList<Recognition>();

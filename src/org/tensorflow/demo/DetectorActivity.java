@@ -48,11 +48,13 @@ import org.tensorflow.demo.env.ImageUtils;
 import org.tensorflow.demo.env.Logger;
 import org.tensorflow.demo.tracking.MultiBoxTracker;
 
+import static java.lang.Thread.sleep;
+
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker defined in the project
  * to detect and then track objects.
  */
-public class DetectorActivity extends CameraActivity implements OnImageAvailableListener, TextToSpeech.OnInitListener {
+public class DetectorActivity extends CameraActivity implements OnImageAvailableListener {
   private static final Logger LOGGER = new Logger();
   Context context = this;
 
@@ -92,22 +94,18 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
    * by new recognized objects.
    * The application only "speaks" the classes recognized after a limit of passed turns without speaking
    */
-  private int currentSpeechTurn = 1;
+  private int currentSpeechTurn = 0;
   private static final int TALK_SPEECH_TURN = 0;
   private int limitWithoutTalk = ONE_OBJECT_TURN_LIMIT;
-  private static final int ONE_OBJECT_TURN_LIMIT = 2;
-  private static final int TWO_OBJECT_TURN_LIMIT = 4;
-  private static final int THREE_OBJECT_TURN_LIMIT = 5;
-  private static final int FOUR_OBJECT_TURN_LIMIT = 6;
-  private static final int FIVE_OBJECT_TURN_LIMIT = 7;
-  private static final int HIGHER_OBJECT_TURN_LIMIT = 10;
+  private static final int ONE_OBJECT_TURN_LIMIT = 1;
+  private static final int HIGHER_OBJECT_TURN_LIMIT = 1;
 
 
 
 
 
   //TextToSpeech  Engine initialized
-  private TextToSpeech tts;
+  //private TextToSpeech tts;
 
 
 
@@ -119,9 +117,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
   private static final int TF_OD_API_INPUT_SIZE = 300;
   private static final String TF_OD_API_MODEL_FILE =
-      "file:///android_asset/ssd_mobilenet_v1_android_export.pb";
+      "file:///android_asset/detect_plate.pb";
   //private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco_labels_list.txt";
-  private static String TF_OD_API_LABELS_FILE ;
+ // private static String TF_OD_API_LABELS_FILE ;
 
   /**
    * (Ihab) I will be adding here new Detection modes based on other models to be able to provide
@@ -133,7 +131,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private static final DetectorMode MODE = DetectorMode.TF_OD_API;
 
   // Minimum detection confidence to track a detection.
-  private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.7f;
+  private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.5f;
 
 
   private static final boolean MAINTAIN_ASPECT = false;
@@ -176,9 +174,6 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   @Override
   public void onPreviewSizeChosen(final Size size, final int rotation) {
     Log.e(TOG," (onPreviewSizeChosen) ");
-    /**********************TTS CODE partie 2********************/
-    tts = new TextToSpeech(this, this);
-    /**********************************************************/
     final float textSizePx =
         TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -189,22 +184,16 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
     int cropSize = TF_OD_API_INPUT_SIZE;
     String lang=Locale.getDefault().getLanguage();
-    if(lang.equals("fr")){
-      TF_OD_API_LABELS_FILE = "file:///android_asset/coco_labels_list_fr.txt";
-    }
-    else{
-      TF_OD_API_LABELS_FILE = "file:///android_asset/coco_labels_list.txt";
-    }
     try {
       detector = TensorFlowObjectDetectionAPIModel.create(
-              getAssets(), TF_OD_API_MODEL_FILE, TF_OD_API_LABELS_FILE, TF_OD_API_INPUT_SIZE);
+              getAssets(), TF_OD_API_MODEL_FILE, TF_OD_API_INPUT_SIZE);
       cropSize = TF_OD_API_INPUT_SIZE;
     } catch (final IOException e) {
       LOGGER.e("Exception initializing classifier!", e);
       Toast toast = Toast.makeText(
                 getApplicationContext(), "Classifier could not be initialized", Toast.LENGTH_SHORT);
       toast.show();
-      finish();
+      //finish();
     }
 
 
@@ -349,180 +338,24 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                           new LinkedList<Classifier.Recognition>();
 
                 for (final Classifier.Recognition result : results) {
-                  final RectF location = result.getLocation();
-                  if (location != null && result.getConfidence() >= minimumConfidence) {
+                  final RectF location = result.getBoxes();
+                  if (location != null && result.getScore() >= minimumConfidence) {
                     canvas.drawRect(location, paint);
 
                     cropToFrameTransform.mapRect(location);
-                    result.setLocation(location);
+                    result.setBoxes(location);
                     mappedRecognitions.add(result);
                   }
                 }
 
+                tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
+                try {
+                  sleep(500);
+                } catch (final Exception e){}
 
-
-                //Here we are trying to not let tracked boxes follow the object when it isn't being recognized anymore
-                // TODO(Ihab): there is a much better method to use the tracker, Once there is time I should
-                // the recognitions of the tracker get SAFELY (I stress the word) into mappedRecognitions to be reused later
-                if (currentSpeechTurn==TALK_SPEECH_TURN){
-                  tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
-                } else if (currentSpeechTurn==limitWithoutTalk){
-                  tracker = new MultiBoxTracker(context);
-                }
-
+                tracker = new MultiBoxTracker(context);
                 trackingOverlay.postInvalidate();
                 requestRender();
-
-
-                /**
-                 * This is the thread where the recognized results get processed to know whether they
-                 * should be "spoken" or not and how and when
-                 */
-                Thread logoTimer = new Thread() {
-                  public void run() {
-                    try {
-                      //These conditions are in order to know when to speak, whenever there are results
-                      // and the its the turn of speaking.
-                      if (mappedRecognitions.size()==0 && currentSpeechTurn == TALK_SPEECH_TURN){
-                        // In this case, there is no object recognized, so we stay in the turn of speaking
-                        // until we find an object to recognize.
-                        currentSpeechTurn = TALK_SPEECH_TURN;
-                      }else if (mappedRecognitions.size()>0 && currentSpeechTurn == TALK_SPEECH_TURN){
-
-                        /**
-                         * here we create an array list of the Occurences of each object, using the
-                         * mappedRecognitions while avoiding repetition. This is in order to give concise speech as output
-                         * with processed results and copy normal speech while using all gramatical rules as much as possible
-                         * Yep! Abstraction is important even in speech! :D
-                         */
-                        List<Occurences> mappedOccurences = new ArrayList<>();
-                        for (Classifier.Recognition mapped : mappedRecognitions){
-
-                          int occu = 0;
-                          Occurences tempOccurence = new Occurences(mapped.getTitle());
-
-                          for (Classifier.Recognition mapping : mappedRecognitions){
-                            if (mapped.getTitle().equals(mapping.getTitle())){
-                              occu++;
-                            }
-                          }
-
-                          tempOccurence.setObjectOccurence(occu + "");
-                          tempOccurence.occ = occu;
-                          //
-
-                          boolean add = true;
-                          if (mappedOccurences.size()>0){
-                            for ( Occurences mapOccu : mappedOccurences){
-                              if (!tempOccurence.getObjectTitle().equals(mapOccu.getObjectTitle())){
-                                add = true;
-                              }else{
-                                add = false;
-                                break;
-                              }
-                            }
-                            if(add){
-                              mappedOccurences.add(tempOccurence);
-                            }
-
-                          }else{
-                            mappedOccurences.add(tempOccurence);
-                          }
-                        }
-
-
-                        /**
-                         * This is a crude way to dynamically change the duration of wait for each speech,
-                         * depending on how long it is each time, to make it very comfortable with no wait time.
-                         */
-                        // TODO (Ihab) : I gotta make this little part into a method to be reused later
-                        // in future Models.
-                        if(mappedOccurences.size()==1){
-                          limitWithoutTalk = ONE_OBJECT_TURN_LIMIT;
-                        } else if (mappedOccurences.size()==2){
-                          limitWithoutTalk = TWO_OBJECT_TURN_LIMIT;
-                        } else if (mappedOccurences.size()==3){
-                          limitWithoutTalk = THREE_OBJECT_TURN_LIMIT;
-                        } else if (mappedOccurences.size()== 4){
-                          limitWithoutTalk = FOUR_OBJECT_TURN_LIMIT;
-                        } else if (mappedOccurences.size()==5){
-                          limitWithoutTalk = FIVE_OBJECT_TURN_LIMIT;
-                        }else{
-                          limitWithoutTalk = HIGHER_OBJECT_TURN_LIMIT;
-                        }
-                        sleep(500);
-                        //This firstSpeak will flush (interrupt) the older speech. They already had ample time to finish their speech
-                        // and we don't need a long Queue of words waiting their turn. It has to be as "real-time" as possible.
-                        firstSpeak("");
-                        int occurenceIndex = 0;
-                        for (Occurences spokenOccurence : mappedOccurences){
-                          String plural_s;
-
-                          /**
-                           * This part makes the recognitions into plural if there are many occurences of it
-                           * The words feel cringeworthy to a grammatical nazi like me if they aren't perfect
-                           * the irregular words are changed first into their plural, and then an "s" is added to regular words.
-                           * The world should be changed if the labels are changed.
-                           */
-                          // TODO (Ihab) : Make this too a method, so that its reused in other Neural Networks
-                          if (spokenOccurence.occ >1){
-                            plural_s = "";
-                            if (spokenOccurence.getObjectTitle().equals("person")){
-                              spokenOccurence.setObjectTitle("people");
-                            } else if (spokenOccurence.getObjectTitle().equals("bus")){
-                              spokenOccurence.setObjectTitle("buses");
-                            } else if (spokenOccurence.getObjectTitle().equals("bench")){
-                              spokenOccurence.setObjectTitle("benches");
-                            } else if (spokenOccurence.getObjectTitle().equals("skis")){
-                              spokenOccurence.setObjectTitle("skis");
-                            } else if (spokenOccurence.getObjectTitle().equals("wine glass")){
-                              spokenOccurence.setObjectTitle("wine glasses");
-                            } else if (spokenOccurence.getObjectTitle().equals("sandwich")){
-                              spokenOccurence.setObjectTitle("sandwiches");
-                            } else if (spokenOccurence.getObjectTitle().equals("couch")){
-                              spokenOccurence.setObjectTitle("couches");
-                            } else if (spokenOccurence.getObjectTitle().equals("scissors")){
-                              spokenOccurence.setObjectTitle("scissors");
-                            } else if (spokenOccurence.getObjectTitle().equals("piece of bread")){
-                              spokenOccurence.setObjectTitle("pieces of bread");
-                            } else {
-                              plural_s = "s";
-                            }
-                          }else{
-                            plural_s = "";
-                          }
-
-                          /**
-                           * Gramma Nazi mode again :D
-                           * "And" should be added before the last recognition to be spoken. That way,
-                           * it gives a smooth speech, and would signal the end of the speech.
-                           */
-                          String and;
-                          if (mappedOccurences.size()==1){
-                            and = "";
-                          } else if(occurenceIndex == mappedOccurences.size()-1){
-                            and = "and ";
-                          } else {
-                            and = "";
-                          }
-                          occurenceIndex++;
-                          speakOut(and + spokenOccurence.getObjectOccurence()+ " " +spokenOccurence.getObjectTitle() + plural_s);
-                        }
-                        currentSpeechTurn++;
-                      }else if(currentSpeechTurn==limitWithoutTalk){
-                        //When you reach the end of cyclical turn, u go back to the start, which is the turn of the speech
-                        currentSpeechTurn = TALK_SPEECH_TURN;
-                      }else{
-                        currentSpeechTurn++;
-                      }
-                    } catch (InterruptedException e) {
-                      e.printStackTrace();
-                    }
-
-                  }
-                };
-                logoTimer.start();
-
                 computingDetection = false;
               }
             });
@@ -551,11 +384,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   @Override
   public void onDestroy() {
     // Don't forget to shutdown tts!
-    if (tts != null) {
-      firstSpeak(getResources().getString(R.string.detector_msg2));
-      tts.stop();
-      tts.shutdown();
-    }
+
     super.onDestroy();
   }
 
@@ -566,40 +395,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
    */
   //TODO (Ihab) : Add the condition where if a phone doesnt have the modules necessary for TextToSpeech
   // it autimatically detects that and downloads it on its own.
-  @Override
-  public void onInit(int status) {
 
-    if (status == TextToSpeech.SUCCESS) {
 
-      int result;
-      String lang=Locale.getDefault().getLanguage();
-      if(lang.equals("fr")){
-        result = tts.setLanguage(Locale.FRANCE);
-      }
-      else{
-        result = tts.setLanguage(Locale.US);
-      }
 
-      if (result == TextToSpeech.LANG_MISSING_DATA
-              || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-        Log.e("TTS", "This Language is not supported");
-      } else {
-        //btnSpeak.setEnabled(true);
-        firstSpeak(getResources().getString(R.string.detector_msg1));
-      }
 
-    } else {
-      Log.e("TTS", "Initilization Failed!");
-    }
-
-  }
-
-  private void speakOut(String text) {
-    tts.speak(text, TextToSpeech.QUEUE_ADD, null);
-  }
-  private void firstSpeak(String text){
-    tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-  }
 
 
 

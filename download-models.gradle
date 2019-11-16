@@ -15,7 +15,7 @@ def models = ['object_detection/ssd_mobilenet_v1_android_export.zip',
 
 // Root URL for model archives
 def MODEL_URL = 'https://storage.googleapis.com/download.tensorflow.org/models'
-
+/*
 buildscript {
     repositories {
         jcenter()
@@ -42,7 +42,7 @@ task extractModels(type: Copy) {
 
     into file(project.ext.ASSET_DIR)
     fileMode  0644
-    exclude '**/LICENSE'
+    exclude '**//*LICENSE'
 
     def needDownload = false
     for (f in models) {
@@ -65,4 +65,5 @@ tasks.whenTaskAdded { task ->
         task.dependsOn 'extractModels'
     }
 }
+*/
 

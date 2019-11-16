@@ -45,7 +45,7 @@ allprojects {
         mavenLocal()*/
         /*****soufiane*****/
         maven { url 'https://maven.google.com' }
-        maven { url 'https://tokbox.bintray.com/maven' }
+        //maven { url 'https://tokbox.bintray.com/maven' }
     }
 }/*
 task clean(type: Delete) {
@@ -239,7 +239,7 @@ dependencies {
     //compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.opentok.android:opentok-android-sdk:2.13.0'
+    //compile 'com.opentok.android:opentok-android-sdk:2.13.0'
     compile 'pub.devrel:easypermissions:0.4.0'
     compile 'com.google.gms:google-services:3.1.0'
     compile 'com.google.firebase:firebase-auth:12.0.0'

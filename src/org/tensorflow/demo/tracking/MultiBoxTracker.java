@@ -231,21 +231,21 @@ public class MultiBoxTracker {
     final Matrix rgbFrameToScreen = new Matrix(getFrameToCanvasMatrix());
 
     for (final Classifier.Recognition result : results) {
-      if (result.getLocation() == null) {
+      if (result.getBoxes() == null) {
         continue;
       }
-      final RectF detectionFrameRect = new RectF(result.getLocation());
+      final RectF detectionFrameRect = new RectF(result.getBoxes());
 
       final RectF detectionScreenRect = new RectF();
       rgbFrameToScreen.mapRect(detectionScreenRect, detectionFrameRect);
 
-      screenRects.add(new Pair<Float, RectF>(result.getConfidence(), detectionScreenRect));
+      screenRects.add(new Pair<Float, RectF>(result.getScore(), detectionScreenRect));
 
       if (detectionFrameRect.width() < MIN_SIZE || detectionFrameRect.height() < MIN_SIZE) {
         continue;
       }
 
-      rectsToTrack.add(new Pair<Float, Classifier.Recognition>(result.getConfidence(), result));
+      rectsToTrack.add(new Pair<Float, Classifier.Recognition>(result.getScore(), result));
     }
 
     if (rectsToTrack.isEmpty()) {
@@ -257,9 +257,9 @@ public class MultiBoxTracker {
       for (final Pair<Float, Classifier.Recognition> potential : rectsToTrack) {
         final TrackedRecognition trackedRecognition = new TrackedRecognition();
         trackedRecognition.detectionConfidence = potential.first;
-        trackedRecognition.location = new RectF(potential.second.getLocation());
+        trackedRecognition.location = new RectF(potential.second.getBoxes());
         trackedRecognition.trackedObject = null;
-        trackedRecognition.title = potential.second.getTitle();
+        trackedRecognition.title = String.valueOf(potential.second.getCategory());
         trackedRecognition.color = COLORS[trackedObjects.size()];
         trackedObjects.add(trackedRecognition);
 
@@ -278,7 +278,7 @@ public class MultiBoxTracker {
   private void handleDetection(
       final byte[] frameCopy, final long timestamp, final Pair<Float, Classifier.Recognition> potential) {
     final ObjectTracker.TrackedObject potentialObject =
-        objectTracker.trackObject(potential.second.getLocation(), timestamp, frameCopy);
+        objectTracker.trackObject(potential.second.getBoxes(), timestamp, frameCopy);
 
     final float potentialCorrelation = potentialObject.getCurrentCorrelation();
 
@@ -367,7 +367,7 @@ public class MultiBoxTracker {
     final TrackedRecognition trackedRecognition = new TrackedRecognition();
     trackedRecognition.detectionConfidence = potential.first;
     trackedRecognition.trackedObject = potentialObject;
-    trackedRecognition.title = potential.second.getTitle();
+    trackedRecognition.title = String.valueOf(potential.second.getCategory());
 
     // Use the color from a replaced object before taking one from the color queue.
     trackedRecognition.color =
