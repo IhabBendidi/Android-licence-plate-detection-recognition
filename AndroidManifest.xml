@@ -12,10 +12,6 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-	
-    <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="26" />
 
     <application android:allowBackup="true"
         android:label="@string/app_name"
@@ -43,34 +39,12 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".CallMVActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".CallVolActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".RegisterActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
 
-        <activity
-            android:name=".BenevoleActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTabsTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity
-            android:name=".MenuActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTabsTheme"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-		<activity android:name="org.tensorflow.demo.VideoActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+
     </application>
 
 </manifest>

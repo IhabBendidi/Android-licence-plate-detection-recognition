@@ -1,55 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
-    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
-    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
-    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
-    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Más opciones"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Listo"</string>
-    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
-    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
-    <string msgid="121134116657445385" name="abc_capital_off">"NO"</string>
-    <string msgid="3405795526292276155" name="abc_capital_on">"SÍ"</string>
-    <string msgid="7723749260725869598" name="abc_search_hint">"Buscar…"</string>
-    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Borrar consulta"</string>
-    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta"</string>
-    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Buscar"</string>
-    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
-    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
-    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
-    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
-    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
-    <string msgid="4770915072144378781" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> necesita uno o varios servicios de Google Play que no están disponibles en este momento. Ponte en contacto con el desarrollador para obtener ayuda."</string>
-    <string msgid="2050101795821476669" name="common_google_play_services_enable_button">"Habilitar servicios de Google Play"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites los Servicios de Google Play."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilita los Servicios de Google Play"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Descargar los Servicios de Google Play"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si los Servicios de Google Play no están instalados en tu teléfono."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si los Servicios de Google Play no están instalados en tu tablet."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Descargar los Servicios de Google Play"</string>
-    <string msgid="479501935061677276" name="common_google_play_services_invalid_account_text">"La cuenta especificada no existe en este dispositivo. Selecciona otra cuenta."</string>
-    <string msgid="5775407690646375078" name="common_google_play_services_invalid_account_title">"Cuenta no válida"</string>
-    <string msgid="6857745590248226927" name="common_google_play_services_network_error_text">"Se necesita una conexión de datos para establecer conexión con los Servicios de Google Play."</string>
-    <string msgid="4183541461338112307" name="common_google_play_services_network_error_title">"Error de red"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Error de servicios de Google Play"</string>
-    <string msgid="8897126254633757462" name="common_google_play_services_resolution_required_text">"Completa la acción que requiere <ns1:g id="APP_NAME">%1$s</ns1:g>."</string>
-    <string msgid="7524004365913123453" name="common_google_play_services_resolution_required_title">"Acción necesaria en servicios de Play"</string>
-    <string msgid="3111284987662714014" name="common_google_play_services_restricted_profile_text">"No se admite el acceso a las cuentas desde un perfil restringido."</string>
-    <string msgid="8137798410446890929" name="common_google_play_services_restricted_profile_title">"Perfil restringido"</string>
-    <string msgid="2431909537598981235" name="common_google_play_services_sign_in_failed_text">"Error al iniciar sesión en la cuenta especificada. Selecciona otra cuenta."</string>
-    <string msgid="4402642931312190213" name="common_google_play_services_sign_in_failed_title">"Error al iniciar sesión"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> tiene problemas con los servicios de Google Play. Si el problema persiste, ponte en contacto con el desarrollador para obtener ayuda."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> se basa en los Servicios de Google Play, pero no es compatible con tu dispositivo. Ponte en contacto con el fabricante para obtener asistencia."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Servicios de Google Play"</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Ir a inicio"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Listo"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Ver todo"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Seleccionar una aplicación"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"DESACTIVADO"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ACTIVADO"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"Suprimir"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"Intro"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Función +"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Mayús +"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"Espacio"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menú +"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Buscar…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Consulta de búsqueda"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Ocultar"</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Habilitar"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites Servicios de Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilita Servicios de Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalar"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si los Servicios de Google Play no están instalados en tu dispositivo."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Descargar Servicios de Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Disponibilidad Servicios de Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Error de Servicios de Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"La aplicación <ns1:g id="APP_NAME">%1$s</ns1:g> tiene problemas con los Servicios de Google Play. Vuelve a intentarlo."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"No es posible ejecutar la aplicación <ns1:g id="APP_NAME">%1$s</ns1:g> sin los Servicios de Google Play, que no son compatibles con tu dispositivo."</string>
     <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Actualizar"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no actualices los servicios de Google Play."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Actualiza los Servicios de Google Play"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará hasta que finalice la actualización en curso de los Servicios de Google Play."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Actualizando Servicios de Google Play"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Se necesita una nueva versión de los Servicios de Google Play. Se actualizará en breve."</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no actualices Servicios de Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Actualiza Servicios de Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará hasta que finalice la actualización en curso de Servicios de Google Play."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Se necesita una nueva versión de Servicios de Google Play. Se actualizará en breve."</string>
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir en teléfono"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sesión"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sesión con Google"</string>
-    <string msgid="146198913615257606" name="search_menu_title">"Buscar"</string>
-    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Buscar"</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>
