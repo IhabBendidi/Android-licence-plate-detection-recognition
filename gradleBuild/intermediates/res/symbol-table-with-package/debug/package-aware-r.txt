@@ -1300,6 +1300,7 @@ id line1
 id line3
 id listMode
 id list_item
+id locationvalue
 id logo
 id logout
 id media_actions
@@ -1412,6 +1413,7 @@ id textShortMessage
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textUri
+id textView
 id textVisiblePassword
 id textWebEditText
 id textWebEmailAddress
@@ -1578,9 +1580,12 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string home_msg
+string location
+string locationvalue
 string login
 string login_failed
 string login_succed
+string logocamera
 string logout
 string lorem_ipsum_long
 string lorem_ipsum_short

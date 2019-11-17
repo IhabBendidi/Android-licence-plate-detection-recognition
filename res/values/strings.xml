@@ -71,5 +71,9 @@
     <string name="buttonText">Click to begin please</string>
     <string name="video">Video</string>
     <string name="audio">Audio</string>
+    <string name="location">Location : </string>locationvalue
+    <string name="locationvalue">Location not activated</string>
+    <string name="logocamera">Logo</string>
+
 
 </resources>

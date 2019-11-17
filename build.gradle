@@ -205,6 +205,9 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-android:1.13.1'
     implementation fileTree(include: '*.jar', dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    //implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    //implementation 'com.googlecode.json-simple:json-simple:1.1'
 
     //implementation 'com.android.support:appcompat-v7:25.0.1'/////////////
 

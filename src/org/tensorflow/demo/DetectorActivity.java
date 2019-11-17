@@ -36,6 +36,9 @@ import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -121,10 +124,12 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   //private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco_labels_list.txt";
  // private static String TF_OD_API_LABELS_FILE ;
 
-  /**
-   * (Ihab) I will be adding here new Detection modes based on other models to be able to provide
-   * packs of recognition that are adapted to each situation and distribute them as such.
-   */
+
+
+
+
+
+
   private enum DetectorMode {
     TF_OD_API
   }

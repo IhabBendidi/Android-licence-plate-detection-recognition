@@ -5,13 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000" >
+
     <ImageView
         android:id="@+id/logo"
-        android:src="@drawable/logo2"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginBottom="32dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"/>
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/logocamera"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:textColor="@color/cpb_grey"
+        android:text="@string/location" />
+
+    <TextView
+        android:id="@+id/locationvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630dp"
+        android:textColor="@color/cpb_grey"
+        android:text="@string/locationvalue" />
 </RelativeLayout>

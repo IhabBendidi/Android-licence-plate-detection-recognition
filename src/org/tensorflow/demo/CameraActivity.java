@@ -5,6 +5,10 @@
 package org.tensorflow.demo;
 
 import android.Manifest;
+import com.google.android.gms.location.LocationServices;
+
+import android.location.Location;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
@@ -23,15 +27,25 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Trace;
+import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.util.Size;
 import android.view.KeyEvent;
 import android.view.Surface;
 import android.view.WindowManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.tasks.OnSuccessListener;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.tensorflow.demo.env.ImageUtils;
 import org.tensorflow.demo.env.Logger;
 import org.tensorflow.demo.R; // Explicit import needed for internal Google builds.
@@ -43,11 +57,17 @@ public abstract class CameraActivity extends Activity
 
   private static final int PERMISSIONS_REQUEST = 1;
 
+  private FusedLocationProviderClient fusedLocationClient;
+  private TextView locationText;
+
+
 
 
 
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
+  private static final String PERMISSION_Location = Manifest.permission.ACCESS_COARSE_LOCATION;
+
 
   private boolean debug = false;
 
@@ -70,12 +90,17 @@ public abstract class CameraActivity extends Activity
 
 
 
+
   //This method creates the first camera view, and calls the cameraconnectionFragment using setFragment
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
     super.onCreate(null);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     setContentView(R.layout.activity_camera);
+    locationText = findViewById(R.id.locationvalue);
+    String country = getDeviceCountryCode(getApplicationContext());
+    locationText.setText(country);
+
     if (hasPermission()) {
       setFragment();
     } else {
@@ -90,6 +115,88 @@ public abstract class CameraActivity extends Activity
 
 
 
+
+  private static String getDeviceCountryCode(Context context) {
+    String countryCode;
+
+    // try to get country code from TelephonyManager service
+    TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+    if(tm != null) {
+      // query first getSimCountryIso()
+      countryCode = tm.getSimCountryIso();
+      if (countryCode != null && countryCode.length() == 2)
+        return countryCode.toLowerCase();
+
+      if (tm.getPhoneType() == TelephonyManager.PHONE_TYPE_CDMA) {
+        // special case for CDMA Devices
+        countryCode = getCDMACountryIso();
+      } else {
+        // for 3G devices (with SIM) query getNetworkCountryIso()
+        countryCode = tm.getNetworkCountryIso();
+      }
+
+      if (countryCode != null && countryCode.length() == 2)
+        return countryCode.toLowerCase();
+    }
+
+    // if network country not available (tablets maybe), get country code from Locale class
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+      countryCode = context.getResources().getConfiguration().getLocales().get(0).getCountry();
+    } else {
+      countryCode = context.getResources().getConfiguration().locale.getCountry();
+    }
+
+    if (countryCode != null && countryCode.length() == 2)
+      return  countryCode.toLowerCase();
+
+    // general fallback to "us"
+    return "us";
+  }
+
+
+  private static String getCDMACountryIso() {
+    try {
+      // try to get country code from SystemProperties private class
+      Class<?> systemProperties = Class.forName("android.os.SystemProperties");
+      Method get = systemProperties.getMethod("get", String.class);
+
+      // get homeOperator that contain MCC + MNC
+      String homeOperator = ((String) get.invoke(systemProperties,
+              "ro.cdma.home.operator.numeric"));
+
+      // first 3 chars (MCC) from homeOperator represents the country code
+      int mcc = Integer.parseInt(homeOperator.substring(0, 3));
+
+      // mapping just countries that actually use CDMA networks
+      switch (mcc) {
+        case 330: return "PR";
+        case 310: return "US";
+        case 311: return "US";
+        case 312: return "US";
+        case 316: return "US";
+        case 283: return "AM";
+        case 460: return "CN";
+        case 455: return "MO";
+        case 414: return "MM";
+        case 619: return "SL";
+        case 450: return "KR";
+        case 634: return "SD";
+        case 434: return "UZ";
+        case 232: return "AT";
+        case 204: return "NL";
+        case 262: return "DE";
+        case 247: return "LV";
+        case 255: return "UA";
+      }
+    } catch (ClassNotFoundException ignored) {
+    } catch (NoSuchMethodException ignored) {
+    } catch (InvocationTargetException ignored) {
+    } catch (IllegalAccessException ignored) {
+    } catch (NullPointerException ignored) {
+    }
+
+    return null;
+  }
 
 
 
@@ -299,7 +406,7 @@ public abstract class CameraActivity extends Activity
       if (shouldShowRequestPermissionRationale(PERMISSION_CAMERA) ||
           shouldShowRequestPermissionRationale(PERMISSION_STORAGE)) {
         Toast.makeText(CameraActivity.this,
-            "Camera AND storage permission are required for this demo", Toast.LENGTH_LONG).show();
+            "Camera AND storage AND Location permission are required for this demo", Toast.LENGTH_LONG).show();
       }
       requestPermissions(new String[] {PERMISSION_CAMERA, PERMISSION_STORAGE}, PERMISSIONS_REQUEST);
     }

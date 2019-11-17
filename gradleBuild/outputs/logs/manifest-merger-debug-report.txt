@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:2:1-8:12
 MERGED from [androidx.multidex:multidex:2.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/5e8289268467d4b585aacf5e6d6924c8/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ihab/.gradle/caches/transforms-2/files-2.1/b1bb46cc1b752148b8992d30eb096c21/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:2:1-18:12
@@ -24,6 +25,7 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/740ee5ee6d94b54d54cdf7ceb3cfe098/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/40e405d9e5467e3aab9b31d7d8b7c11e/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/b3e90b296ee9d418fbaf88482d349216/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:17:1-55:12
@@ -65,8 +67,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ihab/.gradle/caches/tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/b7f99d2049d8e95a72a64b509d678174/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/e58905d0a3817fdf9c3872db09121968/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/f1854bf5407f344cf2ac976ec8eb6c07/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12
 	package
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:4:5-34
 	android:versionName
@@ -83,38 +85,12 @@ uses-permission#android.permission.CAMERA
 ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:8:5-65
 	android:name
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:8:22-62
-uses-feature#android.hardware.camera
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:5-60
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:19-57
-uses-feature#android.hardware.camera.autofocus
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:10:5-70
-	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:10:19-67
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:11:5-80
-	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:11:22-78
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:12:5-71
-	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:12:22-68
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/e59b72b98500c2978a07c78ec7ca8844/play-services-measurement-impl-17.2.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/e59b72b98500c2978a07c78ec7ca8844/play-services-measurement-impl-17.2.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:13:22-76
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:5-67
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:10:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
@@ -126,13 +102,45 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:22-64
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:10:22-64
+uses-feature#android.hardware.camera
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:11:5-60
+	android:name
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:11:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:12:19-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/e59b72b98500c2978a07c78ec7ca8844/play-services-measurement-impl-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/e59b72b98500c2978a07c78ec7ca8844/play-services-measurement-impl-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:22-76
 application
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:16:5-48:19
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:18:5-50:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:11:5-17:19
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ihab/.gradle/caches/transforms-2/files-2.1/b1bb46cc1b752148b8992d30eb096c21/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ihab/.gradle/caches/transforms-2/files-2.1/b1bb46cc1b752148b8992d30eb096c21/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:8:5-16:19
@@ -161,6 +169,8 @@ MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/ihab/.gradle
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/740ee5ee6d94b54d54cdf7ceb3cfe098/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/40e405d9e5467e3aab9b31d7d8b7c11e/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/40e405d9e5467e3aab9b31d7d8b7c11e/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/b3e90b296ee9d418fbaf88482d349216/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
@@ -188,35 +198,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ihab/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/faa95a4526b19a303e9ea96273fbfb2b/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:9-41
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:9-41
 	android:icon
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:18:9-45
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:20:9-45
 	android:allowBackup
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:16:18-44
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:18:18-44
 	android:theme
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:3-34
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:21:3-34
 activity#org.tensorflow.demo.DetectorActivity
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:33:4-40:20
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:35:4-42:20
 	android:label
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:16-51
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:36:16-51
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:33:14-46
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:35:14-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:35:13-39:29
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:36:17-69
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:36:25-66
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:17-77
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:27-74
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:40:27-74
 meta-data#com.google.firebase.ml.vision.DEPENDENCIES
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:44:9-46:35
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:46:9-48:35
 	android:value
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:46:13-32
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:48:13-32
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:45:13-70
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:47:13-70
 uses-sdk
 INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
@@ -227,6 +237,8 @@ MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transfo
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ihab/.gradle/caches/transforms-2/files-2.1/b1bb46cc1b752148b8992d30eb096c21/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
@@ -261,6 +273,8 @@ MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/ihab/.gradle
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/740ee5ee6d94b54d54cdf7ceb3cfe098/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/40e405d9e5467e3aab9b31d7d8b7c11e/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/40e405d9e5467e3aab9b31d7d8b7c11e/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/b3e90b296ee9d418fbaf88482d349216/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
@@ -354,9 +368,9 @@ INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
 		INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-50:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:1-52:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
 ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:12:9-16:66
 	android:label
