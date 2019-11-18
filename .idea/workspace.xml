@@ -18,75 +18,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/activity/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/activity/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/resources/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/appcompat/resources/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/asynclayoutinflater/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/asynclayoutinflater/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/constraintlayout/widget/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/constraintlayout/widget/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/coordinatorlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/coordinatorlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/core/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/core/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/customview/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/customview/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/drawerlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/drawerlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/fragment/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/legacy/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/legacy/coreui/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/legacy/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/legacy/coreutils/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/legacy/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/legacy/v4/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/loader/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/loader/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/media/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/media/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/slidingpanelayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/slidingpanelayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/swiperefreshlayout/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/swiperefreshlayout/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/vectordrawable/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/vectordrawable/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/vectordrawable/animated/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/vectordrawable/animated/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/viewpager/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/androidx/viewpager/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/com/google/android/gms/base/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/com/google/android/gms/base/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/com/google/firebase/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/com/google/firebase/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/org/tensorflow/demo/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/org/tensorflow/demo/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/pub/devrel/easypermissions/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/generated/not_namespaced_r_class_sources/debug/r/pub/devrel/easypermissions/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/activity/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/activity/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/resources/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/resources/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/asynclayoutinflater/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/asynclayoutinflater/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/constraintlayout/widget/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/constraintlayout/widget/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/coordinatorlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/coordinatorlayout/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/core/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/core/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/customview/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/customview/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/drawerlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/drawerlayout/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/fragment/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/fragment/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/legacy/coreui/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/legacy/coreui/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/legacy/coreutils/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/legacy/coreutils/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/legacy/v4/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/legacy/v4/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/loader/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/loader/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/media/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/media/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/slidingpanelayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/slidingpanelayout/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/swiperefreshlayout/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/swiperefreshlayout/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/vectordrawable/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/vectordrawable/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/vectordrawable/animated/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/vectordrawable/animated/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/viewpager/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/viewpager/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/android/gms/base/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/android/gms/base/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/firebase/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/firebase/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/CameraActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/CameraActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/HistoryActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/HistoryActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$interpolator.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$interpolator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$raw.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$raw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/pub/devrel/easypermissions/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -146,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-211">
-              <caret line="426" column="47" lean-forward="true" selection-start-line="426" selection-start-column="47" selection-end-line="426" selection-end-column="79" />
+            <state relative-caret-position="3389">
+              <caret line="426" column="47" selection-start-line="426" selection-start-column="47" selection-end-line="426" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -155,12 +94,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="180" column="118" selection-start-line="180" selection-start-column="118" selection-end-line="180" selection-end-column="118" />
+            <state relative-caret-position="405">
+              <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2996#3143#0" expanded="true" />
-                <element signature="e#3142#3143#0" expanded="true" />
+                <element signature="e#3104#3251#0" expanded="true" />
+                <element signature="e#3250#3251#0" expanded="true" />
+                <element signature="e#9290#9745#0" expanded="true" />
+                <element signature="e#9744#9745#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/CameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="913">
-              <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
+            <state relative-caret-position="403">
+              <caret line="367" column="3" selection-start-line="306" selection-start-column="2" selection-end-line="367" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7792#7793#0" expanded="true" />
@@ -428,8 +369,8 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49758455" visible="true" weight="0.19393456" />
-      <window_info id="Structure" order="2" sideWeight="0.5024155" side_tool="true" weight="0.32242617" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49586776" visible="true" weight="0.19393456" />
+      <window_info id="Structure" order="2" sideWeight="0.5041322" side_tool="true" weight="0.19393456" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
@@ -721,10 +662,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3389">
+          <caret line="426" column="47" selection-start-line="426" selection-start-column="47" selection-end-line="426" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="121" column="59" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
+        <state relative-caret-position="403">
+          <caret line="367" column="3" selection-start-line="306" selection-start-column="2" selection-end-line="367" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7792#7793#0" expanded="true" />
@@ -741,21 +689,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="426" column="47" lean-forward="true" selection-start-line="426" selection-start-column="47" selection-end-line="426" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="180" column="118" selection-start-line="180" selection-start-column="118" selection-end-line="180" selection-end-column="118" />
+        <state relative-caret-position="405">
+          <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2996#3143#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
+            <element signature="e#3104#3251#0" expanded="true" />
+            <element signature="e#3250#3251#0" expanded="true" />
+            <element signature="e#9290#9745#0" expanded="true" />
+            <element signature="e#9744#9745#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -180,6 +180,9 @@ public class OneShotCameraActivity extends AppCompatActivity {
             File the_directory = cwd.getDir("imageDir", Context.MODE_PRIVATE);//
             final File file =new File(the_directory,outputFileName);// Created the file where the image would be saved
             ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener() {
+
+
+
                 @Override
                 public void onImageAvailable(ImageReader reader) {
                     Image image = null;
@@ -199,6 +202,8 @@ public class OneShotCameraActivity extends AppCompatActivity {
                         }
                     }
                 }
+
+
                 private void save(byte[] bytes) throws IOException {
                     OutputStream output = null;
                     try {
