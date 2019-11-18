@@ -69,6 +69,9 @@ public abstract class CameraActivity extends Activity
   private static final String PERMISSION_Location = Manifest.permission.ACCESS_COARSE_LOCATION;
 
 
+  protected Toast toast;
+
+
   private boolean debug = false;
 
   private Handler handler;
@@ -95,6 +98,7 @@ public abstract class CameraActivity extends Activity
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
     super.onCreate(null);
+    toast = Toast.makeText(getApplicationContext(), "Saving the detection results", Toast.LENGTH_SHORT);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     setContentView(R.layout.activity_camera);
     locationText = findViewById(R.id.locationvalue);

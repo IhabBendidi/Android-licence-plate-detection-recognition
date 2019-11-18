@@ -95,7 +95,7 @@ android {
 
     if (nativeBuildSystem == 'cmake') {
         defaultConfig {
-            applicationId = 'com.insea.angeleyes'
+            applicationId = 'org.tensorflow.demo'
             minSdkVersion 21
             targetSdkVersion 26
             multiDexEnabled true

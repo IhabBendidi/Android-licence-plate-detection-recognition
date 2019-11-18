@@ -70,6 +70,14 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
     private String objectOccurence;
     public int occ;
 
+
+
+
+
+
+
+
+
     public Occurences(String objectTitle) {
       this.objectTitle = objectTitle;
     }
@@ -102,6 +110,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private int limitWithoutTalk = ONE_OBJECT_TURN_LIMIT;
   private static final int ONE_OBJECT_TURN_LIMIT = 1;
   private static final int HIGHER_OBJECT_TURN_LIMIT = 1;
+
+
 
 
 
@@ -328,6 +338,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
               public void run() {
                 LOGGER.i("Running detection on image " + currTimestamp);
                 final long startTime = SystemClock.uptimeMillis();
+
                 final List<Classifier.Recognition> results = detector.recognizeImage(croppedBitmap);
                 lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
                 cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
@@ -362,8 +373,42 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 trackingOverlay.postInvalidate();
                 requestRender();
                 computingDetection = false;
+                Log.e(TOG,"1");
+
+
+
+
+
+                Runnable myRunnable =
+                        new Runnable(){
+                    public void run(){
+                        Log.e(TOG,"2");
+                        List<Classifier.Recognition> crops = mappedRecognitions;
+                        Log.e(TOG,"3");
+                        if(crops.size()>0){
+                            Log.e(TOG,"3");
+                            for (final Classifier.Recognition r : crops) {
+                                Log.e(TOG,"4");
+                                final RectF l = r.getBoxes();
+                                Log.e(TOG,"5");
+
+                                Log.e(TOG,"6");
+                                if (rgbFrameBitmap.getWidth() >= (int)l.right && rgbFrameBitmap.getHeight()>= (int)l.bottom){
+                                    toast.show();
+                                    Bitmap resultsBitmap = Bitmap.createBitmap(rgbFrameBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
+                                  //// SHould I be using rgbframebitmap or or croppedbitmap?
+                                    Log.e(TOG,"7");
+                                }
+                            }
+                        }
+                    }
+                };
+                myRunnable.run();
               }
             });
+
+
+
   }
 
 
