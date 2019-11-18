@@ -388,6 +388,22 @@
             ]
         },
         {
+            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat",
             "map": [
                 {
@@ -456,22 +472,6 @@
                         "startOffsets": "105,221,325,438,525,627,749,832,913,1007,1102,1199,1295,1399,1495,1593,1689,1783,1877,1959,2068,2176,2276,2386,2491,2597,2773,5629",
                         "endColumns": "115,103,112,86,101,121,82,80,93,94,96,95,103,95,97,95,93,93,81,108,107,99,109,104,105,175,100,82",
                         "endOffsets": "216,320,433,520,622,744,827,908,1002,1097,1194,1290,1394,1490,1588,1684,1778,1872,1954,2063,2171,2271,2381,2486,2592,2768,2869,5707"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
-                    "from": {
-                        "startLines": "2,5,8",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,214,385",
-                        "endLines": "4,7,10",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "209,380,553"
                     }
                 }
             ]
@@ -1929,47 +1929,6 @@
             ]
         },
         {
-            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-v11/template-styles.xml",
-                    "from": {
-                        "startLines": "19",
-                        "startColumns": "4",
-                        "startOffsets": "663",
-                        "endColumns": "65",
-                        "endOffsets": "724"
-                    },
-                    "to": {
-                        "startLines": "15",
-                        "startColumns": "4",
-                        "startOffsets": "779",
-                        "endColumns": "64",
-                        "endOffsets": "839"
-                    }
-                },
-                {
-                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-v11/styles.xml",
-                    "from": {
-                        "startLines": "7,19,11",
-                        "startColumns": "2,2,2",
-                        "startOffsets": "210,763,340",
-                        "endLines": "9,21,17",
-                        "endColumns": "10,10,10",
-                        "endOffsets": "336,927,759"
-                    },
-                    "to": {
-                        "startLines": "2,5,8",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,186,355",
-                        "endLines": "4,7,14",
-                        "endColumns": "10,10,10",
-                        "endOffsets": "181,350,774"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat",
             "map": [
                 {
@@ -2038,6 +1997,47 @@
                         "startOffsets": "2761,2866,3052,3179,3285,3483,3610,3752,4061,4256,4361,4537,4662,4855,5030,5120,5210",
                         "endColumns": "104,185,126,105,197,126,141,131,194,104,175,124,192,174,89,89,109",
                         "endOffsets": "2861,3047,3174,3280,3478,3605,3747,3879,4251,4356,4532,4657,4850,5025,5115,5205,5315"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-v11/template-styles.xml",
+                    "from": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "663",
+                        "endColumns": "65",
+                        "endOffsets": "724"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "779",
+                        "endColumns": "64",
+                        "endOffsets": "839"
+                    }
+                },
+                {
+                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-v11/styles.xml",
+                    "from": {
+                        "startLines": "7,19,11",
+                        "startColumns": "2,2,2",
+                        "startOffsets": "210,763,340",
+                        "endLines": "9,21,17",
+                        "endColumns": "10,10,10",
+                        "endOffsets": "336,927,759"
+                    },
+                    "to": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,186,355",
+                        "endLines": "4,7,14",
+                        "endColumns": "10,10,10",
+                        "endOffsets": "181,350,774"
                     }
                 }
             ]

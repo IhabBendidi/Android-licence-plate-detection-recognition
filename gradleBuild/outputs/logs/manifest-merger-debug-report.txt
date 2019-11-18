@@ -115,12 +115,8 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:5-81
 	android:name
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:22-78
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:5-71
-	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:22-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:16:5-79
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
@@ -132,7 +128,11 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/bcf9620a8fcc129c2e75f53655da2e0c/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:16:22-76
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:22-76
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:22-78
 application
 ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:5-55:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19

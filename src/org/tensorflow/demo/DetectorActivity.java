@@ -421,6 +421,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                                 Log.e(TOG,"6");
                                 if (temporaryBitmap.getWidth() >= (int)l.right && temporaryBitmap.getHeight()>= (int)l.bottom){
                                     Bitmap resultsBitmap = Bitmap.createBitmap(temporaryBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
+
                                   //// SHould I be using rgbframebitmap or or croppedbitmap?
                                     Log.e(TOG,"7");
                                     timeName = "" + System.currentTimeMillis();

@@ -7,6 +7,7 @@ package org.tensorflow.demo;
 import android.Manifest;
 import com.google.android.gms.location.LocationServices;
 
+import android.content.ContextWrapper;
 import android.location.Location;
 
 import android.app.Activity;
@@ -40,6 +41,8 @@ import android.widget.Toast;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -77,7 +80,7 @@ public abstract class CameraActivity extends Activity
 
 
   // Filename of the file with the detection output absolute paths, and location and time of the detection
-  protected String outputFileName = "PATHS.txt";
+  protected String outputFileName = "resul.txt";
 
 
   private boolean debug = false;
@@ -108,8 +111,22 @@ public abstract class CameraActivity extends Activity
     super.onCreate(null);
     toast = Toast.makeText(getApplicationContext(), "Saving the detection results", Toast.LENGTH_SHORT);
     try{
-      fWriter = new FileWriter(getApplicationContext().getFilesDir() + "/" + outputFileName,true);
-    }catch (IOException e){
+
+      //Log.e(TOG,getApplicationContext().getFilesDir().getAbsolutePath()); ///data/user/0/org.tensorflow.demo/files
+      ContextWrapper cwd = new ContextWrapper(getApplicationContext());
+      File the_directory = cwd.getDir("assets", Context.MODE_APPEND);
+      File outpath=new File(the_directory,outputFileName);
+      if(!outpath.exists()){
+        outpath.createNewFile();
+      }
+     // fWriter = new FileWriter(the_directory.getAbsolutePath() + "/" + outputFileName,true);
+      //Log.e(TOG,outpath.exists() + "    2");
+      fWriter = new FileWriter(outpath,true);
+      Log.e(TOG,outpath.getAbsolutePath() + "    1");
+      //Log.e(TOG,outpath.exists() + "    3");
+    } catch (FileNotFoundException e){
+      Log.e(TOG,"This is so weird :  " + e.toString());
+    } catch (IOException e){
       Log.e(TOG,e.toString());
     }
 
@@ -359,11 +376,11 @@ public abstract class CameraActivity extends Activity
     handlerThread = new HandlerThread("inference");
     handlerThread.start();
     handler = new Handler(handlerThread.getLooper());
-    try{
+    /*try{
       fWriter = new FileWriter(outputFileName,true);
     }catch (IOException e){
       Log.e(TOG,e.toString());
-    }
+    }*/
   }
 
   @Override
@@ -381,32 +398,32 @@ public abstract class CameraActivity extends Activity
     } catch (final InterruptedException e) {
       LOGGER.e(e, "Exception!");
     }
-    try{
+    /*try{
       fWriter.close();
     }catch (IOException e){
       Log.e(TOG,e.toString());
-    }
+    }*/
 
     super.onPause();
   }
 
   @Override
   public synchronized void onStop() {
-    try{
+    /*try{
       fWriter.close();
     }catch (IOException e){
       Log.e(TOG,e.toString());
-    }
+    }*/
     super.onStop();
   }
 
   @Override
   public synchronized void onDestroy() {
-    try{
+    /*try{
       fWriter.close();
     }catch (IOException e){
       Log.e(TOG,e.toString());
-    }
+    }*/
     super.onDestroy();
   }
 
