@@ -16,10 +16,13 @@
 
 package org.tensorflow.demo;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Locale;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -117,6 +120,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
 
+
+
+
+
   //TextToSpeech  Engine initialized
   //private TextToSpeech tts;
 
@@ -149,6 +156,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.5f;
 
 
+
+  private String imagePath;
+
   private static final boolean MAINTAIN_ASPECT = false;
 
   private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
@@ -173,6 +183,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private Matrix cropToFrameTransform;
 
   private MultiBoxTracker tracker;
+
+
+  private String timeName;
 
   private byte[] luminanceCopy;
   private static final String TOG = "DetectorActivity";
@@ -387,6 +400,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                         Log.e(TOG,"3");
                         if(crops.size()>0){
                             Log.e(TOG,"3");
+                            toast.show();
                             for (final Classifier.Recognition r : crops) {
                                 Log.e(TOG,"4");
                                 final RectF l = r.getBoxes();
@@ -394,10 +408,14 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
                                 Log.e(TOG,"6");
                                 if (rgbFrameBitmap.getWidth() >= (int)l.right && rgbFrameBitmap.getHeight()>= (int)l.bottom){
-                                    toast.show();
                                     Bitmap resultsBitmap = Bitmap.createBitmap(rgbFrameBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
                                   //// SHould I be using rgbframebitmap or or croppedbitmap?
                                     Log.e(TOG,"7");
+                                    timeName = "" + System.currentTimeMillis();
+                                    imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                    Log.e(TOG,"8");
+                                    Log.e(TOG,imagePath);
+
                                 }
                             }
                         }
@@ -406,10 +424,38 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 myRunnable.run();
               }
             });
-
-
-
   }
+
+
+
+
+
+  private String saveToInternalStorage(Bitmap bitmapImage,String name){
+    ContextWrapper cw = new ContextWrapper(getApplicationContext());
+    // path to /data/data/yourapp/app_data/imageDir
+    File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
+
+    String fullName = name + ".jpg";
+    // Create imageDir
+    File mypath=new File(directory,fullName);
+
+    FileOutputStream fos = null;
+    try {
+      fos = new FileOutputStream(mypath);
+      // Use the compress method on the BitMap object to write image to the OutputStream
+      bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        fos.close();
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }
+    return directory.getAbsolutePath() + "/" + fullName;
+  }
+
 
 
 
@@ -439,12 +485,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   }
 
 
-  /**
-   * TextToSpeech initialization at the launch of the class
-   * @param status
-   */
-  //TODO (Ihab) : Add the condition where if a phone doesnt have the modules necessary for TextToSpeech
-  // it autimatically detects that and downloads it on its own.
+
 
 
 
