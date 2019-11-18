@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!--tenserflow-->
-	<string name="description_info">Info</string>
+    <!--tenserflow-->
+    <string name="description_info">Info</string>
     <string name="request_permission">This sample needs camera permission.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
     <!---->
@@ -74,6 +74,10 @@
     <string name="location">Location : </string>locationvalue
     <string name="locationvalue">Location not activated</string>
     <string name="logocamera">Logo</string>
+    <string name="logo">logo</string>
+    <string name="main_button_cont_scan">continuous scanning</string>
+    <string name="main_button_one_scan">One Shot Scan</string>
+    <string name="main_button_history">History</string>
 
 
 </resources>

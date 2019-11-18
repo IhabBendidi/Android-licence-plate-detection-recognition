@@ -340,28 +340,37 @@ public final class R {
      */
     public static final int alphabeticModifiers=0x7f040028;
     /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int arrowHeadLength=0x7f040029;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int arrowShaftLength=0x7f04002a;
+    public static final int altSrc=0x7f040029;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int autoCompleteTextViewStyle=0x7f04002b;
+    public static final int animate_relativeTo=0x7f04002a;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int applyMotionScene=0x7f04002b;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>flip</td><td>2</td><td></td></tr>
+     * <tr><td>startHorizontal</td><td>1</td><td></td></tr>
+     * <tr><td>startVertical</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int arcMode=0x7f04002c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -369,7 +378,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeMaxTextSize=0x7f04002c;
+    public static final int arrowHeadLength=0x7f04002d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -377,14 +386,19 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeMinTextSize=0x7f04002d;
+    public static final int arrowShaftLength=0x7f04002e;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int attributeName=0x7f04002f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int autoSizePresetSizes=0x7f04002e;
+    public static final int autoCompleteTextViewStyle=0x7f040030;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -392,7 +406,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int autoSizeStepGranularity=0x7f04002f;
+    public static final int autoSizeMaxTextSize=0x7f040031;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int autoSizeMinTextSize=0x7f040032;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int autoSizePresetSizes=0x7f040033;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int autoSizeStepGranularity=0x7f040034;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -404,14 +441,29 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int autoSizeTextType=0x7f040030;
+    public static final int autoSizeTextType=0x7f040035;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>animateToEnd</td><td>4</td><td></td></tr>
+     * <tr><td>animateToStart</td><td>3</td><td></td></tr>
+     * <tr><td>jumpToEnd</td><td>2</td><td></td></tr>
+     * <tr><td>jumpToStart</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int autoTransition=0x7f040036;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int background=0x7f040031;
+    public static final int background=0x7f040037;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -421,7 +473,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundSplit=0x7f040032;
+    public static final int backgroundSplit=0x7f040038;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -431,13 +483,13 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundStacked=0x7f040033;
+    public static final int backgroundStacked=0x7f040039;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int backgroundTint=0x7f040034;
+    public static final int backgroundTint=0x7f04003a;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -453,13 +505,13 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int backgroundTintMode=0x7f040035;
+    public static final int backgroundTintMode=0x7f04003b;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int barColor=0x7f040036;
+    public static final int barColor=0x7f04003c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -467,7 +519,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int barLength=0x7f040037;
+    public static final int barLength=0x7f04003d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -475,12 +527,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int barWidth=0x7f040038;
+    public static final int barWidth=0x7f04003e;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int barrierAllowsGoneWidgets=0x7f040039;
+    public static final int barrierAllowsGoneWidgets=0x7f04003f;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -496,56 +548,68 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int barrierDirection=0x7f04003a;
+    public static final int barrierDirection=0x7f040040;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int barrierMargin=0x7f040041;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int borderlessButtonStyle=0x7f04003b;
+    public static final int borderlessButtonStyle=0x7f040042;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int brightness=0x7f040043;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarButtonStyle=0x7f04003c;
+    public static final int buttonBarButtonStyle=0x7f040044;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarNegativeButtonStyle=0x7f04003d;
+    public static final int buttonBarNegativeButtonStyle=0x7f040045;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarNeutralButtonStyle=0x7f04003e;
+    public static final int buttonBarNeutralButtonStyle=0x7f040046;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarPositiveButtonStyle=0x7f04003f;
+    public static final int buttonBarPositiveButtonStyle=0x7f040047;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonBarStyle=0x7f040040;
+    public static final int buttonBarStyle=0x7f040048;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonCompat=0x7f040041;
+    public static final int buttonCompat=0x7f040049;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -558,7 +622,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int buttonGravity=0x7f040042;
+    public static final int buttonGravity=0x7f04004a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -566,14 +630,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int buttonIconDimen=0x7f040043;
+    public static final int buttonIconDimen=0x7f04004b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonPanelSideLayout=0x7f040044;
+    public static final int buttonPanelSideLayout=0x7f04004c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -590,27 +654,27 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int buttonSize=0x7f040045;
+    public static final int buttonSize=0x7f04004d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyle=0x7f040046;
+    public static final int buttonStyle=0x7f04004e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyleSmall=0x7f040047;
+    public static final int buttonStyleSmall=0x7f04004f;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int buttonTint=0x7f040048;
+    public static final int buttonTint=0x7f040050;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -626,105 +690,128 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int buttonTintMode=0x7f040049;
+    public static final int buttonTintMode=0x7f040051;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int chainUseRtl=0x7f04004a;
+    public static final int chainUseRtl=0x7f040052;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkboxStyle=0x7f04004b;
+    public static final int checkboxStyle=0x7f040053;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedTextViewStyle=0x7f04004c;
+    public static final int checkedTextViewStyle=0x7f040054;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int circleColor=0x7f04004d;
+    public static final int circleColor=0x7f040055;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int circleCrop=0x7f04004e;
+    public static final int circleCrop=0x7f040056;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int circleRadius=0x7f040057;
+    /**
+     * <p>Must be one or more (separated by '|') of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>jumpToEnd</td><td>100</td><td></td></tr>
+     * <tr><td>jumpToStart</td><td>1000</td><td></td></tr>
+     * <tr><td>toggle</td><td>11</td><td></td></tr>
+     * <tr><td>transitionToEnd</td><td>1</td><td></td></tr>
+     * <tr><td>transitionToStart</td><td>10</td><td></td></tr>
+     * </table>
+     */
+    public static final int clickAction=0x7f040058;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeIcon=0x7f04004f;
+    public static final int closeIcon=0x7f040059;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeItemLayout=0x7f040050;
+    public static final int closeItemLayout=0x7f04005a;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int collapseContentDescription=0x7f040051;
+    public static final int collapseContentDescription=0x7f04005b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapseIcon=0x7f040052;
+    public static final int collapseIcon=0x7f04005c;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int color=0x7f040053;
+    public static final int color=0x7f04005d;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorAccent=0x7f040054;
+    public static final int colorAccent=0x7f04005e;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorBackgroundFloating=0x7f040055;
+    public static final int colorBackgroundFloating=0x7f04005f;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorButtonNormal=0x7f040056;
+    public static final int colorButtonNormal=0x7f040060;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlActivated=0x7f040057;
+    public static final int colorControlActivated=0x7f040061;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlHighlight=0x7f040058;
+    public static final int colorControlHighlight=0x7f040062;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlNormal=0x7f040059;
+    public static final int colorControlNormal=0x7f040063;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -734,19 +821,19 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorError=0x7f04005a;
+    public static final int colorError=0x7f040064;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimary=0x7f04005b;
+    public static final int colorPrimary=0x7f040065;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimaryDark=0x7f04005c;
+    public static final int colorPrimaryDark=0x7f040066;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -763,44 +850,65 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int colorScheme=0x7f04005d;
+    public static final int colorScheme=0x7f040067;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSwitchThumbNormal=0x7f04005e;
+    public static final int colorSwitchThumbNormal=0x7f040068;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int commitIcon=0x7f04005f;
+    public static final int commitIcon=0x7f040069;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int constraintSet=0x7f040060;
+    public static final int constraintSet=0x7f04006a;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int constraintSetEnd=0x7f04006b;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int constraintSetStart=0x7f04006c;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int constraint_referenced_ids=0x7f040061;
+    public static final int constraint_referenced_ids=0x7f04006d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int content=0x7f040062;
+    public static final int constraints=0x7f04006e;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int content=0x7f04006f;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int contentDescription=0x7f040063;
+    public static final int contentDescription=0x7f040070;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -808,7 +916,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEnd=0x7f040064;
+    public static final int contentInsetEnd=0x7f040071;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -816,7 +924,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEndWithActions=0x7f040065;
+    public static final int contentInsetEndWithActions=0x7f040072;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -824,7 +932,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetLeft=0x7f040066;
+    public static final int contentInsetLeft=0x7f040073;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -832,7 +940,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetRight=0x7f040067;
+    public static final int contentInsetRight=0x7f040074;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -840,7 +948,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStart=0x7f040068;
+    public static final int contentInsetStart=0x7f040075;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -848,20 +956,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStartWithNavigation=0x7f040069;
+    public static final int contentInsetStartWithNavigation=0x7f040076;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int contentView=0x7f04006a;
+    public static final int contentView=0x7f040077;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int contourColor=0x7f04006b;
+    public static final int contourColor=0x7f040078;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -869,39 +977,43 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contourSize=0x7f04006c;
+    public static final int contourSize=0x7f040079;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int contrast=0x7f04007a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int controlBackground=0x7f04006d;
+    public static final int controlBackground=0x7f04007b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int coordinatorLayoutStyle=0x7f04006e;
+    public static final int coordinatorLayoutStyle=0x7f04007c;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int cpb_colorIndicator=0x7f04006f;
+    public static final int cpb_colorIndicator=0x7f04007d;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int cpb_colorIndicatorBackground=0x7f040070;
+    public static final int cpb_colorIndicatorBackground=0x7f04007e;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int cpb_colorProgress=0x7f040071;
+    public static final int cpb_colorProgress=0x7f04007f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -909,21 +1021,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cpb_cornerRadius=0x7f040072;
+    public static final int cpb_cornerRadius=0x7f040080;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cpb_iconComplete=0x7f040073;
+    public static final int cpb_iconComplete=0x7f040081;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cpb_iconError=0x7f040074;
+    public static final int cpb_iconError=0x7f040082;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -931,87 +1043,182 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cpb_paddingProgress=0x7f040075;
+    public static final int cpb_paddingProgress=0x7f040083;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cpb_selectorComplete=0x7f040076;
+    public static final int cpb_selectorComplete=0x7f040084;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cpb_selectorError=0x7f040077;
+    public static final int cpb_selectorError=0x7f040085;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int cpb_selectorIdle=0x7f040078;
+    public static final int cpb_selectorIdle=0x7f040086;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int cpb_textComplete=0x7f040079;
+    public static final int cpb_textComplete=0x7f040087;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int cpb_textError=0x7f04007a;
+    public static final int cpb_textError=0x7f040088;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int cpb_textIdle=0x7f04007b;
+    public static final int cpb_textIdle=0x7f040089;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int cpb_textProgress=0x7f04007c;
+    public static final int cpb_textProgress=0x7f04008a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int crossfade=0x7f04008b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int customNavigationLayout=0x7f04007d;
+    public static final int currentState=0x7f04008c;
     /**
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>linear</td><td>1</td><td></td></tr>
+     * <tr><td>spline</td><td>0</td><td></td></tr>
+     * </table>
      */
-    public static final int defaultQueryHint=0x7f04007e;
+    public static final int curveFit=0x7f04008d;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int customBoolean=0x7f04008e;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int customColorDrawableValue=0x7f04008f;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int customColorValue=0x7f040090;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int customDimension=0x7f040091;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int customFloatValue=0x7f040092;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int delayMillis=0x7f04007f;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int dialogCornerRadius=0x7f040080;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int dialogPreferredPadding=0x7f040081;
+    public static final int customIntegerValue=0x7f040093;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dialogTheme=0x7f040082;
+    public static final int customNavigationLayout=0x7f040094;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int customPixelDimension=0x7f040095;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int customStringValue=0x7f040096;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int defaultDuration=0x7f040097;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int defaultQueryHint=0x7f040098;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int defaultState=0x7f040099;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int delayMillis=0x7f04009a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int deltaPolarAngle=0x7f04009b;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int deltaPolarRadius=0x7f04009c;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int deriveConstraintsFrom=0x7f04009d;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int dialogCornerRadius=0x7f04009e;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int dialogPreferredPadding=0x7f04009f;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int dialogTheme=0x7f0400a0;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1028,21 +1235,21 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int displayOptions=0x7f040083;
+    public static final int displayOptions=0x7f0400a1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int divider=0x7f040084;
+    public static final int divider=0x7f0400a2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerHorizontal=0x7f040085;
+    public static final int dividerHorizontal=0x7f0400a3;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1050,42 +1257,76 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dividerPadding=0x7f040086;
+    public static final int dividerPadding=0x7f0400a4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerVertical=0x7f040087;
+    public static final int dividerVertical=0x7f0400a5;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>dragDown</td><td>1</td><td></td></tr>
+     * <tr><td>dragLeft</td><td>2</td><td></td></tr>
+     * <tr><td>dragRight</td><td>3</td><td></td></tr>
+     * <tr><td>dragUp</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int dragDirection=0x7f0400a6;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int dragScale=0x7f0400a7;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>asConfigured</td><td>4</td><td></td></tr>
+     * <tr><td>deltaRelative</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>2</td><td></td></tr>
+     * <tr><td>rectangles</td><td>5</td><td></td></tr>
+     * </table>
+     */
+    public static final int drawPath=0x7f0400a8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableBottomCompat=0x7f040088;
+    public static final int drawableBottomCompat=0x7f0400a9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableEndCompat=0x7f040089;
+    public static final int drawableEndCompat=0x7f0400aa;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableLeftCompat=0x7f04008a;
+    public static final int drawableLeftCompat=0x7f0400ab;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableRightCompat=0x7f04008b;
+    public static final int drawableRightCompat=0x7f0400ac;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1093,20 +1334,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int drawableSize=0x7f04008c;
+    public static final int drawableSize=0x7f0400ad;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableStartCompat=0x7f04008d;
+    public static final int drawableStartCompat=0x7f0400ae;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int drawableTint=0x7f04008e;
+    public static final int drawableTint=0x7f0400af;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1122,28 +1363,28 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int drawableTintMode=0x7f04008f;
+    public static final int drawableTintMode=0x7f0400b0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawableTopCompat=0x7f040090;
+    public static final int drawableTopCompat=0x7f0400b1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerArrowStyle=0x7f040091;
+    public static final int drawerArrowStyle=0x7f0400b2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dropDownListViewStyle=0x7f040092;
+    public static final int dropDownListViewStyle=0x7f0400b3;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1151,90 +1392,82 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dropdownListPreferredItemHeight=0x7f040093;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int editTextBackground=0x7f040094;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int editTextColor=0x7f040095;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int editTextStyle=0x7f040096;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int elevation=0x7f040097;
-    /**
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>gone</td><td>0</td><td></td></tr>
-     * <tr><td>invisible</td><td>1</td><td></td></tr>
-     * </table>
-     */
-    public static final int emptyVisibility=0x7f040098;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int expandActivityOverflowButtonDrawable=0x7f040099;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int firstBaselineToTopHeight=0x7f04009a;
-    /**
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     */
-    public static final int fletFloatingHint=0x7f04009b;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int fletHintTextColor=0x7f04009c;
+    public static final int dropdownListPreferredItemHeight=0x7f0400b4;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fletImeActionId=0x7f04009d;
+    public static final int duration=0x7f0400b5;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int editTextBackground=0x7f0400b6;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int editTextColor=0x7f0400b7;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int editTextStyle=0x7f0400b8;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int elevation=0x7f0400b9;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int expandActivityOverflowButtonDrawable=0x7f0400ba;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int firstBaselineToTopHeight=0x7f0400bb;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fletImeActionLabel=0x7f04009e;
+    public static final int fletFloatingHint=0x7f0400bc;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int fletHintTextColor=0x7f0400bd;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int fletImeActionId=0x7f0400be;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fletImeActionLabel=0x7f0400bf;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1260,7 +1493,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fletImeOptions=0x7f04009f;
+    public static final int fletImeOptions=0x7f0400c0;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1302,24 +1535,24 @@ public final class R {
      * <tr><td>time</td><td>24</td><td></td></tr>
      * </table>
      */
-    public static final int fletInputType=0x7f0400a0;
+    public static final int fletInputType=0x7f0400c1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int fletPassword=0x7f0400a1;
+    public static final int fletPassword=0x7f0400c2;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int fletSingleLine=0x7f0400a2;
+    public static final int fletSingleLine=0x7f0400c3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fletTextBackground=0x7f0400a3;
+    public static final int fletTextBackground=0x7f0400c4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1329,7 +1562,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int fletTextColor=0x7f0400a4;
+    public static final int fletTextColor=0x7f0400c5;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1353,35 +1586,205 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int fletTextGravity=0x7f0400a5;
+    public static final int fletTextGravity=0x7f0400c6;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fletTextLines=0x7f0400a6;
+    public static final int fletTextLines=0x7f0400c7;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int flow_firstHorizontalBias=0x7f0400c8;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_firstHorizontalStyle=0x7f0400c9;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int flow_firstVerticalBias=0x7f0400ca;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_firstVerticalStyle=0x7f0400cb;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_horizontalAlign=0x7f0400cc;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int flow_horizontalBias=0x7f0400cd;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int flow_horizontalGap=0x7f0400ce;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_horizontalStyle=0x7f0400cf;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int flow_lastHorizontalBias=0x7f0400d0;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_lastHorizontalStyle=0x7f0400d1;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int flow_lastVerticalBias=0x7f0400d2;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_lastVerticalStyle=0x7f0400d3;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int flow_maxElementsWrap=0x7f0400d4;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int flow_padding=0x7f0400d5;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>baseline</td><td>3</td><td></td></tr>
+     * <tr><td>bottom</td><td>1</td><td></td></tr>
+     * <tr><td>center</td><td>2</td><td></td></tr>
+     * <tr><td>top</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_verticalAlign=0x7f0400d6;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int flow_verticalBias=0x7f0400d7;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int flow_verticalGap=0x7f0400d8;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_verticalStyle=0x7f0400d9;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>aligned</td><td>2</td><td></td></tr>
+     * <tr><td>chain</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int flow_wrapMode=0x7f0400da;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f0400a7;
+    public static final int font=0x7f0400db;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontFamily=0x7f0400a8;
+    public static final int fontFamily=0x7f0400dc;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f0400a9;
+    public static final int fontProviderAuthority=0x7f0400dd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f0400aa;
+    public static final int fontProviderCerts=0x7f0400de;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1393,7 +1796,7 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f0400ab;
+    public static final int fontProviderFetchStrategy=0x7f0400df;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -1405,17 +1808,17 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f0400ac;
+    public static final int fontProviderFetchTimeout=0x7f0400e0;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f0400ad;
+    public static final int fontProviderPackage=0x7f0400e1;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f0400ae;
+    public static final int fontProviderQuery=0x7f0400e2;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1427,16 +1830,20 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f0400af;
+    public static final int fontStyle=0x7f0400e3;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f0400b0;
+    public static final int fontVariationSettings=0x7f0400e4;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f0400b1;
+    public static final int fontWeight=0x7f0400e5;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int framePosition=0x7f0400e6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1444,21 +1851,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int gapBetweenBars=0x7f0400b2;
+    public static final int gapBetweenBars=0x7f0400e7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int goIcon=0x7f0400b3;
+    public static final int goIcon=0x7f0400e8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int headerView=0x7f0400b4;
+    public static final int headerView=0x7f0400e9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1466,39 +1873,39 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int height=0x7f0400b5;
+    public static final int height=0x7f0400ea;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnContentScroll=0x7f0400b6;
+    public static final int hideOnContentScroll=0x7f0400eb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeAsUpIndicator=0x7f0400b7;
+    public static final int homeAsUpIndicator=0x7f0400ec;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeLayout=0x7f0400b8;
+    public static final int homeLayout=0x7f0400ed;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int icon=0x7f0400b9;
+    public static final int icon=0x7f0400ee;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int iconTint=0x7f0400ba;
+    public static final int iconTint=0x7f0400ef;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1514,16 +1921,16 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int iconTintMode=0x7f0400bb;
+    public static final int iconTintMode=0x7f0400f0;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int iconifiedByDefault=0x7f0400bc;
+    public static final int iconifiedByDefault=0x7f0400f1;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f0400bd;
+    public static final int imageAspectRatio=0x7f0400f2;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1536,36 +1943,36 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f0400be;
+    public static final int imageAspectRatioAdjust=0x7f0400f3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int imageButtonStyle=0x7f0400bf;
+    public static final int imageButtonStyle=0x7f0400f4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int indeterminateProgressStyle=0x7f0400c0;
+    public static final int indeterminateProgressStyle=0x7f0400f5;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int initialActivityCount=0x7f0400c1;
+    public static final int initialActivityCount=0x7f0400f6;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isHeaderParallax=0x7f0400c2;
+    public static final int isHeaderParallax=0x7f0400f7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isLightTheme=0x7f0400c3;
+    public static final int isLightTheme=0x7f0400f8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1573,14 +1980,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemPadding=0x7f0400c4;
+    public static final int itemPadding=0x7f0400f9;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>deltaRelative</td><td>0</td><td></td></tr>
+     * <tr><td>parentRelative</td><td>2</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int keyPositionType=0x7f0400fa;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int keylines=0x7f0400c5;
+    public static final int keylines=0x7f0400fb;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1588,21 +2008,28 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lastBaselineToBottomHeight=0x7f0400c6;
+    public static final int lastBaselineToBottomHeight=0x7f0400fc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout=0x7f0400c7;
+    public static final int layout=0x7f0400fd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_anchor=0x7f0400c8;
+    public static final int layoutDescription=0x7f0400fe;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int layout_anchor=0x7f0400ff;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1626,26 +2053,26 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_anchorGravity=0x7f0400c9;
+    public static final int layout_anchorGravity=0x7f040100;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_behavior=0x7f0400ca;
+    public static final int layout_behavior=0x7f040101;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int layout_constrainedHeight=0x7f0400cb;
+    public static final int layout_constrainedHeight=0x7f040102;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int layout_constrainedWidth=0x7f0400cc;
+    public static final int layout_constrainedWidth=0x7f040103;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBaseline_creator=0x7f0400cd;
+    public static final int layout_constraintBaseline_creator=0x7f040104;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1660,11 +2087,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBaseline_toBaselineOf=0x7f0400ce;
+    public static final int layout_constraintBaseline_toBaselineOf=0x7f040105;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintBottom_creator=0x7f0400cf;
+    public static final int layout_constraintBottom_creator=0x7f040106;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1679,7 +2106,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toBottomOf=0x7f0400d0;
+    public static final int layout_constraintBottom_toBottomOf=0x7f040107;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1694,18 +2121,18 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintBottom_toTopOf=0x7f0400d1;
+    public static final int layout_constraintBottom_toTopOf=0x7f040108;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout_constraintCircle=0x7f0400d2;
+    public static final int layout_constraintCircle=0x7f040109;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintCircleAngle=0x7f0400d3;
+    public static final int layout_constraintCircleAngle=0x7f04010a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1713,12 +2140,12 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintCircleRadius=0x7f0400d4;
+    public static final int layout_constraintCircleRadius=0x7f04010b;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int layout_constraintDimensionRatio=0x7f0400d5;
+    public static final int layout_constraintDimensionRatio=0x7f04010c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1733,7 +2160,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toEndOf=0x7f0400d6;
+    public static final int layout_constraintEnd_toEndOf=0x7f04010d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1748,7 +2175,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintEnd_toStartOf=0x7f0400d7;
+    public static final int layout_constraintEnd_toStartOf=0x7f04010e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1756,7 +2183,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_begin=0x7f0400d8;
+    public static final int layout_constraintGuide_begin=0x7f04010f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1764,11 +2191,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_constraintGuide_end=0x7f0400d9;
+    public static final int layout_constraintGuide_end=0x7f040110;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintGuide_percent=0x7f0400da;
+    public static final int layout_constraintGuide_percent=0x7f040111;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1781,7 +2208,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_default=0x7f0400db;
+    public static final int layout_constraintHeight_default=0x7f040112;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1797,7 +2224,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_max=0x7f0400dc;
+    public static final int layout_constraintHeight_max=0x7f040113;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1813,15 +2240,15 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHeight_min=0x7f0400dd;
+    public static final int layout_constraintHeight_min=0x7f040114;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHeight_percent=0x7f0400de;
+    public static final int layout_constraintHeight_percent=0x7f040115;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_bias=0x7f0400df;
+    public static final int layout_constraintHorizontal_bias=0x7f040116;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1834,15 +2261,15 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintHorizontal_chainStyle=0x7f0400e0;
+    public static final int layout_constraintHorizontal_chainStyle=0x7f040117;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintHorizontal_weight=0x7f0400e1;
+    public static final int layout_constraintHorizontal_weight=0x7f040118;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintLeft_creator=0x7f0400e2;
+    public static final int layout_constraintLeft_creator=0x7f040119;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1857,7 +2284,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toLeftOf=0x7f0400e3;
+    public static final int layout_constraintLeft_toLeftOf=0x7f04011a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1872,11 +2299,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintLeft_toRightOf=0x7f0400e4;
+    public static final int layout_constraintLeft_toRightOf=0x7f04011b;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintRight_creator=0x7f0400e5;
+    public static final int layout_constraintRight_creator=0x7f04011c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1891,7 +2318,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toLeftOf=0x7f0400e6;
+    public static final int layout_constraintRight_toLeftOf=0x7f04011d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1906,7 +2333,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintRight_toRightOf=0x7f0400e7;
+    public static final int layout_constraintRight_toRightOf=0x7f04011e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1921,7 +2348,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toEndOf=0x7f0400e8;
+    public static final int layout_constraintStart_toEndOf=0x7f04011f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1936,11 +2363,16 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintStart_toStartOf=0x7f0400e9;
+    public static final int layout_constraintStart_toStartOf=0x7f040120;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int layout_constraintTag=0x7f040121;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_constraintTop_creator=0x7f0400ea;
+    public static final int layout_constraintTop_creator=0x7f040122;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1955,7 +2387,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toBottomOf=0x7f0400eb;
+    public static final int layout_constraintTop_toBottomOf=0x7f040123;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1970,11 +2402,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintTop_toTopOf=0x7f0400ec;
+    public static final int layout_constraintTop_toTopOf=0x7f040124;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_bias=0x7f0400ed;
+    public static final int layout_constraintVertical_bias=0x7f040125;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1987,11 +2419,11 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintVertical_chainStyle=0x7f0400ee;
+    public static final int layout_constraintVertical_chainStyle=0x7f040126;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintVertical_weight=0x7f0400ef;
+    public static final int layout_constraintVertical_weight=0x7f040127;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2004,7 +2436,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_default=0x7f0400f0;
+    public static final int layout_constraintWidth_default=0x7f040128;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2020,7 +2452,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_max=0x7f0400f1;
+    public static final int layout_constraintWidth_max=0x7f040129;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2036,11 +2468,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int layout_constraintWidth_min=0x7f0400f2;
+    public static final int layout_constraintWidth_min=0x7f04012a;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int layout_constraintWidth_percent=0x7f0400f3;
+    public static final int layout_constraintWidth_percent=0x7f04012b;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2058,7 +2490,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_dodgeInsetEdges=0x7f0400f4;
+    public static final int layout_dodgeInsetEdges=0x7f04012c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2066,7 +2498,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteX=0x7f0400f5;
+    public static final int layout_editor_absoluteX=0x7f04012d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2074,7 +2506,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_editor_absoluteY=0x7f0400f6;
+    public static final int layout_editor_absoluteY=0x7f04012e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2082,7 +2514,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginBottom=0x7f0400f7;
+    public static final int layout_goneMarginBottom=0x7f04012f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2090,7 +2522,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginEnd=0x7f0400f8;
+    public static final int layout_goneMarginEnd=0x7f040130;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2098,7 +2530,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginLeft=0x7f0400f9;
+    public static final int layout_goneMarginLeft=0x7f040131;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2106,7 +2538,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginRight=0x7f0400fa;
+    public static final int layout_goneMarginRight=0x7f040132;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2114,7 +2546,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginStart=0x7f0400fb;
+    public static final int layout_goneMarginStart=0x7f040133;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2122,7 +2554,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int layout_goneMarginTop=0x7f0400fc;
+    public static final int layout_goneMarginTop=0x7f040134;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2139,11 +2571,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
-    public static final int layout_insetEdge=0x7f0400fd;
+    public static final int layout_insetEdge=0x7f040135;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int layout_keyline=0x7f0400fe;
+    public static final int layout_keyline=0x7f040136;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2155,12 +2587,15 @@ public final class R {
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
      * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>graph</td><td>40</td><td></td></tr>
+     * <tr><td>graph_wrap</td><td>80</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>ratio</td><td>10</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      */
-    public static final int layout_optimizationLevel=0x7f0400ff;
+    public static final int layout_optimizationLevel=0x7f040137;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2168,67 +2603,67 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int lineHeight=0x7f040100;
+    public static final int lineHeight=0x7f040138;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int linear_layout_ratio=0x7f040101;
+    public static final int linear_layout_ratio=0x7f040139;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceBackgroundIndicator=0x7f040102;
+    public static final int listChoiceBackgroundIndicator=0x7f04013a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceIndicatorMultipleAnimated=0x7f040103;
+    public static final int listChoiceIndicatorMultipleAnimated=0x7f04013b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceIndicatorSingleAnimated=0x7f040104;
+    public static final int listChoiceIndicatorSingleAnimated=0x7f04013c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listDividerAlertDialog=0x7f040105;
+    public static final int listDividerAlertDialog=0x7f04013d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listItemLayout=0x7f040106;
+    public static final int listItemLayout=0x7f04013e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listLayout=0x7f040107;
+    public static final int listLayout=0x7f04013f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listMenuViewStyle=0x7f040108;
+    public static final int listMenuViewStyle=0x7f040140;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listPopupWindowStyle=0x7f040109;
+    public static final int listPopupWindowStyle=0x7f040141;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2236,7 +2671,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeight=0x7f04010a;
+    public static final int listPreferredItemHeight=0x7f040142;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2244,7 +2679,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightLarge=0x7f04010b;
+    public static final int listPreferredItemHeightLarge=0x7f040143;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2252,7 +2687,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightSmall=0x7f04010c;
+    public static final int listPreferredItemHeightSmall=0x7f040144;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2260,7 +2695,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingEnd=0x7f04010d;
+    public static final int listPreferredItemPaddingEnd=0x7f040145;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2268,7 +2703,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingLeft=0x7f04010e;
+    public static final int listPreferredItemPaddingLeft=0x7f040146;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2276,7 +2711,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingRight=0x7f04010f;
+    public static final int listPreferredItemPaddingRight=0x7f040147;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2284,19 +2719,23 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingStart=0x7f040110;
+    public static final int listPreferredItemPaddingStart=0x7f040148;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int logo=0x7f040111;
+    public static final int logo=0x7f040149;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int logoDescription=0x7f040112;
+    public static final int logoDescription=0x7f04014a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int maxAcceleration=0x7f04014b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2304,52 +2743,194 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int maxButtonHeight=0x7f040113;
+    public static final int maxButtonHeight=0x7f04014c;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int maxHeight=0x7f04014d;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int maxVelocity=0x7f04014e;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int maxWidth=0x7f04014f;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int measureWithLargestChild=0x7f040114;
+    public static final int measureWithLargestChild=0x7f040150;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int menu=0x7f040115;
+    public static final int menu=0x7f040151;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int metaButtonBarButtonStyle=0x7f040116;
+    public static final int metaButtonBarButtonStyle=0x7f040152;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int metaButtonBarStyle=0x7f040117;
+    public static final int metaButtonBarStyle=0x7f040153;
     /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
      */
-    public static final int multiChoiceItemLayout=0x7f040118;
+    public static final int minHeight=0x7f040154;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int minWidth=0x7f040155;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int mock_diagonalsColor=0x7f040156;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int navigationContentDescription=0x7f040119;
+    public static final int mock_label=0x7f040157;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int mock_labelBackgroundColor=0x7f040158;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int mock_labelColor=0x7f040159;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int mock_showDiagonals=0x7f04015a;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int mock_showLabel=0x7f04015b;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>NO_DEBUG</td><td>0</td><td></td></tr>
+     * <tr><td>SHOW_ALL</td><td>3</td><td></td></tr>
+     * <tr><td>SHOW_PATH</td><td>2</td><td></td></tr>
+     * <tr><td>SHOW_PROGRESS</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int motionDebug=0x7f04015c;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bounce</td><td>5</td><td></td></tr>
+     * <tr><td>easeIn</td><td>1</td><td></td></tr>
+     * <tr><td>easeInOut</td><td>0</td><td></td></tr>
+     * <tr><td>easeOut</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int motionInterpolator=0x7f04015d;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int motionPathRotate=0x7f04015e;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int motionProgress=0x7f04015f;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int motionStagger=0x7f040160;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int motionTarget=0x7f040161;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int motion_postLayoutCollision=0x7f040162;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationIcon=0x7f04011a;
+    public static final int motion_triggerOnCollision=0x7f040163;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int moveWhenScrollAtTop=0x7f040164;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int multiChoiceItemLayout=0x7f040165;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int navigationContentDescription=0x7f040166;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int navigationIcon=0x7f040167;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2362,7 +2943,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int navigationMode=0x7f04011b;
+    public static final int navigationMode=0x7f040168;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2378,197 +2959,58 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int numericModifiers=0x7f04011c;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int overlapAnchor=0x7f04011d;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int paddingBottomNoButtons=0x7f04011e;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int paddingEnd=0x7f04011f;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int paddingStart=0x7f040120;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int paddingTopNoTitle=0x7f040121;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int panelBackground=0x7f040122;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int panelMenuListTheme=0x7f040123;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int panelMenuListWidth=0x7f040124;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int popupMenuStyle=0x7f040125;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int popupTheme=0x7f040126;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int popupWindowStyle=0x7f040127;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int preserveIconSpacing=0x7f040128;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int progressBarPadding=0x7f040129;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int progressBarStyle=0x7f04012a;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int pstsDividerColor=0x7f04012b;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int pstsDividerPadding=0x7f04012c;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int pstsDividerWidth=0x7f04012d;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int pstsIndicatorColor=0x7f04012e;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int pstsIndicatorHeight=0x7f04012f;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int pstsPaddingMiddle=0x7f040130;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int pstsScrollOffset=0x7f040131;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int pstsShouldExpand=0x7f040132;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int pstsTabBackground=0x7f040133;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int pstsTabPaddingLeftRight=0x7f040134;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int pstsTabTextAllCaps=0x7f040135;
-    /**
-     * <p>May be an integer value, such as "<code>100</code>".
-     */
-    public static final int pstsTabTextAlpha=0x7f040136;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int pstsTabTextColor=0x7f040137;
+    public static final int numericModifiers=0x7f040169;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int pstsTabTextFontFamily=0x7f040138;
+    public static final int onCross=0x7f04016a;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int onHide=0x7f04016b;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int onNegativeCross=0x7f04016c;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int onPositiveCross=0x7f04016d;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int onShow=0x7f04016e;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>autoComplete</td><td>0</td><td></td></tr>
+     * <tr><td>autoCompleteToEnd</td><td>2</td><td></td></tr>
+     * <tr><td>autoCompleteToStart</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>4</td><td></td></tr>
+     * <tr><td>decelerateAndComplete</td><td>5</td><td></td></tr>
+     * <tr><td>stop</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int onTouchUp=0x7f04016f;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int overlapAnchor=0x7f040170;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int overlay=0x7f040171;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2576,7 +3018,278 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int pstsTabTextSize=0x7f040139;
+    public static final int paddingBottomNoButtons=0x7f040172;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int paddingEnd=0x7f040173;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int paddingStart=0x7f040174;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int paddingTopNoTitle=0x7f040175;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int panelBackground=0x7f040176;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int panelMenuListTheme=0x7f040177;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int panelMenuListWidth=0x7f040178;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>flip</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>startHorizontal</td><td>2</td><td></td></tr>
+     * <tr><td>startVertical</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int pathMotionArc=0x7f040179;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int path_percent=0x7f04017a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int percentHeight=0x7f04017b;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int percentWidth=0x7f04017c;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int percentX=0x7f04017d;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int percentY=0x7f04017e;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int perpendicularPath_percent=0x7f04017f;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int pivotAnchor=0x7f040180;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     */
+    public static final int pivotX=0x7f040181;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     */
+    public static final int pivotY=0x7f040182;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>8</td><td></td></tr>
+     * <tr><td>invisible</td><td>4</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int placeholder_emptyVisibility=0x7f040183;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int popupMenuStyle=0x7f040184;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int popupTheme=0x7f040185;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int popupWindowStyle=0x7f040186;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int preserveIconSpacing=0x7f040187;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int progress=0x7f040188;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int progressBarPadding=0x7f040189;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int progressBarStyle=0x7f04018a;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int pstsDividerColor=0x7f04018b;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int pstsDividerPadding=0x7f04018c;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int pstsDividerWidth=0x7f04018d;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int pstsIndicatorColor=0x7f04018e;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int pstsIndicatorHeight=0x7f04018f;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int pstsPaddingMiddle=0x7f040190;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int pstsScrollOffset=0x7f040191;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int pstsShouldExpand=0x7f040192;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int pstsTabBackground=0x7f040193;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int pstsTabPaddingLeftRight=0x7f040194;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int pstsTabTextAllCaps=0x7f040195;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int pstsTabTextAlpha=0x7f040196;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int pstsTabTextColor=0x7f040197;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int pstsTabTextFontFamily=0x7f040198;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int pstsTabTextSize=0x7f040199;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2593,13 +3306,13 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int pstsTabTextStyle=0x7f04013a;
+    public static final int pstsTabTextStyle=0x7f04019a;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int pstsUnderlineColor=0x7f04013b;
+    public static final int pstsUnderlineColor=0x7f04019b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2607,26 +3320,26 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int pstsUnderlineHeight=0x7f04013c;
+    public static final int pstsUnderlineHeight=0x7f04019c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryBackground=0x7f04013d;
+    public static final int queryBackground=0x7f04019d;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int queryHint=0x7f04013e;
+    public static final int queryHint=0x7f04019e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int radioButtonStyle=0x7f04013f;
+    public static final int radioButtonStyle=0x7f04019f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2634,34 +3347,66 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int radius=0x7f040140;
+    public static final int radius=0x7f0401a0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyle=0x7f040141;
+    public static final int ratingBarStyle=0x7f0401a1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleIndicator=0x7f040142;
+    public static final int ratingBarStyleIndicator=0x7f0401a2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleSmall=0x7f040143;
+    public static final int ratingBarStyleSmall=0x7f0401a3;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int region_heightLessThan=0x7f0401a4;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int region_heightMoreThan=0x7f0401a5;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int region_widthLessThan=0x7f0401a6;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int region_widthMoreThan=0x7f0401a7;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int rimColor=0x7f040144;
+    public static final int rimColor=0x7f0401a8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2669,28 +3414,28 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int rimWidth=0x7f040145;
+    public static final int rimWidth=0x7f0401a9;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int rippleAlpha=0x7f040146;
+    public static final int rippleAlpha=0x7f0401aa;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int rippleBackground=0x7f040147;
+    public static final int rippleBackground=0x7f0401ab;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int rippleColor=0x7f040148;
+    public static final int rippleColor=0x7f0401ac;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int rippleDelayClick=0x7f040149;
+    public static final int rippleDelayClick=0x7f0401ad;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2698,35 +3443,51 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int rippleDimension=0x7f04014a;
+    public static final int rippleDimension=0x7f0401ae;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int rippleDuration=0x7f04014b;
+    public static final int rippleDuration=0x7f0401af;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int rippleFadeDuration=0x7f04014c;
+    public static final int rippleFadeDuration=0x7f0401b0;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int rippleHover=0x7f04014d;
+    public static final int rippleHover=0x7f0401b1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int rippleInAdapter=0x7f04014e;
+    public static final int rippleInAdapter=0x7f0401b2;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int rippleOverlay=0x7f04014f;
+    public static final int rippleOverlay=0x7f0401b3;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int ripplePersistent=0x7f040150;
+    public static final int ripplePersistent=0x7f0401b4;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int round=0x7f0401b5;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int roundPercent=0x7f0401b6;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int saturation=0x7f0401b7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2735,49 +3496,49 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int scopeUris=0x7f040151;
+    public static final int scopeUris=0x7f0401b8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchHintIcon=0x7f040152;
+    public static final int searchHintIcon=0x7f0401b9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchIcon=0x7f040153;
+    public static final int searchIcon=0x7f0401ba;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchViewStyle=0x7f040154;
+    public static final int searchViewStyle=0x7f0401bb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f040155;
+    public static final int seekBarStyle=0x7f0401bc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f040156;
+    public static final int selectableItemBackground=0x7f0401bd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackgroundBorderless=0x7f040157;
+    public static final int selectableItemBackgroundBorderless=0x7f0401be;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2792,7 +3553,7 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int showAsAction=0x7f040158;
+    public static final int showAsAction=0x7f0401bf;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -2806,17 +3567,22 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int showDividers=0x7f040159;
+    public static final int showDividers=0x7f0401c0;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showText=0x7f04015a;
+    public static final int showPaths=0x7f0401c1;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showTitle=0x7f04015b;
+    public static final int showText=0x7f0401c2;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int showTitle=0x7f0401c3;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2828,17 +3594,17 @@ public final class R {
      * <tr><td>right</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int siArrowPosition=0x7f04015c;
+    public static final int siArrowPosition=0x7f0401c4;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int siBorderAlpha=0x7f04015d;
+    public static final int siBorderAlpha=0x7f0401c5;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int siBorderColor=0x7f04015e;
+    public static final int siBorderColor=0x7f0401c6;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2850,7 +3616,7 @@ public final class R {
      * <tr><td>stroke</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int siBorderType=0x7f04015f;
+    public static final int siBorderType=0x7f0401c7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2858,7 +3624,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int siBorderWidth=0x7f040160;
+    public static final int siBorderWidth=0x7f0401c8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2866,7 +3632,7 @@ public final class R {
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int siForeground=0x7f040161;
+    public static final int siForeground=0x7f0401c9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2874,7 +3640,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int siRadius=0x7f040162;
+    public static final int siRadius=0x7f0401ca;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2882,12 +3648,12 @@ public final class R {
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int siShape=0x7f040163;
+    public static final int siShape=0x7f0401cb;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int siSquare=0x7f040164;
+    public static final int siSquare=0x7f0401cc;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2900,7 +3666,7 @@ public final class R {
      * <tr><td>square</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int siStrokeCap=0x7f040165;
+    public static final int siStrokeCap=0x7f0401cd;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2913,7 +3679,7 @@ public final class R {
      * <tr><td>round</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int siStrokeJoin=0x7f040166;
+    public static final int siStrokeJoin=0x7f0401ce;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2921,7 +3687,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int siStrokeMiter=0x7f040167;
+    public static final int siStrokeMiter=0x7f0401cf;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2929,19 +3695,23 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int siTriangleHeight=0x7f040168;
+    public static final int siTriangleHeight=0x7f0401d0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int singleChoiceItemLayout=0x7f040169;
+    public static final int singleChoiceItemLayout=0x7f0401d1;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int sizePercent=0x7f0401d2;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int spinBars=0x7f04016a;
+    public static final int spinBars=0x7f0401d3;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2949,38 +3719,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int spinSpeed=0x7f04016b;
+    public static final int spinSpeed=0x7f0401d4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerDropDownItemStyle=0x7f04016c;
+    public static final int spinnerDropDownItemStyle=0x7f0401d5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerStyle=0x7f04016d;
+    public static final int spinnerStyle=0x7f0401d6;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int splitTrack=0x7f04016e;
+    public static final int splitTrack=0x7f0401d7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int srcCompat=0x7f04016f;
+    public static final int srcCompat=0x7f0401d8;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int staggered=0x7f0401d9;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_above_anchor=0x7f040170;
+    public static final int state_above_anchor=0x7f0401da;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2990,53 +3764,53 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int statusBarBackground=0x7f040171;
+    public static final int statusBarBackground=0x7f0401db;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subMenuArrow=0x7f040172;
+    public static final int subMenuArrow=0x7f0401dc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int submitBackground=0x7f040173;
+    public static final int submitBackground=0x7f0401dd;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int subtitle=0x7f040174;
+    public static final int subtitle=0x7f0401de;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextAppearance=0x7f040175;
+    public static final int subtitleTextAppearance=0x7f0401df;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int subtitleTextColor=0x7f040176;
+    public static final int subtitleTextColor=0x7f0401e0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextStyle=0x7f040177;
+    public static final int subtitleTextStyle=0x7f0401e1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int suggestionRowLayout=0x7f040178;
+    public static final int suggestionRowLayout=0x7f0401e2;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3044,7 +3818,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchMinWidth=0x7f040179;
+    public static final int switchMinWidth=0x7f0401e3;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3052,26 +3826,57 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchPadding=0x7f04017a;
+    public static final int switchPadding=0x7f0401e4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchStyle=0x7f04017b;
+    public static final int switchStyle=0x7f0401e5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchTextAppearance=0x7f04017c;
+    public static final int switchTextAppearance=0x7f0401e6;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int targetId=0x7f0401e7;
+    /**
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int telltales_tailColor=0x7f0401e8;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int telltales_tailScale=0x7f0401e9;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>layout</td><td>0</td><td></td></tr>
+     * <tr><td>postLayout</td><td>1</td><td></td></tr>
+     * <tr><td>staticLayout</td><td>3</td><td></td></tr>
+     * <tr><td>staticPostLayout</td><td>2</td><td></td></tr>
+     * </table>
+     */
+    public static final int telltales_velocityMode=0x7f0401ea;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int text=0x7f04017d;
+    public static final int text=0x7f0401eb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3080,79 +3885,69 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int textAllCaps=0x7f04017e;
+    public static final int textAllCaps=0x7f0401ec;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceLargePopupMenu=0x7f04017f;
+    public static final int textAppearanceLargePopupMenu=0x7f0401ed;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItem=0x7f040180;
+    public static final int textAppearanceListItem=0x7f0401ee;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSecondary=0x7f040181;
+    public static final int textAppearanceListItemSecondary=0x7f0401ef;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSmall=0x7f040182;
+    public static final int textAppearanceListItemSmall=0x7f0401f0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearancePopupMenuHeader=0x7f040183;
+    public static final int textAppearancePopupMenuHeader=0x7f0401f1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultSubtitle=0x7f040184;
+    public static final int textAppearanceSearchResultSubtitle=0x7f0401f2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultTitle=0x7f040185;
+    public static final int textAppearanceSearchResultTitle=0x7f0401f3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSmallPopupMenu=0x7f040186;
+    public static final int textAppearanceSmallPopupMenu=0x7f0401f4;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColor=0x7f040187;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int textColorAlertDialogListItem=0x7f040188;
+    public static final int textColor=0x7f0401f5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3162,12 +3957,22 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorSearchUrl=0x7f040189;
+    public static final int textColorAlertDialogListItem=0x7f0401f6;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int textColorSearchUrl=0x7f0401f7;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int textLocale=0x7f04018a;
+    public static final int textLocale=0x7f0401f8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3175,14 +3980,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int textSize=0x7f04018b;
+    public static final int textSize=0x7f0401f9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int theme=0x7f04018c;
+    public static final int theme=0x7f0401fa;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3190,7 +3995,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thickness=0x7f04018d;
+    public static final int thickness=0x7f0401fb;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3198,13 +4003,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thumbTextPadding=0x7f04018e;
+    public static final int thumbTextPadding=0x7f0401fc;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int thumbTint=0x7f04018f;
+    public static final int thumbTint=0x7f0401fd;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3220,20 +4025,20 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int thumbTintMode=0x7f040190;
+    public static final int thumbTintMode=0x7f0401fe;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tickMark=0x7f040191;
+    public static final int tickMark=0x7f0401ff;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tickMarkTint=0x7f040192;
+    public static final int tickMarkTint=0x7f040200;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3249,13 +4054,13 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tickMarkTintMode=0x7f040193;
+    public static final int tickMarkTintMode=0x7f040201;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tint=0x7f040194;
+    public static final int tint=0x7f040202;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3271,12 +4076,12 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tintMode=0x7f040195;
+    public static final int tintMode=0x7f040203;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int title=0x7f040196;
+    public static final int title=0x7f040204;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3284,7 +4089,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargin=0x7f040197;
+    public static final int titleMargin=0x7f040205;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3292,7 +4097,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginBottom=0x7f040198;
+    public static final int titleMarginBottom=0x7f040206;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3300,7 +4105,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginEnd=0x7f040199;
+    public static final int titleMarginEnd=0x7f040207;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3308,7 +4113,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginStart=0x7f04019a;
+    public static final int titleMarginStart=0x7f040208;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3316,7 +4121,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginTop=0x7f04019b;
+    public static final int titleMarginTop=0x7f040209;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3324,41 +4129,41 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargins=0x7f04019c;
+    public static final int titleMargins=0x7f04020a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextAppearance=0x7f04019d;
+    public static final int titleTextAppearance=0x7f04020b;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int titleTextColor=0x7f04019e;
+    public static final int titleTextColor=0x7f04020c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextStyle=0x7f04019f;
+    public static final int titleTextStyle=0x7f04020d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarNavigationButtonStyle=0x7f0401a0;
+    public static final int toolbarNavigationButtonStyle=0x7f04020e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarStyle=0x7f0401a1;
+    public static final int toolbarStyle=0x7f04020f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -3368,32 +4173,60 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tooltipForegroundColor=0x7f0401a2;
+    public static final int tooltipForegroundColor=0x7f040210;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tooltipFrameBackground=0x7f0401a3;
+    public static final int tooltipFrameBackground=0x7f040211;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int tooltipText=0x7f0401a4;
+    public static final int tooltipText=0x7f040212;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f0401a5;
+    public static final int touchAnchorId=0x7f040213;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>left</td><td>1</td><td></td></tr>
+     * <tr><td>right</td><td>2</td><td></td></tr>
+     * <tr><td>top</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int touchAnchorSide=0x7f040214;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int touchRegionId=0x7f040215;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int track=0x7f040216;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f0401a6;
+    public static final int trackTint=0x7f040217;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3409,11 +4242,54 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f0401a7;
+    public static final int trackTintMode=0x7f040218;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int transitionDisable=0x7f040219;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int transitionEasing=0x7f04021a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int transitionPathRotate=0x7f04021b;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int triggerId=0x7f04021c;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int triggerReceiver=0x7f04021d;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int triggerSlack=0x7f04021e;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f0401a8;
+    public static final int ttcIndex=0x7f04021f;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3439,34 +4315,96 @@ public final class R {
      * <tr><td>robotoThinItalic</td><td>f</td><td></td></tr>
      * </table>
      */
-    public static final int typeface=0x7f0401a9;
+    public static final int typeface=0x7f040220;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f0401aa;
+    public static final int viewInflaterClass=0x7f040221;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>ignore</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int visibilityMode=0x7f040222;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f0401ab;
+    public static final int voiceIcon=0x7f040223;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int warmth=0x7f040224;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int waveDecay=0x7f040225;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int waveOffset=0x7f040226;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int wavePeriod=0x7f040227;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bounce</td><td>6</td><td></td></tr>
+     * <tr><td>cos</td><td>5</td><td></td></tr>
+     * <tr><td>reverseSawtooth</td><td>4</td><td></td></tr>
+     * <tr><td>sawtooth</td><td>3</td><td></td></tr>
+     * <tr><td>sin</td><td>0</td><td></td></tr>
+     * <tr><td>square</td><td>1</td><td></td></tr>
+     * <tr><td>triangle</td><td>2</td><td></td></tr>
+     * </table>
+     */
+    public static final int waveShape=0x7f040228;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>position</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int waveVariesBy=0x7f040229;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f0401ac;
+    public static final int windowActionBar=0x7f04022a;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f0401ad;
+    public static final int windowActionBarOverlay=0x7f04022b;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f0401ae;
+    public static final int windowActionModeOverlay=0x7f04022c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3478,7 +4416,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f0401af;
+    public static final int windowFixedHeightMajor=0x7f04022d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3490,7 +4428,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f0401b0;
+    public static final int windowFixedHeightMinor=0x7f04022e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3502,7 +4440,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f0401b1;
+    public static final int windowFixedWidthMajor=0x7f04022f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3514,7 +4452,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f0401b2;
+    public static final int windowFixedWidthMinor=0x7f040230;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3526,7 +4464,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f0401b3;
+    public static final int windowMinWidthMajor=0x7f040231;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -3538,19 +4476,19 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f0401b4;
+    public static final int windowMinWidthMinor=0x7f040232;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f0401b5;
+    public static final int windowNoTitle=0x7f040233;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int zoomView=0x7f0401b6;
+    public static final int zoomView=0x7f040234;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f050000;
@@ -3600,355 +4538,356 @@ public final class R {
     public static final int colorGreen=0x7f060027;
     public static final int colorPrimary=0x7f060028;
     public static final int colorPrimaryDark=0x7f060029;
-    public static final int common_google_signin_btn_text_dark=0x7f06002a;
-    public static final int common_google_signin_btn_text_dark_default=0x7f06002b;
-    public static final int common_google_signin_btn_text_dark_disabled=0x7f06002c;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f06002d;
-    public static final int common_google_signin_btn_text_dark_pressed=0x7f06002e;
-    public static final int common_google_signin_btn_text_light=0x7f06002f;
-    public static final int common_google_signin_btn_text_light_default=0x7f060030;
-    public static final int common_google_signin_btn_text_light_disabled=0x7f060031;
-    public static final int common_google_signin_btn_text_light_focused=0x7f060032;
-    public static final int common_google_signin_btn_text_light_pressed=0x7f060033;
-    public static final int common_google_signin_btn_tint=0x7f060034;
-    public static final int control_background=0x7f060035;
-    public static final int cpb_blue=0x7f060036;
-    public static final int cpb_blue_dark=0x7f060037;
-    public static final int cpb_complete_state_selector=0x7f060038;
-    public static final int cpb_error_state_selector=0x7f060039;
-    public static final int cpb_green=0x7f06003a;
-    public static final int cpb_green_dark=0x7f06003b;
-    public static final int cpb_grey=0x7f06003c;
-    public static final int cpb_idle_state_selector=0x7f06003d;
-    public static final int cpb_red=0x7f06003e;
-    public static final int cpb_red_dark=0x7f06003f;
-    public static final int cpb_white=0x7f060040;
-    public static final int dim_foreground_disabled_material_dark=0x7f060041;
-    public static final int dim_foreground_disabled_material_light=0x7f060042;
-    public static final int dim_foreground_material_dark=0x7f060043;
-    public static final int dim_foreground_material_light=0x7f060044;
-    public static final int divider_color=0x7f060045;
-    public static final int email_color=0x7f060046;
-    public static final int error_color_material_dark=0x7f060047;
-    public static final int error_color_material_light=0x7f060048;
-    public static final int foreground_material_dark=0x7f060049;
-    public static final int foreground_material_light=0x7f06004a;
-    public static final int highlighted_text_material_dark=0x7f06004b;
-    public static final int highlighted_text_material_light=0x7f06004c;
-    public static final int main_color_100=0x7f06004d;
-    public static final int main_color_200=0x7f06004e;
-    public static final int main_color_300=0x7f06004f;
-    public static final int main_color_400=0x7f060050;
-    public static final int main_color_50=0x7f060051;
-    public static final int main_color_500=0x7f060052;
-    public static final int main_color_500_10_percent=0x7f060053;
-    public static final int main_color_500_20_percent=0x7f060054;
-    public static final int main_color_500_50_percent=0x7f060055;
-    public static final int main_color_600=0x7f060056;
-    public static final int main_color_700=0x7f060057;
-    public static final int main_color_800=0x7f060058;
-    public static final int main_color_900=0x7f060059;
-    public static final int main_color_A100=0x7f06005a;
-    public static final int main_color_A200=0x7f06005b;
-    public static final int main_color_A400=0x7f06005c;
-    public static final int main_color_grey_100=0x7f06005d;
-    public static final int main_color_grey_200=0x7f06005e;
-    public static final int main_color_grey_300=0x7f06005f;
-    public static final int main_color_grey_400=0x7f060060;
-    public static final int main_color_grey_50=0x7f060061;
-    public static final int main_color_grey_500=0x7f060062;
-    public static final int main_color_grey_600=0x7f060063;
-    public static final int main_color_grey_700=0x7f060064;
-    public static final int main_color_grey_800=0x7f060065;
-    public static final int main_color_grey_900=0x7f060066;
-    public static final int material_blue_100=0x7f060067;
-    public static final int material_blue_200=0x7f060068;
-    public static final int material_blue_300=0x7f060069;
-    public static final int material_blue_400=0x7f06006a;
-    public static final int material_blue_50=0x7f06006b;
-    public static final int material_blue_500=0x7f06006c;
-    public static final int material_blue_600=0x7f06006d;
-    public static final int material_blue_700=0x7f06006e;
-    public static final int material_blue_800=0x7f06006f;
-    public static final int material_blue_900=0x7f060070;
-    public static final int material_blue_A100=0x7f060071;
-    public static final int material_blue_A200=0x7f060072;
-    public static final int material_blue_A400=0x7f060073;
-    public static final int material_blue_A700=0x7f060074;
-    public static final int material_blue_grey_100=0x7f060075;
-    public static final int material_blue_grey_200=0x7f060076;
-    public static final int material_blue_grey_300=0x7f060077;
-    public static final int material_blue_grey_400=0x7f060078;
-    public static final int material_blue_grey_50=0x7f060079;
-    public static final int material_blue_grey_500=0x7f06007a;
-    public static final int material_blue_grey_600=0x7f06007b;
-    public static final int material_blue_grey_700=0x7f06007c;
-    public static final int material_blue_grey_800=0x7f06007d;
-    public static final int material_blue_grey_900=0x7f06007e;
-    public static final int material_blue_grey_950=0x7f06007f;
-    public static final int material_brown_100=0x7f060080;
-    public static final int material_brown_200=0x7f060081;
-    public static final int material_brown_300=0x7f060082;
-    public static final int material_brown_400=0x7f060083;
-    public static final int material_brown_50=0x7f060084;
-    public static final int material_brown_500=0x7f060085;
-    public static final int material_brown_600=0x7f060086;
-    public static final int material_brown_700=0x7f060087;
-    public static final int material_brown_800=0x7f060088;
-    public static final int material_brown_900=0x7f060089;
-    public static final int material_cyan_100=0x7f06008a;
-    public static final int material_cyan_200=0x7f06008b;
-    public static final int material_cyan_300=0x7f06008c;
-    public static final int material_cyan_400=0x7f06008d;
-    public static final int material_cyan_50=0x7f06008e;
-    public static final int material_cyan_500=0x7f06008f;
-    public static final int material_cyan_600=0x7f060090;
-    public static final int material_cyan_700=0x7f060091;
-    public static final int material_cyan_800=0x7f060092;
-    public static final int material_cyan_900=0x7f060093;
-    public static final int material_cyan_A100=0x7f060094;
-    public static final int material_cyan_A200=0x7f060095;
-    public static final int material_cyan_A400=0x7f060096;
-    public static final int material_cyan_A700=0x7f060097;
-    public static final int material_deep_orange_100=0x7f060098;
-    public static final int material_deep_orange_200=0x7f060099;
-    public static final int material_deep_orange_300=0x7f06009a;
-    public static final int material_deep_orange_400=0x7f06009b;
-    public static final int material_deep_orange_50=0x7f06009c;
-    public static final int material_deep_orange_500=0x7f06009d;
-    public static final int material_deep_orange_600=0x7f06009e;
-    public static final int material_deep_orange_700=0x7f06009f;
-    public static final int material_deep_orange_800=0x7f0600a0;
-    public static final int material_deep_orange_900=0x7f0600a1;
-    public static final int material_deep_orange_A100=0x7f0600a2;
-    public static final int material_deep_orange_A200=0x7f0600a3;
-    public static final int material_deep_orange_A400=0x7f0600a4;
-    public static final int material_deep_orange_A700=0x7f0600a5;
-    public static final int material_deep_purple_100=0x7f0600a6;
-    public static final int material_deep_purple_200=0x7f0600a7;
-    public static final int material_deep_purple_300=0x7f0600a8;
-    public static final int material_deep_purple_400=0x7f0600a9;
-    public static final int material_deep_purple_50=0x7f0600aa;
-    public static final int material_deep_purple_500=0x7f0600ab;
-    public static final int material_deep_purple_600=0x7f0600ac;
-    public static final int material_deep_purple_700=0x7f0600ad;
-    public static final int material_deep_purple_800=0x7f0600ae;
-    public static final int material_deep_purple_900=0x7f0600af;
-    public static final int material_deep_purple_A100=0x7f0600b0;
-    public static final int material_deep_purple_A200=0x7f0600b1;
-    public static final int material_deep_purple_A400=0x7f0600b2;
-    public static final int material_deep_purple_A700=0x7f0600b3;
-    public static final int material_deep_teal_200=0x7f0600b4;
-    public static final int material_deep_teal_500=0x7f0600b5;
-    public static final int material_green_100=0x7f0600b6;
-    public static final int material_green_200=0x7f0600b7;
-    public static final int material_green_300=0x7f0600b8;
-    public static final int material_green_400=0x7f0600b9;
-    public static final int material_green_50=0x7f0600ba;
-    public static final int material_green_500=0x7f0600bb;
-    public static final int material_green_600=0x7f0600bc;
-    public static final int material_green_700=0x7f0600bd;
-    public static final int material_green_800=0x7f0600be;
-    public static final int material_green_900=0x7f0600bf;
-    public static final int material_green_A100=0x7f0600c0;
-    public static final int material_green_A200=0x7f0600c1;
-    public static final int material_green_A400=0x7f0600c2;
-    public static final int material_green_A700=0x7f0600c3;
-    public static final int material_grey_100=0x7f0600c4;
-    public static final int material_grey_200=0x7f0600c5;
-    public static final int material_grey_300=0x7f0600c6;
-    public static final int material_grey_400=0x7f0600c7;
-    public static final int material_grey_50=0x7f0600c8;
-    public static final int material_grey_500=0x7f0600c9;
-    public static final int material_grey_600=0x7f0600ca;
-    public static final int material_grey_700=0x7f0600cb;
-    public static final int material_grey_800=0x7f0600cc;
-    public static final int material_grey_850=0x7f0600cd;
-    public static final int material_grey_900=0x7f0600ce;
-    public static final int material_indigo_100=0x7f0600cf;
-    public static final int material_indigo_200=0x7f0600d0;
-    public static final int material_indigo_300=0x7f0600d1;
-    public static final int material_indigo_400=0x7f0600d2;
-    public static final int material_indigo_50=0x7f0600d3;
-    public static final int material_indigo_500=0x7f0600d4;
-    public static final int material_indigo_600=0x7f0600d5;
-    public static final int material_indigo_700=0x7f0600d6;
-    public static final int material_indigo_800=0x7f0600d7;
-    public static final int material_indigo_900=0x7f0600d8;
-    public static final int material_indigo_A100=0x7f0600d9;
-    public static final int material_indigo_A200=0x7f0600da;
-    public static final int material_indigo_A400=0x7f0600db;
-    public static final int material_indigo_A700=0x7f0600dc;
-    public static final int material_light_blue_100=0x7f0600dd;
-    public static final int material_light_blue_200=0x7f0600de;
-    public static final int material_light_blue_300=0x7f0600df;
-    public static final int material_light_blue_400=0x7f0600e0;
-    public static final int material_light_blue_50=0x7f0600e1;
-    public static final int material_light_blue_500=0x7f0600e2;
-    public static final int material_light_blue_600=0x7f0600e3;
-    public static final int material_light_blue_700=0x7f0600e4;
-    public static final int material_light_blue_800=0x7f0600e5;
-    public static final int material_light_blue_900=0x7f0600e6;
-    public static final int material_light_blue_A100=0x7f0600e7;
-    public static final int material_light_blue_A200=0x7f0600e8;
-    public static final int material_light_blue_A400=0x7f0600e9;
-    public static final int material_light_blue_A700=0x7f0600ea;
-    public static final int material_light_green_100=0x7f0600eb;
-    public static final int material_light_green_200=0x7f0600ec;
-    public static final int material_light_green_300=0x7f0600ed;
-    public static final int material_light_green_400=0x7f0600ee;
-    public static final int material_light_green_50=0x7f0600ef;
-    public static final int material_light_green_500=0x7f0600f0;
-    public static final int material_light_green_600=0x7f0600f1;
-    public static final int material_light_green_700=0x7f0600f2;
-    public static final int material_light_green_800=0x7f0600f3;
-    public static final int material_light_green_900=0x7f0600f4;
-    public static final int material_light_green_A100=0x7f0600f5;
-    public static final int material_light_green_A200=0x7f0600f6;
-    public static final int material_light_green_A400=0x7f0600f7;
-    public static final int material_light_green_A700=0x7f0600f8;
-    public static final int material_light_yellow_100=0x7f0600f9;
-    public static final int material_light_yellow_200=0x7f0600fa;
-    public static final int material_light_yellow_300=0x7f0600fb;
-    public static final int material_light_yellow_400=0x7f0600fc;
-    public static final int material_light_yellow_50=0x7f0600fd;
-    public static final int material_light_yellow_500=0x7f0600fe;
-    public static final int material_light_yellow_600=0x7f0600ff;
-    public static final int material_light_yellow_700=0x7f060100;
-    public static final int material_light_yellow_800=0x7f060101;
-    public static final int material_light_yellow_900=0x7f060102;
-    public static final int material_light_yellow_A100=0x7f060103;
-    public static final int material_light_yellow_A200=0x7f060104;
-    public static final int material_light_yellow_A400=0x7f060105;
-    public static final int material_light_yellow_A700=0x7f060106;
-    public static final int material_lime_100=0x7f060107;
-    public static final int material_lime_200=0x7f060108;
-    public static final int material_lime_300=0x7f060109;
-    public static final int material_lime_400=0x7f06010a;
-    public static final int material_lime_50=0x7f06010b;
-    public static final int material_lime_500=0x7f06010c;
-    public static final int material_lime_600=0x7f06010d;
-    public static final int material_lime_700=0x7f06010e;
-    public static final int material_lime_800=0x7f06010f;
-    public static final int material_lime_900=0x7f060110;
-    public static final int material_lime_A100=0x7f060111;
-    public static final int material_lime_A200=0x7f060112;
-    public static final int material_lime_A400=0x7f060113;
-    public static final int material_lime_A700=0x7f060114;
-    public static final int material_orange_100=0x7f060115;
-    public static final int material_orange_200=0x7f060116;
-    public static final int material_orange_300=0x7f060117;
-    public static final int material_orange_400=0x7f060118;
-    public static final int material_orange_50=0x7f060119;
-    public static final int material_orange_500=0x7f06011a;
-    public static final int material_orange_600=0x7f06011b;
-    public static final int material_orange_700=0x7f06011c;
-    public static final int material_orange_800=0x7f06011d;
-    public static final int material_orange_900=0x7f06011e;
-    public static final int material_orange_A100=0x7f06011f;
-    public static final int material_orange_A200=0x7f060120;
-    public static final int material_orange_A400=0x7f060121;
-    public static final int material_orange_A700=0x7f060122;
-    public static final int material_pink_100=0x7f060123;
-    public static final int material_pink_200=0x7f060124;
-    public static final int material_pink_300=0x7f060125;
-    public static final int material_pink_400=0x7f060126;
-    public static final int material_pink_50=0x7f060127;
-    public static final int material_pink_500=0x7f060128;
-    public static final int material_pink_600=0x7f060129;
-    public static final int material_pink_700=0x7f06012a;
-    public static final int material_pink_800=0x7f06012b;
-    public static final int material_pink_900=0x7f06012c;
-    public static final int material_pink_A100=0x7f06012d;
-    public static final int material_pink_A200=0x7f06012e;
-    public static final int material_pink_A400=0x7f06012f;
-    public static final int material_pink_A700=0x7f060130;
-    public static final int material_purple_100=0x7f060131;
-    public static final int material_purple_200=0x7f060132;
-    public static final int material_purple_300=0x7f060133;
-    public static final int material_purple_400=0x7f060134;
-    public static final int material_purple_50=0x7f060135;
-    public static final int material_purple_500=0x7f060136;
-    public static final int material_purple_600=0x7f060137;
-    public static final int material_purple_700=0x7f060138;
-    public static final int material_purple_800=0x7f060139;
-    public static final int material_purple_900=0x7f06013a;
-    public static final int material_purple_A100=0x7f06013b;
-    public static final int material_purple_A200=0x7f06013c;
-    public static final int material_purple_A400=0x7f06013d;
-    public static final int material_purple_A700=0x7f06013e;
-    public static final int material_red_100=0x7f06013f;
-    public static final int material_red_200=0x7f060140;
-    public static final int material_red_300=0x7f060141;
-    public static final int material_red_400=0x7f060142;
-    public static final int material_red_50=0x7f060143;
-    public static final int material_red_500=0x7f060144;
-    public static final int material_red_600=0x7f060145;
-    public static final int material_red_700=0x7f060146;
-    public static final int material_red_800=0x7f060147;
-    public static final int material_red_900=0x7f060148;
-    public static final int material_red_A100=0x7f060149;
-    public static final int material_red_A200=0x7f06014a;
-    public static final int material_red_A400=0x7f06014b;
-    public static final int material_red_A700=0x7f06014c;
-    public static final int material_teal_100=0x7f06014d;
-    public static final int material_teal_200=0x7f06014e;
-    public static final int material_teal_300=0x7f06014f;
-    public static final int material_teal_400=0x7f060150;
-    public static final int material_teal_50=0x7f060151;
-    public static final int material_teal_500=0x7f060152;
-    public static final int material_teal_600=0x7f060153;
-    public static final int material_teal_700=0x7f060154;
-    public static final int material_teal_800=0x7f060155;
-    public static final int material_teal_900=0x7f060156;
-    public static final int material_teal_A100=0x7f060157;
-    public static final int material_teal_A200=0x7f060158;
-    public static final int material_teal_A400=0x7f060159;
-    public static final int material_teal_A700=0x7f06015a;
-    public static final int material_yellow_100=0x7f06015b;
-    public static final int material_yellow_200=0x7f06015c;
-    public static final int material_yellow_300=0x7f06015d;
-    public static final int material_yellow_400=0x7f06015e;
-    public static final int material_yellow_50=0x7f06015f;
-    public static final int material_yellow_500=0x7f060160;
-    public static final int material_yellow_600=0x7f060161;
-    public static final int material_yellow_700=0x7f060162;
-    public static final int material_yellow_800=0x7f060163;
-    public static final int material_yellow_900=0x7f060164;
-    public static final int material_yellow_A100=0x7f060165;
-    public static final int material_yellow_A200=0x7f060166;
-    public static final int material_yellow_A400=0x7f060167;
-    public static final int material_yellow_A700=0x7f060168;
-    public static final int notification_action_color_filter=0x7f060169;
-    public static final int notification_icon_bg_color=0x7f06016a;
-    public static final int notification_material_background_media_default_color=0x7f06016b;
-    public static final int primary_dark_material_dark=0x7f06016c;
-    public static final int primary_dark_material_light=0x7f06016d;
-    public static final int primary_material_dark=0x7f06016e;
-    public static final int primary_material_light=0x7f06016f;
-    public static final int primary_text_default_material_dark=0x7f060170;
-    public static final int primary_text_default_material_light=0x7f060171;
-    public static final int primary_text_disabled_material_dark=0x7f060172;
-    public static final int primary_text_disabled_material_light=0x7f060173;
-    public static final int psts_background_tab_pressed=0x7f060174;
-    public static final int psts_background_tab_pressed_ripple=0x7f060175;
-    public static final int ripple_material_dark=0x7f060176;
-    public static final int ripple_material_light=0x7f060177;
-    public static final int secondary_text_default_material_dark=0x7f060178;
-    public static final int secondary_text_default_material_light=0x7f060179;
-    public static final int secondary_text_disabled_material_dark=0x7f06017a;
-    public static final int secondary_text_disabled_material_light=0x7f06017b;
-    public static final int switch_thumb_disabled_material_dark=0x7f06017c;
-    public static final int switch_thumb_disabled_material_light=0x7f06017d;
-    public static final int switch_thumb_material_dark=0x7f06017e;
-    public static final int switch_thumb_material_light=0x7f06017f;
-    public static final int switch_thumb_normal_material_dark=0x7f060180;
-    public static final int switch_thumb_normal_material_light=0x7f060181;
-    public static final int tooltip_background_dark=0x7f060182;
-    public static final int tooltip_background_light=0x7f060183;
-    public static final int white=0x7f060184;
-    public static final int white_15_percent=0x7f060185;
-    public static final int white_30_percent=0x7f060186;
+    public static final int colortext=0x7f06002a;
+    public static final int common_google_signin_btn_text_dark=0x7f06002b;
+    public static final int common_google_signin_btn_text_dark_default=0x7f06002c;
+    public static final int common_google_signin_btn_text_dark_disabled=0x7f06002d;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f06002e;
+    public static final int common_google_signin_btn_text_dark_pressed=0x7f06002f;
+    public static final int common_google_signin_btn_text_light=0x7f060030;
+    public static final int common_google_signin_btn_text_light_default=0x7f060031;
+    public static final int common_google_signin_btn_text_light_disabled=0x7f060032;
+    public static final int common_google_signin_btn_text_light_focused=0x7f060033;
+    public static final int common_google_signin_btn_text_light_pressed=0x7f060034;
+    public static final int common_google_signin_btn_tint=0x7f060035;
+    public static final int control_background=0x7f060036;
+    public static final int cpb_blue=0x7f060037;
+    public static final int cpb_blue_dark=0x7f060038;
+    public static final int cpb_complete_state_selector=0x7f060039;
+    public static final int cpb_error_state_selector=0x7f06003a;
+    public static final int cpb_green=0x7f06003b;
+    public static final int cpb_green_dark=0x7f06003c;
+    public static final int cpb_grey=0x7f06003d;
+    public static final int cpb_idle_state_selector=0x7f06003e;
+    public static final int cpb_red=0x7f06003f;
+    public static final int cpb_red_dark=0x7f060040;
+    public static final int cpb_white=0x7f060041;
+    public static final int dim_foreground_disabled_material_dark=0x7f060042;
+    public static final int dim_foreground_disabled_material_light=0x7f060043;
+    public static final int dim_foreground_material_dark=0x7f060044;
+    public static final int dim_foreground_material_light=0x7f060045;
+    public static final int divider_color=0x7f060046;
+    public static final int email_color=0x7f060047;
+    public static final int error_color_material_dark=0x7f060048;
+    public static final int error_color_material_light=0x7f060049;
+    public static final int foreground_material_dark=0x7f06004a;
+    public static final int foreground_material_light=0x7f06004b;
+    public static final int highlighted_text_material_dark=0x7f06004c;
+    public static final int highlighted_text_material_light=0x7f06004d;
+    public static final int main_color_100=0x7f06004e;
+    public static final int main_color_200=0x7f06004f;
+    public static final int main_color_300=0x7f060050;
+    public static final int main_color_400=0x7f060051;
+    public static final int main_color_50=0x7f060052;
+    public static final int main_color_500=0x7f060053;
+    public static final int main_color_500_10_percent=0x7f060054;
+    public static final int main_color_500_20_percent=0x7f060055;
+    public static final int main_color_500_50_percent=0x7f060056;
+    public static final int main_color_600=0x7f060057;
+    public static final int main_color_700=0x7f060058;
+    public static final int main_color_800=0x7f060059;
+    public static final int main_color_900=0x7f06005a;
+    public static final int main_color_A100=0x7f06005b;
+    public static final int main_color_A200=0x7f06005c;
+    public static final int main_color_A400=0x7f06005d;
+    public static final int main_color_grey_100=0x7f06005e;
+    public static final int main_color_grey_200=0x7f06005f;
+    public static final int main_color_grey_300=0x7f060060;
+    public static final int main_color_grey_400=0x7f060061;
+    public static final int main_color_grey_50=0x7f060062;
+    public static final int main_color_grey_500=0x7f060063;
+    public static final int main_color_grey_600=0x7f060064;
+    public static final int main_color_grey_700=0x7f060065;
+    public static final int main_color_grey_800=0x7f060066;
+    public static final int main_color_grey_900=0x7f060067;
+    public static final int material_blue_100=0x7f060068;
+    public static final int material_blue_200=0x7f060069;
+    public static final int material_blue_300=0x7f06006a;
+    public static final int material_blue_400=0x7f06006b;
+    public static final int material_blue_50=0x7f06006c;
+    public static final int material_blue_500=0x7f06006d;
+    public static final int material_blue_600=0x7f06006e;
+    public static final int material_blue_700=0x7f06006f;
+    public static final int material_blue_800=0x7f060070;
+    public static final int material_blue_900=0x7f060071;
+    public static final int material_blue_A100=0x7f060072;
+    public static final int material_blue_A200=0x7f060073;
+    public static final int material_blue_A400=0x7f060074;
+    public static final int material_blue_A700=0x7f060075;
+    public static final int material_blue_grey_100=0x7f060076;
+    public static final int material_blue_grey_200=0x7f060077;
+    public static final int material_blue_grey_300=0x7f060078;
+    public static final int material_blue_grey_400=0x7f060079;
+    public static final int material_blue_grey_50=0x7f06007a;
+    public static final int material_blue_grey_500=0x7f06007b;
+    public static final int material_blue_grey_600=0x7f06007c;
+    public static final int material_blue_grey_700=0x7f06007d;
+    public static final int material_blue_grey_800=0x7f06007e;
+    public static final int material_blue_grey_900=0x7f06007f;
+    public static final int material_blue_grey_950=0x7f060080;
+    public static final int material_brown_100=0x7f060081;
+    public static final int material_brown_200=0x7f060082;
+    public static final int material_brown_300=0x7f060083;
+    public static final int material_brown_400=0x7f060084;
+    public static final int material_brown_50=0x7f060085;
+    public static final int material_brown_500=0x7f060086;
+    public static final int material_brown_600=0x7f060087;
+    public static final int material_brown_700=0x7f060088;
+    public static final int material_brown_800=0x7f060089;
+    public static final int material_brown_900=0x7f06008a;
+    public static final int material_cyan_100=0x7f06008b;
+    public static final int material_cyan_200=0x7f06008c;
+    public static final int material_cyan_300=0x7f06008d;
+    public static final int material_cyan_400=0x7f06008e;
+    public static final int material_cyan_50=0x7f06008f;
+    public static final int material_cyan_500=0x7f060090;
+    public static final int material_cyan_600=0x7f060091;
+    public static final int material_cyan_700=0x7f060092;
+    public static final int material_cyan_800=0x7f060093;
+    public static final int material_cyan_900=0x7f060094;
+    public static final int material_cyan_A100=0x7f060095;
+    public static final int material_cyan_A200=0x7f060096;
+    public static final int material_cyan_A400=0x7f060097;
+    public static final int material_cyan_A700=0x7f060098;
+    public static final int material_deep_orange_100=0x7f060099;
+    public static final int material_deep_orange_200=0x7f06009a;
+    public static final int material_deep_orange_300=0x7f06009b;
+    public static final int material_deep_orange_400=0x7f06009c;
+    public static final int material_deep_orange_50=0x7f06009d;
+    public static final int material_deep_orange_500=0x7f06009e;
+    public static final int material_deep_orange_600=0x7f06009f;
+    public static final int material_deep_orange_700=0x7f0600a0;
+    public static final int material_deep_orange_800=0x7f0600a1;
+    public static final int material_deep_orange_900=0x7f0600a2;
+    public static final int material_deep_orange_A100=0x7f0600a3;
+    public static final int material_deep_orange_A200=0x7f0600a4;
+    public static final int material_deep_orange_A400=0x7f0600a5;
+    public static final int material_deep_orange_A700=0x7f0600a6;
+    public static final int material_deep_purple_100=0x7f0600a7;
+    public static final int material_deep_purple_200=0x7f0600a8;
+    public static final int material_deep_purple_300=0x7f0600a9;
+    public static final int material_deep_purple_400=0x7f0600aa;
+    public static final int material_deep_purple_50=0x7f0600ab;
+    public static final int material_deep_purple_500=0x7f0600ac;
+    public static final int material_deep_purple_600=0x7f0600ad;
+    public static final int material_deep_purple_700=0x7f0600ae;
+    public static final int material_deep_purple_800=0x7f0600af;
+    public static final int material_deep_purple_900=0x7f0600b0;
+    public static final int material_deep_purple_A100=0x7f0600b1;
+    public static final int material_deep_purple_A200=0x7f0600b2;
+    public static final int material_deep_purple_A400=0x7f0600b3;
+    public static final int material_deep_purple_A700=0x7f0600b4;
+    public static final int material_deep_teal_200=0x7f0600b5;
+    public static final int material_deep_teal_500=0x7f0600b6;
+    public static final int material_green_100=0x7f0600b7;
+    public static final int material_green_200=0x7f0600b8;
+    public static final int material_green_300=0x7f0600b9;
+    public static final int material_green_400=0x7f0600ba;
+    public static final int material_green_50=0x7f0600bb;
+    public static final int material_green_500=0x7f0600bc;
+    public static final int material_green_600=0x7f0600bd;
+    public static final int material_green_700=0x7f0600be;
+    public static final int material_green_800=0x7f0600bf;
+    public static final int material_green_900=0x7f0600c0;
+    public static final int material_green_A100=0x7f0600c1;
+    public static final int material_green_A200=0x7f0600c2;
+    public static final int material_green_A400=0x7f0600c3;
+    public static final int material_green_A700=0x7f0600c4;
+    public static final int material_grey_100=0x7f0600c5;
+    public static final int material_grey_200=0x7f0600c6;
+    public static final int material_grey_300=0x7f0600c7;
+    public static final int material_grey_400=0x7f0600c8;
+    public static final int material_grey_50=0x7f0600c9;
+    public static final int material_grey_500=0x7f0600ca;
+    public static final int material_grey_600=0x7f0600cb;
+    public static final int material_grey_700=0x7f0600cc;
+    public static final int material_grey_800=0x7f0600cd;
+    public static final int material_grey_850=0x7f0600ce;
+    public static final int material_grey_900=0x7f0600cf;
+    public static final int material_indigo_100=0x7f0600d0;
+    public static final int material_indigo_200=0x7f0600d1;
+    public static final int material_indigo_300=0x7f0600d2;
+    public static final int material_indigo_400=0x7f0600d3;
+    public static final int material_indigo_50=0x7f0600d4;
+    public static final int material_indigo_500=0x7f0600d5;
+    public static final int material_indigo_600=0x7f0600d6;
+    public static final int material_indigo_700=0x7f0600d7;
+    public static final int material_indigo_800=0x7f0600d8;
+    public static final int material_indigo_900=0x7f0600d9;
+    public static final int material_indigo_A100=0x7f0600da;
+    public static final int material_indigo_A200=0x7f0600db;
+    public static final int material_indigo_A400=0x7f0600dc;
+    public static final int material_indigo_A700=0x7f0600dd;
+    public static final int material_light_blue_100=0x7f0600de;
+    public static final int material_light_blue_200=0x7f0600df;
+    public static final int material_light_blue_300=0x7f0600e0;
+    public static final int material_light_blue_400=0x7f0600e1;
+    public static final int material_light_blue_50=0x7f0600e2;
+    public static final int material_light_blue_500=0x7f0600e3;
+    public static final int material_light_blue_600=0x7f0600e4;
+    public static final int material_light_blue_700=0x7f0600e5;
+    public static final int material_light_blue_800=0x7f0600e6;
+    public static final int material_light_blue_900=0x7f0600e7;
+    public static final int material_light_blue_A100=0x7f0600e8;
+    public static final int material_light_blue_A200=0x7f0600e9;
+    public static final int material_light_blue_A400=0x7f0600ea;
+    public static final int material_light_blue_A700=0x7f0600eb;
+    public static final int material_light_green_100=0x7f0600ec;
+    public static final int material_light_green_200=0x7f0600ed;
+    public static final int material_light_green_300=0x7f0600ee;
+    public static final int material_light_green_400=0x7f0600ef;
+    public static final int material_light_green_50=0x7f0600f0;
+    public static final int material_light_green_500=0x7f0600f1;
+    public static final int material_light_green_600=0x7f0600f2;
+    public static final int material_light_green_700=0x7f0600f3;
+    public static final int material_light_green_800=0x7f0600f4;
+    public static final int material_light_green_900=0x7f0600f5;
+    public static final int material_light_green_A100=0x7f0600f6;
+    public static final int material_light_green_A200=0x7f0600f7;
+    public static final int material_light_green_A400=0x7f0600f8;
+    public static final int material_light_green_A700=0x7f0600f9;
+    public static final int material_light_yellow_100=0x7f0600fa;
+    public static final int material_light_yellow_200=0x7f0600fb;
+    public static final int material_light_yellow_300=0x7f0600fc;
+    public static final int material_light_yellow_400=0x7f0600fd;
+    public static final int material_light_yellow_50=0x7f0600fe;
+    public static final int material_light_yellow_500=0x7f0600ff;
+    public static final int material_light_yellow_600=0x7f060100;
+    public static final int material_light_yellow_700=0x7f060101;
+    public static final int material_light_yellow_800=0x7f060102;
+    public static final int material_light_yellow_900=0x7f060103;
+    public static final int material_light_yellow_A100=0x7f060104;
+    public static final int material_light_yellow_A200=0x7f060105;
+    public static final int material_light_yellow_A400=0x7f060106;
+    public static final int material_light_yellow_A700=0x7f060107;
+    public static final int material_lime_100=0x7f060108;
+    public static final int material_lime_200=0x7f060109;
+    public static final int material_lime_300=0x7f06010a;
+    public static final int material_lime_400=0x7f06010b;
+    public static final int material_lime_50=0x7f06010c;
+    public static final int material_lime_500=0x7f06010d;
+    public static final int material_lime_600=0x7f06010e;
+    public static final int material_lime_700=0x7f06010f;
+    public static final int material_lime_800=0x7f060110;
+    public static final int material_lime_900=0x7f060111;
+    public static final int material_lime_A100=0x7f060112;
+    public static final int material_lime_A200=0x7f060113;
+    public static final int material_lime_A400=0x7f060114;
+    public static final int material_lime_A700=0x7f060115;
+    public static final int material_orange_100=0x7f060116;
+    public static final int material_orange_200=0x7f060117;
+    public static final int material_orange_300=0x7f060118;
+    public static final int material_orange_400=0x7f060119;
+    public static final int material_orange_50=0x7f06011a;
+    public static final int material_orange_500=0x7f06011b;
+    public static final int material_orange_600=0x7f06011c;
+    public static final int material_orange_700=0x7f06011d;
+    public static final int material_orange_800=0x7f06011e;
+    public static final int material_orange_900=0x7f06011f;
+    public static final int material_orange_A100=0x7f060120;
+    public static final int material_orange_A200=0x7f060121;
+    public static final int material_orange_A400=0x7f060122;
+    public static final int material_orange_A700=0x7f060123;
+    public static final int material_pink_100=0x7f060124;
+    public static final int material_pink_200=0x7f060125;
+    public static final int material_pink_300=0x7f060126;
+    public static final int material_pink_400=0x7f060127;
+    public static final int material_pink_50=0x7f060128;
+    public static final int material_pink_500=0x7f060129;
+    public static final int material_pink_600=0x7f06012a;
+    public static final int material_pink_700=0x7f06012b;
+    public static final int material_pink_800=0x7f06012c;
+    public static final int material_pink_900=0x7f06012d;
+    public static final int material_pink_A100=0x7f06012e;
+    public static final int material_pink_A200=0x7f06012f;
+    public static final int material_pink_A400=0x7f060130;
+    public static final int material_pink_A700=0x7f060131;
+    public static final int material_purple_100=0x7f060132;
+    public static final int material_purple_200=0x7f060133;
+    public static final int material_purple_300=0x7f060134;
+    public static final int material_purple_400=0x7f060135;
+    public static final int material_purple_50=0x7f060136;
+    public static final int material_purple_500=0x7f060137;
+    public static final int material_purple_600=0x7f060138;
+    public static final int material_purple_700=0x7f060139;
+    public static final int material_purple_800=0x7f06013a;
+    public static final int material_purple_900=0x7f06013b;
+    public static final int material_purple_A100=0x7f06013c;
+    public static final int material_purple_A200=0x7f06013d;
+    public static final int material_purple_A400=0x7f06013e;
+    public static final int material_purple_A700=0x7f06013f;
+    public static final int material_red_100=0x7f060140;
+    public static final int material_red_200=0x7f060141;
+    public static final int material_red_300=0x7f060142;
+    public static final int material_red_400=0x7f060143;
+    public static final int material_red_50=0x7f060144;
+    public static final int material_red_500=0x7f060145;
+    public static final int material_red_600=0x7f060146;
+    public static final int material_red_700=0x7f060147;
+    public static final int material_red_800=0x7f060148;
+    public static final int material_red_900=0x7f060149;
+    public static final int material_red_A100=0x7f06014a;
+    public static final int material_red_A200=0x7f06014b;
+    public static final int material_red_A400=0x7f06014c;
+    public static final int material_red_A700=0x7f06014d;
+    public static final int material_teal_100=0x7f06014e;
+    public static final int material_teal_200=0x7f06014f;
+    public static final int material_teal_300=0x7f060150;
+    public static final int material_teal_400=0x7f060151;
+    public static final int material_teal_50=0x7f060152;
+    public static final int material_teal_500=0x7f060153;
+    public static final int material_teal_600=0x7f060154;
+    public static final int material_teal_700=0x7f060155;
+    public static final int material_teal_800=0x7f060156;
+    public static final int material_teal_900=0x7f060157;
+    public static final int material_teal_A100=0x7f060158;
+    public static final int material_teal_A200=0x7f060159;
+    public static final int material_teal_A400=0x7f06015a;
+    public static final int material_teal_A700=0x7f06015b;
+    public static final int material_yellow_100=0x7f06015c;
+    public static final int material_yellow_200=0x7f06015d;
+    public static final int material_yellow_300=0x7f06015e;
+    public static final int material_yellow_400=0x7f06015f;
+    public static final int material_yellow_50=0x7f060160;
+    public static final int material_yellow_500=0x7f060161;
+    public static final int material_yellow_600=0x7f060162;
+    public static final int material_yellow_700=0x7f060163;
+    public static final int material_yellow_800=0x7f060164;
+    public static final int material_yellow_900=0x7f060165;
+    public static final int material_yellow_A100=0x7f060166;
+    public static final int material_yellow_A200=0x7f060167;
+    public static final int material_yellow_A400=0x7f060168;
+    public static final int material_yellow_A700=0x7f060169;
+    public static final int notification_action_color_filter=0x7f06016a;
+    public static final int notification_icon_bg_color=0x7f06016b;
+    public static final int notification_material_background_media_default_color=0x7f06016c;
+    public static final int primary_dark_material_dark=0x7f06016d;
+    public static final int primary_dark_material_light=0x7f06016e;
+    public static final int primary_material_dark=0x7f06016f;
+    public static final int primary_material_light=0x7f060170;
+    public static final int primary_text_default_material_dark=0x7f060171;
+    public static final int primary_text_default_material_light=0x7f060172;
+    public static final int primary_text_disabled_material_dark=0x7f060173;
+    public static final int primary_text_disabled_material_light=0x7f060174;
+    public static final int psts_background_tab_pressed=0x7f060175;
+    public static final int psts_background_tab_pressed_ripple=0x7f060176;
+    public static final int ripple_material_dark=0x7f060177;
+    public static final int ripple_material_light=0x7f060178;
+    public static final int secondary_text_default_material_dark=0x7f060179;
+    public static final int secondary_text_default_material_light=0x7f06017a;
+    public static final int secondary_text_disabled_material_dark=0x7f06017b;
+    public static final int secondary_text_disabled_material_light=0x7f06017c;
+    public static final int switch_thumb_disabled_material_dark=0x7f06017d;
+    public static final int switch_thumb_disabled_material_light=0x7f06017e;
+    public static final int switch_thumb_material_dark=0x7f06017f;
+    public static final int switch_thumb_material_light=0x7f060180;
+    public static final int switch_thumb_normal_material_dark=0x7f060181;
+    public static final int switch_thumb_normal_material_light=0x7f060182;
+    public static final int tooltip_background_dark=0x7f060183;
+    public static final int tooltip_background_light=0x7f060184;
+    public static final int white=0x7f060185;
+    public static final int white_15_percent=0x7f060186;
+    public static final int white_30_percent=0x7f060187;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f070000;
@@ -4256,280 +5195,341 @@ public final class R {
     public static final int CTRL=0x7f090001;
     public static final int FUNCTION=0x7f090002;
     public static final int META=0x7f090003;
-    public static final int SHIFT=0x7f090004;
-    public static final int SYM=0x7f090005;
-    public static final int accessibility_action_clickable_span=0x7f090006;
-    public static final int accessibility_custom_action_0=0x7f090007;
-    public static final int accessibility_custom_action_1=0x7f090008;
-    public static final int accessibility_custom_action_10=0x7f090009;
-    public static final int accessibility_custom_action_11=0x7f09000a;
-    public static final int accessibility_custom_action_12=0x7f09000b;
-    public static final int accessibility_custom_action_13=0x7f09000c;
-    public static final int accessibility_custom_action_14=0x7f09000d;
-    public static final int accessibility_custom_action_15=0x7f09000e;
-    public static final int accessibility_custom_action_16=0x7f09000f;
-    public static final int accessibility_custom_action_17=0x7f090010;
-    public static final int accessibility_custom_action_18=0x7f090011;
-    public static final int accessibility_custom_action_19=0x7f090012;
-    public static final int accessibility_custom_action_2=0x7f090013;
-    public static final int accessibility_custom_action_20=0x7f090014;
-    public static final int accessibility_custom_action_21=0x7f090015;
-    public static final int accessibility_custom_action_22=0x7f090016;
-    public static final int accessibility_custom_action_23=0x7f090017;
-    public static final int accessibility_custom_action_24=0x7f090018;
-    public static final int accessibility_custom_action_25=0x7f090019;
-    public static final int accessibility_custom_action_26=0x7f09001a;
-    public static final int accessibility_custom_action_27=0x7f09001b;
-    public static final int accessibility_custom_action_28=0x7f09001c;
-    public static final int accessibility_custom_action_29=0x7f09001d;
-    public static final int accessibility_custom_action_3=0x7f09001e;
-    public static final int accessibility_custom_action_30=0x7f09001f;
-    public static final int accessibility_custom_action_31=0x7f090020;
-    public static final int accessibility_custom_action_4=0x7f090021;
-    public static final int accessibility_custom_action_5=0x7f090022;
-    public static final int accessibility_custom_action_6=0x7f090023;
-    public static final int accessibility_custom_action_7=0x7f090024;
-    public static final int accessibility_custom_action_8=0x7f090025;
-    public static final int accessibility_custom_action_9=0x7f090026;
-    public static final int action0=0x7f090027;
-    public static final int actionDone=0x7f090028;
-    public static final int actionGo=0x7f090029;
-    public static final int actionNext=0x7f09002a;
-    public static final int actionNone=0x7f09002b;
-    public static final int actionPrevious=0x7f09002c;
-    public static final int actionSearch=0x7f09002d;
-    public static final int actionSend=0x7f09002e;
-    public static final int actionUnspecified=0x7f09002f;
-    public static final int action_bar=0x7f090030;
-    public static final int action_bar_activity_content=0x7f090031;
-    public static final int action_bar_container=0x7f090032;
-    public static final int action_bar_root=0x7f090033;
-    public static final int action_bar_spinner=0x7f090034;
-    public static final int action_bar_subtitle=0x7f090035;
-    public static final int action_bar_title=0x7f090036;
-    public static final int action_container=0x7f090037;
-    public static final int action_context_bar=0x7f090038;
-    public static final int action_divider=0x7f090039;
-    public static final int action_image=0x7f09003a;
-    public static final int action_menu_divider=0x7f09003b;
-    public static final int action_menu_presenter=0x7f09003c;
-    public static final int action_mode_bar=0x7f09003d;
-    public static final int action_mode_bar_stub=0x7f09003e;
-    public static final int action_mode_close_button=0x7f09003f;
-    public static final int action_text=0x7f090040;
-    public static final int actions=0x7f090041;
-    public static final int activity_chooser_view_content=0x7f090042;
-    public static final int add=0x7f090043;
-    public static final int adjust_height=0x7f090044;
-    public static final int adjust_width=0x7f090045;
-    public static final int alertTitle=0x7f090046;
-    public static final int all=0x7f090047;
-    public static final int always=0x7f090048;
-    public static final int async=0x7f090049;
-    public static final int auto=0x7f09004a;
-    public static final int barrier=0x7f09004b;
-    public static final int beginning=0x7f09004c;
-    public static final int bevel=0x7f09004d;
-    public static final int blocking=0x7f09004e;
-    public static final int bold=0x7f09004f;
-    public static final int bottom=0x7f090050;
-    public static final int butt=0x7f090051;
-    public static final int buttonPanel=0x7f090052;
-    public static final int cancel_action=0x7f090053;
-    public static final int center=0x7f090054;
-    public static final int center_horizontal=0x7f090055;
-    public static final int center_vertical=0x7f090056;
-    public static final int chains=0x7f090057;
-    public static final int checkbox=0x7f090058;
-    public static final int checked=0x7f090059;
-    public static final int chronometer=0x7f09005a;
-    public static final int clip_horizontal=0x7f09005b;
-    public static final int clip_vertical=0x7f09005c;
-    public static final int collapseActionView=0x7f09005d;
-    public static final int container=0x7f09005e;
-    public static final int content=0x7f09005f;
-    public static final int contentPanel=0x7f090060;
-    public static final int custom=0x7f090061;
-    public static final int customPanel=0x7f090062;
-    public static final int dark=0x7f090063;
-    public static final int date=0x7f090064;
-    public static final int datetime=0x7f090065;
-    public static final int debug_overlay=0x7f090066;
-    public static final int decor_content_parent=0x7f090067;
-    public static final int default_activity_button=0x7f090068;
-    public static final int dialog_button=0x7f090069;
-    public static final int dimensions=0x7f09006a;
-    public static final int direct=0x7f09006b;
-    public static final int disableHome=0x7f09006c;
-    public static final int edit_query=0x7f09006d;
-    public static final int end=0x7f09006e;
-    public static final int end_padder=0x7f09006f;
-    public static final int expand_activities_button=0x7f090070;
-    public static final int expanded_menu=0x7f090071;
-    public static final int fill=0x7f090072;
-    public static final int fill_horizontal=0x7f090073;
-    public static final int fill_vertical=0x7f090074;
-    public static final int flagForceAscii=0x7f090075;
-    public static final int flagNavigateNext=0x7f090076;
-    public static final int flagNavigatePrevious=0x7f090077;
-    public static final int flagNoAccessoryAction=0x7f090078;
-    public static final int flagNoEnterAction=0x7f090079;
-    public static final int flagNoExtractUi=0x7f09007a;
-    public static final int flagNoFullscreen=0x7f09007b;
-    public static final int forever=0x7f09007c;
-    public static final int gone=0x7f09007d;
-    public static final int group_divider=0x7f09007e;
-    public static final int groups=0x7f09007f;
-    public static final int home=0x7f090080;
-    public static final int homeAsUp=0x7f090081;
-    public static final int icon=0x7f090082;
-    public static final int icon_group=0x7f090083;
-    public static final int icon_only=0x7f090084;
-    public static final int ifRoom=0x7f090085;
-    public static final int image=0x7f090086;
-    public static final int info=0x7f090087;
-    public static final int invisible=0x7f090088;
-    public static final int italic=0x7f090089;
-    public static final int left=0x7f09008a;
-    public static final int light=0x7f09008b;
-    public static final int line1=0x7f09008c;
-    public static final int line3=0x7f09008d;
-    public static final int listMode=0x7f09008e;
-    public static final int list_item=0x7f09008f;
-    public static final int locationvalue=0x7f090090;
-    public static final int logo=0x7f090091;
-    public static final int logout=0x7f090092;
-    public static final int media_actions=0x7f090093;
-    public static final int message=0x7f090094;
-    public static final int middle=0x7f090095;
-    public static final int miter=0x7f090096;
-    public static final int multiply=0x7f090097;
-    public static final int never=0x7f090098;
-    public static final int none=0x7f090099;
-    public static final int normal=0x7f09009a;
-    public static final int notification_background=0x7f09009b;
-    public static final int notification_main_column=0x7f09009c;
-    public static final int notification_main_column_container=0x7f09009d;
-    public static final int number=0x7f09009e;
-    public static final int numberDecimal=0x7f09009f;
-    public static final int numberPassword=0x7f0900a0;
-    public static final int numberSigned=0x7f0900a1;
-    public static final int off=0x7f0900a2;
-    public static final int on=0x7f0900a3;
-    public static final int packed=0x7f0900a4;
-    public static final int parent=0x7f0900a5;
-    public static final int parentPanel=0x7f0900a6;
-    public static final int percent=0x7f0900a7;
-    public static final int phone=0x7f0900a8;
-    public static final int progress_circular=0x7f0900a9;
-    public static final int progress_horizontal=0x7f0900aa;
-    public static final int radio=0x7f0900ab;
-    public static final int right=0x7f0900ac;
-    public static final int right_icon=0x7f0900ad;
-    public static final int right_side=0x7f0900ae;
-    public static final int robotoBlack=0x7f0900af;
-    public static final int robotoBlackItalic=0x7f0900b0;
-    public static final int robotoBold=0x7f0900b1;
-    public static final int robotoBoldCondensed=0x7f0900b2;
-    public static final int robotoBoldCondensedItalic=0x7f0900b3;
-    public static final int robotoBoldItalic=0x7f0900b4;
-    public static final int robotoCondensed=0x7f0900b5;
-    public static final int robotoCondensedItalic=0x7f0900b6;
-    public static final int robotoItalic=0x7f0900b7;
-    public static final int robotoLight=0x7f0900b8;
-    public static final int robotoLightItalic=0x7f0900b9;
-    public static final int robotoMedium=0x7f0900ba;
-    public static final int robotoMediumItalic=0x7f0900bb;
-    public static final int robotoRegular=0x7f0900bc;
-    public static final int robotoThin=0x7f0900bd;
-    public static final int robotoThinItalic=0x7f0900be;
-    public static final int round=0x7f0900bf;
-    public static final int screen=0x7f0900c0;
-    public static final int scrollIndicatorDown=0x7f0900c1;
-    public static final int scrollIndicatorUp=0x7f0900c2;
-    public static final int scrollView=0x7f0900c3;
-    public static final int scrollview=0x7f0900c4;
-    public static final int search_badge=0x7f0900c5;
-    public static final int search_bar=0x7f0900c6;
-    public static final int search_button=0x7f0900c7;
-    public static final int search_close_btn=0x7f0900c8;
-    public static final int search_edit_frame=0x7f0900c9;
-    public static final int search_go_btn=0x7f0900ca;
-    public static final int search_mag_icon=0x7f0900cb;
-    public static final int search_plate=0x7f0900cc;
-    public static final int search_src_text=0x7f0900cd;
-    public static final int search_voice_btn=0x7f0900ce;
-    public static final int select_dialog_listview=0x7f0900cf;
-    public static final int shortcut=0x7f0900d0;
-    public static final int showCustom=0x7f0900d1;
-    public static final int showHome=0x7f0900d2;
-    public static final int showTitle=0x7f0900d3;
-    public static final int spacer=0x7f0900d4;
-    public static final int split_action_bar=0x7f0900d5;
-    public static final int spread=0x7f0900d6;
-    public static final int spread_inside=0x7f0900d7;
-    public static final int square=0x7f0900d8;
-    public static final int src_atop=0x7f0900d9;
-    public static final int src_in=0x7f0900da;
-    public static final int src_over=0x7f0900db;
-    public static final int standard=0x7f0900dc;
-    public static final int start=0x7f0900dd;
-    public static final int status_bar_latest_event_content=0x7f0900de;
-    public static final int stroke=0x7f0900df;
-    public static final int submenuarrow=0x7f0900e0;
-    public static final int submit_area=0x7f0900e1;
-    public static final int tabMode=0x7f0900e2;
-    public static final int tag_accessibility_actions=0x7f0900e3;
-    public static final int tag_accessibility_clickable_spans=0x7f0900e4;
-    public static final int tag_accessibility_heading=0x7f0900e5;
-    public static final int tag_accessibility_pane_title=0x7f0900e6;
-    public static final int tag_screen_reader_focusable=0x7f0900e7;
-    public static final int tag_transition_group=0x7f0900e8;
-    public static final int tag_unhandled_key_event_manager=0x7f0900e9;
-    public static final int tag_unhandled_key_listeners=0x7f0900ea;
-    public static final int text=0x7f0900eb;
-    public static final int text2=0x7f0900ec;
-    public static final int textAutoComplete=0x7f0900ed;
-    public static final int textAutoCorrect=0x7f0900ee;
-    public static final int textCapCharacters=0x7f0900ef;
-    public static final int textCapSentences=0x7f0900f0;
-    public static final int textCapWords=0x7f0900f1;
-    public static final int textEmailAddress=0x7f0900f2;
-    public static final int textEmailSubject=0x7f0900f3;
-    public static final int textFilter=0x7f0900f4;
-    public static final int textImeMultiLine=0x7f0900f5;
-    public static final int textLongMessage=0x7f0900f6;
-    public static final int textMultiLine=0x7f0900f7;
-    public static final int textNoSuggestions=0x7f0900f8;
-    public static final int textPassword=0x7f0900f9;
-    public static final int textPersonName=0x7f0900fa;
-    public static final int textPhonetic=0x7f0900fb;
-    public static final int textPostalAddress=0x7f0900fc;
-    public static final int textShortMessage=0x7f0900fd;
-    public static final int textSpacerNoButtons=0x7f0900fe;
-    public static final int textSpacerNoTitle=0x7f0900ff;
-    public static final int textUri=0x7f090100;
-    public static final int textView=0x7f090101;
-    public static final int textVisiblePassword=0x7f090102;
-    public static final int textWebEditText=0x7f090103;
-    public static final int textWebEmailAddress=0x7f090104;
-    public static final int textWebPassword=0x7f090105;
-    public static final int texture=0x7f090106;
-    public static final int time=0x7f090107;
-    public static final int title=0x7f090108;
-    public static final int titleDividerNoCustom=0x7f090109;
-    public static final int title_template=0x7f09010a;
-    public static final int top=0x7f09010b;
-    public static final int topPanel=0x7f09010c;
-    public static final int tracking_overlay=0x7f09010d;
-    public static final int unchecked=0x7f09010e;
-    public static final int uniform=0x7f09010f;
-    public static final int up=0x7f090110;
-    public static final int useLogo=0x7f090111;
-    public static final int wide=0x7f090112;
-    public static final int withText=0x7f090113;
-    public static final int wrap=0x7f090114;
-    public static final int wrap_content=0x7f090115;
+    public static final int NO_DEBUG=0x7f090004;
+    public static final int SHIFT=0x7f090005;
+    public static final int SHOW_ALL=0x7f090006;
+    public static final int SHOW_PATH=0x7f090007;
+    public static final int SHOW_PROGRESS=0x7f090008;
+    public static final int SYM=0x7f090009;
+    public static final int accelerate=0x7f09000a;
+    public static final int accessibility_action_clickable_span=0x7f09000b;
+    public static final int accessibility_custom_action_0=0x7f09000c;
+    public static final int accessibility_custom_action_1=0x7f09000d;
+    public static final int accessibility_custom_action_10=0x7f09000e;
+    public static final int accessibility_custom_action_11=0x7f09000f;
+    public static final int accessibility_custom_action_12=0x7f090010;
+    public static final int accessibility_custom_action_13=0x7f090011;
+    public static final int accessibility_custom_action_14=0x7f090012;
+    public static final int accessibility_custom_action_15=0x7f090013;
+    public static final int accessibility_custom_action_16=0x7f090014;
+    public static final int accessibility_custom_action_17=0x7f090015;
+    public static final int accessibility_custom_action_18=0x7f090016;
+    public static final int accessibility_custom_action_19=0x7f090017;
+    public static final int accessibility_custom_action_2=0x7f090018;
+    public static final int accessibility_custom_action_20=0x7f090019;
+    public static final int accessibility_custom_action_21=0x7f09001a;
+    public static final int accessibility_custom_action_22=0x7f09001b;
+    public static final int accessibility_custom_action_23=0x7f09001c;
+    public static final int accessibility_custom_action_24=0x7f09001d;
+    public static final int accessibility_custom_action_25=0x7f09001e;
+    public static final int accessibility_custom_action_26=0x7f09001f;
+    public static final int accessibility_custom_action_27=0x7f090020;
+    public static final int accessibility_custom_action_28=0x7f090021;
+    public static final int accessibility_custom_action_29=0x7f090022;
+    public static final int accessibility_custom_action_3=0x7f090023;
+    public static final int accessibility_custom_action_30=0x7f090024;
+    public static final int accessibility_custom_action_31=0x7f090025;
+    public static final int accessibility_custom_action_4=0x7f090026;
+    public static final int accessibility_custom_action_5=0x7f090027;
+    public static final int accessibility_custom_action_6=0x7f090028;
+    public static final int accessibility_custom_action_7=0x7f090029;
+    public static final int accessibility_custom_action_8=0x7f09002a;
+    public static final int accessibility_custom_action_9=0x7f09002b;
+    public static final int action0=0x7f09002c;
+    public static final int actionDone=0x7f09002d;
+    public static final int actionGo=0x7f09002e;
+    public static final int actionNext=0x7f09002f;
+    public static final int actionNone=0x7f090030;
+    public static final int actionPrevious=0x7f090031;
+    public static final int actionSearch=0x7f090032;
+    public static final int actionSend=0x7f090033;
+    public static final int actionUnspecified=0x7f090034;
+    public static final int action_bar=0x7f090035;
+    public static final int action_bar_activity_content=0x7f090036;
+    public static final int action_bar_container=0x7f090037;
+    public static final int action_bar_root=0x7f090038;
+    public static final int action_bar_spinner=0x7f090039;
+    public static final int action_bar_subtitle=0x7f09003a;
+    public static final int action_bar_title=0x7f09003b;
+    public static final int action_container=0x7f09003c;
+    public static final int action_context_bar=0x7f09003d;
+    public static final int action_divider=0x7f09003e;
+    public static final int action_image=0x7f09003f;
+    public static final int action_menu_divider=0x7f090040;
+    public static final int action_menu_presenter=0x7f090041;
+    public static final int action_mode_bar=0x7f090042;
+    public static final int action_mode_bar_stub=0x7f090043;
+    public static final int action_mode_close_button=0x7f090044;
+    public static final int action_text=0x7f090045;
+    public static final int actions=0x7f090046;
+    public static final int activity_chooser_view_content=0x7f090047;
+    public static final int add=0x7f090048;
+    public static final int adjust_height=0x7f090049;
+    public static final int adjust_width=0x7f09004a;
+    public static final int alertTitle=0x7f09004b;
+    public static final int aligned=0x7f09004c;
+    public static final int all=0x7f09004d;
+    public static final int always=0x7f09004e;
+    public static final int animateToEnd=0x7f09004f;
+    public static final int animateToStart=0x7f090050;
+    public static final int asConfigured=0x7f090051;
+    public static final int async=0x7f090052;
+    public static final int auto=0x7f090053;
+    public static final int autoComplete=0x7f090054;
+    public static final int autoCompleteToEnd=0x7f090055;
+    public static final int autoCompleteToStart=0x7f090056;
+    public static final int barrier=0x7f090057;
+    public static final int baseline=0x7f090058;
+    public static final int beginning=0x7f090059;
+    public static final int bevel=0x7f09005a;
+    public static final int blocking=0x7f09005b;
+    public static final int bold=0x7f09005c;
+    public static final int bottom=0x7f09005d;
+    public static final int bounce=0x7f09005e;
+    public static final int butt=0x7f09005f;
+    public static final int button=0x7f090060;
+    public static final int button2=0x7f090061;
+    public static final int button3=0x7f090062;
+    public static final int buttonPanel=0x7f090063;
+    public static final int cancel_action=0x7f090064;
+    public static final int center=0x7f090065;
+    public static final int center_horizontal=0x7f090066;
+    public static final int center_vertical=0x7f090067;
+    public static final int chain=0x7f090068;
+    public static final int chains=0x7f090069;
+    public static final int checkbox=0x7f09006a;
+    public static final int checked=0x7f09006b;
+    public static final int chronometer=0x7f09006c;
+    public static final int clip_horizontal=0x7f09006d;
+    public static final int clip_vertical=0x7f09006e;
+    public static final int collapseActionView=0x7f09006f;
+    public static final int container=0x7f090070;
+    public static final int content=0x7f090071;
+    public static final int contentPanel=0x7f090072;
+    public static final int cos=0x7f090073;
+    public static final int custom=0x7f090074;
+    public static final int customPanel=0x7f090075;
+    public static final int dark=0x7f090076;
+    public static final int date=0x7f090077;
+    public static final int datetime=0x7f090078;
+    public static final int debug_overlay=0x7f090079;
+    public static final int decelerate=0x7f09007a;
+    public static final int decelerateAndComplete=0x7f09007b;
+    public static final int decor_content_parent=0x7f09007c;
+    public static final int default_activity_button=0x7f09007d;
+    public static final int deltaRelative=0x7f09007e;
+    public static final int dialog_button=0x7f09007f;
+    public static final int dimensions=0x7f090080;
+    public static final int direct=0x7f090081;
+    public static final int disableHome=0x7f090082;
+    public static final int dragDown=0x7f090083;
+    public static final int dragLeft=0x7f090084;
+    public static final int dragRight=0x7f090085;
+    public static final int dragUp=0x7f090086;
+    public static final int easeIn=0x7f090087;
+    public static final int easeInOut=0x7f090088;
+    public static final int easeOut=0x7f090089;
+    public static final int edit_query=0x7f09008a;
+    public static final int end=0x7f09008b;
+    public static final int end_padder=0x7f09008c;
+    public static final int expand_activities_button=0x7f09008d;
+    public static final int expanded_menu=0x7f09008e;
+    public static final int fill=0x7f09008f;
+    public static final int fill_horizontal=0x7f090090;
+    public static final int fill_vertical=0x7f090091;
+    public static final int flagForceAscii=0x7f090092;
+    public static final int flagNavigateNext=0x7f090093;
+    public static final int flagNavigatePrevious=0x7f090094;
+    public static final int flagNoAccessoryAction=0x7f090095;
+    public static final int flagNoEnterAction=0x7f090096;
+    public static final int flagNoExtractUi=0x7f090097;
+    public static final int flagNoFullscreen=0x7f090098;
+    public static final int flip=0x7f090099;
+    public static final int forever=0x7f09009a;
+    public static final int gone=0x7f09009b;
+    public static final int graph=0x7f09009c;
+    public static final int graph_wrap=0x7f09009d;
+    public static final int group_divider=0x7f09009e;
+    public static final int groups=0x7f09009f;
+    public static final int home=0x7f0900a0;
+    public static final int homeAsUp=0x7f0900a1;
+    public static final int icon=0x7f0900a2;
+    public static final int icon_group=0x7f0900a3;
+    public static final int icon_only=0x7f0900a4;
+    public static final int ifRoom=0x7f0900a5;
+    public static final int ignore=0x7f0900a6;
+    public static final int image=0x7f0900a7;
+    public static final int imageView2=0x7f0900a8;
+    public static final int info=0x7f0900a9;
+    public static final int invisible=0x7f0900aa;
+    public static final int italic=0x7f0900ab;
+    public static final int jumpToEnd=0x7f0900ac;
+    public static final int jumpToStart=0x7f0900ad;
+    public static final int layout=0x7f0900ae;
+    public static final int left=0x7f0900af;
+    public static final int light=0x7f0900b0;
+    public static final int line1=0x7f0900b1;
+    public static final int line3=0x7f0900b2;
+    public static final int linear=0x7f0900b3;
+    public static final int listMode=0x7f0900b4;
+    public static final int list_item=0x7f0900b5;
+    public static final int locationvalue=0x7f0900b6;
+    public static final int logo=0x7f0900b7;
+    public static final int logout=0x7f0900b8;
+    public static final int media_actions=0x7f0900b9;
+    public static final int message=0x7f0900ba;
+    public static final int middle=0x7f0900bb;
+    public static final int miter=0x7f0900bc;
+    public static final int motion_base=0x7f0900bd;
+    public static final int multiply=0x7f0900be;
+    public static final int never=0x7f0900bf;
+    public static final int none=0x7f0900c0;
+    public static final int normal=0x7f0900c1;
+    public static final int notification_background=0x7f0900c2;
+    public static final int notification_main_column=0x7f0900c3;
+    public static final int notification_main_column_container=0x7f0900c4;
+    public static final int number=0x7f0900c5;
+    public static final int numberDecimal=0x7f0900c6;
+    public static final int numberPassword=0x7f0900c7;
+    public static final int numberSigned=0x7f0900c8;
+    public static final int off=0x7f0900c9;
+    public static final int on=0x7f0900ca;
+    public static final int packed=0x7f0900cb;
+    public static final int parent=0x7f0900cc;
+    public static final int parentPanel=0x7f0900cd;
+    public static final int parentRelative=0x7f0900ce;
+    public static final int path=0x7f0900cf;
+    public static final int pathRelative=0x7f0900d0;
+    public static final int percent=0x7f0900d1;
+    public static final int phone=0x7f0900d2;
+    public static final int position=0x7f0900d3;
+    public static final int postLayout=0x7f0900d4;
+    public static final int progress_circular=0x7f0900d5;
+    public static final int progress_horizontal=0x7f0900d6;
+    public static final int radio=0x7f0900d7;
+    public static final int ratio=0x7f0900d8;
+    public static final int rectangles=0x7f0900d9;
+    public static final int reverseSawtooth=0x7f0900da;
+    public static final int right=0x7f0900db;
+    public static final int right_icon=0x7f0900dc;
+    public static final int right_side=0x7f0900dd;
+    public static final int robotoBlack=0x7f0900de;
+    public static final int robotoBlackItalic=0x7f0900df;
+    public static final int robotoBold=0x7f0900e0;
+    public static final int robotoBoldCondensed=0x7f0900e1;
+    public static final int robotoBoldCondensedItalic=0x7f0900e2;
+    public static final int robotoBoldItalic=0x7f0900e3;
+    public static final int robotoCondensed=0x7f0900e4;
+    public static final int robotoCondensedItalic=0x7f0900e5;
+    public static final int robotoItalic=0x7f0900e6;
+    public static final int robotoLight=0x7f0900e7;
+    public static final int robotoLightItalic=0x7f0900e8;
+    public static final int robotoMedium=0x7f0900e9;
+    public static final int robotoMediumItalic=0x7f0900ea;
+    public static final int robotoRegular=0x7f0900eb;
+    public static final int robotoThin=0x7f0900ec;
+    public static final int robotoThinItalic=0x7f0900ed;
+    public static final int round=0x7f0900ee;
+    public static final int sawtooth=0x7f0900ef;
+    public static final int screen=0x7f0900f0;
+    public static final int scrollIndicatorDown=0x7f0900f1;
+    public static final int scrollIndicatorUp=0x7f0900f2;
+    public static final int scrollView=0x7f0900f3;
+    public static final int scrollview=0x7f0900f4;
+    public static final int search_badge=0x7f0900f5;
+    public static final int search_bar=0x7f0900f6;
+    public static final int search_button=0x7f0900f7;
+    public static final int search_close_btn=0x7f0900f8;
+    public static final int search_edit_frame=0x7f0900f9;
+    public static final int search_go_btn=0x7f0900fa;
+    public static final int search_mag_icon=0x7f0900fb;
+    public static final int search_plate=0x7f0900fc;
+    public static final int search_src_text=0x7f0900fd;
+    public static final int search_voice_btn=0x7f0900fe;
+    public static final int select_dialog_listview=0x7f0900ff;
+    public static final int shortcut=0x7f090100;
+    public static final int showCustom=0x7f090101;
+    public static final int showHome=0x7f090102;
+    public static final int showTitle=0x7f090103;
+    public static final int sin=0x7f090104;
+    public static final int spacer=0x7f090105;
+    public static final int spline=0x7f090106;
+    public static final int split_action_bar=0x7f090107;
+    public static final int spread=0x7f090108;
+    public static final int spread_inside=0x7f090109;
+    public static final int square=0x7f09010a;
+    public static final int src_atop=0x7f09010b;
+    public static final int src_in=0x7f09010c;
+    public static final int src_over=0x7f09010d;
+    public static final int standard=0x7f09010e;
+    public static final int start=0x7f09010f;
+    public static final int startHorizontal=0x7f090110;
+    public static final int startVertical=0x7f090111;
+    public static final int staticLayout=0x7f090112;
+    public static final int staticPostLayout=0x7f090113;
+    public static final int status_bar_latest_event_content=0x7f090114;
+    public static final int stop=0x7f090115;
+    public static final int stroke=0x7f090116;
+    public static final int submenuarrow=0x7f090117;
+    public static final int submit_area=0x7f090118;
+    public static final int tabMode=0x7f090119;
+    public static final int tag_accessibility_actions=0x7f09011a;
+    public static final int tag_accessibility_clickable_spans=0x7f09011b;
+    public static final int tag_accessibility_heading=0x7f09011c;
+    public static final int tag_accessibility_pane_title=0x7f09011d;
+    public static final int tag_screen_reader_focusable=0x7f09011e;
+    public static final int tag_transition_group=0x7f09011f;
+    public static final int tag_unhandled_key_event_manager=0x7f090120;
+    public static final int tag_unhandled_key_listeners=0x7f090121;
+    public static final int text=0x7f090122;
+    public static final int text2=0x7f090123;
+    public static final int textAutoComplete=0x7f090124;
+    public static final int textAutoCorrect=0x7f090125;
+    public static final int textCapCharacters=0x7f090126;
+    public static final int textCapSentences=0x7f090127;
+    public static final int textCapWords=0x7f090128;
+    public static final int textEmailAddress=0x7f090129;
+    public static final int textEmailSubject=0x7f09012a;
+    public static final int textFilter=0x7f09012b;
+    public static final int textImeMultiLine=0x7f09012c;
+    public static final int textLongMessage=0x7f09012d;
+    public static final int textMultiLine=0x7f09012e;
+    public static final int textNoSuggestions=0x7f09012f;
+    public static final int textPassword=0x7f090130;
+    public static final int textPersonName=0x7f090131;
+    public static final int textPhonetic=0x7f090132;
+    public static final int textPostalAddress=0x7f090133;
+    public static final int textShortMessage=0x7f090134;
+    public static final int textSpacerNoButtons=0x7f090135;
+    public static final int textSpacerNoTitle=0x7f090136;
+    public static final int textUri=0x7f090137;
+    public static final int textView=0x7f090138;
+    public static final int textVisiblePassword=0x7f090139;
+    public static final int textWebEditText=0x7f09013a;
+    public static final int textWebEmailAddress=0x7f09013b;
+    public static final int textWebPassword=0x7f09013c;
+    public static final int texture=0x7f09013d;
+    public static final int the_layout=0x7f09013e;
+    public static final int time=0x7f09013f;
+    public static final int title=0x7f090140;
+    public static final int titleDividerNoCustom=0x7f090141;
+    public static final int title_template=0x7f090142;
+    public static final int toggle=0x7f090143;
+    public static final int top=0x7f090144;
+    public static final int topPanel=0x7f090145;
+    public static final int tracking_overlay=0x7f090146;
+    public static final int transitionToEnd=0x7f090147;
+    public static final int transitionToStart=0x7f090148;
+    public static final int triangle=0x7f090149;
+    public static final int unchecked=0x7f09014a;
+    public static final int uniform=0x7f09014b;
+    public static final int up=0x7f09014c;
+    public static final int useLogo=0x7f09014d;
+    public static final int visible=0x7f09014e;
+    public static final int wide=0x7f09014f;
+    public static final int withText=0x7f090150;
+    public static final int wrap=0x7f090151;
+    public static final int wrap_content=0x7f090152;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;
@@ -4578,27 +5578,31 @@ public final class R {
     public static final int abc_select_dialog_material=0x7f0c001a;
     public static final int abc_tooltip=0x7f0c001b;
     public static final int activity_camera=0x7f0c001c;
-    public static final int camera_connection_fragment_tracking=0x7f0c001d;
-    public static final int custom_dialog=0x7f0c001e;
-    public static final int notification_action=0x7f0c001f;
-    public static final int notification_action_tombstone=0x7f0c0020;
-    public static final int notification_media_action=0x7f0c0021;
-    public static final int notification_media_cancel_action=0x7f0c0022;
-    public static final int notification_template_big_media=0x7f0c0023;
-    public static final int notification_template_big_media_custom=0x7f0c0024;
-    public static final int notification_template_big_media_narrow=0x7f0c0025;
-    public static final int notification_template_big_media_narrow_custom=0x7f0c0026;
-    public static final int notification_template_custom_big=0x7f0c0027;
-    public static final int notification_template_icon_group=0x7f0c0028;
-    public static final int notification_template_lines_media=0x7f0c0029;
-    public static final int notification_template_media=0x7f0c002a;
-    public static final int notification_template_media_custom=0x7f0c002b;
-    public static final int notification_template_part_chronometer=0x7f0c002c;
-    public static final int notification_template_part_time=0x7f0c002d;
-    public static final int select_dialog_item_material=0x7f0c002e;
-    public static final int select_dialog_multichoice_material=0x7f0c002f;
-    public static final int select_dialog_singlechoice_material=0x7f0c0030;
-    public static final int support_simple_spinner_dropdown_item=0x7f0c0031;
+    public static final int activity_history=0x7f0c001d;
+    public static final int activity_main=0x7f0c001e;
+    public static final int activity_one_shot_camera=0x7f0c001f;
+    public static final int activity_splash=0x7f0c0020;
+    public static final int camera_connection_fragment_tracking=0x7f0c0021;
+    public static final int custom_dialog=0x7f0c0022;
+    public static final int notification_action=0x7f0c0023;
+    public static final int notification_action_tombstone=0x7f0c0024;
+    public static final int notification_media_action=0x7f0c0025;
+    public static final int notification_media_cancel_action=0x7f0c0026;
+    public static final int notification_template_big_media=0x7f0c0027;
+    public static final int notification_template_big_media_custom=0x7f0c0028;
+    public static final int notification_template_big_media_narrow=0x7f0c0029;
+    public static final int notification_template_big_media_narrow_custom=0x7f0c002a;
+    public static final int notification_template_custom_big=0x7f0c002b;
+    public static final int notification_template_icon_group=0x7f0c002c;
+    public static final int notification_template_lines_media=0x7f0c002d;
+    public static final int notification_template_media=0x7f0c002e;
+    public static final int notification_template_media_custom=0x7f0c002f;
+    public static final int notification_template_part_chronometer=0x7f0c0030;
+    public static final int notification_template_part_time=0x7f0c0031;
+    public static final int select_dialog_item_material=0x7f0c0032;
+    public static final int select_dialog_multichoice_material=0x7f0c0033;
+    public static final int select_dialog_singlechoice_material=0x7f0c0034;
+    public static final int support_simple_spinner_dropdown_item=0x7f0c0035;
   }
   public static final class menu {
     public static final int main=0x7f0d0000;
@@ -4693,42 +5697,46 @@ public final class R {
     public static final int login=0x7f0f0050;
     public static final int login_failed=0x7f0f0051;
     public static final int login_succed=0x7f0f0052;
-    public static final int logocamera=0x7f0f0053;
-    public static final int logout=0x7f0f0054;
-    public static final int lorem_ipsum_long=0x7f0f0055;
-    public static final int lorem_ipsum_short=0x7f0f0056;
-    public static final int material_icon_favorite=0x7f0f0057;
-    public static final int material_icon_like=0x7f0f0058;
-    public static final int material_icon_message=0x7f0f0059;
-    public static final int material_icon_share=0x7f0f005a;
-    public static final int material_icon_star_outline=0x7f0f005b;
-    public static final int menu_msg=0x7f0f005c;
-    public static final int no=0x7f0f005d;
-    public static final int ok=0x7f0f005e;
-    public static final int password=0x7f0f005f;
-    public static final int project_id=0x7f0f0060;
-    public static final int rate=0x7f0f0061;
-    public static final int rate_msg=0x7f0f0062;
-    public static final int rationale_ask_again=0x7f0f0063;
-    public static final int rationale_video_app=0x7f0f0064;
-    public static final int register=0x7f0f0065;
-    public static final int register_failed=0x7f0f0066;
-    public static final int register_succed=0x7f0f0067;
-    public static final int request_permission=0x7f0f0068;
-    public static final int search_menu_title=0x7f0f0069;
-    public static final int setting=0x7f0f006a;
-    public static final int status_bar_notification_info_overflow=0x7f0f006b;
-    public static final int tab_about=0x7f0f006c;
-    public static final int tab_gift=0x7f0f006d;
-    public static final int tab_offer=0x7f0f006e;
-    public static final int title_settings_dialog=0x7f0f006f;
-    public static final int username=0x7f0f0070;
-    public static final int video=0x7f0f0071;
-    public static final int volunteer_added=0x7f0f0072;
-    public static final int volunteer_btn=0x7f0f0073;
-    public static final int welcome=0x7f0f0074;
-    public static final int yes=0x7f0f0075;
-    public static final int your_email=0x7f0f0076;
+    public static final int logo=0x7f0f0053;
+    public static final int logocamera=0x7f0f0054;
+    public static final int logout=0x7f0f0055;
+    public static final int lorem_ipsum_long=0x7f0f0056;
+    public static final int lorem_ipsum_short=0x7f0f0057;
+    public static final int main_button_cont_scan=0x7f0f0058;
+    public static final int main_button_history=0x7f0f0059;
+    public static final int main_button_one_scan=0x7f0f005a;
+    public static final int material_icon_favorite=0x7f0f005b;
+    public static final int material_icon_like=0x7f0f005c;
+    public static final int material_icon_message=0x7f0f005d;
+    public static final int material_icon_share=0x7f0f005e;
+    public static final int material_icon_star_outline=0x7f0f005f;
+    public static final int menu_msg=0x7f0f0060;
+    public static final int no=0x7f0f0061;
+    public static final int ok=0x7f0f0062;
+    public static final int password=0x7f0f0063;
+    public static final int project_id=0x7f0f0064;
+    public static final int rate=0x7f0f0065;
+    public static final int rate_msg=0x7f0f0066;
+    public static final int rationale_ask_again=0x7f0f0067;
+    public static final int rationale_video_app=0x7f0f0068;
+    public static final int register=0x7f0f0069;
+    public static final int register_failed=0x7f0f006a;
+    public static final int register_succed=0x7f0f006b;
+    public static final int request_permission=0x7f0f006c;
+    public static final int search_menu_title=0x7f0f006d;
+    public static final int setting=0x7f0f006e;
+    public static final int status_bar_notification_info_overflow=0x7f0f006f;
+    public static final int tab_about=0x7f0f0070;
+    public static final int tab_gift=0x7f0f0071;
+    public static final int tab_offer=0x7f0f0072;
+    public static final int title_settings_dialog=0x7f0f0073;
+    public static final int username=0x7f0f0074;
+    public static final int video=0x7f0f0075;
+    public static final int volunteer_added=0x7f0f0076;
+    public static final int volunteer_btn=0x7f0f0077;
+    public static final int welcome=0x7f0f0078;
+    public static final int yes=0x7f0f0079;
+    public static final int your_email=0x7f0f007a;
   }
   public static final class style {
     public static final int ActionBarOverlay_Transparent=0x7f100000;
@@ -5203,14 +6211,14 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-      0x7f040031, 0x7f040032, 0x7f040033, 0x7f040064, 
-      0x7f040065, 0x7f040066, 0x7f040067, 0x7f040068, 
-      0x7f040069, 0x7f04007d, 0x7f040083, 0x7f040084, 
-      0x7f040097, 0x7f0400b5, 0x7f0400b6, 0x7f0400b7, 
-      0x7f0400b8, 0x7f0400b9, 0x7f0400c0, 0x7f0400c4, 
-      0x7f040111, 0x7f04011b, 0x7f040126, 0x7f040129, 
-      0x7f04012a, 0x7f040174, 0x7f040177, 0x7f040196, 
-      0x7f04019f
+      0x7f040037, 0x7f040038, 0x7f040039, 0x7f040071, 
+      0x7f040072, 0x7f040073, 0x7f040074, 0x7f040075, 
+      0x7f040076, 0x7f040094, 0x7f0400a1, 0x7f0400a2, 
+      0x7f0400b9, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 
+      0x7f0400ed, 0x7f0400ee, 0x7f0400f5, 0x7f0400f9, 
+      0x7f040149, 0x7f040168, 0x7f040185, 0x7f040189, 
+      0x7f04018a, 0x7f0401de, 0x7f0401e1, 0x7f040204, 
+      0x7f04020d
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#background}
@@ -5680,8 +6688,8 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-      0x7f040031, 0x7f040032, 0x7f040050, 0x7f0400b5, 
-      0x7f040177, 0x7f04019f
+      0x7f040037, 0x7f040038, 0x7f04005a, 0x7f0400ea, 
+      0x7f0401e1, 0x7f04020d
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#background}
@@ -5773,7 +6781,7 @@ public final class R {
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-      0x7f040099, 0x7f0400c1
+      0x7f0400ba, 0x7f0400f6
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#expandActivityOverflowButtonDrawable}
@@ -5823,8 +6831,8 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-      0x010100f2, 0x7f040043, 0x7f040044, 0x7f040106, 
-      0x7f040107, 0x7f040118, 0x7f04015b, 0x7f040169
+      0x010100f2, 0x7f04004b, 0x7f04004c, 0x7f04013e, 
+      0x7f04013f, 0x7f040165, 0x7f0401c3, 0x7f0401d1
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -6128,7 +7136,7 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-      0x01010119, 0x7f04016f, 0x7f040194, 0x7f040195
+      0x01010119, 0x7f0401d8, 0x7f040202, 0x7f040203
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -6207,7 +7215,7 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-      0x01010142, 0x7f040191, 0x7f040192, 0x7f040193
+      0x01010142, 0x7f0401ff, 0x7f040200, 0x7f040201
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -6446,12 +7454,12 @@ public final class R {
      * @see #AppCompatTextView_textLocale
      */
     public static final int[] AppCompatTextView={
-      0x01010034, 0x7f04002c, 0x7f04002d, 0x7f04002e, 
-      0x7f04002f, 0x7f040030, 0x7f040088, 0x7f040089, 
-      0x7f04008a, 0x7f04008b, 0x7f04008d, 0x7f04008e, 
-      0x7f04008f, 0x7f040090, 0x7f04009a, 0x7f0400a8, 
-      0x7f0400b0, 0x7f0400c6, 0x7f040100, 0x7f04017e, 
-      0x7f04018a
+      0x01010034, 0x7f040031, 0x7f040032, 0x7f040033, 
+      0x7f040034, 0x7f040035, 0x7f0400a9, 0x7f0400aa, 
+      0x7f0400ab, 0x7f0400ac, 0x7f0400ae, 0x7f0400af, 
+      0x7f0400b0, 0x7f0400b1, 0x7f0400bb, 0x7f0400dc, 
+      0x7f0400e4, 0x7f0400fc, 0x7f040138, 0x7f0401ec, 
+      0x7f0401f8
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -6989,29 +7997,29 @@ public final class R {
       0x7f040017, 0x7f040018, 0x7f040019, 0x7f04001a, 
       0x7f04001b, 0x7f04001c, 0x7f04001d, 0x7f04001e, 
       0x7f040021, 0x7f040022, 0x7f040023, 0x7f040024, 
-      0x7f040025, 0x7f04002b, 0x7f04003b, 0x7f04003c, 
-      0x7f04003d, 0x7f04003e, 0x7f04003f, 0x7f040040, 
-      0x7f040046, 0x7f040047, 0x7f04004b, 0x7f04004c, 
-      0x7f040054, 0x7f040055, 0x7f040056, 0x7f040057, 
-      0x7f040058, 0x7f040059, 0x7f04005a, 0x7f04005b, 
-      0x7f04005c, 0x7f04005e, 0x7f04006d, 0x7f040080, 
-      0x7f040081, 0x7f040082, 0x7f040085, 0x7f040087, 
-      0x7f040092, 0x7f040093, 0x7f040094, 0x7f040095, 
-      0x7f040096, 0x7f0400b7, 0x7f0400bf, 0x7f040102, 
-      0x7f040103, 0x7f040104, 0x7f040105, 0x7f040108, 
-      0x7f040109, 0x7f04010a, 0x7f04010b, 0x7f04010c, 
-      0x7f04010d, 0x7f04010e, 0x7f04010f, 0x7f040110, 
-      0x7f040122, 0x7f040123, 0x7f040124, 0x7f040125, 
-      0x7f040127, 0x7f04013f, 0x7f040141, 0x7f040142, 
-      0x7f040143, 0x7f040154, 0x7f040155, 0x7f040156, 
-      0x7f040157, 0x7f04016c, 0x7f04016d, 0x7f04017b, 
-      0x7f04017f, 0x7f040180, 0x7f040181, 0x7f040182, 
-      0x7f040183, 0x7f040184, 0x7f040185, 0x7f040186, 
-      0x7f040188, 0x7f040189, 0x7f0401a0, 0x7f0401a1, 
-      0x7f0401a2, 0x7f0401a3, 0x7f0401aa, 0x7f0401ac, 
-      0x7f0401ad, 0x7f0401ae, 0x7f0401af, 0x7f0401b0, 
-      0x7f0401b1, 0x7f0401b2, 0x7f0401b3, 0x7f0401b4, 
-      0x7f0401b5
+      0x7f040025, 0x7f040030, 0x7f040042, 0x7f040044, 
+      0x7f040045, 0x7f040046, 0x7f040047, 0x7f040048, 
+      0x7f04004e, 0x7f04004f, 0x7f040053, 0x7f040054, 
+      0x7f04005e, 0x7f04005f, 0x7f040060, 0x7f040061, 
+      0x7f040062, 0x7f040063, 0x7f040064, 0x7f040065, 
+      0x7f040066, 0x7f040068, 0x7f04007b, 0x7f04009e, 
+      0x7f04009f, 0x7f0400a0, 0x7f0400a3, 0x7f0400a5, 
+      0x7f0400b3, 0x7f0400b4, 0x7f0400b6, 0x7f0400b7, 
+      0x7f0400b8, 0x7f0400ec, 0x7f0400f4, 0x7f04013a, 
+      0x7f04013b, 0x7f04013c, 0x7f04013d, 0x7f040140, 
+      0x7f040141, 0x7f040142, 0x7f040143, 0x7f040144, 
+      0x7f040145, 0x7f040146, 0x7f040147, 0x7f040148, 
+      0x7f040176, 0x7f040177, 0x7f040178, 0x7f040184, 
+      0x7f040186, 0x7f04019f, 0x7f0401a1, 0x7f0401a2, 
+      0x7f0401a3, 0x7f0401bb, 0x7f0401bc, 0x7f0401bd, 
+      0x7f0401be, 0x7f0401d5, 0x7f0401d6, 0x7f0401e5, 
+      0x7f0401ed, 0x7f0401ee, 0x7f0401ef, 0x7f0401f0, 
+      0x7f0401f1, 0x7f0401f2, 0x7f0401f3, 0x7f0401f4, 
+      0x7f0401f6, 0x7f0401f7, 0x7f04020e, 0x7f04020f, 
+      0x7f040210, 0x7f040211, 0x7f040221, 0x7f04022a, 
+      0x7f04022b, 0x7f04022c, 0x7f04022d, 0x7f04022e, 
+      0x7f04022f, 0x7f040230, 0x7f040231, 0x7f040232, 
+      0x7f040233
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -8572,7 +9580,7 @@ public final class R {
      * @see #ButtonBarContainerTheme_metaButtonBarStyle
      */
     public static final int[] ButtonBarContainerTheme={
-      0x7f040116, 0x7f040117
+      0x7f040152, 0x7f040153
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#metaButtonBarButtonStyle}
@@ -8660,10 +9668,10 @@ public final class R {
      * @see #CircularProgressButton_cpb_textProgress
      */
     public static final int[] CircularProgressButton={
-      0x7f04006f, 0x7f040070, 0x7f040071, 0x7f040072, 
-      0x7f040073, 0x7f040074, 0x7f040075, 0x7f040076, 
-      0x7f040077, 0x7f040078, 0x7f040079, 0x7f04007a, 
-      0x7f04007b, 0x7f04007c
+      0x7f04007d, 0x7f04007e, 0x7f04007f, 0x7f040080, 
+      0x7f040081, 0x7f040082, 0x7f040083, 0x7f040084, 
+      0x7f040085, 0x7f040086, 0x7f040087, 0x7f040088, 
+      0x7f040089, 0x7f04008a
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#cpb_colorIndicator}
@@ -8889,7 +9897,7 @@ public final class R {
      * @see #CompoundButton_buttonTintMode
      */
     public static final int[] CompoundButton={
-      0x01010107, 0x7f040041, 0x7f040048, 0x7f040049
+      0x01010107, 0x7f040049, 0x7f040050, 0x7f040051
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#button}
@@ -8948,6 +9956,1829 @@ public final class R {
      */
     public static final int CompoundButton_buttonTintMode=3;
     /**
+     * Attributes that can be used with a Constraint.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Constraint_android_orientation android:orientation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_id android:id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_visibility android:visibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_width android:layout_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_height android:layout_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_marginLeft android:layout_marginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_marginTop android:layout_marginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_marginRight android:layout_marginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_marginBottom android:layout_marginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_maxHeight android:maxHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_minWidth android:minWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_minHeight android:minHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_pivotX android:pivotX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_pivotY android:pivotY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_alpha android:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_transformPivotX android:transformPivotX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_transformPivotY android:transformPivotY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_translationX android:translationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_translationY android:translationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_scaleX android:scaleX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_scaleY android:scaleY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_rotation android:rotation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_rotationX android:rotationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_rotationY android:rotationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_marginStart android:layout_marginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_translationZ android:translationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_animate_relativeTo org.tensorflow.demo:animate_relativeTo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_barrierAllowsGoneWidgets org.tensorflow.demo:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_barrierDirection org.tensorflow.demo:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_barrierMargin org.tensorflow.demo:barrierMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_chainUseRtl org.tensorflow.demo:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_constraint_referenced_ids org.tensorflow.demo:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_drawPath org.tensorflow.demo:drawPath}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_firstHorizontalBias org.tensorflow.demo:flow_firstHorizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_firstHorizontalStyle org.tensorflow.demo:flow_firstHorizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_firstVerticalBias org.tensorflow.demo:flow_firstVerticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_firstVerticalStyle org.tensorflow.demo:flow_firstVerticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_horizontalAlign org.tensorflow.demo:flow_horizontalAlign}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_horizontalBias org.tensorflow.demo:flow_horizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_horizontalGap org.tensorflow.demo:flow_horizontalGap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_horizontalStyle org.tensorflow.demo:flow_horizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_lastHorizontalBias org.tensorflow.demo:flow_lastHorizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_lastHorizontalStyle org.tensorflow.demo:flow_lastHorizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_lastVerticalBias org.tensorflow.demo:flow_lastVerticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_lastVerticalStyle org.tensorflow.demo:flow_lastVerticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_maxElementsWrap org.tensorflow.demo:flow_maxElementsWrap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_verticalAlign org.tensorflow.demo:flow_verticalAlign}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_verticalBias org.tensorflow.demo:flow_verticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_verticalGap org.tensorflow.demo:flow_verticalGap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_verticalStyle org.tensorflow.demo:flow_verticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_flow_wrapMode org.tensorflow.demo:flow_wrapMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constrainedHeight org.tensorflow.demo:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constrainedWidth org.tensorflow.demo:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintBaseline_creator org.tensorflow.demo:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintBaseline_toBaselineOf org.tensorflow.demo:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintBottom_creator org.tensorflow.demo:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintBottom_toBottomOf org.tensorflow.demo:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintBottom_toTopOf org.tensorflow.demo:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintCircle org.tensorflow.demo:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintCircleAngle org.tensorflow.demo:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintCircleRadius org.tensorflow.demo:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintDimensionRatio org.tensorflow.demo:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintEnd_toEndOf org.tensorflow.demo:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintEnd_toStartOf org.tensorflow.demo:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintGuide_begin org.tensorflow.demo:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintGuide_end org.tensorflow.demo:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintGuide_percent org.tensorflow.demo:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHeight_default org.tensorflow.demo:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHeight_max org.tensorflow.demo:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHeight_min org.tensorflow.demo:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHeight_percent org.tensorflow.demo:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHorizontal_bias org.tensorflow.demo:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHorizontal_chainStyle org.tensorflow.demo:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintHorizontal_weight org.tensorflow.demo:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintLeft_creator org.tensorflow.demo:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintLeft_toLeftOf org.tensorflow.demo:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintLeft_toRightOf org.tensorflow.demo:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintRight_creator org.tensorflow.demo:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintRight_toLeftOf org.tensorflow.demo:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintRight_toRightOf org.tensorflow.demo:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintStart_toEndOf org.tensorflow.demo:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintStart_toStartOf org.tensorflow.demo:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintTag org.tensorflow.demo:layout_constraintTag}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintTop_creator org.tensorflow.demo:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintTop_toBottomOf org.tensorflow.demo:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintTop_toTopOf org.tensorflow.demo:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintVertical_bias org.tensorflow.demo:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintVertical_chainStyle org.tensorflow.demo:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintVertical_weight org.tensorflow.demo:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintWidth_default org.tensorflow.demo:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintWidth_max org.tensorflow.demo:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintWidth_min org.tensorflow.demo:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_constraintWidth_percent org.tensorflow.demo:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_editor_absoluteX org.tensorflow.demo:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_editor_absoluteY org.tensorflow.demo:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_goneMarginBottom org.tensorflow.demo:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_goneMarginEnd org.tensorflow.demo:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_goneMarginLeft org.tensorflow.demo:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_goneMarginRight org.tensorflow.demo:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_goneMarginStart org.tensorflow.demo:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_layout_goneMarginTop org.tensorflow.demo:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_motionStagger org.tensorflow.demo:motionStagger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_pathMotionArc org.tensorflow.demo:pathMotionArc}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_pivotAnchor org.tensorflow.demo:pivotAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_progress org.tensorflow.demo:progress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_transitionPathRotate org.tensorflow.demo:transitionPathRotate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Constraint_visibilityMode org.tensorflow.demo:visibilityMode}</code></td><td></td></tr>
+     * </table>
+     * @see #Constraint_android_orientation
+     * @see #Constraint_android_id
+     * @see #Constraint_android_visibility
+     * @see #Constraint_android_layout_width
+     * @see #Constraint_android_layout_height
+     * @see #Constraint_android_layout_marginLeft
+     * @see #Constraint_android_layout_marginTop
+     * @see #Constraint_android_layout_marginRight
+     * @see #Constraint_android_layout_marginBottom
+     * @see #Constraint_android_maxWidth
+     * @see #Constraint_android_maxHeight
+     * @see #Constraint_android_minWidth
+     * @see #Constraint_android_minHeight
+     * @see #Constraint_android_pivotX
+     * @see #Constraint_android_pivotY
+     * @see #Constraint_android_alpha
+     * @see #Constraint_android_transformPivotX
+     * @see #Constraint_android_transformPivotY
+     * @see #Constraint_android_translationX
+     * @see #Constraint_android_translationY
+     * @see #Constraint_android_scaleX
+     * @see #Constraint_android_scaleY
+     * @see #Constraint_android_rotation
+     * @see #Constraint_android_rotationX
+     * @see #Constraint_android_rotationY
+     * @see #Constraint_android_layout_marginStart
+     * @see #Constraint_android_layout_marginEnd
+     * @see #Constraint_android_translationZ
+     * @see #Constraint_android_elevation
+     * @see #Constraint_animate_relativeTo
+     * @see #Constraint_barrierAllowsGoneWidgets
+     * @see #Constraint_barrierDirection
+     * @see #Constraint_barrierMargin
+     * @see #Constraint_chainUseRtl
+     * @see #Constraint_constraint_referenced_ids
+     * @see #Constraint_drawPath
+     * @see #Constraint_flow_firstHorizontalBias
+     * @see #Constraint_flow_firstHorizontalStyle
+     * @see #Constraint_flow_firstVerticalBias
+     * @see #Constraint_flow_firstVerticalStyle
+     * @see #Constraint_flow_horizontalAlign
+     * @see #Constraint_flow_horizontalBias
+     * @see #Constraint_flow_horizontalGap
+     * @see #Constraint_flow_horizontalStyle
+     * @see #Constraint_flow_lastHorizontalBias
+     * @see #Constraint_flow_lastHorizontalStyle
+     * @see #Constraint_flow_lastVerticalBias
+     * @see #Constraint_flow_lastVerticalStyle
+     * @see #Constraint_flow_maxElementsWrap
+     * @see #Constraint_flow_verticalAlign
+     * @see #Constraint_flow_verticalBias
+     * @see #Constraint_flow_verticalGap
+     * @see #Constraint_flow_verticalStyle
+     * @see #Constraint_flow_wrapMode
+     * @see #Constraint_layout_constrainedHeight
+     * @see #Constraint_layout_constrainedWidth
+     * @see #Constraint_layout_constraintBaseline_creator
+     * @see #Constraint_layout_constraintBaseline_toBaselineOf
+     * @see #Constraint_layout_constraintBottom_creator
+     * @see #Constraint_layout_constraintBottom_toBottomOf
+     * @see #Constraint_layout_constraintBottom_toTopOf
+     * @see #Constraint_layout_constraintCircle
+     * @see #Constraint_layout_constraintCircleAngle
+     * @see #Constraint_layout_constraintCircleRadius
+     * @see #Constraint_layout_constraintDimensionRatio
+     * @see #Constraint_layout_constraintEnd_toEndOf
+     * @see #Constraint_layout_constraintEnd_toStartOf
+     * @see #Constraint_layout_constraintGuide_begin
+     * @see #Constraint_layout_constraintGuide_end
+     * @see #Constraint_layout_constraintGuide_percent
+     * @see #Constraint_layout_constraintHeight_default
+     * @see #Constraint_layout_constraintHeight_max
+     * @see #Constraint_layout_constraintHeight_min
+     * @see #Constraint_layout_constraintHeight_percent
+     * @see #Constraint_layout_constraintHorizontal_bias
+     * @see #Constraint_layout_constraintHorizontal_chainStyle
+     * @see #Constraint_layout_constraintHorizontal_weight
+     * @see #Constraint_layout_constraintLeft_creator
+     * @see #Constraint_layout_constraintLeft_toLeftOf
+     * @see #Constraint_layout_constraintLeft_toRightOf
+     * @see #Constraint_layout_constraintRight_creator
+     * @see #Constraint_layout_constraintRight_toLeftOf
+     * @see #Constraint_layout_constraintRight_toRightOf
+     * @see #Constraint_layout_constraintStart_toEndOf
+     * @see #Constraint_layout_constraintStart_toStartOf
+     * @see #Constraint_layout_constraintTag
+     * @see #Constraint_layout_constraintTop_creator
+     * @see #Constraint_layout_constraintTop_toBottomOf
+     * @see #Constraint_layout_constraintTop_toTopOf
+     * @see #Constraint_layout_constraintVertical_bias
+     * @see #Constraint_layout_constraintVertical_chainStyle
+     * @see #Constraint_layout_constraintVertical_weight
+     * @see #Constraint_layout_constraintWidth_default
+     * @see #Constraint_layout_constraintWidth_max
+     * @see #Constraint_layout_constraintWidth_min
+     * @see #Constraint_layout_constraintWidth_percent
+     * @see #Constraint_layout_editor_absoluteX
+     * @see #Constraint_layout_editor_absoluteY
+     * @see #Constraint_layout_goneMarginBottom
+     * @see #Constraint_layout_goneMarginEnd
+     * @see #Constraint_layout_goneMarginLeft
+     * @see #Constraint_layout_goneMarginRight
+     * @see #Constraint_layout_goneMarginStart
+     * @see #Constraint_layout_goneMarginTop
+     * @see #Constraint_motionStagger
+     * @see #Constraint_pathMotionArc
+     * @see #Constraint_pivotAnchor
+     * @see #Constraint_progress
+     * @see #Constraint_transitionEasing
+     * @see #Constraint_transitionPathRotate
+     * @see #Constraint_visibilityMode
+     */
+    public static final int[] Constraint={
+      0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
+      0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
+      0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
+      0x01010140, 0x010101b5, 0x010101b6, 0x0101031f, 
+      0x01010320, 0x01010321, 0x01010322, 0x01010323, 
+      0x01010324, 0x01010325, 0x01010326, 0x01010327, 
+      0x01010328, 0x010103b5, 0x010103b6, 0x010103fa, 
+      0x01010440, 0x7f04002a, 0x7f04003f, 0x7f040040, 
+      0x7f040041, 0x7f040052, 0x7f04006d, 0x7f0400a8, 
+      0x7f0400c8, 0x7f0400c9, 0x7f0400ca, 0x7f0400cb, 
+      0x7f0400cc, 0x7f0400cd, 0x7f0400ce, 0x7f0400cf, 
+      0x7f0400d0, 0x7f0400d1, 0x7f0400d2, 0x7f0400d3, 
+      0x7f0400d4, 0x7f0400d6, 0x7f0400d7, 0x7f0400d8, 
+      0x7f0400d9, 0x7f0400da, 0x7f040102, 0x7f040103, 
+      0x7f040104, 0x7f040105, 0x7f040106, 0x7f040107, 
+      0x7f040108, 0x7f040109, 0x7f04010a, 0x7f04010b, 
+      0x7f04010c, 0x7f04010d, 0x7f04010e, 0x7f04010f, 
+      0x7f040110, 0x7f040111, 0x7f040112, 0x7f040113, 
+      0x7f040114, 0x7f040115, 0x7f040116, 0x7f040117, 
+      0x7f040118, 0x7f040119, 0x7f04011a, 0x7f04011b, 
+      0x7f04011c, 0x7f04011d, 0x7f04011e, 0x7f04011f, 
+      0x7f040120, 0x7f040121, 0x7f040122, 0x7f040123, 
+      0x7f040124, 0x7f040125, 0x7f040126, 0x7f040127, 
+      0x7f040128, 0x7f040129, 0x7f04012a, 0x7f04012b, 
+      0x7f04012d, 0x7f04012e, 0x7f04012f, 0x7f040130, 
+      0x7f040131, 0x7f040132, 0x7f040133, 0x7f040134, 
+      0x7f040160, 0x7f040179, 0x7f040180, 0x7f040188, 
+      0x7f04021a, 0x7f04021b, 0x7f040222
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>horizontal</td><td>0</td><td></td></tr>
+     * <tr><td>vertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:orientation
+     */
+    public static final int Constraint_android_orientation=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name android:id
+     */
+    public static final int Constraint_android_id=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#visibility}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>2</td><td></td></tr>
+     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:visibility
+     */
+    public static final int Constraint_android_visibility=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_width}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:layout_width
+     */
+    public static final int Constraint_android_layout_width=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_height}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:layout_height
+     */
+    public static final int Constraint_android_layout_height=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginLeft}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginLeft
+     */
+    public static final int Constraint_android_layout_marginLeft=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginTop}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginTop
+     */
+    public static final int Constraint_android_layout_marginTop=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginRight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginRight
+     */
+    public static final int Constraint_android_layout_marginRight=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginBottom}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginBottom
+     */
+    public static final int Constraint_android_layout_marginBottom=8;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:maxWidth
+     */
+    public static final int Constraint_android_maxWidth=9;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#maxHeight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:maxHeight
+     */
+    public static final int Constraint_android_maxHeight=10;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minWidth
+     */
+    public static final int Constraint_android_minWidth=11;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minHeight
+     */
+    public static final int Constraint_android_minHeight=12;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#pivotX}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     *
+     * @attr name android:pivotX
+     */
+    public static final int Constraint_android_pivotX=13;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#pivotY}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     *
+     * @attr name android:pivotY
+     */
+    public static final int Constraint_android_pivotY=14;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#alpha}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:alpha
+     */
+    public static final int Constraint_android_alpha=15;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#transformPivotX}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:transformPivotX
+     */
+    public static final int Constraint_android_transformPivotX=16;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#transformPivotY}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:transformPivotY
+     */
+    public static final int Constraint_android_transformPivotY=17;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationX}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationX
+     */
+    public static final int Constraint_android_translationX=18;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationY}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationY
+     */
+    public static final int Constraint_android_translationY=19;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleX
+     */
+    public static final int Constraint_android_scaleX=20;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleY
+     */
+    public static final int Constraint_android_scaleY=21;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotation}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotation
+     */
+    public static final int Constraint_android_rotation=22;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationX
+     */
+    public static final int Constraint_android_rotationX=23;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationY
+     */
+    public static final int Constraint_android_rotationY=24;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginStart}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginStart
+     */
+    public static final int Constraint_android_layout_marginStart=25;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginEnd}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginEnd
+     */
+    public static final int Constraint_android_layout_marginEnd=26;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationZ
+     */
+    public static final int Constraint_android_translationZ=27;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#elevation}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:elevation
+     */
+    public static final int Constraint_android_elevation=28;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#animate_relativeTo}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:animate_relativeTo
+     */
+    public static final int Constraint_animate_relativeTo=29;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierAllowsGoneWidgets}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:barrierAllowsGoneWidgets
+     */
+    public static final int Constraint_barrierAllowsGoneWidgets=30;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierDirection}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>end</td><td>6</td><td></td></tr>
+     * <tr><td>left</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>5</td><td></td></tr>
+     * <tr><td>top</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:barrierDirection
+     */
+    public static final int Constraint_barrierDirection=31;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierMargin}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:barrierMargin
+     */
+    public static final int Constraint_barrierMargin=32;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#chainUseRtl}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:chainUseRtl
+     */
+    public static final int Constraint_chainUseRtl=33;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraint_referenced_ids}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:constraint_referenced_ids
+     */
+    public static final int Constraint_constraint_referenced_ids=34;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#drawPath}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>asConfigured</td><td>4</td><td></td></tr>
+     * <tr><td>deltaRelative</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>2</td><td></td></tr>
+     * <tr><td>rectangles</td><td>5</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:drawPath
+     */
+    public static final int Constraint_drawPath=35;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstHorizontalBias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_firstHorizontalBias
+     */
+    public static final int Constraint_flow_firstHorizontalBias=36;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstHorizontalStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_firstHorizontalStyle
+     */
+    public static final int Constraint_flow_firstHorizontalStyle=37;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstVerticalBias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_firstVerticalBias
+     */
+    public static final int Constraint_flow_firstVerticalBias=38;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstVerticalStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_firstVerticalStyle
+     */
+    public static final int Constraint_flow_firstVerticalStyle=39;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalAlign}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalAlign
+     */
+    public static final int Constraint_flow_horizontalAlign=40;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalBias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalBias
+     */
+    public static final int Constraint_flow_horizontalBias=41;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalGap}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalGap
+     */
+    public static final int Constraint_flow_horizontalGap=42;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalStyle
+     */
+    public static final int Constraint_flow_horizontalStyle=43;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastHorizontalBias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_lastHorizontalBias
+     */
+    public static final int Constraint_flow_lastHorizontalBias=44;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastHorizontalStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_lastHorizontalStyle
+     */
+    public static final int Constraint_flow_lastHorizontalStyle=45;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastVerticalBias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_lastVerticalBias
+     */
+    public static final int Constraint_flow_lastVerticalBias=46;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastVerticalStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_lastVerticalStyle
+     */
+    public static final int Constraint_flow_lastVerticalStyle=47;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_maxElementsWrap}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_maxElementsWrap
+     */
+    public static final int Constraint_flow_maxElementsWrap=48;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalAlign}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>baseline</td><td>3</td><td></td></tr>
+     * <tr><td>bottom</td><td>1</td><td></td></tr>
+     * <tr><td>center</td><td>2</td><td></td></tr>
+     * <tr><td>top</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_verticalAlign
+     */
+    public static final int Constraint_flow_verticalAlign=49;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalBias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_verticalBias
+     */
+    public static final int Constraint_flow_verticalBias=50;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalGap}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:flow_verticalGap
+     */
+    public static final int Constraint_flow_verticalGap=51;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_verticalStyle
+     */
+    public static final int Constraint_flow_verticalStyle=52;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_wrapMode}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>aligned</td><td>2</td><td></td></tr>
+     * <tr><td>chain</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_wrapMode
+     */
+    public static final int Constraint_flow_wrapMode=53;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedHeight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constrainedHeight
+     */
+    public static final int Constraint_layout_constrainedHeight=54;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedWidth}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constrainedWidth
+     */
+    public static final int Constraint_layout_constrainedWidth=55;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_creator}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBaseline_creator
+     */
+    public static final int Constraint_layout_constraintBaseline_creator=56;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_toBaselineOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBaseline_toBaselineOf
+     */
+    public static final int Constraint_layout_constraintBaseline_toBaselineOf=57;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_creator}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBottom_creator
+     */
+    public static final int Constraint_layout_constraintBottom_creator=58;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toBottomOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBottom_toBottomOf
+     */
+    public static final int Constraint_layout_constraintBottom_toBottomOf=59;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toTopOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBottom_toTopOf
+     */
+    public static final int Constraint_layout_constraintBottom_toTopOf=60;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintCircle
+     */
+    public static final int Constraint_layout_constraintCircle=61;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleAngle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintCircleAngle
+     */
+    public static final int Constraint_layout_constraintCircleAngle=62;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleRadius}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_constraintCircleRadius
+     */
+    public static final int Constraint_layout_constraintCircleRadius=63;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintDimensionRatio}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:layout_constraintDimensionRatio
+     */
+    public static final int Constraint_layout_constraintDimensionRatio=64;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toEndOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintEnd_toEndOf
+     */
+    public static final int Constraint_layout_constraintEnd_toEndOf=65;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toStartOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintEnd_toStartOf
+     */
+    public static final int Constraint_layout_constraintEnd_toStartOf=66;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_begin}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_constraintGuide_begin
+     */
+    public static final int Constraint_layout_constraintGuide_begin=67;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_end}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_constraintGuide_end
+     */
+    public static final int Constraint_layout_constraintGuide_end=68;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_percent}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintGuide_percent
+     */
+    public static final int Constraint_layout_constraintGuide_percent=69;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_default}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_default
+     */
+    public static final int Constraint_layout_constraintHeight_default=70;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_max}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_max
+     */
+    public static final int Constraint_layout_constraintHeight_max=71;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_min}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_min
+     */
+    public static final int Constraint_layout_constraintHeight_min=72;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_percent}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_percent
+     */
+    public static final int Constraint_layout_constraintHeight_percent=73;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_bias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHorizontal_bias
+     */
+    public static final int Constraint_layout_constraintHorizontal_bias=74;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_chainStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHorizontal_chainStyle
+     */
+    public static final int Constraint_layout_constraintHorizontal_chainStyle=75;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_weight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHorizontal_weight
+     */
+    public static final int Constraint_layout_constraintHorizontal_weight=76;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_creator}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintLeft_creator
+     */
+    public static final int Constraint_layout_constraintLeft_creator=77;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toLeftOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintLeft_toLeftOf
+     */
+    public static final int Constraint_layout_constraintLeft_toLeftOf=78;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toRightOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintLeft_toRightOf
+     */
+    public static final int Constraint_layout_constraintLeft_toRightOf=79;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_creator}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintRight_creator
+     */
+    public static final int Constraint_layout_constraintRight_creator=80;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toLeftOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintRight_toLeftOf
+     */
+    public static final int Constraint_layout_constraintRight_toLeftOf=81;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toRightOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintRight_toRightOf
+     */
+    public static final int Constraint_layout_constraintRight_toRightOf=82;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toEndOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintStart_toEndOf
+     */
+    public static final int Constraint_layout_constraintStart_toEndOf=83;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toStartOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintStart_toStartOf
+     */
+    public static final int Constraint_layout_constraintStart_toStartOf=84;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTag}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTag
+     */
+    public static final int Constraint_layout_constraintTag=85;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_creator}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTop_creator
+     */
+    public static final int Constraint_layout_constraintTop_creator=86;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toBottomOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTop_toBottomOf
+     */
+    public static final int Constraint_layout_constraintTop_toBottomOf=87;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toTopOf}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTop_toTopOf
+     */
+    public static final int Constraint_layout_constraintTop_toTopOf=88;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_bias}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintVertical_bias
+     */
+    public static final int Constraint_layout_constraintVertical_bias=89;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_chainStyle}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintVertical_chainStyle
+     */
+    public static final int Constraint_layout_constraintVertical_chainStyle=90;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_weight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintVertical_weight
+     */
+    public static final int Constraint_layout_constraintVertical_weight=91;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_default}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_default
+     */
+    public static final int Constraint_layout_constraintWidth_default=92;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_max}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_max
+     */
+    public static final int Constraint_layout_constraintWidth_max=93;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_min}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_min
+     */
+    public static final int Constraint_layout_constraintWidth_min=94;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_percent}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_percent
+     */
+    public static final int Constraint_layout_constraintWidth_percent=95;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteX}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_editor_absoluteX
+     */
+    public static final int Constraint_layout_editor_absoluteX=96;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteY}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_editor_absoluteY
+     */
+    public static final int Constraint_layout_editor_absoluteY=97;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginBottom}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginBottom
+     */
+    public static final int Constraint_layout_goneMarginBottom=98;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginEnd}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginEnd
+     */
+    public static final int Constraint_layout_goneMarginEnd=99;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginLeft}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginLeft
+     */
+    public static final int Constraint_layout_goneMarginLeft=100;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginRight}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginRight
+     */
+    public static final int Constraint_layout_goneMarginRight=101;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginStart}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginStart
+     */
+    public static final int Constraint_layout_goneMarginStart=102;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginTop}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginTop
+     */
+    public static final int Constraint_layout_goneMarginTop=103;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionStagger}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionStagger
+     */
+    public static final int Constraint_motionStagger=104;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pathMotionArc}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>flip</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>startHorizontal</td><td>2</td><td></td></tr>
+     * <tr><td>startVertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pathMotionArc
+     */
+    public static final int Constraint_pathMotionArc=105;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pivotAnchor}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pivotAnchor
+     */
+    public static final int Constraint_pivotAnchor=106;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#progress}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:progress
+     */
+    public static final int Constraint_progress=107;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int Constraint_transitionEasing=108;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionPathRotate}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:transitionPathRotate
+     */
+    public static final int Constraint_transitionPathRotate=109;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#visibilityMode}
+     * attribute's value can be found in the {@link #Constraint} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>ignore</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:visibilityMode
+     */
+    public static final int Constraint_visibilityMode=110;
+    /**
      * Attributes that can be used with a ConstraintLayout_Layout.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -8955,15 +11786,40 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_orientation android:orientation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_padding android:padding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_paddingLeft android:paddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_paddingTop android:paddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_paddingRight android:paddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_paddingBottom android:paddingBottom}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets org.tensorflow.demo:barrierAllowsGoneWidgets}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection org.tensorflow.demo:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierMargin org.tensorflow.demo:barrierMargin}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl org.tensorflow.demo:chainUseRtl}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet org.tensorflow.demo:constraintSet}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids org.tensorflow.demo:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_firstHorizontalBias org.tensorflow.demo:flow_firstHorizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_firstHorizontalStyle org.tensorflow.demo:flow_firstHorizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_firstVerticalBias org.tensorflow.demo:flow_firstVerticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_firstVerticalStyle org.tensorflow.demo:flow_firstVerticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_horizontalAlign org.tensorflow.demo:flow_horizontalAlign}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_horizontalBias org.tensorflow.demo:flow_horizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_horizontalGap org.tensorflow.demo:flow_horizontalGap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_horizontalStyle org.tensorflow.demo:flow_horizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_lastHorizontalBias org.tensorflow.demo:flow_lastHorizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_lastHorizontalStyle org.tensorflow.demo:flow_lastHorizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_lastVerticalBias org.tensorflow.demo:flow_lastVerticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_lastVerticalStyle org.tensorflow.demo:flow_lastVerticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_maxElementsWrap org.tensorflow.demo:flow_maxElementsWrap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_verticalAlign org.tensorflow.demo:flow_verticalAlign}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_verticalBias org.tensorflow.demo:flow_verticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_verticalGap org.tensorflow.demo:flow_verticalGap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_verticalStyle org.tensorflow.demo:flow_verticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_flow_wrapMode org.tensorflow.demo:flow_wrapMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layoutDescription org.tensorflow.demo:layoutDescription}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight org.tensorflow.demo:layout_constrainedHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth org.tensorflow.demo:layout_constrainedWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator org.tensorflow.demo:layout_constraintBaseline_creator}</code></td><td></td></tr>
@@ -8995,6 +11851,7 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf org.tensorflow.demo:layout_constraintRight_toRightOf}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf org.tensorflow.demo:layout_constraintStart_toEndOf}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf org.tensorflow.demo:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTag org.tensorflow.demo:layout_constraintTag}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator org.tensorflow.demo:layout_constraintTop_creator}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf org.tensorflow.demo:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf org.tensorflow.demo:layout_constraintTop_toTopOf}</code></td><td></td></tr>
@@ -9016,15 +11873,40 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel org.tensorflow.demo:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
+     * @see #ConstraintLayout_Layout_android_padding
+     * @see #ConstraintLayout_Layout_android_paddingLeft
+     * @see #ConstraintLayout_Layout_android_paddingTop
+     * @see #ConstraintLayout_Layout_android_paddingRight
+     * @see #ConstraintLayout_Layout_android_paddingBottom
      * @see #ConstraintLayout_Layout_android_maxWidth
      * @see #ConstraintLayout_Layout_android_maxHeight
      * @see #ConstraintLayout_Layout_android_minWidth
      * @see #ConstraintLayout_Layout_android_minHeight
      * @see #ConstraintLayout_Layout_barrierAllowsGoneWidgets
      * @see #ConstraintLayout_Layout_barrierDirection
+     * @see #ConstraintLayout_Layout_barrierMargin
      * @see #ConstraintLayout_Layout_chainUseRtl
      * @see #ConstraintLayout_Layout_constraintSet
      * @see #ConstraintLayout_Layout_constraint_referenced_ids
+     * @see #ConstraintLayout_Layout_flow_firstHorizontalBias
+     * @see #ConstraintLayout_Layout_flow_firstHorizontalStyle
+     * @see #ConstraintLayout_Layout_flow_firstVerticalBias
+     * @see #ConstraintLayout_Layout_flow_firstVerticalStyle
+     * @see #ConstraintLayout_Layout_flow_horizontalAlign
+     * @see #ConstraintLayout_Layout_flow_horizontalBias
+     * @see #ConstraintLayout_Layout_flow_horizontalGap
+     * @see #ConstraintLayout_Layout_flow_horizontalStyle
+     * @see #ConstraintLayout_Layout_flow_lastHorizontalBias
+     * @see #ConstraintLayout_Layout_flow_lastHorizontalStyle
+     * @see #ConstraintLayout_Layout_flow_lastVerticalBias
+     * @see #ConstraintLayout_Layout_flow_lastVerticalStyle
+     * @see #ConstraintLayout_Layout_flow_maxElementsWrap
+     * @see #ConstraintLayout_Layout_flow_verticalAlign
+     * @see #ConstraintLayout_Layout_flow_verticalBias
+     * @see #ConstraintLayout_Layout_flow_verticalGap
+     * @see #ConstraintLayout_Layout_flow_verticalStyle
+     * @see #ConstraintLayout_Layout_flow_wrapMode
+     * @see #ConstraintLayout_Layout_layoutDescription
      * @see #ConstraintLayout_Layout_layout_constrainedHeight
      * @see #ConstraintLayout_Layout_layout_constrainedWidth
      * @see #ConstraintLayout_Layout_layout_constraintBaseline_creator
@@ -9056,6 +11938,7 @@ public final class R {
      * @see #ConstraintLayout_Layout_layout_constraintRight_toRightOf
      * @see #ConstraintLayout_Layout_layout_constraintStart_toEndOf
      * @see #ConstraintLayout_Layout_layout_constraintStart_toStartOf
+     * @see #ConstraintLayout_Layout_layout_constraintTag
      * @see #ConstraintLayout_Layout_layout_constraintTop_creator
      * @see #ConstraintLayout_Layout_layout_constraintTop_toBottomOf
      * @see #ConstraintLayout_Layout_layout_constraintTop_toTopOf
@@ -9077,21 +11960,28 @@ public final class R {
      * @see #ConstraintLayout_Layout_layout_optimizationLevel
      */
     public static final int[] ConstraintLayout_Layout={
-      0x010100c4, 0x0101011f, 0x01010120, 0x0101013f, 
-      0x01010140, 0x7f040039, 0x7f04003a, 0x7f04004a, 
-      0x7f040060, 0x7f040061, 0x7f0400cb, 0x7f0400cc, 
-      0x7f0400cd, 0x7f0400ce, 0x7f0400cf, 0x7f0400d0, 
-      0x7f0400d1, 0x7f0400d2, 0x7f0400d3, 0x7f0400d4, 
-      0x7f0400d5, 0x7f0400d6, 0x7f0400d7, 0x7f0400d8, 
-      0x7f0400d9, 0x7f0400da, 0x7f0400db, 0x7f0400dc, 
-      0x7f0400dd, 0x7f0400de, 0x7f0400df, 0x7f0400e0, 
-      0x7f0400e1, 0x7f0400e2, 0x7f0400e3, 0x7f0400e4, 
-      0x7f0400e5, 0x7f0400e6, 0x7f0400e7, 0x7f0400e8, 
-      0x7f0400e9, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 
-      0x7f0400ed, 0x7f0400ee, 0x7f0400ef, 0x7f0400f0, 
-      0x7f0400f1, 0x7f0400f2, 0x7f0400f3, 0x7f0400f5, 
-      0x7f0400f6, 0x7f0400f7, 0x7f0400f8, 0x7f0400f9, 
-      0x7f0400fa, 0x7f0400fb, 0x7f0400fc, 0x7f0400ff
+      0x010100c4, 0x010100d5, 0x010100d6, 0x010100d7, 
+      0x010100d8, 0x010100d9, 0x0101011f, 0x01010120, 
+      0x0101013f, 0x01010140, 0x7f04003f, 0x7f040040, 
+      0x7f040041, 0x7f040052, 0x7f04006a, 0x7f04006d, 
+      0x7f0400c8, 0x7f0400c9, 0x7f0400ca, 0x7f0400cb, 
+      0x7f0400cc, 0x7f0400cd, 0x7f0400ce, 0x7f0400cf, 
+      0x7f0400d0, 0x7f0400d1, 0x7f0400d2, 0x7f0400d3, 
+      0x7f0400d4, 0x7f0400d6, 0x7f0400d7, 0x7f0400d8, 
+      0x7f0400d9, 0x7f0400da, 0x7f0400fe, 0x7f040102, 
+      0x7f040103, 0x7f040104, 0x7f040105, 0x7f040106, 
+      0x7f040107, 0x7f040108, 0x7f040109, 0x7f04010a, 
+      0x7f04010b, 0x7f04010c, 0x7f04010d, 0x7f04010e, 
+      0x7f04010f, 0x7f040110, 0x7f040111, 0x7f040112, 
+      0x7f040113, 0x7f040114, 0x7f040115, 0x7f040116, 
+      0x7f040117, 0x7f040118, 0x7f040119, 0x7f04011a, 
+      0x7f04011b, 0x7f04011c, 0x7f04011d, 0x7f04011e, 
+      0x7f04011f, 0x7f040120, 0x7f040121, 0x7f040122, 
+      0x7f040123, 0x7f040124, 0x7f040125, 0x7f040126, 
+      0x7f040127, 0x7f040128, 0x7f040129, 0x7f04012a, 
+      0x7f04012b, 0x7f04012d, 0x7f04012e, 0x7f04012f, 
+      0x7f040130, 0x7f040131, 0x7f040132, 0x7f040133, 
+      0x7f040134, 0x7f040137
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -9111,6 +12001,71 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_orientation=0;
     /**
+     * <p>This symbol is the offset where the {@link android.R.attr#padding}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:padding
+     */
+    public static final int ConstraintLayout_Layout_android_padding=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#paddingLeft}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:paddingLeft
+     */
+    public static final int ConstraintLayout_Layout_android_paddingLeft=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#paddingTop}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:paddingTop
+     */
+    public static final int ConstraintLayout_Layout_android_paddingTop=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#paddingRight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:paddingRight
+     */
+    public static final int ConstraintLayout_Layout_android_paddingRight=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#paddingBottom}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:paddingBottom
+     */
+    public static final int ConstraintLayout_Layout_android_paddingBottom=5;
+    /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
@@ -9122,7 +12077,7 @@ public final class R {
      *
      * @attr name android:maxWidth
      */
-    public static final int ConstraintLayout_Layout_android_maxWidth=1;
+    public static final int ConstraintLayout_Layout_android_maxWidth=6;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#maxHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9135,7 +12090,7 @@ public final class R {
      *
      * @attr name android:maxHeight
      */
-    public static final int ConstraintLayout_Layout_android_maxHeight=2;
+    public static final int ConstraintLayout_Layout_android_maxHeight=7;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9148,7 +12103,7 @@ public final class R {
      *
      * @attr name android:minWidth
      */
-    public static final int ConstraintLayout_Layout_android_minWidth=3;
+    public static final int ConstraintLayout_Layout_android_minWidth=8;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9161,7 +12116,7 @@ public final class R {
      *
      * @attr name android:minHeight
      */
-    public static final int ConstraintLayout_Layout_android_minHeight=4;
+    public static final int ConstraintLayout_Layout_android_minHeight=9;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9171,7 +12126,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:barrierAllowsGoneWidgets
      */
-    public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
+    public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=10;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9192,7 +12147,20 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:barrierDirection
      */
-    public static final int ConstraintLayout_Layout_barrierDirection=6;
+    public static final int ConstraintLayout_Layout_barrierDirection=11;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierMargin}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:barrierMargin
+     */
+    public static final int ConstraintLayout_Layout_barrierMargin=12;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9202,7 +12170,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:chainUseRtl
      */
-    public static final int ConstraintLayout_Layout_chainUseRtl=7;
+    public static final int ConstraintLayout_Layout_chainUseRtl=13;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9214,7 +12182,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:constraintSet
      */
-    public static final int ConstraintLayout_Layout_constraintSet=8;
+    public static final int ConstraintLayout_Layout_constraintSet=14;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9224,7 +12192,271 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:constraint_referenced_ids
      */
-    public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
+    public static final int ConstraintLayout_Layout_constraint_referenced_ids=15;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstHorizontalBias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_firstHorizontalBias
+     */
+    public static final int ConstraintLayout_Layout_flow_firstHorizontalBias=16;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstHorizontalStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_firstHorizontalStyle
+     */
+    public static final int ConstraintLayout_Layout_flow_firstHorizontalStyle=17;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstVerticalBias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_firstVerticalBias
+     */
+    public static final int ConstraintLayout_Layout_flow_firstVerticalBias=18;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstVerticalStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_firstVerticalStyle
+     */
+    public static final int ConstraintLayout_Layout_flow_firstVerticalStyle=19;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalAlign}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalAlign
+     */
+    public static final int ConstraintLayout_Layout_flow_horizontalAlign=20;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalBias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalBias
+     */
+    public static final int ConstraintLayout_Layout_flow_horizontalBias=21;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalGap}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalGap
+     */
+    public static final int ConstraintLayout_Layout_flow_horizontalGap=22;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalStyle
+     */
+    public static final int ConstraintLayout_Layout_flow_horizontalStyle=23;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastHorizontalBias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_lastHorizontalBias
+     */
+    public static final int ConstraintLayout_Layout_flow_lastHorizontalBias=24;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastHorizontalStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_lastHorizontalStyle
+     */
+    public static final int ConstraintLayout_Layout_flow_lastHorizontalStyle=25;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastVerticalBias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_lastVerticalBias
+     */
+    public static final int ConstraintLayout_Layout_flow_lastVerticalBias=26;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastVerticalStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_lastVerticalStyle
+     */
+    public static final int ConstraintLayout_Layout_flow_lastVerticalStyle=27;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_maxElementsWrap}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_maxElementsWrap
+     */
+    public static final int ConstraintLayout_Layout_flow_maxElementsWrap=28;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalAlign}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>baseline</td><td>3</td><td></td></tr>
+     * <tr><td>bottom</td><td>1</td><td></td></tr>
+     * <tr><td>center</td><td>2</td><td></td></tr>
+     * <tr><td>top</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_verticalAlign
+     */
+    public static final int ConstraintLayout_Layout_flow_verticalAlign=29;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalBias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_verticalBias
+     */
+    public static final int ConstraintLayout_Layout_flow_verticalBias=30;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalGap}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:flow_verticalGap
+     */
+    public static final int ConstraintLayout_Layout_flow_verticalGap=31;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_verticalStyle
+     */
+    public static final int ConstraintLayout_Layout_flow_verticalStyle=32;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_wrapMode}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>aligned</td><td>2</td><td></td></tr>
+     * <tr><td>chain</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_wrapMode
+     */
+    public static final int ConstraintLayout_Layout_flow_wrapMode=33;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layoutDescription}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:layoutDescription
+     */
+    public static final int ConstraintLayout_Layout_layoutDescription=34;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9234,7 +12466,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constrainedHeight
      */
-    public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
+    public static final int ConstraintLayout_Layout_layout_constrainedHeight=35;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9244,7 +12476,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constrainedWidth
      */
-    public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
+    public static final int ConstraintLayout_Layout_layout_constrainedWidth=36;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9253,7 +12485,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBaseline_creator
      */
-    public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
+    public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=37;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9273,7 +12505,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBaseline_toBaselineOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
+    public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=38;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9282,7 +12514,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBottom_creator
      */
-    public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
+    public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=39;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9302,7 +12534,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBottom_toBottomOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
+    public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=40;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9322,7 +12554,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBottom_toTopOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
+    public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=41;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9334,7 +12566,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintCircle
      */
-    public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
+    public static final int ConstraintLayout_Layout_layout_constraintCircle=42;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9343,7 +12575,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintCircleAngle
      */
-    public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
+    public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=43;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9356,7 +12588,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintCircleRadius
      */
-    public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
+    public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=44;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9366,7 +12598,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintDimensionRatio
      */
-    public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
+    public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=45;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9386,7 +12618,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintEnd_toEndOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
+    public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=46;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9406,7 +12638,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintEnd_toStartOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
+    public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=47;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9419,7 +12651,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintGuide_begin
      */
-    public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
+    public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=48;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9432,7 +12664,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintGuide_end
      */
-    public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
+    public static final int ConstraintLayout_Layout_layout_constraintGuide_end=49;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9441,7 +12673,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintGuide_percent
      */
-    public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
+    public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=50;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9459,7 +12691,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_default
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_default=51;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9480,7 +12712,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_max
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_max=52;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9501,7 +12733,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_min
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_min=53;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9510,7 +12742,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_percent
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=54;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9519,7 +12751,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHorizontal_bias
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
+    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=55;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9537,7 +12769,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHorizontal_chainStyle
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
+    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=56;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9546,7 +12778,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHorizontal_weight
      */
-    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
+    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=57;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9555,7 +12787,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintLeft_creator
      */
-    public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
+    public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=58;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9575,7 +12807,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintLeft_toLeftOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
+    public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=59;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9595,7 +12827,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintLeft_toRightOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
+    public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=60;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9604,7 +12836,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintRight_creator
      */
-    public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
+    public static final int ConstraintLayout_Layout_layout_constraintRight_creator=61;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9624,7 +12856,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintRight_toLeftOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
+    public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=62;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9644,7 +12876,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintRight_toRightOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
+    public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=63;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9664,7 +12896,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintStart_toEndOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
+    public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=64;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9684,7 +12916,17 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintStart_toStartOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
+    public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=65;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTag}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTag
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintTag=66;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9693,7 +12935,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintTop_creator
      */
-    public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
+    public static final int ConstraintLayout_Layout_layout_constraintTop_creator=67;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9713,7 +12955,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintTop_toBottomOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
+    public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=68;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9733,7 +12975,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintTop_toTopOf
      */
-    public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
+    public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=69;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9742,7 +12984,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintVertical_bias
      */
-    public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
+    public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=70;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9760,7 +13002,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintVertical_chainStyle
      */
-    public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
+    public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=71;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9769,7 +13011,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintVertical_weight
      */
-    public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
+    public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=72;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9787,7 +13029,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_default
      */
-    public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_default=73;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9808,7 +13050,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_max
      */
-    public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_max=74;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9829,7 +13071,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_min
      */
-    public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_min=75;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9838,7 +13080,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_percent
      */
-    public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=76;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9851,7 +13093,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_editor_absoluteX
      */
-    public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
+    public static final int ConstraintLayout_Layout_layout_editor_absoluteX=77;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9864,7 +13106,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_editor_absoluteY
      */
-    public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
+    public static final int ConstraintLayout_Layout_layout_editor_absoluteY=78;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9877,7 +13119,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginBottom
      */
-    public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
+    public static final int ConstraintLayout_Layout_layout_goneMarginBottom=79;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9890,7 +13132,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginEnd
      */
-    public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
+    public static final int ConstraintLayout_Layout_layout_goneMarginEnd=80;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9903,7 +13145,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginLeft
      */
-    public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
+    public static final int ConstraintLayout_Layout_layout_goneMarginLeft=81;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9916,7 +13158,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginRight
      */
-    public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
+    public static final int ConstraintLayout_Layout_layout_goneMarginRight=82;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9929,7 +13171,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginStart
      */
-    public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
+    public static final int ConstraintLayout_Layout_layout_goneMarginStart=83;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9942,7 +13184,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginTop
      */
-    public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
+    public static final int ConstraintLayout_Layout_layout_goneMarginTop=84;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
@@ -9957,14 +13199,17 @@ public final class R {
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
      * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>graph</td><td>40</td><td></td></tr>
+     * <tr><td>graph_wrap</td><td>80</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>ratio</td><td>10</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
      * @attr name org.tensorflow.demo:layout_optimizationLevel
      */
-    public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
+    public static final int ConstraintLayout_Layout_layout_optimizationLevel=85;
     /**
      * Attributes that can be used with a ConstraintLayout_placeholder.
      * <p>Includes the following attributes:</p>
@@ -9973,13 +13218,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ConstraintLayout_placeholder_content org.tensorflow.demo:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility org.tensorflow.demo:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_placeholder_emptyVisibility org.tensorflow.demo:placeholder_emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
-     * @see #ConstraintLayout_placeholder_emptyVisibility
+     * @see #ConstraintLayout_placeholder_placeholder_emptyVisibility
      */
     public static final int[] ConstraintLayout_placeholder={
-      0x7f040062, 0x7f040098
+      0x7f04006f, 0x7f040183
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#content}
@@ -9994,7 +13239,7 @@ public final class R {
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#placeholder_emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10003,13 +13248,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>gone</td><td>0</td><td></td></tr>
-     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * <tr><td>gone</td><td>8</td><td></td></tr>
+     * <tr><td>invisible</td><td>4</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name org.tensorflow.demo:emptyVisibility
+     * @attr name org.tensorflow.demo:placeholder_emptyVisibility
      */
-    public static final int ConstraintLayout_placeholder_emptyVisibility=1;
+    public static final int ConstraintLayout_placeholder_placeholder_emptyVisibility=1;
     /**
      * Attributes that can be used with a ConstraintSet.
      * <p>Includes the following attributes:</p>
@@ -10030,6 +13276,8 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_minHeight android:minHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_pivotX android:pivotX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_pivotY android:pivotY}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_alpha android:alpha}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_transformPivotX android:transformPivotX}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_transformPivotY android:transformPivotY}</code></td><td></td></tr>
@@ -10044,10 +13292,32 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_animate_relativeTo org.tensorflow.demo:animate_relativeTo}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets org.tensorflow.demo:barrierAllowsGoneWidgets}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_barrierDirection org.tensorflow.demo:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierMargin org.tensorflow.demo:barrierMargin}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_chainUseRtl org.tensorflow.demo:chainUseRtl}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids org.tensorflow.demo:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_deriveConstraintsFrom org.tensorflow.demo:deriveConstraintsFrom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_drawPath org.tensorflow.demo:drawPath}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_firstHorizontalBias org.tensorflow.demo:flow_firstHorizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_firstHorizontalStyle org.tensorflow.demo:flow_firstHorizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_firstVerticalBias org.tensorflow.demo:flow_firstVerticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_firstVerticalStyle org.tensorflow.demo:flow_firstVerticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_horizontalAlign org.tensorflow.demo:flow_horizontalAlign}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_horizontalBias org.tensorflow.demo:flow_horizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_horizontalGap org.tensorflow.demo:flow_horizontalGap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_horizontalStyle org.tensorflow.demo:flow_horizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_lastHorizontalBias org.tensorflow.demo:flow_lastHorizontalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_lastHorizontalStyle org.tensorflow.demo:flow_lastHorizontalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_lastVerticalBias org.tensorflow.demo:flow_lastVerticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_lastVerticalStyle org.tensorflow.demo:flow_lastVerticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_maxElementsWrap org.tensorflow.demo:flow_maxElementsWrap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_verticalAlign org.tensorflow.demo:flow_verticalAlign}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_verticalBias org.tensorflow.demo:flow_verticalBias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_verticalGap org.tensorflow.demo:flow_verticalGap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_verticalStyle org.tensorflow.demo:flow_verticalStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_flow_wrapMode org.tensorflow.demo:flow_wrapMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight org.tensorflow.demo:layout_constrainedHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth org.tensorflow.demo:layout_constrainedWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator org.tensorflow.demo:layout_constraintBaseline_creator}</code></td><td></td></tr>
@@ -10079,6 +13349,7 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf org.tensorflow.demo:layout_constraintRight_toRightOf}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf org.tensorflow.demo:layout_constraintStart_toEndOf}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf org.tensorflow.demo:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTag org.tensorflow.demo:layout_constraintTag}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator org.tensorflow.demo:layout_constraintTop_creator}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf org.tensorflow.demo:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf org.tensorflow.demo:layout_constraintTop_toTopOf}</code></td><td></td></tr>
@@ -10097,6 +13368,12 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight org.tensorflow.demo:layout_goneMarginRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart org.tensorflow.demo:layout_goneMarginStart}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop org.tensorflow.demo:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_motionProgress org.tensorflow.demo:motionProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_motionStagger org.tensorflow.demo:motionStagger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_pathMotionArc org.tensorflow.demo:pathMotionArc}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_pivotAnchor org.tensorflow.demo:pivotAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_transitionPathRotate org.tensorflow.demo:transitionPathRotate}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -10111,6 +13388,8 @@ public final class R {
      * @see #ConstraintSet_android_maxHeight
      * @see #ConstraintSet_android_minWidth
      * @see #ConstraintSet_android_minHeight
+     * @see #ConstraintSet_android_pivotX
+     * @see #ConstraintSet_android_pivotY
      * @see #ConstraintSet_android_alpha
      * @see #ConstraintSet_android_transformPivotX
      * @see #ConstraintSet_android_transformPivotY
@@ -10125,10 +13404,32 @@ public final class R {
      * @see #ConstraintSet_android_layout_marginEnd
      * @see #ConstraintSet_android_translationZ
      * @see #ConstraintSet_android_elevation
+     * @see #ConstraintSet_animate_relativeTo
      * @see #ConstraintSet_barrierAllowsGoneWidgets
      * @see #ConstraintSet_barrierDirection
+     * @see #ConstraintSet_barrierMargin
      * @see #ConstraintSet_chainUseRtl
      * @see #ConstraintSet_constraint_referenced_ids
+     * @see #ConstraintSet_deriveConstraintsFrom
+     * @see #ConstraintSet_drawPath
+     * @see #ConstraintSet_flow_firstHorizontalBias
+     * @see #ConstraintSet_flow_firstHorizontalStyle
+     * @see #ConstraintSet_flow_firstVerticalBias
+     * @see #ConstraintSet_flow_firstVerticalStyle
+     * @see #ConstraintSet_flow_horizontalAlign
+     * @see #ConstraintSet_flow_horizontalBias
+     * @see #ConstraintSet_flow_horizontalGap
+     * @see #ConstraintSet_flow_horizontalStyle
+     * @see #ConstraintSet_flow_lastHorizontalBias
+     * @see #ConstraintSet_flow_lastHorizontalStyle
+     * @see #ConstraintSet_flow_lastVerticalBias
+     * @see #ConstraintSet_flow_lastVerticalStyle
+     * @see #ConstraintSet_flow_maxElementsWrap
+     * @see #ConstraintSet_flow_verticalAlign
+     * @see #ConstraintSet_flow_verticalBias
+     * @see #ConstraintSet_flow_verticalGap
+     * @see #ConstraintSet_flow_verticalStyle
+     * @see #ConstraintSet_flow_wrapMode
      * @see #ConstraintSet_layout_constrainedHeight
      * @see #ConstraintSet_layout_constrainedWidth
      * @see #ConstraintSet_layout_constraintBaseline_creator
@@ -10160,6 +13461,7 @@ public final class R {
      * @see #ConstraintSet_layout_constraintRight_toRightOf
      * @see #ConstraintSet_layout_constraintStart_toEndOf
      * @see #ConstraintSet_layout_constraintStart_toStartOf
+     * @see #ConstraintSet_layout_constraintTag
      * @see #ConstraintSet_layout_constraintTop_creator
      * @see #ConstraintSet_layout_constraintTop_toBottomOf
      * @see #ConstraintSet_layout_constraintTop_toTopOf
@@ -10178,28 +13480,42 @@ public final class R {
      * @see #ConstraintSet_layout_goneMarginRight
      * @see #ConstraintSet_layout_goneMarginStart
      * @see #ConstraintSet_layout_goneMarginTop
+     * @see #ConstraintSet_motionProgress
+     * @see #ConstraintSet_motionStagger
+     * @see #ConstraintSet_pathMotionArc
+     * @see #ConstraintSet_pivotAnchor
+     * @see #ConstraintSet_transitionEasing
+     * @see #ConstraintSet_transitionPathRotate
      */
     public static final int[] ConstraintSet={
       0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
       0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
       0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
-      0x01010140, 0x0101031f, 0x01010320, 0x01010321, 
-      0x01010322, 0x01010323, 0x01010324, 0x01010325, 
-      0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
-      0x010103b6, 0x010103fa, 0x01010440, 0x7f040039, 
-      0x7f04003a, 0x7f04004a, 0x7f040061, 0x7f0400cb, 
-      0x7f0400cc, 0x7f0400cd, 0x7f0400ce, 0x7f0400cf, 
-      0x7f0400d0, 0x7f0400d1, 0x7f0400d2, 0x7f0400d3, 
-      0x7f0400d4, 0x7f0400d5, 0x7f0400d6, 0x7f0400d7, 
-      0x7f0400d8, 0x7f0400d9, 0x7f0400da, 0x7f0400db, 
-      0x7f0400dc, 0x7f0400dd, 0x7f0400de, 0x7f0400df, 
-      0x7f0400e0, 0x7f0400e1, 0x7f0400e2, 0x7f0400e3, 
-      0x7f0400e4, 0x7f0400e5, 0x7f0400e6, 0x7f0400e7, 
-      0x7f0400e8, 0x7f0400e9, 0x7f0400ea, 0x7f0400eb, 
-      0x7f0400ec, 0x7f0400ed, 0x7f0400ee, 0x7f0400ef, 
-      0x7f0400f0, 0x7f0400f1, 0x7f0400f2, 0x7f0400f3, 
-      0x7f0400f5, 0x7f0400f6, 0x7f0400f7, 0x7f0400f8, 
-      0x7f0400f9, 0x7f0400fa, 0x7f0400fb, 0x7f0400fc
+      0x01010140, 0x010101b5, 0x010101b6, 0x0101031f, 
+      0x01010320, 0x01010321, 0x01010322, 0x01010323, 
+      0x01010324, 0x01010325, 0x01010326, 0x01010327, 
+      0x01010328, 0x010103b5, 0x010103b6, 0x010103fa, 
+      0x01010440, 0x7f04002a, 0x7f04003f, 0x7f040040, 
+      0x7f040041, 0x7f040052, 0x7f04006d, 0x7f04009d, 
+      0x7f0400a8, 0x7f0400c8, 0x7f0400c9, 0x7f0400ca, 
+      0x7f0400cb, 0x7f0400cc, 0x7f0400cd, 0x7f0400ce, 
+      0x7f0400cf, 0x7f0400d0, 0x7f0400d1, 0x7f0400d2, 
+      0x7f0400d3, 0x7f0400d4, 0x7f0400d6, 0x7f0400d7, 
+      0x7f0400d8, 0x7f0400d9, 0x7f0400da, 0x7f040102, 
+      0x7f040103, 0x7f040104, 0x7f040105, 0x7f040106, 
+      0x7f040107, 0x7f040108, 0x7f040109, 0x7f04010a, 
+      0x7f04010b, 0x7f04010c, 0x7f04010d, 0x7f04010e, 
+      0x7f04010f, 0x7f040110, 0x7f040111, 0x7f040112, 
+      0x7f040113, 0x7f040114, 0x7f040115, 0x7f040116, 
+      0x7f040117, 0x7f040118, 0x7f040119, 0x7f04011a, 
+      0x7f04011b, 0x7f04011c, 0x7f04011d, 0x7f04011e, 
+      0x7f04011f, 0x7f040120, 0x7f040121, 0x7f040122, 
+      0x7f040123, 0x7f040124, 0x7f040125, 0x7f040126, 
+      0x7f040127, 0x7f040128, 0x7f040129, 0x7f04012a, 
+      0x7f04012b, 0x7f04012d, 0x7f04012e, 0x7f04012f, 
+      0x7f040130, 0x7f040131, 0x7f040132, 0x7f040133, 
+      0x7f040134, 0x7f04015f, 0x7f040160, 0x7f040179, 
+      0x7f040180, 0x7f04021a, 0x7f04021b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
@@ -10399,6 +13715,32 @@ public final class R {
      */
     public static final int ConstraintSet_android_minHeight=12;
     /**
+     * <p>This symbol is the offset where the {@link android.R.attr#pivotX}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     *
+     * @attr name android:pivotX
+     */
+    public static final int ConstraintSet_android_pivotX=13;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#pivotY}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     *
+     * @attr name android:pivotY
+     */
+    public static final int ConstraintSet_android_pivotY=14;
+    /**
      * <p>This symbol is the offset where the {@link android.R.attr#alpha}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
@@ -10406,7 +13748,7 @@ public final class R {
      *
      * @attr name android:alpha
      */
-    public static final int ConstraintSet_android_alpha=13;
+    public static final int ConstraintSet_android_alpha=15;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#transformPivotX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10419,7 +13761,7 @@ public final class R {
      *
      * @attr name android:transformPivotX
      */
-    public static final int ConstraintSet_android_transformPivotX=14;
+    public static final int ConstraintSet_android_transformPivotX=16;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#transformPivotY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10432,7 +13774,7 @@ public final class R {
      *
      * @attr name android:transformPivotY
      */
-    public static final int ConstraintSet_android_transformPivotY=15;
+    public static final int ConstraintSet_android_transformPivotY=17;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#translationX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10445,7 +13787,7 @@ public final class R {
      *
      * @attr name android:translationX
      */
-    public static final int ConstraintSet_android_translationX=16;
+    public static final int ConstraintSet_android_translationX=18;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#translationY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10458,7 +13800,7 @@ public final class R {
      *
      * @attr name android:translationY
      */
-    public static final int ConstraintSet_android_translationY=17;
+    public static final int ConstraintSet_android_translationY=19;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10467,7 +13809,7 @@ public final class R {
      *
      * @attr name android:scaleX
      */
-    public static final int ConstraintSet_android_scaleX=18;
+    public static final int ConstraintSet_android_scaleX=20;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10476,7 +13818,7 @@ public final class R {
      *
      * @attr name android:scaleY
      */
-    public static final int ConstraintSet_android_scaleY=19;
+    public static final int ConstraintSet_android_scaleY=21;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#rotation}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10485,7 +13827,7 @@ public final class R {
      *
      * @attr name android:rotation
      */
-    public static final int ConstraintSet_android_rotation=20;
+    public static final int ConstraintSet_android_rotation=22;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10494,7 +13836,7 @@ public final class R {
      *
      * @attr name android:rotationX
      */
-    public static final int ConstraintSet_android_rotationX=21;
+    public static final int ConstraintSet_android_rotationX=23;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10503,7 +13845,7 @@ public final class R {
      *
      * @attr name android:rotationY
      */
-    public static final int ConstraintSet_android_rotationY=22;
+    public static final int ConstraintSet_android_rotationY=24;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_marginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10516,7 +13858,7 @@ public final class R {
      *
      * @attr name android:layout_marginStart
      */
-    public static final int ConstraintSet_android_layout_marginStart=23;
+    public static final int ConstraintSet_android_layout_marginStart=25;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_marginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10529,7 +13871,7 @@ public final class R {
      *
      * @attr name android:layout_marginEnd
      */
-    public static final int ConstraintSet_android_layout_marginEnd=24;
+    public static final int ConstraintSet_android_layout_marginEnd=26;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10542,7 +13884,7 @@ public final class R {
      *
      * @attr name android:translationZ
      */
-    public static final int ConstraintSet_android_translationZ=25;
+    public static final int ConstraintSet_android_translationZ=27;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#elevation}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10555,7 +13897,19 @@ public final class R {
      *
      * @attr name android:elevation
      */
-    public static final int ConstraintSet_android_elevation=26;
+    public static final int ConstraintSet_android_elevation=28;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#animate_relativeTo}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:animate_relativeTo
+     */
+    public static final int ConstraintSet_animate_relativeTo=29;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10565,7 +13919,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:barrierAllowsGoneWidgets
      */
-    public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
+    public static final int ConstraintSet_barrierAllowsGoneWidgets=30;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10586,7 +13940,20 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:barrierDirection
      */
-    public static final int ConstraintSet_barrierDirection=28;
+    public static final int ConstraintSet_barrierDirection=31;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierMargin}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:barrierMargin
+     */
+    public static final int ConstraintSet_barrierMargin=32;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10596,7 +13963,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:chainUseRtl
      */
-    public static final int ConstraintSet_chainUseRtl=29;
+    public static final int ConstraintSet_chainUseRtl=33;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10606,7 +13973,292 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:constraint_referenced_ids
      */
-    public static final int ConstraintSet_constraint_referenced_ids=30;
+    public static final int ConstraintSet_constraint_referenced_ids=34;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#deriveConstraintsFrom}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:deriveConstraintsFrom
+     */
+    public static final int ConstraintSet_deriveConstraintsFrom=35;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#drawPath}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>asConfigured</td><td>4</td><td></td></tr>
+     * <tr><td>deltaRelative</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>2</td><td></td></tr>
+     * <tr><td>rectangles</td><td>5</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:drawPath
+     */
+    public static final int ConstraintSet_drawPath=36;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstHorizontalBias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_firstHorizontalBias
+     */
+    public static final int ConstraintSet_flow_firstHorizontalBias=37;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstHorizontalStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_firstHorizontalStyle
+     */
+    public static final int ConstraintSet_flow_firstHorizontalStyle=38;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstVerticalBias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_firstVerticalBias
+     */
+    public static final int ConstraintSet_flow_firstVerticalBias=39;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_firstVerticalStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_firstVerticalStyle
+     */
+    public static final int ConstraintSet_flow_firstVerticalStyle=40;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalAlign}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>end</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalAlign
+     */
+    public static final int ConstraintSet_flow_horizontalAlign=41;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalBias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalBias
+     */
+    public static final int ConstraintSet_flow_horizontalBias=42;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalGap}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalGap
+     */
+    public static final int ConstraintSet_flow_horizontalGap=43;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_horizontalStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_horizontalStyle
+     */
+    public static final int ConstraintSet_flow_horizontalStyle=44;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastHorizontalBias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_lastHorizontalBias
+     */
+    public static final int ConstraintSet_flow_lastHorizontalBias=45;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastHorizontalStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_lastHorizontalStyle
+     */
+    public static final int ConstraintSet_flow_lastHorizontalStyle=46;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastVerticalBias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_lastVerticalBias
+     */
+    public static final int ConstraintSet_flow_lastVerticalBias=47;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_lastVerticalStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_lastVerticalStyle
+     */
+    public static final int ConstraintSet_flow_lastVerticalStyle=48;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_maxElementsWrap}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_maxElementsWrap
+     */
+    public static final int ConstraintSet_flow_maxElementsWrap=49;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalAlign}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>baseline</td><td>3</td><td></td></tr>
+     * <tr><td>bottom</td><td>1</td><td></td></tr>
+     * <tr><td>center</td><td>2</td><td></td></tr>
+     * <tr><td>top</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_verticalAlign
+     */
+    public static final int ConstraintSet_flow_verticalAlign=50;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalBias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:flow_verticalBias
+     */
+    public static final int ConstraintSet_flow_verticalBias=51;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalGap}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:flow_verticalGap
+     */
+    public static final int ConstraintSet_flow_verticalGap=52;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_verticalStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_verticalStyle
+     */
+    public static final int ConstraintSet_flow_verticalStyle=53;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#flow_wrapMode}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>aligned</td><td>2</td><td></td></tr>
+     * <tr><td>chain</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:flow_wrapMode
+     */
+    public static final int ConstraintSet_flow_wrapMode=54;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10616,7 +14268,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constrainedHeight
      */
-    public static final int ConstraintSet_layout_constrainedHeight=31;
+    public static final int ConstraintSet_layout_constrainedHeight=55;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10626,7 +14278,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constrainedWidth
      */
-    public static final int ConstraintSet_layout_constrainedWidth=32;
+    public static final int ConstraintSet_layout_constrainedWidth=56;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10635,7 +14287,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBaseline_creator
      */
-    public static final int ConstraintSet_layout_constraintBaseline_creator=33;
+    public static final int ConstraintSet_layout_constraintBaseline_creator=57;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10655,7 +14307,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBaseline_toBaselineOf
      */
-    public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
+    public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=58;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10664,7 +14316,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBottom_creator
      */
-    public static final int ConstraintSet_layout_constraintBottom_creator=35;
+    public static final int ConstraintSet_layout_constraintBottom_creator=59;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10684,7 +14336,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBottom_toBottomOf
      */
-    public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
+    public static final int ConstraintSet_layout_constraintBottom_toBottomOf=60;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10704,7 +14356,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintBottom_toTopOf
      */
-    public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
+    public static final int ConstraintSet_layout_constraintBottom_toTopOf=61;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10716,7 +14368,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintCircle
      */
-    public static final int ConstraintSet_layout_constraintCircle=38;
+    public static final int ConstraintSet_layout_constraintCircle=62;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10725,7 +14377,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintCircleAngle
      */
-    public static final int ConstraintSet_layout_constraintCircleAngle=39;
+    public static final int ConstraintSet_layout_constraintCircleAngle=63;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10738,7 +14390,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintCircleRadius
      */
-    public static final int ConstraintSet_layout_constraintCircleRadius=40;
+    public static final int ConstraintSet_layout_constraintCircleRadius=64;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10748,7 +14400,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintDimensionRatio
      */
-    public static final int ConstraintSet_layout_constraintDimensionRatio=41;
+    public static final int ConstraintSet_layout_constraintDimensionRatio=65;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10768,7 +14420,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintEnd_toEndOf
      */
-    public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
+    public static final int ConstraintSet_layout_constraintEnd_toEndOf=66;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10788,7 +14440,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintEnd_toStartOf
      */
-    public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
+    public static final int ConstraintSet_layout_constraintEnd_toStartOf=67;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10801,7 +14453,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintGuide_begin
      */
-    public static final int ConstraintSet_layout_constraintGuide_begin=44;
+    public static final int ConstraintSet_layout_constraintGuide_begin=68;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10814,7 +14466,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintGuide_end
      */
-    public static final int ConstraintSet_layout_constraintGuide_end=45;
+    public static final int ConstraintSet_layout_constraintGuide_end=69;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10823,7 +14475,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintGuide_percent
      */
-    public static final int ConstraintSet_layout_constraintGuide_percent=46;
+    public static final int ConstraintSet_layout_constraintGuide_percent=70;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10841,7 +14493,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_default
      */
-    public static final int ConstraintSet_layout_constraintHeight_default=47;
+    public static final int ConstraintSet_layout_constraintHeight_default=71;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10862,7 +14514,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_max
      */
-    public static final int ConstraintSet_layout_constraintHeight_max=48;
+    public static final int ConstraintSet_layout_constraintHeight_max=72;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10883,7 +14535,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_min
      */
-    public static final int ConstraintSet_layout_constraintHeight_min=49;
+    public static final int ConstraintSet_layout_constraintHeight_min=73;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10892,7 +14544,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHeight_percent
      */
-    public static final int ConstraintSet_layout_constraintHeight_percent=50;
+    public static final int ConstraintSet_layout_constraintHeight_percent=74;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10901,7 +14553,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHorizontal_bias
      */
-    public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
+    public static final int ConstraintSet_layout_constraintHorizontal_bias=75;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10919,7 +14571,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHorizontal_chainStyle
      */
-    public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
+    public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=76;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10928,7 +14580,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintHorizontal_weight
      */
-    public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
+    public static final int ConstraintSet_layout_constraintHorizontal_weight=77;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10937,7 +14589,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintLeft_creator
      */
-    public static final int ConstraintSet_layout_constraintLeft_creator=54;
+    public static final int ConstraintSet_layout_constraintLeft_creator=78;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10957,7 +14609,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintLeft_toLeftOf
      */
-    public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
+    public static final int ConstraintSet_layout_constraintLeft_toLeftOf=79;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10977,7 +14629,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintLeft_toRightOf
      */
-    public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
+    public static final int ConstraintSet_layout_constraintLeft_toRightOf=80;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -10986,7 +14638,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintRight_creator
      */
-    public static final int ConstraintSet_layout_constraintRight_creator=57;
+    public static final int ConstraintSet_layout_constraintRight_creator=81;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11006,7 +14658,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintRight_toLeftOf
      */
-    public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
+    public static final int ConstraintSet_layout_constraintRight_toLeftOf=82;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11026,7 +14678,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintRight_toRightOf
      */
-    public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
+    public static final int ConstraintSet_layout_constraintRight_toRightOf=83;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11046,7 +14698,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintStart_toEndOf
      */
-    public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
+    public static final int ConstraintSet_layout_constraintStart_toEndOf=84;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11066,7 +14718,17 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintStart_toStartOf
      */
-    public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
+    public static final int ConstraintSet_layout_constraintStart_toStartOf=85;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTag}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTag
+     */
+    public static final int ConstraintSet_layout_constraintTag=86;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11075,7 +14737,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintTop_creator
      */
-    public static final int ConstraintSet_layout_constraintTop_creator=62;
+    public static final int ConstraintSet_layout_constraintTop_creator=87;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11095,7 +14757,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintTop_toBottomOf
      */
-    public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
+    public static final int ConstraintSet_layout_constraintTop_toBottomOf=88;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11115,7 +14777,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintTop_toTopOf
      */
-    public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
+    public static final int ConstraintSet_layout_constraintTop_toTopOf=89;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11124,7 +14786,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintVertical_bias
      */
-    public static final int ConstraintSet_layout_constraintVertical_bias=65;
+    public static final int ConstraintSet_layout_constraintVertical_bias=90;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11142,7 +14804,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintVertical_chainStyle
      */
-    public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
+    public static final int ConstraintSet_layout_constraintVertical_chainStyle=91;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11151,7 +14813,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintVertical_weight
      */
-    public static final int ConstraintSet_layout_constraintVertical_weight=67;
+    public static final int ConstraintSet_layout_constraintVertical_weight=92;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11169,7 +14831,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_default
      */
-    public static final int ConstraintSet_layout_constraintWidth_default=68;
+    public static final int ConstraintSet_layout_constraintWidth_default=93;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11190,7 +14852,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_max
      */
-    public static final int ConstraintSet_layout_constraintWidth_max=69;
+    public static final int ConstraintSet_layout_constraintWidth_max=94;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11211,7 +14873,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_min
      */
-    public static final int ConstraintSet_layout_constraintWidth_min=70;
+    public static final int ConstraintSet_layout_constraintWidth_min=95;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11220,7 +14882,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_constraintWidth_percent
      */
-    public static final int ConstraintSet_layout_constraintWidth_percent=71;
+    public static final int ConstraintSet_layout_constraintWidth_percent=96;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11233,7 +14895,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_editor_absoluteX
      */
-    public static final int ConstraintSet_layout_editor_absoluteX=72;
+    public static final int ConstraintSet_layout_editor_absoluteX=97;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11246,7 +14908,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_editor_absoluteY
      */
-    public static final int ConstraintSet_layout_editor_absoluteY=73;
+    public static final int ConstraintSet_layout_editor_absoluteY=98;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11259,7 +14921,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginBottom
      */
-    public static final int ConstraintSet_layout_goneMarginBottom=74;
+    public static final int ConstraintSet_layout_goneMarginBottom=99;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11272,7 +14934,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginEnd
      */
-    public static final int ConstraintSet_layout_goneMarginEnd=75;
+    public static final int ConstraintSet_layout_goneMarginEnd=100;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11285,7 +14947,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginLeft
      */
-    public static final int ConstraintSet_layout_goneMarginLeft=76;
+    public static final int ConstraintSet_layout_goneMarginLeft=101;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11298,7 +14960,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginRight
      */
-    public static final int ConstraintSet_layout_goneMarginRight=77;
+    public static final int ConstraintSet_layout_goneMarginRight=102;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11311,7 +14973,7 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginStart
      */
-    public static final int ConstraintSet_layout_goneMarginStart=78;
+    public static final int ConstraintSet_layout_goneMarginStart=103;
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -11324,7 +14986,94 @@ public final class R {
      *
      * @attr name org.tensorflow.demo:layout_goneMarginTop
      */
-    public static final int ConstraintSet_layout_goneMarginTop=79;
+    public static final int ConstraintSet_layout_goneMarginTop=104;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionProgress}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionProgress
+     */
+    public static final int ConstraintSet_motionProgress=105;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionStagger}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionStagger
+     */
+    public static final int ConstraintSet_motionStagger=106;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pathMotionArc}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>flip</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>startHorizontal</td><td>2</td><td></td></tr>
+     * <tr><td>startVertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pathMotionArc
+     */
+    public static final int ConstraintSet_pathMotionArc=107;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pivotAnchor}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pivotAnchor
+     */
+    public static final int ConstraintSet_pivotAnchor=108;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int ConstraintSet_transitionEasing=109;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionPathRotate}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:transitionPathRotate
+     */
+    public static final int ConstraintSet_transitionPathRotate=110;
     /**
      * Attributes that can be used with a CoordinatorLayout.
      * <p>Includes the following attributes:</p>
@@ -11339,7 +15088,7 @@ public final class R {
      * @see #CoordinatorLayout_statusBarBackground
      */
     public static final int[] CoordinatorLayout={
-      0x7f0400c5, 0x7f040171
+      0x7f0400fb, 0x7f0401db
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#keylines}
@@ -11392,8 +15141,8 @@ public final class R {
      * @see #CoordinatorLayout_Layout_layout_keyline
      */
     public static final int[] CoordinatorLayout_Layout={
-      0x010100b3, 0x7f0400c8, 0x7f0400c9, 0x7f0400ca, 
-      0x7f0400f4, 0x7f0400fd, 0x7f0400fe
+      0x010100b3, 0x7f0400ff, 0x7f040100, 0x7f040101, 
+      0x7f04012c, 0x7f040135, 0x7f040136
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
@@ -11530,6 +15279,134 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
+     * Attributes that can be used with a CustomAttribute.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #CustomAttribute_attributeName org.tensorflow.demo:attributeName}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customBoolean org.tensorflow.demo:customBoolean}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customColorDrawableValue org.tensorflow.demo:customColorDrawableValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customColorValue org.tensorflow.demo:customColorValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customDimension org.tensorflow.demo:customDimension}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customFloatValue org.tensorflow.demo:customFloatValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customIntegerValue org.tensorflow.demo:customIntegerValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customPixelDimension org.tensorflow.demo:customPixelDimension}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAttribute_customStringValue org.tensorflow.demo:customStringValue}</code></td><td></td></tr>
+     * </table>
+     * @see #CustomAttribute_attributeName
+     * @see #CustomAttribute_customBoolean
+     * @see #CustomAttribute_customColorDrawableValue
+     * @see #CustomAttribute_customColorValue
+     * @see #CustomAttribute_customDimension
+     * @see #CustomAttribute_customFloatValue
+     * @see #CustomAttribute_customIntegerValue
+     * @see #CustomAttribute_customPixelDimension
+     * @see #CustomAttribute_customStringValue
+     */
+    public static final int[] CustomAttribute={
+      0x7f04002f, 0x7f04008e, 0x7f04008f, 0x7f040090, 
+      0x7f040091, 0x7f040092, 0x7f040093, 0x7f040095, 
+      0x7f040096
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#attributeName}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:attributeName
+     */
+    public static final int CustomAttribute_attributeName=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customBoolean}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:customBoolean
+     */
+    public static final int CustomAttribute_customBoolean=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customColorDrawableValue}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name org.tensorflow.demo:customColorDrawableValue
+     */
+    public static final int CustomAttribute_customColorDrawableValue=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customColorValue}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name org.tensorflow.demo:customColorValue
+     */
+    public static final int CustomAttribute_customColorValue=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customDimension}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:customDimension
+     */
+    public static final int CustomAttribute_customDimension=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customFloatValue}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:customFloatValue
+     */
+    public static final int CustomAttribute_customFloatValue=5;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customIntegerValue}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:customIntegerValue
+     */
+    public static final int CustomAttribute_customIntegerValue=6;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customPixelDimension}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:customPixelDimension
+     */
+    public static final int CustomAttribute_customPixelDimension=7;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#customStringValue}
+     * attribute's value can be found in the {@link #CustomAttribute} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:customStringValue
+     */
+    public static final int CustomAttribute_customStringValue=8;
+    /**
      * Attributes that can be used with a DrawerArrowToggle.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -11555,8 +15432,8 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-      0x7f040029, 0x7f04002a, 0x7f040037, 0x7f040053, 
-      0x7f04008c, 0x7f0400b2, 0x7f04016a, 0x7f04018d
+      0x7f04002d, 0x7f04002e, 0x7f04003d, 0x7f04005d, 
+      0x7f0400ad, 0x7f0400e7, 0x7f0401d3, 0x7f0401fb
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#arrowHeadLength}
@@ -11691,9 +15568,9 @@ public final class R {
      * @see #FloatLabeledEditText_fletTextLines
      */
     public static final int[] FloatLabeledEditText={
-      0x7f04009b, 0x7f04009c, 0x7f04009d, 0x7f04009e, 
-      0x7f04009f, 0x7f0400a0, 0x7f0400a1, 0x7f0400a2, 
-      0x7f0400a3, 0x7f0400a4, 0x7f0400a5, 0x7f0400a6
+      0x7f0400bc, 0x7f0400bd, 0x7f0400be, 0x7f0400bf, 
+      0x7f0400c0, 0x7f0400c1, 0x7f0400c2, 0x7f0400c3, 
+      0x7f0400c4, 0x7f0400c5, 0x7f0400c6, 0x7f0400c7
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#fletFloatingHint}
@@ -11924,8 +15801,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f0400a9, 0x7f0400aa, 0x7f0400ab, 0x7f0400ac, 
-      0x7f0400ad, 0x7f0400ae
+      0x7f0400dd, 0x7f0400de, 0x7f0400df, 0x7f0400e0, 
+      0x7f0400e1, 0x7f0400e2
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#fontProviderAuthority}
@@ -12034,8 +15911,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f0400a7, 0x7f0400af, 0x7f0400b0, 
-      0x7f0400b1, 0x7f0401a8
+      0x01010570, 0x7f0400db, 0x7f0400e3, 0x7f0400e4, 
+      0x7f0400e5, 0x7f04021f
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -12376,22 +16253,1492 @@ public final class R {
      */
     public static final int GradientColorItem_android_offset=1;
     /**
-     * Attributes that can be used with a LinearConstraintLayout.
+     * Attributes that can be used with a ImageFilterView.
      * <p>Includes the following attributes:</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LinearConstraintLayout_android_orientation android:orientation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_altSrc org.tensorflow.demo:altSrc}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_brightness org.tensorflow.demo:brightness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_contrast org.tensorflow.demo:contrast}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_crossfade org.tensorflow.demo:crossfade}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_overlay org.tensorflow.demo:overlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_round org.tensorflow.demo:round}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_roundPercent org.tensorflow.demo:roundPercent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_saturation org.tensorflow.demo:saturation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ImageFilterView_warmth org.tensorflow.demo:warmth}</code></td><td></td></tr>
      * </table>
-     * @see #LinearConstraintLayout_android_orientation
+     * @see #ImageFilterView_altSrc
+     * @see #ImageFilterView_brightness
+     * @see #ImageFilterView_contrast
+     * @see #ImageFilterView_crossfade
+     * @see #ImageFilterView_overlay
+     * @see #ImageFilterView_round
+     * @see #ImageFilterView_roundPercent
+     * @see #ImageFilterView_saturation
+     * @see #ImageFilterView_warmth
      */
-    public static final int[] LinearConstraintLayout={
-      0x010100c4
+    public static final int[] ImageFilterView={
+      0x7f040029, 0x7f040043, 0x7f04007a, 0x7f04008b, 
+      0x7f040171, 0x7f0401b5, 0x7f0401b6, 0x7f0401b7, 
+      0x7f040224
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#altSrc}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:altSrc
+     */
+    public static final int ImageFilterView_altSrc=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#brightness}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:brightness
+     */
+    public static final int ImageFilterView_brightness=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#contrast}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:contrast
+     */
+    public static final int ImageFilterView_contrast=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#crossfade}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:crossfade
+     */
+    public static final int ImageFilterView_crossfade=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#overlay}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:overlay
+     */
+    public static final int ImageFilterView_overlay=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#round}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:round
+     */
+    public static final int ImageFilterView_round=5;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#roundPercent}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:roundPercent
+     */
+    public static final int ImageFilterView_roundPercent=6;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#saturation}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:saturation
+     */
+    public static final int ImageFilterView_saturation=7;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#warmth}
+     * attribute's value can be found in the {@link #ImageFilterView} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:warmth
+     */
+    public static final int ImageFilterView_warmth=8;
+    /**
+     * Attributes that can be used with a KeyAttribute.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_visibility android:visibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_alpha android:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_translationX android:translationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_translationY android:translationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_scaleX android:scaleX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_scaleY android:scaleY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_rotation android:rotation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_rotationX android:rotationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_rotationY android:rotationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_translationZ android:translationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_curveFit org.tensorflow.demo:curveFit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_framePosition org.tensorflow.demo:framePosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_motionProgress org.tensorflow.demo:motionProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_motionTarget org.tensorflow.demo:motionTarget}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyAttribute_transitionPathRotate org.tensorflow.demo:transitionPathRotate}</code></td><td></td></tr>
+     * </table>
+     * @see #KeyAttribute_android_visibility
+     * @see #KeyAttribute_android_alpha
+     * @see #KeyAttribute_android_translationX
+     * @see #KeyAttribute_android_translationY
+     * @see #KeyAttribute_android_scaleX
+     * @see #KeyAttribute_android_scaleY
+     * @see #KeyAttribute_android_rotation
+     * @see #KeyAttribute_android_rotationX
+     * @see #KeyAttribute_android_rotationY
+     * @see #KeyAttribute_android_translationZ
+     * @see #KeyAttribute_android_elevation
+     * @see #KeyAttribute_curveFit
+     * @see #KeyAttribute_framePosition
+     * @see #KeyAttribute_motionProgress
+     * @see #KeyAttribute_motionTarget
+     * @see #KeyAttribute_transitionEasing
+     * @see #KeyAttribute_transitionPathRotate
+     */
+    public static final int[] KeyAttribute={
+      0x010100dc, 0x0101031f, 0x01010322, 0x01010323, 
+      0x01010324, 0x01010325, 0x01010326, 0x01010327, 
+      0x01010328, 0x010103fa, 0x01010440, 0x7f04008d, 
+      0x7f0400e6, 0x7f04015f, 0x7f040161, 0x7f04021a, 
+      0x7f04021b
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#visibility}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>2</td><td></td></tr>
+     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:visibility
+     */
+    public static final int KeyAttribute_android_visibility=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#alpha}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:alpha
+     */
+    public static final int KeyAttribute_android_alpha=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationX}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationX
+     */
+    public static final int KeyAttribute_android_translationX=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationY}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationY
+     */
+    public static final int KeyAttribute_android_translationY=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleX
+     */
+    public static final int KeyAttribute_android_scaleX=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleY
+     */
+    public static final int KeyAttribute_android_scaleY=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotation}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotation
+     */
+    public static final int KeyAttribute_android_rotation=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationX
+     */
+    public static final int KeyAttribute_android_rotationX=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationY
+     */
+    public static final int KeyAttribute_android_rotationY=8;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationZ
+     */
+    public static final int KeyAttribute_android_translationZ=9;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#elevation}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:elevation
+     */
+    public static final int KeyAttribute_android_elevation=10;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#curveFit}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>linear</td><td>1</td><td></td></tr>
+     * <tr><td>spline</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:curveFit
+     */
+    public static final int KeyAttribute_curveFit=11;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#framePosition}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:framePosition
+     */
+    public static final int KeyAttribute_framePosition=12;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionProgress}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionProgress
+     */
+    public static final int KeyAttribute_motionProgress=13;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionTarget}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:motionTarget
+     */
+    public static final int KeyAttribute_motionTarget=14;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int KeyAttribute_transitionEasing=15;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionPathRotate}
+     * attribute's value can be found in the {@link #KeyAttribute} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:transitionPathRotate
+     */
+    public static final int KeyAttribute_transitionPathRotate=16;
+    /**
+     * Attributes that can be used with a KeyCycle.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #KeyCycle_android_alpha android:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_translationX android:translationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_translationY android:translationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_scaleX android:scaleX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_scaleY android:scaleY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_rotation android:rotation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_rotationX android:rotationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_rotationY android:rotationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_translationZ android:translationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_curveFit org.tensorflow.demo:curveFit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_framePosition org.tensorflow.demo:framePosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_motionProgress org.tensorflow.demo:motionProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_motionTarget org.tensorflow.demo:motionTarget}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_transitionPathRotate org.tensorflow.demo:transitionPathRotate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_waveOffset org.tensorflow.demo:waveOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_wavePeriod org.tensorflow.demo:wavePeriod}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_waveShape org.tensorflow.demo:waveShape}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyCycle_waveVariesBy org.tensorflow.demo:waveVariesBy}</code></td><td></td></tr>
+     * </table>
+     * @see #KeyCycle_android_alpha
+     * @see #KeyCycle_android_translationX
+     * @see #KeyCycle_android_translationY
+     * @see #KeyCycle_android_scaleX
+     * @see #KeyCycle_android_scaleY
+     * @see #KeyCycle_android_rotation
+     * @see #KeyCycle_android_rotationX
+     * @see #KeyCycle_android_rotationY
+     * @see #KeyCycle_android_translationZ
+     * @see #KeyCycle_android_elevation
+     * @see #KeyCycle_curveFit
+     * @see #KeyCycle_framePosition
+     * @see #KeyCycle_motionProgress
+     * @see #KeyCycle_motionTarget
+     * @see #KeyCycle_transitionEasing
+     * @see #KeyCycle_transitionPathRotate
+     * @see #KeyCycle_waveOffset
+     * @see #KeyCycle_wavePeriod
+     * @see #KeyCycle_waveShape
+     * @see #KeyCycle_waveVariesBy
+     */
+    public static final int[] KeyCycle={
+      0x0101031f, 0x01010322, 0x01010323, 0x01010324, 
+      0x01010325, 0x01010326, 0x01010327, 0x01010328, 
+      0x010103fa, 0x01010440, 0x7f04008d, 0x7f0400e6, 
+      0x7f04015f, 0x7f040161, 0x7f04021a, 0x7f04021b, 
+      0x7f040226, 0x7f040227, 0x7f040228, 0x7f040229
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#alpha}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:alpha
+     */
+    public static final int KeyCycle_android_alpha=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationX}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationX
+     */
+    public static final int KeyCycle_android_translationX=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationY}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationY
+     */
+    public static final int KeyCycle_android_translationY=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleX
+     */
+    public static final int KeyCycle_android_scaleX=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleY
+     */
+    public static final int KeyCycle_android_scaleY=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotation}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotation
+     */
+    public static final int KeyCycle_android_rotation=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationX
+     */
+    public static final int KeyCycle_android_rotationX=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationY
+     */
+    public static final int KeyCycle_android_rotationY=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationZ
+     */
+    public static final int KeyCycle_android_translationZ=8;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#elevation}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:elevation
+     */
+    public static final int KeyCycle_android_elevation=9;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#curveFit}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>linear</td><td>1</td><td></td></tr>
+     * <tr><td>spline</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:curveFit
+     */
+    public static final int KeyCycle_curveFit=10;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#framePosition}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:framePosition
+     */
+    public static final int KeyCycle_framePosition=11;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionProgress}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionProgress
+     */
+    public static final int KeyCycle_motionProgress=12;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionTarget}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:motionTarget
+     */
+    public static final int KeyCycle_motionTarget=13;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int KeyCycle_transitionEasing=14;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionPathRotate}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:transitionPathRotate
+     */
+    public static final int KeyCycle_transitionPathRotate=15;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#waveOffset}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:waveOffset
+     */
+    public static final int KeyCycle_waveOffset=16;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#wavePeriod}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:wavePeriod
+     */
+    public static final int KeyCycle_wavePeriod=17;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#waveShape}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bounce</td><td>6</td><td></td></tr>
+     * <tr><td>cos</td><td>5</td><td></td></tr>
+     * <tr><td>reverseSawtooth</td><td>4</td><td></td></tr>
+     * <tr><td>sawtooth</td><td>3</td><td></td></tr>
+     * <tr><td>sin</td><td>0</td><td></td></tr>
+     * <tr><td>square</td><td>1</td><td></td></tr>
+     * <tr><td>triangle</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:waveShape
+     */
+    public static final int KeyCycle_waveShape=18;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#waveVariesBy}
+     * attribute's value can be found in the {@link #KeyCycle} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>position</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:waveVariesBy
+     */
+    public static final int KeyCycle_waveVariesBy=19;
+    public static final int[] KeyFrame={
+    };
+    public static final int[] KeyFramesAcceleration={
+    };
+    public static final int[] KeyFramesVelocity={
+    };
+    /**
+     * Attributes that can be used with a KeyPosition.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #KeyPosition_curveFit org.tensorflow.demo:curveFit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_drawPath org.tensorflow.demo:drawPath}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_framePosition org.tensorflow.demo:framePosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_keyPositionType org.tensorflow.demo:keyPositionType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_motionTarget org.tensorflow.demo:motionTarget}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_pathMotionArc org.tensorflow.demo:pathMotionArc}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_percentHeight org.tensorflow.demo:percentHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_percentWidth org.tensorflow.demo:percentWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_percentX org.tensorflow.demo:percentX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_percentY org.tensorflow.demo:percentY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_sizePercent org.tensorflow.demo:sizePercent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyPosition_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * </table>
+     * @see #KeyPosition_curveFit
+     * @see #KeyPosition_drawPath
+     * @see #KeyPosition_framePosition
+     * @see #KeyPosition_keyPositionType
+     * @see #KeyPosition_motionTarget
+     * @see #KeyPosition_pathMotionArc
+     * @see #KeyPosition_percentHeight
+     * @see #KeyPosition_percentWidth
+     * @see #KeyPosition_percentX
+     * @see #KeyPosition_percentY
+     * @see #KeyPosition_sizePercent
+     * @see #KeyPosition_transitionEasing
+     */
+    public static final int[] KeyPosition={
+      0x7f04008d, 0x7f0400a8, 0x7f0400e6, 0x7f0400fa, 
+      0x7f040161, 0x7f040179, 0x7f04017b, 0x7f04017c, 
+      0x7f04017d, 0x7f04017e, 0x7f0401d2, 0x7f04021a
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#curveFit}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>linear</td><td>1</td><td></td></tr>
+     * <tr><td>spline</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:curveFit
+     */
+    public static final int KeyPosition_curveFit=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#drawPath}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>asConfigured</td><td>4</td><td></td></tr>
+     * <tr><td>deltaRelative</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>2</td><td></td></tr>
+     * <tr><td>rectangles</td><td>5</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:drawPath
+     */
+    public static final int KeyPosition_drawPath=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#framePosition}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:framePosition
+     */
+    public static final int KeyPosition_framePosition=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#keyPositionType}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>deltaRelative</td><td>0</td><td></td></tr>
+     * <tr><td>parentRelative</td><td>2</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:keyPositionType
+     */
+    public static final int KeyPosition_keyPositionType=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionTarget}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:motionTarget
+     */
+    public static final int KeyPosition_motionTarget=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pathMotionArc}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>flip</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>startHorizontal</td><td>2</td><td></td></tr>
+     * <tr><td>startVertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pathMotionArc
+     */
+    public static final int KeyPosition_pathMotionArc=5;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#percentHeight}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:percentHeight
+     */
+    public static final int KeyPosition_percentHeight=6;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#percentWidth}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:percentWidth
+     */
+    public static final int KeyPosition_percentWidth=7;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#percentX}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:percentX
+     */
+    public static final int KeyPosition_percentX=8;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#percentY}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:percentY
+     */
+    public static final int KeyPosition_percentY=9;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#sizePercent}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:sizePercent
+     */
+    public static final int KeyPosition_sizePercent=10;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #KeyPosition} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int KeyPosition_transitionEasing=11;
+    /**
+     * Attributes that can be used with a KeyTimeCycle.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_alpha android:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_translationX android:translationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_translationY android:translationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_scaleX android:scaleX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_scaleY android:scaleY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_rotation android:rotation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_rotationX android:rotationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_rotationY android:rotationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_translationZ android:translationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_curveFit org.tensorflow.demo:curveFit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_framePosition org.tensorflow.demo:framePosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_motionProgress org.tensorflow.demo:motionProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_motionTarget org.tensorflow.demo:motionTarget}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_transitionPathRotate org.tensorflow.demo:transitionPathRotate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_waveDecay org.tensorflow.demo:waveDecay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_waveOffset org.tensorflow.demo:waveOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_wavePeriod org.tensorflow.demo:wavePeriod}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTimeCycle_waveShape org.tensorflow.demo:waveShape}</code></td><td></td></tr>
+     * </table>
+     * @see #KeyTimeCycle_android_alpha
+     * @see #KeyTimeCycle_android_translationX
+     * @see #KeyTimeCycle_android_translationY
+     * @see #KeyTimeCycle_android_scaleX
+     * @see #KeyTimeCycle_android_scaleY
+     * @see #KeyTimeCycle_android_rotation
+     * @see #KeyTimeCycle_android_rotationX
+     * @see #KeyTimeCycle_android_rotationY
+     * @see #KeyTimeCycle_android_translationZ
+     * @see #KeyTimeCycle_android_elevation
+     * @see #KeyTimeCycle_curveFit
+     * @see #KeyTimeCycle_framePosition
+     * @see #KeyTimeCycle_motionProgress
+     * @see #KeyTimeCycle_motionTarget
+     * @see #KeyTimeCycle_transitionEasing
+     * @see #KeyTimeCycle_transitionPathRotate
+     * @see #KeyTimeCycle_waveDecay
+     * @see #KeyTimeCycle_waveOffset
+     * @see #KeyTimeCycle_wavePeriod
+     * @see #KeyTimeCycle_waveShape
+     */
+    public static final int[] KeyTimeCycle={
+      0x0101031f, 0x01010322, 0x01010323, 0x01010324, 
+      0x01010325, 0x01010326, 0x01010327, 0x01010328, 
+      0x010103fa, 0x01010440, 0x7f04008d, 0x7f0400e6, 
+      0x7f04015f, 0x7f040161, 0x7f04021a, 0x7f04021b, 
+      0x7f040225, 0x7f040226, 0x7f040227, 0x7f040228
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#alpha}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:alpha
+     */
+    public static final int KeyTimeCycle_android_alpha=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationX}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationX
+     */
+    public static final int KeyTimeCycle_android_translationX=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationY}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationY
+     */
+    public static final int KeyTimeCycle_android_translationY=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleX
+     */
+    public static final int KeyTimeCycle_android_scaleX=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleY
+     */
+    public static final int KeyTimeCycle_android_scaleY=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotation}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotation
+     */
+    public static final int KeyTimeCycle_android_rotation=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationX
+     */
+    public static final int KeyTimeCycle_android_rotationX=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationY
+     */
+    public static final int KeyTimeCycle_android_rotationY=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationZ
+     */
+    public static final int KeyTimeCycle_android_translationZ=8;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#elevation}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:elevation
+     */
+    public static final int KeyTimeCycle_android_elevation=9;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#curveFit}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>linear</td><td>1</td><td></td></tr>
+     * <tr><td>spline</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:curveFit
+     */
+    public static final int KeyTimeCycle_curveFit=10;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#framePosition}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:framePosition
+     */
+    public static final int KeyTimeCycle_framePosition=11;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionProgress}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionProgress
+     */
+    public static final int KeyTimeCycle_motionProgress=12;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionTarget}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:motionTarget
+     */
+    public static final int KeyTimeCycle_motionTarget=13;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int KeyTimeCycle_transitionEasing=14;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionPathRotate}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:transitionPathRotate
+     */
+    public static final int KeyTimeCycle_transitionPathRotate=15;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#waveDecay}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:waveDecay
+     */
+    public static final int KeyTimeCycle_waveDecay=16;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#waveOffset}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:waveOffset
+     */
+    public static final int KeyTimeCycle_waveOffset=17;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#wavePeriod}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:wavePeriod
+     */
+    public static final int KeyTimeCycle_wavePeriod=18;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#waveShape}
+     * attribute's value can be found in the {@link #KeyTimeCycle} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bounce</td><td>6</td><td></td></tr>
+     * <tr><td>cos</td><td>5</td><td></td></tr>
+     * <tr><td>reverseSawtooth</td><td>4</td><td></td></tr>
+     * <tr><td>sawtooth</td><td>3</td><td></td></tr>
+     * <tr><td>sin</td><td>0</td><td></td></tr>
+     * <tr><td>square</td><td>1</td><td></td></tr>
+     * <tr><td>triangle</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:waveShape
+     */
+    public static final int KeyTimeCycle_waveShape=19;
+    /**
+     * Attributes that can be used with a KeyTrigger.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #KeyTrigger_framePosition org.tensorflow.demo:framePosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_motionTarget org.tensorflow.demo:motionTarget}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_motion_postLayoutCollision org.tensorflow.demo:motion_postLayoutCollision}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_motion_triggerOnCollision org.tensorflow.demo:motion_triggerOnCollision}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_onCross org.tensorflow.demo:onCross}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_onNegativeCross org.tensorflow.demo:onNegativeCross}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_onPositiveCross org.tensorflow.demo:onPositiveCross}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_triggerId org.tensorflow.demo:triggerId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_triggerReceiver org.tensorflow.demo:triggerReceiver}</code></td><td></td></tr>
+     * <tr><td><code>{@link #KeyTrigger_triggerSlack org.tensorflow.demo:triggerSlack}</code></td><td></td></tr>
+     * </table>
+     * @see #KeyTrigger_framePosition
+     * @see #KeyTrigger_motionTarget
+     * @see #KeyTrigger_motion_postLayoutCollision
+     * @see #KeyTrigger_motion_triggerOnCollision
+     * @see #KeyTrigger_onCross
+     * @see #KeyTrigger_onNegativeCross
+     * @see #KeyTrigger_onPositiveCross
+     * @see #KeyTrigger_triggerId
+     * @see #KeyTrigger_triggerReceiver
+     * @see #KeyTrigger_triggerSlack
+     */
+    public static final int[] KeyTrigger={
+      0x7f0400e6, 0x7f040161, 0x7f040162, 0x7f040163, 
+      0x7f04016a, 0x7f04016c, 0x7f04016d, 0x7f04021c, 
+      0x7f04021d, 0x7f04021e
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#framePosition}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:framePosition
+     */
+    public static final int KeyTrigger_framePosition=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionTarget}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:motionTarget
+     */
+    public static final int KeyTrigger_motionTarget=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motion_postLayoutCollision}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:motion_postLayoutCollision
+     */
+    public static final int KeyTrigger_motion_postLayoutCollision=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motion_triggerOnCollision}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:motion_triggerOnCollision
+     */
+    public static final int KeyTrigger_motion_triggerOnCollision=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#onCross}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:onCross
+     */
+    public static final int KeyTrigger_onCross=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#onNegativeCross}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:onNegativeCross
+     */
+    public static final int KeyTrigger_onNegativeCross=5;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#onPositiveCross}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:onPositiveCross
+     */
+    public static final int KeyTrigger_onPositiveCross=6;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#triggerId}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:triggerId
+     */
+    public static final int KeyTrigger_triggerId=7;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#triggerReceiver}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:triggerReceiver
+     */
+    public static final int KeyTrigger_triggerReceiver=8;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#triggerSlack}
+     * attribute's value can be found in the {@link #KeyTrigger} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:triggerSlack
+     */
+    public static final int KeyTrigger_triggerSlack=9;
+    /**
+     * Attributes that can be used with a Layout.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Layout_android_orientation android:orientation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_width android:layout_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_height android:layout_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_marginLeft android:layout_marginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_marginTop android:layout_marginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_marginRight android:layout_marginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_marginBottom android:layout_marginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_marginStart android:layout_marginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_barrierAllowsGoneWidgets org.tensorflow.demo:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_barrierDirection org.tensorflow.demo:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_barrierMargin org.tensorflow.demo:barrierMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_chainUseRtl org.tensorflow.demo:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_constraint_referenced_ids org.tensorflow.demo:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constrainedHeight org.tensorflow.demo:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constrainedWidth org.tensorflow.demo:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintBaseline_creator org.tensorflow.demo:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintBaseline_toBaselineOf org.tensorflow.demo:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintBottom_creator org.tensorflow.demo:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintBottom_toBottomOf org.tensorflow.demo:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintBottom_toTopOf org.tensorflow.demo:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintCircle org.tensorflow.demo:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintCircleAngle org.tensorflow.demo:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintCircleRadius org.tensorflow.demo:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintDimensionRatio org.tensorflow.demo:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintEnd_toEndOf org.tensorflow.demo:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintEnd_toStartOf org.tensorflow.demo:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintGuide_begin org.tensorflow.demo:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintGuide_end org.tensorflow.demo:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintGuide_percent org.tensorflow.demo:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHeight_default org.tensorflow.demo:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHeight_max org.tensorflow.demo:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHeight_min org.tensorflow.demo:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHeight_percent org.tensorflow.demo:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHorizontal_bias org.tensorflow.demo:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHorizontal_chainStyle org.tensorflow.demo:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintHorizontal_weight org.tensorflow.demo:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintLeft_creator org.tensorflow.demo:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintLeft_toLeftOf org.tensorflow.demo:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintLeft_toRightOf org.tensorflow.demo:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintRight_creator org.tensorflow.demo:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintRight_toLeftOf org.tensorflow.demo:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintRight_toRightOf org.tensorflow.demo:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintStart_toEndOf org.tensorflow.demo:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintStart_toStartOf org.tensorflow.demo:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintTop_creator org.tensorflow.demo:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintTop_toBottomOf org.tensorflow.demo:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintTop_toTopOf org.tensorflow.demo:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintVertical_bias org.tensorflow.demo:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintVertical_chainStyle org.tensorflow.demo:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintVertical_weight org.tensorflow.demo:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintWidth_default org.tensorflow.demo:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintWidth_max org.tensorflow.demo:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintWidth_min org.tensorflow.demo:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_constraintWidth_percent org.tensorflow.demo:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_editor_absoluteX org.tensorflow.demo:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_editor_absoluteY org.tensorflow.demo:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_goneMarginBottom org.tensorflow.demo:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_goneMarginEnd org.tensorflow.demo:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_goneMarginLeft org.tensorflow.demo:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_goneMarginRight org.tensorflow.demo:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_goneMarginStart org.tensorflow.demo:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_layout_goneMarginTop org.tensorflow.demo:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_maxHeight org.tensorflow.demo:maxHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_maxWidth org.tensorflow.demo:maxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_minHeight org.tensorflow.demo:minHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Layout_minWidth org.tensorflow.demo:minWidth}</code></td><td></td></tr>
+     * </table>
+     * @see #Layout_android_orientation
+     * @see #Layout_android_layout_width
+     * @see #Layout_android_layout_height
+     * @see #Layout_android_layout_marginLeft
+     * @see #Layout_android_layout_marginTop
+     * @see #Layout_android_layout_marginRight
+     * @see #Layout_android_layout_marginBottom
+     * @see #Layout_android_layout_marginStart
+     * @see #Layout_android_layout_marginEnd
+     * @see #Layout_barrierAllowsGoneWidgets
+     * @see #Layout_barrierDirection
+     * @see #Layout_barrierMargin
+     * @see #Layout_chainUseRtl
+     * @see #Layout_constraint_referenced_ids
+     * @see #Layout_layout_constrainedHeight
+     * @see #Layout_layout_constrainedWidth
+     * @see #Layout_layout_constraintBaseline_creator
+     * @see #Layout_layout_constraintBaseline_toBaselineOf
+     * @see #Layout_layout_constraintBottom_creator
+     * @see #Layout_layout_constraintBottom_toBottomOf
+     * @see #Layout_layout_constraintBottom_toTopOf
+     * @see #Layout_layout_constraintCircle
+     * @see #Layout_layout_constraintCircleAngle
+     * @see #Layout_layout_constraintCircleRadius
+     * @see #Layout_layout_constraintDimensionRatio
+     * @see #Layout_layout_constraintEnd_toEndOf
+     * @see #Layout_layout_constraintEnd_toStartOf
+     * @see #Layout_layout_constraintGuide_begin
+     * @see #Layout_layout_constraintGuide_end
+     * @see #Layout_layout_constraintGuide_percent
+     * @see #Layout_layout_constraintHeight_default
+     * @see #Layout_layout_constraintHeight_max
+     * @see #Layout_layout_constraintHeight_min
+     * @see #Layout_layout_constraintHeight_percent
+     * @see #Layout_layout_constraintHorizontal_bias
+     * @see #Layout_layout_constraintHorizontal_chainStyle
+     * @see #Layout_layout_constraintHorizontal_weight
+     * @see #Layout_layout_constraintLeft_creator
+     * @see #Layout_layout_constraintLeft_toLeftOf
+     * @see #Layout_layout_constraintLeft_toRightOf
+     * @see #Layout_layout_constraintRight_creator
+     * @see #Layout_layout_constraintRight_toLeftOf
+     * @see #Layout_layout_constraintRight_toRightOf
+     * @see #Layout_layout_constraintStart_toEndOf
+     * @see #Layout_layout_constraintStart_toStartOf
+     * @see #Layout_layout_constraintTop_creator
+     * @see #Layout_layout_constraintTop_toBottomOf
+     * @see #Layout_layout_constraintTop_toTopOf
+     * @see #Layout_layout_constraintVertical_bias
+     * @see #Layout_layout_constraintVertical_chainStyle
+     * @see #Layout_layout_constraintVertical_weight
+     * @see #Layout_layout_constraintWidth_default
+     * @see #Layout_layout_constraintWidth_max
+     * @see #Layout_layout_constraintWidth_min
+     * @see #Layout_layout_constraintWidth_percent
+     * @see #Layout_layout_editor_absoluteX
+     * @see #Layout_layout_editor_absoluteY
+     * @see #Layout_layout_goneMarginBottom
+     * @see #Layout_layout_goneMarginEnd
+     * @see #Layout_layout_goneMarginLeft
+     * @see #Layout_layout_goneMarginRight
+     * @see #Layout_layout_goneMarginStart
+     * @see #Layout_layout_goneMarginTop
+     * @see #Layout_maxHeight
+     * @see #Layout_maxWidth
+     * @see #Layout_minHeight
+     * @see #Layout_minWidth
+     */
+    public static final int[] Layout={
+      0x010100c4, 0x010100f4, 0x010100f5, 0x010100f7, 
+      0x010100f8, 0x010100f9, 0x010100fa, 0x010103b5, 
+      0x010103b6, 0x7f04003f, 0x7f040040, 0x7f040041, 
+      0x7f040052, 0x7f04006d, 0x7f040102, 0x7f040103, 
+      0x7f040104, 0x7f040105, 0x7f040106, 0x7f040107, 
+      0x7f040108, 0x7f040109, 0x7f04010a, 0x7f04010b, 
+      0x7f04010c, 0x7f04010d, 0x7f04010e, 0x7f04010f, 
+      0x7f040110, 0x7f040111, 0x7f040112, 0x7f040113, 
+      0x7f040114, 0x7f040115, 0x7f040116, 0x7f040117, 
+      0x7f040118, 0x7f040119, 0x7f04011a, 0x7f04011b, 
+      0x7f04011c, 0x7f04011d, 0x7f04011e, 0x7f04011f, 
+      0x7f040120, 0x7f040122, 0x7f040123, 0x7f040124, 
+      0x7f040125, 0x7f040126, 0x7f040127, 0x7f040128, 
+      0x7f040129, 0x7f04012a, 0x7f04012b, 0x7f04012d, 
+      0x7f04012e, 0x7f04012f, 0x7f040130, 0x7f040131, 
+      0x7f040132, 0x7f040133, 0x7f040134, 0x7f04014d, 
+      0x7f04014f, 0x7f040154, 0x7f040155
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#orientation}
-     * attribute's value can be found in the {@link #LinearConstraintLayout} array.
+     * attribute's value can be found in the {@link #Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -12405,7 +17752,965 @@ public final class R {
      *
      * @attr name android:orientation
      */
-    public static final int LinearConstraintLayout_android_orientation=0;
+    public static final int Layout_android_orientation=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_width}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:layout_width
+     */
+    public static final int Layout_android_layout_width=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_height}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:layout_height
+     */
+    public static final int Layout_android_layout_height=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginLeft}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginLeft
+     */
+    public static final int Layout_android_layout_marginLeft=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginTop}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginTop
+     */
+    public static final int Layout_android_layout_marginTop=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginRight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginRight
+     */
+    public static final int Layout_android_layout_marginRight=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginBottom}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginBottom
+     */
+    public static final int Layout_android_layout_marginBottom=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginStart}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginStart
+     */
+    public static final int Layout_android_layout_marginStart=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginEnd}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginEnd
+     */
+    public static final int Layout_android_layout_marginEnd=8;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierAllowsGoneWidgets}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:barrierAllowsGoneWidgets
+     */
+    public static final int Layout_barrierAllowsGoneWidgets=9;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierDirection}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>end</td><td>6</td><td></td></tr>
+     * <tr><td>left</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>5</td><td></td></tr>
+     * <tr><td>top</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:barrierDirection
+     */
+    public static final int Layout_barrierDirection=10;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barrierMargin}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:barrierMargin
+     */
+    public static final int Layout_barrierMargin=11;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#chainUseRtl}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:chainUseRtl
+     */
+    public static final int Layout_chainUseRtl=12;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraint_referenced_ids}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:constraint_referenced_ids
+     */
+    public static final int Layout_constraint_referenced_ids=13;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedHeight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constrainedHeight
+     */
+    public static final int Layout_layout_constrainedHeight=14;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constrainedWidth}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constrainedWidth
+     */
+    public static final int Layout_layout_constrainedWidth=15;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_creator}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBaseline_creator
+     */
+    public static final int Layout_layout_constraintBaseline_creator=16;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBaseline_toBaselineOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBaseline_toBaselineOf
+     */
+    public static final int Layout_layout_constraintBaseline_toBaselineOf=17;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_creator}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBottom_creator
+     */
+    public static final int Layout_layout_constraintBottom_creator=18;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toBottomOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBottom_toBottomOf
+     */
+    public static final int Layout_layout_constraintBottom_toBottomOf=19;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintBottom_toTopOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintBottom_toTopOf
+     */
+    public static final int Layout_layout_constraintBottom_toTopOf=20;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircle}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintCircle
+     */
+    public static final int Layout_layout_constraintCircle=21;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleAngle}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintCircleAngle
+     */
+    public static final int Layout_layout_constraintCircleAngle=22;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintCircleRadius}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_constraintCircleRadius
+     */
+    public static final int Layout_layout_constraintCircleRadius=23;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintDimensionRatio}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:layout_constraintDimensionRatio
+     */
+    public static final int Layout_layout_constraintDimensionRatio=24;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toEndOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintEnd_toEndOf
+     */
+    public static final int Layout_layout_constraintEnd_toEndOf=25;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintEnd_toStartOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintEnd_toStartOf
+     */
+    public static final int Layout_layout_constraintEnd_toStartOf=26;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_begin}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_constraintGuide_begin
+     */
+    public static final int Layout_layout_constraintGuide_begin=27;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_end}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_constraintGuide_end
+     */
+    public static final int Layout_layout_constraintGuide_end=28;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintGuide_percent}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintGuide_percent
+     */
+    public static final int Layout_layout_constraintGuide_percent=29;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_default}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_default
+     */
+    public static final int Layout_layout_constraintHeight_default=30;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_max}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_max
+     */
+    public static final int Layout_layout_constraintHeight_max=31;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_min}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_min
+     */
+    public static final int Layout_layout_constraintHeight_min=32;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHeight_percent}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHeight_percent
+     */
+    public static final int Layout_layout_constraintHeight_percent=33;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_bias}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHorizontal_bias
+     */
+    public static final int Layout_layout_constraintHorizontal_bias=34;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_chainStyle}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHorizontal_chainStyle
+     */
+    public static final int Layout_layout_constraintHorizontal_chainStyle=35;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintHorizontal_weight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintHorizontal_weight
+     */
+    public static final int Layout_layout_constraintHorizontal_weight=36;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_creator}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintLeft_creator
+     */
+    public static final int Layout_layout_constraintLeft_creator=37;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toLeftOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintLeft_toLeftOf
+     */
+    public static final int Layout_layout_constraintLeft_toLeftOf=38;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintLeft_toRightOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintLeft_toRightOf
+     */
+    public static final int Layout_layout_constraintLeft_toRightOf=39;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_creator}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintRight_creator
+     */
+    public static final int Layout_layout_constraintRight_creator=40;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toLeftOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintRight_toLeftOf
+     */
+    public static final int Layout_layout_constraintRight_toLeftOf=41;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintRight_toRightOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintRight_toRightOf
+     */
+    public static final int Layout_layout_constraintRight_toRightOf=42;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toEndOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintStart_toEndOf
+     */
+    public static final int Layout_layout_constraintStart_toEndOf=43;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintStart_toStartOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintStart_toStartOf
+     */
+    public static final int Layout_layout_constraintStart_toStartOf=44;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_creator}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTop_creator
+     */
+    public static final int Layout_layout_constraintTop_creator=45;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toBottomOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTop_toBottomOf
+     */
+    public static final int Layout_layout_constraintTop_toBottomOf=46;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTop_toTopOf}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTop_toTopOf
+     */
+    public static final int Layout_layout_constraintTop_toTopOf=47;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_bias}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintVertical_bias
+     */
+    public static final int Layout_layout_constraintVertical_bias=48;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_chainStyle}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintVertical_chainStyle
+     */
+    public static final int Layout_layout_constraintVertical_chainStyle=49;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintVertical_weight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintVertical_weight
+     */
+    public static final int Layout_layout_constraintVertical_weight=50;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_default}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_default
+     */
+    public static final int Layout_layout_constraintWidth_default=51;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_max}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_max
+     */
+    public static final int Layout_layout_constraintWidth_max=52;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_min}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_min
+     */
+    public static final int Layout_layout_constraintWidth_min=53;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintWidth_percent}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:layout_constraintWidth_percent
+     */
+    public static final int Layout_layout_constraintWidth_percent=54;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteX}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_editor_absoluteX
+     */
+    public static final int Layout_layout_editor_absoluteX=55;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_editor_absoluteY}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_editor_absoluteY
+     */
+    public static final int Layout_layout_editor_absoluteY=56;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginBottom}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginBottom
+     */
+    public static final int Layout_layout_goneMarginBottom=57;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginEnd}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginEnd
+     */
+    public static final int Layout_layout_goneMarginEnd=58;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginLeft}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginLeft
+     */
+    public static final int Layout_layout_goneMarginLeft=59;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginRight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginRight
+     */
+    public static final int Layout_layout_goneMarginRight=60;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginStart}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginStart
+     */
+    public static final int Layout_layout_goneMarginStart=61;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_goneMarginTop}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:layout_goneMarginTop
+     */
+    public static final int Layout_layout_goneMarginTop=62;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#maxHeight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:maxHeight
+     */
+    public static final int Layout_maxHeight=63;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#maxWidth}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:maxWidth
+     */
+    public static final int Layout_maxWidth=64;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#minHeight}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:minHeight
+     */
+    public static final int Layout_minHeight=65;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#minWidth}
+     * attribute's value can be found in the {@link #Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:minWidth
+     */
+    public static final int Layout_minWidth=66;
     /**
      * Attributes that can be used with a LinearLayoutCompat.
      * <p>Includes the following attributes:</p>
@@ -12435,8 +18740,8 @@ public final class R {
      */
     public static final int[] LinearLayoutCompat={
       0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-      0x01010128, 0x7f040084, 0x7f040086, 0x7f040114, 
-      0x7f040159
+      0x01010128, 0x7f0400a2, 0x7f0400a4, 0x7f040150, 
+      0x7f0401c0
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -12728,7 +19033,7 @@ public final class R {
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-      0x7f04004e, 0x7f0400bd, 0x7f0400be
+      0x7f040056, 0x7f0400f2, 0x7f0400f3
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#circleCrop}
@@ -12799,9 +19104,9 @@ public final class R {
      * @see #MaterialRippleLayout_ripplePersistent
      */
     public static final int[] MaterialRippleLayout={
-      0x7f040146, 0x7f040147, 0x7f040148, 0x7f040149, 
-      0x7f04014a, 0x7f04014b, 0x7f04014c, 0x7f04014d, 
-      0x7f04014e, 0x7f04014f, 0x7f040150
+      0x7f0401aa, 0x7f0401ab, 0x7f0401ac, 0x7f0401ad, 
+      0x7f0401ae, 0x7f0401af, 0x7f0401b0, 0x7f0401b1, 
+      0x7f0401b2, 0x7f0401b3, 0x7f0401b4
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#rippleAlpha}
@@ -13078,8 +19383,8 @@ public final class R {
       0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
       0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
       0x0101026f, 0x7f04000d, 0x7f04001f, 0x7f040020, 
-      0x7f040028, 0x7f040063, 0x7f0400ba, 0x7f0400bb, 
-      0x7f04011c, 0x7f040158, 0x7f0401a4
+      0x7f040028, 0x7f040070, 0x7f0400ef, 0x7f0400f0, 
+      0x7f040169, 0x7f0401bf, 0x7f040212
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#icon}
@@ -13398,8 +19703,8 @@ public final class R {
      */
     public static final int[] MenuView={
       0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-      0x0101012f, 0x01010130, 0x01010131, 0x7f040128, 
-      0x7f040172
+      0x0101012f, 0x01010130, 0x01010131, 0x7f040187, 
+      0x7f0401dc
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
@@ -13511,6 +19816,623 @@ public final class R {
      */
     public static final int MenuView_subMenuArrow=8;
     /**
+     * Attributes that can be used with a MockView.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MockView_mock_diagonalsColor org.tensorflow.demo:mock_diagonalsColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MockView_mock_label org.tensorflow.demo:mock_label}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MockView_mock_labelBackgroundColor org.tensorflow.demo:mock_labelBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MockView_mock_labelColor org.tensorflow.demo:mock_labelColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MockView_mock_showDiagonals org.tensorflow.demo:mock_showDiagonals}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MockView_mock_showLabel org.tensorflow.demo:mock_showLabel}</code></td><td></td></tr>
+     * </table>
+     * @see #MockView_mock_diagonalsColor
+     * @see #MockView_mock_label
+     * @see #MockView_mock_labelBackgroundColor
+     * @see #MockView_mock_labelColor
+     * @see #MockView_mock_showDiagonals
+     * @see #MockView_mock_showLabel
+     */
+    public static final int[] MockView={
+      0x7f040156, 0x7f040157, 0x7f040158, 0x7f040159, 
+      0x7f04015a, 0x7f04015b
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#mock_diagonalsColor}
+     * attribute's value can be found in the {@link #MockView} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name org.tensorflow.demo:mock_diagonalsColor
+     */
+    public static final int MockView_mock_diagonalsColor=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#mock_label}
+     * attribute's value can be found in the {@link #MockView} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:mock_label
+     */
+    public static final int MockView_mock_label=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#mock_labelBackgroundColor}
+     * attribute's value can be found in the {@link #MockView} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name org.tensorflow.demo:mock_labelBackgroundColor
+     */
+    public static final int MockView_mock_labelBackgroundColor=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#mock_labelColor}
+     * attribute's value can be found in the {@link #MockView} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name org.tensorflow.demo:mock_labelColor
+     */
+    public static final int MockView_mock_labelColor=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#mock_showDiagonals}
+     * attribute's value can be found in the {@link #MockView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:mock_showDiagonals
+     */
+    public static final int MockView_mock_showDiagonals=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#mock_showLabel}
+     * attribute's value can be found in the {@link #MockView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:mock_showLabel
+     */
+    public static final int MockView_mock_showLabel=5;
+    /**
+     * Attributes that can be used with a Motion.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Motion_animate_relativeTo org.tensorflow.demo:animate_relativeTo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Motion_drawPath org.tensorflow.demo:drawPath}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Motion_motionPathRotate org.tensorflow.demo:motionPathRotate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Motion_motionStagger org.tensorflow.demo:motionStagger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Motion_pathMotionArc org.tensorflow.demo:pathMotionArc}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Motion_transitionEasing org.tensorflow.demo:transitionEasing}</code></td><td></td></tr>
+     * </table>
+     * @see #Motion_animate_relativeTo
+     * @see #Motion_drawPath
+     * @see #Motion_motionPathRotate
+     * @see #Motion_motionStagger
+     * @see #Motion_pathMotionArc
+     * @see #Motion_transitionEasing
+     */
+    public static final int[] Motion={
+      0x7f04002a, 0x7f0400a8, 0x7f04015e, 0x7f040160, 
+      0x7f040179, 0x7f04021a
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#animate_relativeTo}
+     * attribute's value can be found in the {@link #Motion} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:animate_relativeTo
+     */
+    public static final int Motion_animate_relativeTo=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#drawPath}
+     * attribute's value can be found in the {@link #Motion} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>asConfigured</td><td>4</td><td></td></tr>
+     * <tr><td>deltaRelative</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>path</td><td>1</td><td></td></tr>
+     * <tr><td>pathRelative</td><td>2</td><td></td></tr>
+     * <tr><td>rectangles</td><td>5</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:drawPath
+     */
+    public static final int Motion_drawPath=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionPathRotate}
+     * attribute's value can be found in the {@link #Motion} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionPathRotate
+     */
+    public static final int Motion_motionPathRotate=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionStagger}
+     * attribute's value can be found in the {@link #Motion} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionStagger
+     */
+    public static final int Motion_motionStagger=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pathMotionArc}
+     * attribute's value can be found in the {@link #Motion} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>flip</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>startHorizontal</td><td>2</td><td></td></tr>
+     * <tr><td>startVertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pathMotionArc
+     */
+    public static final int Motion_pathMotionArc=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionEasing}
+     * attribute's value can be found in the {@link #Motion} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>accelerate</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:transitionEasing
+     */
+    public static final int Motion_transitionEasing=5;
+    /**
+     * Attributes that can be used with a MotionHelper.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MotionHelper_onHide org.tensorflow.demo:onHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionHelper_onShow org.tensorflow.demo:onShow}</code></td><td></td></tr>
+     * </table>
+     * @see #MotionHelper_onHide
+     * @see #MotionHelper_onShow
+     */
+    public static final int[] MotionHelper={
+      0x7f04016b, 0x7f04016e
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#onHide}
+     * attribute's value can be found in the {@link #MotionHelper} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:onHide
+     */
+    public static final int MotionHelper_onHide=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#onShow}
+     * attribute's value can be found in the {@link #MotionHelper} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:onShow
+     */
+    public static final int MotionHelper_onShow=1;
+    /**
+     * Attributes that can be used with a MotionLayout.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MotionLayout_applyMotionScene org.tensorflow.demo:applyMotionScene}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionLayout_currentState org.tensorflow.demo:currentState}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionLayout_layoutDescription org.tensorflow.demo:layoutDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionLayout_motionDebug org.tensorflow.demo:motionDebug}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionLayout_motionProgress org.tensorflow.demo:motionProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionLayout_showPaths org.tensorflow.demo:showPaths}</code></td><td></td></tr>
+     * </table>
+     * @see #MotionLayout_applyMotionScene
+     * @see #MotionLayout_currentState
+     * @see #MotionLayout_layoutDescription
+     * @see #MotionLayout_motionDebug
+     * @see #MotionLayout_motionProgress
+     * @see #MotionLayout_showPaths
+     */
+    public static final int[] MotionLayout={
+      0x7f04002b, 0x7f04008c, 0x7f0400fe, 0x7f04015c, 
+      0x7f04015f, 0x7f0401c1
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#applyMotionScene}
+     * attribute's value can be found in the {@link #MotionLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:applyMotionScene
+     */
+    public static final int MotionLayout_applyMotionScene=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#currentState}
+     * attribute's value can be found in the {@link #MotionLayout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:currentState
+     */
+    public static final int MotionLayout_currentState=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layoutDescription}
+     * attribute's value can be found in the {@link #MotionLayout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:layoutDescription
+     */
+    public static final int MotionLayout_layoutDescription=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionDebug}
+     * attribute's value can be found in the {@link #MotionLayout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>NO_DEBUG</td><td>0</td><td></td></tr>
+     * <tr><td>SHOW_ALL</td><td>3</td><td></td></tr>
+     * <tr><td>SHOW_PATH</td><td>2</td><td></td></tr>
+     * <tr><td>SHOW_PROGRESS</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:motionDebug
+     */
+    public static final int MotionLayout_motionDebug=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionProgress}
+     * attribute's value can be found in the {@link #MotionLayout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionProgress
+     */
+    public static final int MotionLayout_motionProgress=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#showPaths}
+     * attribute's value can be found in the {@link #MotionLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:showPaths
+     */
+    public static final int MotionLayout_showPaths=5;
+    /**
+     * Attributes that can be used with a MotionScene.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MotionScene_defaultDuration org.tensorflow.demo:defaultDuration}</code></td><td></td></tr>
+     * </table>
+     * @see #MotionScene_defaultDuration
+     */
+    public static final int[] MotionScene={
+      0x7f040097
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#defaultDuration}
+     * attribute's value can be found in the {@link #MotionScene} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:defaultDuration
+     */
+    public static final int MotionScene_defaultDuration=0;
+    /**
+     * Attributes that can be used with a MotionTelltales.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #MotionTelltales_telltales_tailColor org.tensorflow.demo:telltales_tailColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionTelltales_telltales_tailScale org.tensorflow.demo:telltales_tailScale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MotionTelltales_telltales_velocityMode org.tensorflow.demo:telltales_velocityMode}</code></td><td></td></tr>
+     * </table>
+     * @see #MotionTelltales_telltales_tailColor
+     * @see #MotionTelltales_telltales_tailScale
+     * @see #MotionTelltales_telltales_velocityMode
+     */
+    public static final int[] MotionTelltales={
+      0x7f0401e8, 0x7f0401e9, 0x7f0401ea
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#telltales_tailColor}
+     * attribute's value can be found in the {@link #MotionTelltales} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name org.tensorflow.demo:telltales_tailColor
+     */
+    public static final int MotionTelltales_telltales_tailColor=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#telltales_tailScale}
+     * attribute's value can be found in the {@link #MotionTelltales} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:telltales_tailScale
+     */
+    public static final int MotionTelltales_telltales_tailScale=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#telltales_velocityMode}
+     * attribute's value can be found in the {@link #MotionTelltales} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>layout</td><td>0</td><td></td></tr>
+     * <tr><td>postLayout</td><td>1</td><td></td></tr>
+     * <tr><td>staticLayout</td><td>3</td><td></td></tr>
+     * <tr><td>staticPostLayout</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:telltales_velocityMode
+     */
+    public static final int MotionTelltales_telltales_velocityMode=2;
+    /**
+     * Attributes that can be used with a OnClick.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #OnClick_clickAction org.tensorflow.demo:clickAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnClick_targetId org.tensorflow.demo:targetId}</code></td><td></td></tr>
+     * </table>
+     * @see #OnClick_clickAction
+     * @see #OnClick_targetId
+     */
+    public static final int[] OnClick={
+      0x7f040058, 0x7f0401e7
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#clickAction}
+     * attribute's value can be found in the {@link #OnClick} array.
+     *
+     * <p>Must be one or more (separated by '|') of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>jumpToEnd</td><td>100</td><td></td></tr>
+     * <tr><td>jumpToStart</td><td>1000</td><td></td></tr>
+     * <tr><td>toggle</td><td>11</td><td></td></tr>
+     * <tr><td>transitionToEnd</td><td>1</td><td></td></tr>
+     * <tr><td>transitionToStart</td><td>10</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:clickAction
+     */
+    public static final int OnClick_clickAction=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#targetId}
+     * attribute's value can be found in the {@link #OnClick} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:targetId
+     */
+    public static final int OnClick_targetId=1;
+    /**
+     * Attributes that can be used with a OnSwipe.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #OnSwipe_dragDirection org.tensorflow.demo:dragDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_dragScale org.tensorflow.demo:dragScale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_maxAcceleration org.tensorflow.demo:maxAcceleration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_maxVelocity org.tensorflow.demo:maxVelocity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_moveWhenScrollAtTop org.tensorflow.demo:moveWhenScrollAtTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_onTouchUp org.tensorflow.demo:onTouchUp}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_touchAnchorId org.tensorflow.demo:touchAnchorId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_touchAnchorSide org.tensorflow.demo:touchAnchorSide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #OnSwipe_touchRegionId org.tensorflow.demo:touchRegionId}</code></td><td></td></tr>
+     * </table>
+     * @see #OnSwipe_dragDirection
+     * @see #OnSwipe_dragScale
+     * @see #OnSwipe_maxAcceleration
+     * @see #OnSwipe_maxVelocity
+     * @see #OnSwipe_moveWhenScrollAtTop
+     * @see #OnSwipe_onTouchUp
+     * @see #OnSwipe_touchAnchorId
+     * @see #OnSwipe_touchAnchorSide
+     * @see #OnSwipe_touchRegionId
+     */
+    public static final int[] OnSwipe={
+      0x7f0400a6, 0x7f0400a7, 0x7f04014b, 0x7f04014e, 
+      0x7f040164, 0x7f04016f, 0x7f040213, 0x7f040214, 
+      0x7f040215
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#dragDirection}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>dragDown</td><td>1</td><td></td></tr>
+     * <tr><td>dragLeft</td><td>2</td><td></td></tr>
+     * <tr><td>dragRight</td><td>3</td><td></td></tr>
+     * <tr><td>dragUp</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:dragDirection
+     */
+    public static final int OnSwipe_dragDirection=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#dragScale}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:dragScale
+     */
+    public static final int OnSwipe_dragScale=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#maxAcceleration}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:maxAcceleration
+     */
+    public static final int OnSwipe_maxAcceleration=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#maxVelocity}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:maxVelocity
+     */
+    public static final int OnSwipe_maxVelocity=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#moveWhenScrollAtTop}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:moveWhenScrollAtTop
+     */
+    public static final int OnSwipe_moveWhenScrollAtTop=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#onTouchUp}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>autoComplete</td><td>0</td><td></td></tr>
+     * <tr><td>autoCompleteToEnd</td><td>2</td><td></td></tr>
+     * <tr><td>autoCompleteToStart</td><td>1</td><td></td></tr>
+     * <tr><td>decelerate</td><td>4</td><td></td></tr>
+     * <tr><td>decelerateAndComplete</td><td>5</td><td></td></tr>
+     * <tr><td>stop</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:onTouchUp
+     */
+    public static final int OnSwipe_onTouchUp=5;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#touchAnchorId}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:touchAnchorId
+     */
+    public static final int OnSwipe_touchAnchorId=6;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#touchAnchorSide}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>left</td><td>1</td><td></td></tr>
+     * <tr><td>right</td><td>2</td><td></td></tr>
+     * <tr><td>top</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:touchAnchorSide
+     */
+    public static final int OnSwipe_touchAnchorSide=7;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#touchRegionId}
+     * attribute's value can be found in the {@link #OnSwipe} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:touchRegionId
+     */
+    public static final int OnSwipe_touchRegionId=8;
+    /**
      * Attributes that can be used with a PagerSlidingTabStrip.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -13556,11 +20478,11 @@ public final class R {
      * @see #PagerSlidingTabStrip_pstsUnderlineHeight
      */
     public static final int[] PagerSlidingTabStrip={
-      0x7f04012b, 0x7f04012c, 0x7f04012d, 0x7f04012e, 
-      0x7f04012f, 0x7f040130, 0x7f040131, 0x7f040132, 
-      0x7f040133, 0x7f040134, 0x7f040135, 0x7f040136, 
-      0x7f040137, 0x7f040138, 0x7f040139, 0x7f04013a, 
-      0x7f04013b, 0x7f04013c
+      0x7f04018b, 0x7f04018c, 0x7f04018d, 0x7f04018e, 
+      0x7f04018f, 0x7f040190, 0x7f040191, 0x7f040192, 
+      0x7f040193, 0x7f040194, 0x7f040195, 0x7f040196, 
+      0x7f040197, 0x7f040198, 0x7f040199, 0x7f04019a, 
+      0x7f04019b, 0x7f04019c
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pstsDividerColor}
@@ -13797,7 +20719,7 @@ public final class R {
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-      0x01010176, 0x010102c9, 0x7f04011d
+      0x01010176, 0x010102c9, 0x7f040170
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -13848,7 +20770,7 @@ public final class R {
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-      0x7f040170
+      0x7f0401da
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#state_above_anchor}
@@ -13898,10 +20820,10 @@ public final class R {
      * @see #ProgressWheel_textSize
      */
     public static final int[] ProgressWheel={
-      0x7f040036, 0x7f040037, 0x7f040038, 0x7f04004d, 
-      0x7f04006b, 0x7f04006c, 0x7f04007f, 0x7f040140, 
-      0x7f040144, 0x7f040145, 0x7f04016b, 0x7f04017d, 
-      0x7f040187, 0x7f04018b
+      0x7f04003c, 0x7f04003d, 0x7f04003e, 0x7f040055, 
+      0x7f040078, 0x7f040079, 0x7f04009a, 0x7f0401a0, 
+      0x7f0401a8, 0x7f0401a9, 0x7f0401d4, 0x7f0401eb, 
+      0x7f0401f5, 0x7f0401f9
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#barColor}
@@ -14069,6 +20991,92 @@ public final class R {
      */
     public static final int ProgressWheel_textSize=13;
     /**
+     * Attributes that can be used with a PropertySet.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #PropertySet_android_visibility android:visibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PropertySet_android_alpha android:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PropertySet_layout_constraintTag org.tensorflow.demo:layout_constraintTag}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PropertySet_motionProgress org.tensorflow.demo:motionProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PropertySet_visibilityMode org.tensorflow.demo:visibilityMode}</code></td><td></td></tr>
+     * </table>
+     * @see #PropertySet_android_visibility
+     * @see #PropertySet_android_alpha
+     * @see #PropertySet_layout_constraintTag
+     * @see #PropertySet_motionProgress
+     * @see #PropertySet_visibilityMode
+     */
+    public static final int[] PropertySet={
+      0x010100dc, 0x0101031f, 0x7f040121, 0x7f04015f, 
+      0x7f040222
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#visibility}
+     * attribute's value can be found in the {@link #PropertySet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>2</td><td></td></tr>
+     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:visibility
+     */
+    public static final int PropertySet_android_visibility=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#alpha}
+     * attribute's value can be found in the {@link #PropertySet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:alpha
+     */
+    public static final int PropertySet_android_alpha=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#layout_constraintTag}
+     * attribute's value can be found in the {@link #PropertySet} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name org.tensorflow.demo:layout_constraintTag
+     */
+    public static final int PropertySet_layout_constraintTag=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionProgress}
+     * attribute's value can be found in the {@link #PropertySet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:motionProgress
+     */
+    public static final int PropertySet_motionProgress=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#visibilityMode}
+     * attribute's value can be found in the {@link #PropertySet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>ignore</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:visibilityMode
+     */
+    public static final int PropertySet_visibilityMode=4;
+    /**
      * Attributes that can be used with a PullToZoomView.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -14086,7 +21094,7 @@ public final class R {
      * @see #PullToZoomView_zoomView
      */
     public static final int[] PullToZoomView={
-      0x7f04006a, 0x7f0400b4, 0x7f0400c2, 0x7f0401b6
+      0x7f040077, 0x7f0400e9, 0x7f0400f7, 0x7f040234
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#contentView}
@@ -14148,7 +21156,7 @@ public final class R {
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-      0x7f04011e, 0x7f040121
+      0x7f040172, 0x7f040175
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#paddingBottomNoButtons}
@@ -14188,7 +21196,7 @@ public final class R {
      * @see #RobotoTextView_typeface
      */
     public static final int[] RobotoTextView={
-      0x7f0401a9
+      0x7f040220
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#typeface}
@@ -14233,7 +21241,7 @@ public final class R {
      * @see #ScaledLinearLayout_linear_layout_ratio
      */
     public static final int[] ScaledLinearLayout={
-      0x7f040101
+      0x7f040139
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#linear_layout_ratio}
@@ -14289,10 +21297,10 @@ public final class R {
      */
     public static final int[] SearchView={
       0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-      0x7f04004f, 0x7f04005f, 0x7f04007e, 0x7f0400b3, 
-      0x7f0400bc, 0x7f0400c7, 0x7f04013d, 0x7f04013e, 
-      0x7f040152, 0x7f040153, 0x7f040173, 0x7f040178, 
-      0x7f0401ab
+      0x7f040059, 0x7f040069, 0x7f040098, 0x7f0400e8, 
+      0x7f0400f1, 0x7f0400fd, 0x7f04019d, 0x7f04019e, 
+      0x7f0401b9, 0x7f0401ba, 0x7f0401dd, 0x7f0401e2, 
+      0x7f040223
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -14590,10 +21598,10 @@ public final class R {
      * @see #ShaderImageView_siTriangleHeight
      */
     public static final int[] ShaderImageView={
-      0x7f04015c, 0x7f04015d, 0x7f04015e, 0x7f04015f, 
-      0x7f040160, 0x7f040161, 0x7f040162, 0x7f040163, 
-      0x7f040164, 0x7f040165, 0x7f040166, 0x7f040167, 
-      0x7f040168
+      0x7f0401c4, 0x7f0401c5, 0x7f0401c6, 0x7f0401c7, 
+      0x7f0401c8, 0x7f0401c9, 0x7f0401ca, 0x7f0401cb, 
+      0x7f0401cc, 0x7f0401cd, 0x7f0401ce, 0x7f0401cf, 
+      0x7f0401d0
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#siArrowPosition}
@@ -14789,7 +21797,7 @@ public final class R {
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-      0x7f040045, 0x7f04005d, 0x7f040151
+      0x7f04004d, 0x7f040067, 0x7f0401b8
     };
     /**
      * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#buttonSize}
@@ -14870,7 +21878,7 @@ public final class R {
      */
     public static final int[] Spinner={
       0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-      0x7f040126
+      0x7f040185
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#entries}
@@ -14946,6 +21954,46 @@ public final class R {
      * @attr name org.tensorflow.demo:popupTheme
      */
     public static final int Spinner_popupTheme=4;
+    /**
+     * Attributes that can be used with a State.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #State_android_id android:id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #State_constraints org.tensorflow.demo:constraints}</code></td><td></td></tr>
+     * </table>
+     * @see #State_android_id
+     * @see #State_constraints
+     */
+    public static final int[] State={
+      0x010100d0, 0x7f04006e
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #State} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name android:id
+     */
+    public static final int State_android_id=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraints}
+     * attribute's value can be found in the {@link #State} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:constraints
+     */
+    public static final int State_constraints=1;
     /**
      * Attributes that can be used with a StateListDrawable.
      * <p>Includes the following attributes:</p>
@@ -15056,6 +22104,32 @@ public final class R {
      */
     public static final int StateListDrawableItem_android_drawable=0;
     /**
+     * Attributes that can be used with a StateSet.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #StateSet_defaultState org.tensorflow.demo:defaultState}</code></td><td></td></tr>
+     * </table>
+     * @see #StateSet_defaultState
+     */
+    public static final int[] StateSet={
+      0x7f040099
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#defaultState}
+     * attribute's value can be found in the {@link #StateSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:defaultState
+     */
+    public static final int StateSet_defaultState=0;
+    /**
      * Attributes that can be used with a SwitchCompat.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -15093,10 +22167,10 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-      0x01010124, 0x01010125, 0x01010142, 0x7f04015a, 
-      0x7f04016e, 0x7f040179, 0x7f04017a, 0x7f04017c, 
-      0x7f04018e, 0x7f04018f, 0x7f040190, 0x7f0401a5, 
-      0x7f0401a6, 0x7f0401a7
+      0x01010124, 0x01010125, 0x01010142, 0x7f0401c2, 
+      0x7f0401d7, 0x7f0401e3, 0x7f0401e4, 0x7f0401e6, 
+      0x7f0401fc, 0x7f0401fd, 0x7f0401fe, 0x7f040216, 
+      0x7f040217, 0x7f040218
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textOn}
@@ -15322,7 +22396,7 @@ public final class R {
       0x01010095, 0x01010096, 0x01010097, 0x01010098, 
       0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
       0x01010163, 0x01010164, 0x010103ac, 0x01010585, 
-      0x7f0400a8, 0x7f0400b0, 0x7f04017e, 0x7f04018a
+      0x7f0400dc, 0x7f0400e4, 0x7f0401ec, 0x7f0401f8
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
@@ -15590,14 +22664,14 @@ public final class R {
      * @see #Toolbar_titleTextColor
      */
     public static final int[] Toolbar={
-      0x010100af, 0x01010140, 0x7f040042, 0x7f040051, 
-      0x7f040052, 0x7f040064, 0x7f040065, 0x7f040066, 
-      0x7f040067, 0x7f040068, 0x7f040069, 0x7f040111, 
-      0x7f040112, 0x7f040113, 0x7f040115, 0x7f040119, 
-      0x7f04011a, 0x7f040126, 0x7f040174, 0x7f040175, 
-      0x7f040176, 0x7f040196, 0x7f040197, 0x7f040198, 
-      0x7f040199, 0x7f04019a, 0x7f04019b, 0x7f04019c, 
-      0x7f04019d, 0x7f04019e
+      0x010100af, 0x01010140, 0x7f04004a, 0x7f04005b, 
+      0x7f04005c, 0x7f040071, 0x7f040072, 0x7f040073, 
+      0x7f040074, 0x7f040075, 0x7f040076, 0x7f040149, 
+      0x7f04014a, 0x7f04014c, 0x7f040151, 0x7f040166, 
+      0x7f040167, 0x7f040185, 0x7f0401de, 0x7f0401df, 
+      0x7f0401e0, 0x7f040204, 0x7f040205, 0x7f040206, 
+      0x7f040207, 0x7f040208, 0x7f040209, 0x7f04020a, 
+      0x7f04020b, 0x7f04020c
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -15985,6 +23059,444 @@ public final class R {
      */
     public static final int Toolbar_titleTextColor=29;
     /**
+     * Attributes that can be used with a Transform.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Transform_android_transformPivotX android:transformPivotX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_transformPivotY android:transformPivotY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_translationX android:translationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_translationY android:translationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_scaleX android:scaleX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_scaleY android:scaleY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_rotation android:rotation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_rotationX android:rotationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_rotationY android:rotationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_translationZ android:translationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_pivotAnchor org.tensorflow.demo:pivotAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_pivotX org.tensorflow.demo:pivotX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transform_pivotY org.tensorflow.demo:pivotY}</code></td><td></td></tr>
+     * </table>
+     * @see #Transform_android_transformPivotX
+     * @see #Transform_android_transformPivotY
+     * @see #Transform_android_translationX
+     * @see #Transform_android_translationY
+     * @see #Transform_android_scaleX
+     * @see #Transform_android_scaleY
+     * @see #Transform_android_rotation
+     * @see #Transform_android_rotationX
+     * @see #Transform_android_rotationY
+     * @see #Transform_android_translationZ
+     * @see #Transform_android_elevation
+     * @see #Transform_pivotAnchor
+     * @see #Transform_pivotX
+     * @see #Transform_pivotY
+     */
+    public static final int[] Transform={
+      0x01010320, 0x01010321, 0x01010322, 0x01010323, 
+      0x01010324, 0x01010325, 0x01010326, 0x01010327, 
+      0x01010328, 0x010103fa, 0x01010440, 0x7f040180, 
+      0x7f040181, 0x7f040182
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#transformPivotX}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:transformPivotX
+     */
+    public static final int Transform_android_transformPivotX=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#transformPivotY}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:transformPivotY
+     */
+    public static final int Transform_android_transformPivotY=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationX}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationX
+     */
+    public static final int Transform_android_translationX=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationY}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationY
+     */
+    public static final int Transform_android_translationY=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleX
+     */
+    public static final int Transform_android_scaleX=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleY
+     */
+    public static final int Transform_android_scaleY=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotation}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotation
+     */
+    public static final int Transform_android_rotation=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationX
+     */
+    public static final int Transform_android_rotationX=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationY
+     */
+    public static final int Transform_android_rotationY=8;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationZ
+     */
+    public static final int Transform_android_translationZ=9;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#elevation}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:elevation
+     */
+    public static final int Transform_android_elevation=10;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pivotAnchor}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:pivotAnchor
+     */
+    public static final int Transform_pivotAnchor=11;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pivotX}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     *
+     * @attr name org.tensorflow.demo:pivotX
+     */
+    public static final int Transform_pivotX=12;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#pivotY}
+     * attribute's value can be found in the {@link #Transform} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     * <p>May be a fractional value, which is a floating point number appended with
+     * either % or %p, such as "<code>14.5%</code>".
+     * The % suffix always means a percentage of the base size;
+     * the optional %p suffix provides a size relative to some parent container.
+     *
+     * @attr name org.tensorflow.demo:pivotY
+     */
+    public static final int Transform_pivotY=13;
+    /**
+     * Attributes that can be used with a Transition.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Transition_android_id android:id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_autoTransition org.tensorflow.demo:autoTransition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_constraintSetEnd org.tensorflow.demo:constraintSetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_constraintSetStart org.tensorflow.demo:constraintSetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_duration org.tensorflow.demo:duration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_motionInterpolator org.tensorflow.demo:motionInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_staggered org.tensorflow.demo:staggered}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Transition_transitionDisable org.tensorflow.demo:transitionDisable}</code></td><td></td></tr>
+     * </table>
+     * @see #Transition_android_id
+     * @see #Transition_autoTransition
+     * @see #Transition_constraintSetEnd
+     * @see #Transition_constraintSetStart
+     * @see #Transition_duration
+     * @see #Transition_motionInterpolator
+     * @see #Transition_staggered
+     * @see #Transition_transitionDisable
+     */
+    public static final int[] Transition={
+      0x010100d0, 0x7f040036, 0x7f04006b, 0x7f04006c, 
+      0x7f0400b5, 0x7f04015d, 0x7f0401d9, 0x7f040219
+    };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name android:id
+     */
+    public static final int Transition_android_id=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#autoTransition}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>animateToEnd</td><td>4</td><td></td></tr>
+     * <tr><td>animateToStart</td><td>3</td><td></td></tr>
+     * <tr><td>jumpToEnd</td><td>2</td><td></td></tr>
+     * <tr><td>jumpToStart</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:autoTransition
+     */
+    public static final int Transition_autoTransition=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraintSetEnd}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:constraintSetEnd
+     */
+    public static final int Transition_constraintSetEnd=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraintSetStart}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:constraintSetStart
+     */
+    public static final int Transition_constraintSetStart=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#duration}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name org.tensorflow.demo:duration
+     */
+    public static final int Transition_duration=4;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#motionInterpolator}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bounce</td><td>5</td><td></td></tr>
+     * <tr><td>easeIn</td><td>1</td><td></td></tr>
+     * <tr><td>easeInOut</td><td>0</td><td></td></tr>
+     * <tr><td>easeOut</td><td>2</td><td></td></tr>
+     * <tr><td>linear</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name org.tensorflow.demo:motionInterpolator
+     */
+    public static final int Transition_motionInterpolator=5;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#staggered}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name org.tensorflow.demo:staggered
+     */
+    public static final int Transition_staggered=6;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#transitionDisable}
+     * attribute's value can be found in the {@link #Transition} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name org.tensorflow.demo:transitionDisable
+     */
+    public static final int Transition_transitionDisable=7;
+    /**
+     * Attributes that can be used with a Variant.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Variant_constraints org.tensorflow.demo:constraints}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Variant_region_heightLessThan org.tensorflow.demo:region_heightLessThan}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Variant_region_heightMoreThan org.tensorflow.demo:region_heightMoreThan}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Variant_region_widthLessThan org.tensorflow.demo:region_widthLessThan}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Variant_region_widthMoreThan org.tensorflow.demo:region_widthMoreThan}</code></td><td></td></tr>
+     * </table>
+     * @see #Variant_constraints
+     * @see #Variant_region_heightLessThan
+     * @see #Variant_region_heightMoreThan
+     * @see #Variant_region_widthLessThan
+     * @see #Variant_region_widthMoreThan
+     */
+    public static final int[] Variant={
+      0x7f04006e, 0x7f0401a4, 0x7f0401a5, 0x7f0401a6, 
+      0x7f0401a7
+    };
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#constraints}
+     * attribute's value can be found in the {@link #Variant} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name org.tensorflow.demo:constraints
+     */
+    public static final int Variant_constraints=0;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#region_heightLessThan}
+     * attribute's value can be found in the {@link #Variant} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:region_heightLessThan
+     */
+    public static final int Variant_region_heightLessThan=1;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#region_heightMoreThan}
+     * attribute's value can be found in the {@link #Variant} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:region_heightMoreThan
+     */
+    public static final int Variant_region_heightMoreThan=2;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#region_widthLessThan}
+     * attribute's value can be found in the {@link #Variant} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:region_widthLessThan
+     */
+    public static final int Variant_region_widthLessThan=3;
+    /**
+     * <p>This symbol is the offset where the {@link org.tensorflow.demo.R.attr#region_widthMoreThan}
+     * attribute's value can be found in the {@link #Variant} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name org.tensorflow.demo:region_widthMoreThan
+     */
+    public static final int Variant_region_widthMoreThan=4;
+    /**
      * Attributes that can be used with a View.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -16004,8 +23516,8 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-      0x01010000, 0x010100da, 0x7f04011f, 0x7f040120, 
-      0x7f04018c
+      0x01010000, 0x010100da, 0x7f040173, 0x7f040174, 
+      0x7f0401fa
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#theme}
@@ -16091,7 +23603,7 @@ public final class R {
      * @see #ViewBackgroundHelper_backgroundTintMode
      */
     public static final int[] ViewBackgroundHelper={
-      0x010100d4, 0x7f040034, 0x7f040035
+      0x010100d4, 0x7f04003a, 0x7f04003b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#background}

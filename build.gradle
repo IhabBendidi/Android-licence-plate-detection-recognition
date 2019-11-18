@@ -86,7 +86,7 @@ def bazelLocation = '/usr/local/bin/bazel'
 
 // import DownloadModels task
 project.ext.ASSET_DIR = projectDir.toString() + '/assets'
-project.ext.TMP_DIR   = project.buildDir.toString() + '/downloads'
+project.ext.TMP_DIR = project.buildDir.toString() + '/downloads'
 
 apply plugin: 'com.android.application'
 
@@ -163,8 +163,6 @@ android {
 }
 
 
-
-
 task copyNativeLibs(type: Copy) {
     from demoLibPath
     from inferenceLibPath
@@ -184,8 +182,6 @@ tasks.whenTaskAdded { task ->
         }
     }
 }
-
-
 
 
 dependencies {
@@ -230,7 +226,7 @@ dependencies {
     //compile 'com.opentok.android:opentok-android-sdk:2.13.0'
     implementation 'pub.devrel:easypermissions:0.4.0'
     //implementation 'com.google.gms:google-services:4.3.3'
-    implementation('com.google.android.gms:play-services-base:17.1.0'){ force=true }
+    implementation('com.google.android.gms:play-services-base:17.1.0') { force = true }
     implementation 'com.google.firebase:firebase-core:17.2.1'
 
     implementation 'com.google.firebase:firebase-ml-vision:24.0.1'
@@ -239,3 +235,28 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
