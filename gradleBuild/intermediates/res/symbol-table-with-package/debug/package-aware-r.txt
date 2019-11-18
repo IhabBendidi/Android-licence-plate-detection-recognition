@@ -1378,6 +1378,7 @@ id blocking
 id bold
 id bottom
 id bounce
+id btn_takepicture
 id butt
 id button
 id button2
@@ -1809,6 +1810,7 @@ string status_bar_notification_info_overflow
 string tab_about
 string tab_gift
 string tab_offer
+string take_picture
 string title_settings_dialog
 string username
 string video

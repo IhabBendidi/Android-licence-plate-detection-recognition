@@ -74,6 +74,7 @@
     <string name="location">Location : </string>locationvalue
     <string name="locationvalue">Location not activated</string>
     <string name="logocamera">Logo</string>
+    <string name="take_picture" translatable="false">Scan</string>
     <string name="logo">logo</string>
     <string name="main_button_cont_scan">continuous scanning</string>
     <string name="main_button_one_scan">One Shot Scan</string>
