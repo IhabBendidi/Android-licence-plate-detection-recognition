@@ -133,7 +133,10 @@ public abstract class CameraActivity extends Activity
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     setContentView(R.layout.activity_camera);
     locationText = findViewById(R.id.locationvalue);
-    String country = getDeviceCountryCode(getApplicationContext());
+    String pays = getDeviceCountryCode(getApplicationContext());
+    CountryCodes c = new CountryCodes();
+    String country = CountryCodes.getKey(c.map,pays.toUpperCase());
+
     locationText.setText(country);
 
     if (hasPermission()) {
