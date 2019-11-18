@@ -18,7 +18,10 @@ package org.tensorflow.demo;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Locale;
 
 import android.content.Context;
@@ -159,6 +162,12 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
   private String imagePath;
 
+  private String time;
+
+  private Bitmap temporaryBitmap;
+
+
+
   private static final boolean MAINTAIN_ASPECT = false;
 
   private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
@@ -186,6 +195,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
   private String timeName;
+
+  String outputName;
 
   private byte[] luminanceCopy;
   private static final String TOG = "DetectorActivity";
@@ -351,6 +362,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
               public void run() {
                 LOGGER.i("Running detection on image " + currTimestamp);
                 final long startTime = SystemClock.uptimeMillis();
+                temporaryBitmap =  Bitmap.createBitmap(rgbFrameBitmap);
 
                 final List<Classifier.Recognition> results = detector.recognizeImage(croppedBitmap);
                 lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
@@ -407,15 +419,22 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                                 Log.e(TOG,"5");
 
                                 Log.e(TOG,"6");
-                                if (rgbFrameBitmap.getWidth() >= (int)l.right && rgbFrameBitmap.getHeight()>= (int)l.bottom){
-                                    Bitmap resultsBitmap = Bitmap.createBitmap(rgbFrameBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
+                                if (temporaryBitmap.getWidth() >= (int)l.right && temporaryBitmap.getHeight()>= (int)l.bottom){
+                                    Bitmap resultsBitmap = Bitmap.createBitmap(temporaryBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
                                   //// SHould I be using rgbframebitmap or or croppedbitmap?
                                     Log.e(TOG,"7");
                                     timeName = "" + System.currentTimeMillis();
                                     imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
                                     Log.e(TOG,"8");
                                     Log.e(TOG,imagePath);
-
+                                    time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                    outputName = imagePath + " " + locationText.getText() + " " + time + "\r\n";
+                                    // Writing output ( Paths for images, location and time of the detection)
+                                    try{
+                                      fWriter.write(outputName);
+                                    }catch(IOException e){
+                                      Log.e(TOG,e.toString());
+                                    }
                                 }
                             }
                         }
@@ -480,6 +499,13 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   @Override
   public void onDestroy() {
     // Don't forget to shutdown tts!
+
+
+    try{
+      fWriter.close();
+    }catch (IOException e){
+      Log.e(TOG,e.toString());
+    }
 
     super.onDestroy();
   }

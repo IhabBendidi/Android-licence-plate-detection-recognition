@@ -40,6 +40,8 @@ import android.widget.Toast;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
@@ -58,7 +60,7 @@ public abstract class CameraActivity extends Activity
   private static final int PERMISSIONS_REQUEST = 1;
 
   private FusedLocationProviderClient fusedLocationClient;
-  private TextView locationText;
+  protected TextView locationText;
 
 
 
@@ -66,10 +68,16 @@ public abstract class CameraActivity extends Activity
 
   private static final String PERMISSION_CAMERA = Manifest.permission.CAMERA;
   private static final String PERMISSION_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;
-  private static final String PERMISSION_Location = Manifest.permission.ACCESS_COARSE_LOCATION;
+  private static final String PERMISSION_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
 
 
   protected Toast toast;
+
+  protected FileWriter fWriter ;
+
+
+  // Filename of the file with the detection output absolute paths, and location and time of the detection
+  protected String outputFileName = "PATHS.txt";
 
 
   private boolean debug = false;
@@ -99,6 +107,12 @@ public abstract class CameraActivity extends Activity
   protected void onCreate(final Bundle savedInstanceState) {
     super.onCreate(null);
     toast = Toast.makeText(getApplicationContext(), "Saving the detection results", Toast.LENGTH_SHORT);
+    try{
+      fWriter = new FileWriter(getApplicationContext().getFilesDir() + "/" + outputFileName,true);
+    }catch (IOException e){
+      Log.e(TOG,e.toString());
+    }
+
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     setContentView(R.layout.activity_camera);
     locationText = findViewById(R.id.locationvalue);
@@ -345,6 +359,11 @@ public abstract class CameraActivity extends Activity
     handlerThread = new HandlerThread("inference");
     handlerThread.start();
     handler = new Handler(handlerThread.getLooper());
+    try{
+      fWriter = new FileWriter(outputFileName,true);
+    }catch (IOException e){
+      Log.e(TOG,e.toString());
+    }
   }
 
   @Override
@@ -362,19 +381,36 @@ public abstract class CameraActivity extends Activity
     } catch (final InterruptedException e) {
       LOGGER.e(e, "Exception!");
     }
+    try{
+      fWriter.close();
+    }catch (IOException e){
+      Log.e(TOG,e.toString());
+    }
 
     super.onPause();
   }
 
   @Override
   public synchronized void onStop() {
+    try{
+      fWriter.close();
+    }catch (IOException e){
+      Log.e(TOG,e.toString());
+    }
     super.onStop();
   }
 
   @Override
   public synchronized void onDestroy() {
+    try{
+      fWriter.close();
+    }catch (IOException e){
+      Log.e(TOG,e.toString());
+    }
     super.onDestroy();
   }
+
+
 
   protected synchronized void runInBackground(final Runnable r) {
     if (handler != null) {
