@@ -1,6 +1,7 @@
 package org.tensorflow.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -102,6 +103,13 @@ public class HistoryActivity extends AppCompatActivity {
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
+        CardView card = new CardView(this);
+        card.setRadius(0.2f);
+        card.setCardBackgroundColor(Color.parseColor("#151515"));
+
+        LinearLayout linear = new LinearLayout(this);
+        linear.setOrientation(1);
+
         Log.e(TOG,"13");
         //Image handling
         Bitmap b = loadImageFromStorage(imagePath);
@@ -152,12 +160,31 @@ public class HistoryActivity extends AppCompatActivity {
 
         Log.e(TOG,"16");
 
-        this.layout.addView(img);
-        this.layout.addView(recon_text);
-        this.layout.addView(locationholder);
-        this.layout.addView(locationText);
-        this.layout.addView(timeholder);
-        this.layout.addView(timeText);
+
+        linear.addView(img);
+        linear.addView(recon_text);
+        linear.addView(locationholder);
+        linear.addView(locationText);
+        linear.addView(timeholder);
+        linear.addView(timeText);
+
+        card.addView(linear);
+
+
+        /*
+        card.addView(img);
+        card.addView(recon_text);
+        card.addView(locationholder);
+        card.addView(locationText);
+        card.addView(timeholder);
+        card.addView(timeText);
+
+         */
+
+
+        this.layout.addView(card);
+
+
 
 
 

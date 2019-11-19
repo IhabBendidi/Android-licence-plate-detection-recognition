@@ -10,6 +10,7 @@ MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transfo
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/5f6a811498f06ba089b72025f7a9ee39/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/acdbd3a06a30640219cf8f9982012af0/play-services-auth-base-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fef7ddfb87c0a4bf0f5482d3757af57/play-services-vision-19.0.0/AndroidManifest.xml:2:1-9:12
@@ -259,6 +260,8 @@ MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.g
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/5f6a811498f06ba089b72025f7a9ee39/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/5f6a811498f06ba089b72025f7a9ee39/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/acdbd3a06a30640219cf8f9982012af0/play-services-auth-base-17.0.0/AndroidManifest.xml:5:5-44
