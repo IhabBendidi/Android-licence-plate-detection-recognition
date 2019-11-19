@@ -42,8 +42,18 @@ import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
+import android.widget.ToggleButton;
+
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.ml.vision.FirebaseVision;
+import com.google.firebase.ml.vision.common.FirebaseVisionImage;
+import com.google.firebase.ml.vision.text.FirebaseVisionText;
+import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -79,6 +89,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
   private int limitWithoutTalk = ONE_OBJECT_TURN_LIMIT;
   private static final int ONE_OBJECT_TURN_LIMIT = 1;
+
+
+  public String text_recon = "__";
+  Bitmap rotatedBitmap;
 
 
 
@@ -126,6 +140,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private String time;
 
   private Bitmap temporaryBitmap;
+  Bitmap resultsBitmap;
 
 
 
@@ -380,22 +395,59 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
                                 Log.e(TOG,"6");
                                 if (temporaryBitmap.getWidth() >= (int)l.right && temporaryBitmap.getHeight()>= (int)l.bottom){
-                                    Bitmap resultsBitmap = Bitmap.createBitmap(temporaryBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
+                                    resultsBitmap = Bitmap.createBitmap(temporaryBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
+                                    Log.e(TOG,"6.5");
+                                    Bitmap scaledBitmap = rescaleBitmap(resultsBitmap,80);
+                                    Matrix matrix = new Matrix();
+                                    matrix.postRotate(90);
+                                    rotatedBitmap = Bitmap.createBitmap(scaledBitmap, 0, 0, scaledBitmap.getWidth(), scaledBitmap.getHeight(),
+                                            matrix, true);
+                                    //text_recon = "_";
+                                    // Firebase text detection stuff
+                                    FirebaseVisionImage textImage = FirebaseVisionImage.fromBitmap(rotatedBitmap);
+                                    FirebaseVisionTextRecognizer fireDetector = FirebaseVision.getInstance().getOnDeviceTextRecognizer();
+                                    final Task<FirebaseVisionText> text_result =
+                                          fireDetector.processImage(textImage)
+                                                  .addOnSuccessListener(new OnSuccessListener<FirebaseVisionText>() {
+                                                    @Override
+                                                    public void onSuccess(FirebaseVisionText firebaseVisionText) {
+                                                      // Task completed successfully
+                                                        Log.e(TOG,"2 - Text extracted successfully ...... : " + firebaseVisionText.getText());
+                                                        //text_recon = firebaseVisionText.getText();
+                                                        text_recon = "";
+                                                        for (FirebaseVisionText.TextBlock block: firebaseVisionText.getTextBlocks()){
+                                                            for (FirebaseVisionText.Line line: block.getLines()){
+                                                                for (FirebaseVisionText.Element element: line.getElements()){
+                                                                    text_recon += element.getText();
+                                                                }
+                                                            }
+                                                        }
+                                                        Log.e(TOG,"7");
+                                                        timeName = "" + System.currentTimeMillis();
+                                                        imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                        Log.e(TOG,"8");
+                                                        Log.e(TOG,imagePath);
+                                                        time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                                        outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+                                                        // Writing output ( Paths for images, location and time of the detection)
+                                                        try{
+                                                            fWriter.write(outputName);
+                                                        }catch(IOException e){
+                                                            Log.e(TOG,e.toString());
+                                                        }
+                                                    }
+                                                  })
+                                                  .addOnFailureListener(
+                                                          new OnFailureListener() {
+                                                            @Override
+                                                            public void onFailure(@NonNull Exception e) {
+                                                              // Task failed with an exception
+                                                              Log.e(TOG,"Task failed miserably, with exception ...... : " + e.toString());
+                                                            }
+                                                          });
+                                    //text_recon=text_result.onSuccessTask(text_result).getResult().getText();
 
-                                  //// SHould I be using rgbframebitmap or or croppedbitmap?
-                                    Log.e(TOG,"7");
-                                    timeName = "" + System.currentTimeMillis();
-                                    imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
-                                    Log.e(TOG,"8");
-                                    Log.e(TOG,imagePath);
-                                    time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-                                    outputName = imagePath + " " + locationText.getText() + " " + time + "\r\n";
-                                    // Writing output ( Paths for images, location and time of the detection)
-                                    try{
-                                      fWriter.write(outputName);
-                                    }catch(IOException e){
-                                      Log.e(TOG,e.toString());
-                                    }
+
                                 }
                             }
                         }
@@ -471,6 +523,17 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
     super.onDestroy();
   }
+
+    public Bitmap rescaleBitmap(Bitmap b,int h){
+        float aspectRatio = b.getWidth() /
+                (float) b.getHeight();
+        int width = h;
+        int height = Math.round(width / aspectRatio);
+
+        Bitmap result_bitmap = Bitmap.createScaledBitmap(
+                b, width, height, false);
+        return result_bitmap;
+    }
 
 
 

@@ -93,10 +93,11 @@ public class HistoryActivity extends AppCompatActivity {
         String[] values = line.split(" ");
         Log.e(TOG,"9");
         String imagePath = values[0];
+        String result_text = values[1];
         Log.e(TOG,"10");
-        String location = values[1];
+        String location = values[2];
         Log.e(TOG,"11");
-        String time = values[2];
+        String time = values[3];
         Log.e(TOG,"12");
         LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -110,6 +111,14 @@ public class HistoryActivity extends AppCompatActivity {
 
 
         Log.e(TOG,"14");
+
+
+        //Text handling
+        TextView recon_text = new TextView(this);
+        recon_text.setLayoutParams(lparams);
+        recon_text.setText(result_text);
+        recon_text.setTextColor(Color.parseColor("#FFFFFF"));
+
 
 
         //Location handling
@@ -144,10 +153,13 @@ public class HistoryActivity extends AppCompatActivity {
         Log.e(TOG,"16");
 
         this.layout.addView(img);
+        this.layout.addView(recon_text);
         this.layout.addView(locationholder);
         this.layout.addView(locationText);
         this.layout.addView(timeholder);
         this.layout.addView(timeText);
+
+
 
 
         Log.e(TOG,"17");
