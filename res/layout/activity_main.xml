@@ -4,42 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="90dp"
-            android:background="@color/white_30_percent"
-            android:onClick="continuous_camera"
-            android:text="@string/main_button_cont_scan"
-            android:textColor="@color/colortext" />
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="90dp"
-            android:background="@color/white_30_percent"
-            android:onClick="one_shot_camera"
-            android:text="@string/main_button_one_scan"
-            android:textColor="@color/colortext" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="60dp"
+                android:background="@color/white_30_percent"
+                android:onClick="continuous_camera"
+                android:text="@string/main_button_cont_scan"
+                android:textColor="@color/colortext" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="90dp"
-            android:background="@color/white_30_percent"
-            android:onClick="history"
-            android:text="@string/main_button_history"
-            android:textColor="@color/colortext" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="60dp"
+                android:background="@color/white_30_percent"
+                android:onClick="one_shot_camera"
+                android:text="@string/main_button_one_scan"
+                android:textColor="@color/colortext" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="60dp"
+                android:background="@color/white_30_percent"
+                android:onClick="history"
+                android:text="@string/main_button_history"
+                android:textColor="@color/colortext" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
         android:textColor="@color/cpb_grey"
         android:text="@string/location" />
 
@@ -29,7 +30,9 @@
         android:id="@+id/locationvalue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="630dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="50dp"
         android:textColor="@color/cpb_grey"
         android:text="@string/locationvalue" />
 </RelativeLayout>
