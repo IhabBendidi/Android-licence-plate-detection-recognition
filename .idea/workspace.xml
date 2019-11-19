@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea0bd35d-5d8e-4aa3-ae7e-db39beb6fafa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/ShotDetectionActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,15 +19,62 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/packageDebug/tmp/debug/zip-cache/GEwWhadVNvXTKqG0KntzQx9Ug7Q=" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/incremental/packageDebug/tmp/debug/zip-cache/GEwWhadVNvXTKqG0KntzQx9Ug7Q=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$DetectorMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$DetectorMode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity$Occurences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/DetectorActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity$8.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/OneShotCameraActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/res/merged/debug/layout_activity_one_shot_camera.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/res/merged/debug/layout_activity_one_shot_camera.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$3$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$3$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$DetectorMode.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$DetectorMode.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity$Occurences.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/DetectorActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$4.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$5.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$6.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$7.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity$8.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/transforms/dexBuilder/debug/0/org/tensorflow/demo/OneShotCameraActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/outputs/apk/debug/AngelEyes-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/outputs/apk/debug/AngelEyes-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradleBuild/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/gradleBuild/android-profile/" />
@@ -74,59 +122,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/HistoryActivity.java">
+        <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="173" selection-start-line="173" selection-end-line="173" />
+            <state relative-caret-position="2040">
+              <caret line="136" column="13" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java">
+        <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3389">
-              <caret line="426" column="47" selection-start-line="426" selection-start-column="47" selection-end-line="426" selection-end-column="79" />
+            <state relative-caret-position="75">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3104#3251#0" expanded="true" />
-                <element signature="e#3250#3251#0" expanded="true" />
-                <element signature="e#9290#9745#0" expanded="true" />
-                <element signature="e#9744#9745#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/CameraActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="367" column="3" selection-start-line="306" selection-start-column="2" selection-end-line="367" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7792#7793#0" expanded="true" />
-                <element signature="e#7819#7820#0" expanded="true" />
-                <element signature="e#7856#7857#0" expanded="true" />
-                <element signature="e#7884#7885#0" expanded="true" />
-                <element signature="e#10988#10989#0" expanded="true" />
-                <element signature="e#11013#11014#0" expanded="true" />
-                <element signature="e#17132#17133#0" expanded="true" />
-                <element signature="e#17154#17155#0" expanded="true" />
-                <element signature="e#17609#17610#0" expanded="true" />
-                <element signature="e#17646#17647#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -157,18 +187,20 @@
         <option value="$PROJECT_DIR$/src/org/tensorflow/demo/SplashActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/SplashActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_splash.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_history.xml" />
-        <option value="$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/HistoryActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/CountryCodes.java" />
         <option value="$PROJECT_DIR$/src/org/tensorflow/demo/CameraActivity.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml" />
+        <option value="$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/ShotDetectionActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml" />
       </list>
     </option>
   </component>
@@ -183,19 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AngelEyes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngelEyes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -228,11 +247,6 @@
             <path>
               <item name="AngelEyes" type="1abcf292:AndroidViewProjectNode" />
               <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="AngelEyes" type="1abcf292:AndroidViewProjectNode" />
-              <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -245,6 +259,12 @@
               <item name="AngelEyes" type="1abcf292:AndroidViewProjectNode" />
               <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="AngelEyes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
@@ -252,12 +272,39 @@
               <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-              <item name="strings" type="c431d0b8:AndroidResGroupNode" />
+              <item name="styles" type="c431d0b8:AndroidResGroupNode" />
+            </path>
+            <path>
+              <item name="AngelEyes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="template-dimens" type="c431d0b8:AndroidResGroupNode" />
+            </path>
+            <path>
+              <item name="AngelEyes" type="1abcf292:AndroidViewProjectNode" />
+              <item name="AngelEyes" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="template-styles" type="c431d0b8:AndroidResGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AngelEyes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngelEyes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,21 +416,21 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49586776" visible="true" weight="0.19393456" />
-      <window_info id="Structure" order="2" sideWeight="0.5041322" side_tool="true" weight="0.19393456" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49261084" visible="true" weight="0.32083002" />
+      <window_info id="Structure" order="2" sideWeight="0.5073892" side_tool="true" weight="0.19393456" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3289256" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.3289256" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3289256" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3272727" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.31570247" />
+      <window_info anchor="bottom" id="Build" order="6" visible="true" weight="0.31570247" />
       <window_info anchor="bottom" id="Debug" order="7" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.3289256" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3289256" />
@@ -396,60 +443,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/model/DummyModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/SplashScreensActivity.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/env/ImageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2190">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/coco_labels_list.txt" />
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/MenuActivity.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DataBase.java" />
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_rate.xml" />
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_video.xml" />
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_login.xml" />
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_dialog.xml" />
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_parallax.xml" />
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DialogRateActivity.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/OverlayView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/tracking/ObjectTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/BUILD">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/CameraConnectionFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/RecognizeCommands.java" />
-    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8016" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/download-models.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -477,13 +470,6 @@
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="142" column="12" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -505,18 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-676" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_camera.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/camera_connection_fragment_tracking.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/Classifier.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -574,7 +548,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_splash.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
@@ -583,48 +556,7 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
-          <folding>
-            <element signature="e#891#922#0" expanded="true" />
-            <element signature="e#1296#1326#0" expanded="true" />
-            <element signature="e#1692#1721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="80" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_history.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/CountryCodes.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,35 +576,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1441">
+          <caret line="355" column="16" selection-end-line="484" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
           <folding>
-            <element signature="e#1045#1067#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/HistoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
+        <state relative-caret-position="523">
           <caret line="173" selection-start-line="173" selection-end-line="173" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/DetectorActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/ShotDetectionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3389">
-          <caret line="426" column="47" selection-start-line="426" selection-start-column="47" selection-end-line="426" selection-end-column="79" />
+        <state relative-caret-position="-4216">
+          <caret line="162" column="62" selection-start-line="162" selection-start-column="62" selection-end-line="162" selection-end-column="62" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="532" column="10" selection-start-line="532" selection-start-column="10" selection-end-line="532" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12573#12574#0" expanded="true" />
+            <element signature="e#12603#12604#0" expanded="true" />
+            <element signature="e#19576#19577#0" expanded="true" />
+            <element signature="e#20120#20121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/camera_connection_fragment_tracking.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_camera.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_history.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/tensorflow/demo/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="367" column="3" selection-start-line="306" selection-start-column="2" selection-end-line="367" selection-end-column="3" />
+        <state relative-caret-position="154">
+          <caret line="134" column="50" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7792#7793#0" expanded="true" />
@@ -689,19 +657,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tensorflow/demo/OneShotCameraActivity.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3104#3251#0" expanded="true" />
-            <element signature="e#3250#3251#0" expanded="true" />
-            <element signature="e#9290#9745#0" expanded="true" />
-            <element signature="e#9744#9745#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/ic_settings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/base-strings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-v21/base-template-styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors_material.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/template-dimens.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-v11/template-styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-sw600dp/template-styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_progress_bars.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_text_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/template-styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-358" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles_button.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" column="13" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-v11/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-v14/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_one_shot_camera.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

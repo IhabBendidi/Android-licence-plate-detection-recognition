@@ -68,42 +68,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   Context context = this;
 
 
-  /**
-   * This is a class of objects, relating objects to their number of occurence in one single picture
-   */
-  public class Occurences {
-    private String objectTitle;
-    private String objectOccurence;
-    public int occ;
 
-
-
-
-
-
-
-
-
-    public Occurences(String objectTitle) {
-      this.objectTitle = objectTitle;
-    }
-
-
-
-    public String getObjectTitle(){
-      return this.objectTitle;
-    }
-    public String getObjectOccurence(){
-      return this.objectOccurence;
-    }
-
-    public void setObjectTitle(String title){
-      this.objectTitle = title;
-    }
-    public void setObjectOccurence(String occurence){
-      this.objectOccurence = occurence;
-    }
-  }
 
 
   /**
@@ -111,11 +76,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
    * by new recognized objects.
    * The application only "speaks" the classes recognized after a limit of passed turns without speaking
    */
-  private int currentSpeechTurn = 0;
-  private static final int TALK_SPEECH_TURN = 0;
+
   private int limitWithoutTalk = ONE_OBJECT_TURN_LIMIT;
   private static final int ONE_OBJECT_TURN_LIMIT = 1;
-  private static final int HIGHER_OBJECT_TURN_LIMIT = 1;
 
 
 
@@ -127,8 +90,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
 
-  //TextToSpeech  Engine initialized
-  //private TextToSpeech tts;
+
 
 
 
@@ -141,8 +103,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private static final int TF_OD_API_INPUT_SIZE = 480;
   private static final String TF_OD_API_MODEL_FILE =
       "file:///android_asset/detect_plate.pb";
-  //private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco_labels_list.txt";
- // private static String TF_OD_API_LABELS_FILE ;
+
 
 
 
@@ -391,9 +352,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
                 tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
                 try {
-                  sleep(500);
+                    sleep(500);
                 } catch (final Exception e){}
-
                 tracker = new MultiBoxTracker(context);
                 trackingOverlay.postInvalidate();
                 requestRender();
@@ -442,6 +402,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                     }
                 };
                 myRunnable.run();
+
               }
             });
   }

@@ -35,23 +35,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="org.tensorflow.demo.HistoryActivity" />
-        <activity android:name="org.tensorflow.demo.OneShotCameraActivity" />
+        <activity android:name="org.tensorflow.demo.ShotDetectionActivity" />
         <activity android:name="org.tensorflow.demo.MainActivity" />
-        <activity android:name="org.tensorflow.demo.DetectorActivity" /> <!-- android:theme="@style/MaterialTheme" -->
-        <!--
-<activity android:name=".DetectorActivity"
-            android:screenOrientation="portrait"
-            android:label="Angel EyesDilog">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".DetectorActivity"
-            android:screenOrientation="portrait">
-        </activity
-        -->
+        <activity android:name="org.tensorflow.demo.DetectorActivity" />
         <activity
             android:name="org.tensorflow.demo.SplashActivity"
             android:label="Angel Eyes" >

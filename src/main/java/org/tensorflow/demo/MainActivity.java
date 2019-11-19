@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void one_shot_camera(View view){
-        Intent intent = new Intent(this, OneShotCameraActivity.class);
+        Intent intent = new Intent(this, ShotDetectionActivity.class);
         startActivity(intent);
     }
 

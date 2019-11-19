@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:2:1-8:12
 MERGED from [androidx.multidex:multidex:2.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/5e8289268467d4b585aacf5e6d6924c8/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/ihab/.gradle/caches/transforms-2/files-2.1/e89cc5819b77de1608ca725959f787fd/constraintlayout-2.0.0-beta3/AndroidManifest.xml:2:1-11:12
@@ -67,8 +67,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ihab/.gradle/caches/tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/b7f99d2049d8e95a72a64b509d678174/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/e58905d0a3817fdf9c3872db09121968/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/f1854bf5407f344cf2ac976ec8eb6c07/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:3:5-34
 	android:versionName
@@ -134,7 +134,7 @@ ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:5-81
 	android:name
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:22-78
 application
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:5-55:19
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:5-41:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/ihab/.gradle/caches/transforms-2/files-2.1/e89cc5819b77de1608ca725959f787fd/constraintlayout-2.0.0-beta3/AndroidManifest.xml:9:5-20
@@ -209,7 +209,7 @@ activity#org.tensorflow.demo.HistoryActivity
 ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:24:9-62
 	android:name
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:24:19-50
-activity#org.tensorflow.demo.OneShotCameraActivity
+activity#org.tensorflow.demo.ShotDetectionActivity
 ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:25:9-59
 	android:name
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:25:19-56
@@ -222,27 +222,27 @@ ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:27:9-54
 	android:name
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:27:19-51
 activity#org.tensorflow.demo.SplashActivity
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:42:9-50:20
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:28:9-36:20
 	android:label
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:44:13-39
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:30:13-39
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:43:13-43
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:29:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:45:13-49:29
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:46:17-69
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:46:25-66
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:48:17-77
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:48:27-74
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:27-74
 meta-data#com.google.firebase.ml.vision.DEPENDENCIES
-ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:52:9-54:35
+ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:9-40:35
 	android:value
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:54:13-32
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:40:13-32
 	android:name
-		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:53:13-70
+		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:39:13-70
 uses-sdk
 INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
@@ -384,9 +384,9 @@ INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
 		ADDED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
 		INJECTED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-57:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:2:1-43:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
 ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:12:9-16:66
 	android:label

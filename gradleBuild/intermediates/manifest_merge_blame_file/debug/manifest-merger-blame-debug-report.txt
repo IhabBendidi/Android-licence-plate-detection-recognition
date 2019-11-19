@@ -52,7 +52,7 @@
 26-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
 27
 28    <application
-28-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:5-55:19
+28-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:5-41:19
 29        android:allowBackup="true"
 29-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:20:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -68,185 +68,171 @@
 36        <activity android:name="org.tensorflow.demo.HistoryActivity" />
 36-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:24:9-62
 36-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:24:19-50
-37        <activity android:name="org.tensorflow.demo.OneShotCameraActivity" />
+37        <activity android:name="org.tensorflow.demo.ShotDetectionActivity" />
 37-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:25:9-59
 37-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:25:19-56
 38        <activity android:name="org.tensorflow.demo.MainActivity" />
 38-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:26:9-50
 38-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:26:19-47
-39        <activity android:name="org.tensorflow.demo.DetectorActivity" /> <!-- android:theme="@style/MaterialTheme" -->
+39        <activity android:name="org.tensorflow.demo.DetectorActivity" />
 39-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:27:9-54
 39-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:27:19-51
-40        <!--
-41<activity android:name=".DetectorActivity"
-42            android:screenOrientation="portrait"
-43            android:label="Angel EyesDilog">
-44            <intent-filter>
-45                <action android:name="android.intent.action.MAIN" />
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-48            </intent-filter>
-49        </activity>
-50        <activity android:name=".DetectorActivity"
-51            android:screenOrientation="portrait">
-52        </activity
-53        -->
+40        <activity
+40-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:28:9-36:20
+41            android:name="org.tensorflow.demo.SplashActivity"
+41-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:29:13-43
+42            android:label="Angel Eyes" >
+42-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:30:13-39
+43            <intent-filter>
+43-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:31:13-35:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:32:17-69
+44-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:32:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:17-77
+46-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <meta-data
+50-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:9-40:35
+51            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+51-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:39:13-70
+52            android:value="ocr" />
+52-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:40:13-32
+53
 54        <activity
-54-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:42:9-50:20
-55            android:name="org.tensorflow.demo.SplashActivity"
-55-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:43:13-43
-56            android:label="Angel Eyes" >
-56-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:44:13-39
-57            <intent-filter>
-57-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:45:13-49:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:46:17-69
-58-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:46:25-66
+54-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:12:9-16:66
+55            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+55-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:13:13-86
+56            android:exported="false"
+56-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:14:13-37
+57            android:label=""
+57-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:15:13-29
+58            android:theme="@style/EasyPermissions.Transparent" />
+58-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:16:13-63
 59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:48:17-77
-60-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:48:27-74
-61            </intent-filter>
-62        </activity>
-63
-64        <meta-data
-64-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:52:9-54:35
-65            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-65-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:53:13-70
-66            android:value="ocr" />
-66-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:54:13-32
-67
-68        <activity
-68-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:12:9-16:66
-69            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-69-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:13:13-86
-70            android:exported="false"
-70-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:14:13-37
-71            android:label=""
-71-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:15:13-29
-72            android:theme="@style/EasyPermissions.Transparent" />
-72-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:16:13-63
-73
-74        <service
-74-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:9:9-15:19
-75            android:name="com.google.firebase.components.ComponentDiscoveryService"
-75-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:10:13-84
-76            android:exported="false" >
-76-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:11:13-37
-77            <meta-data
-77-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:12:13-14:85
-78                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
-78-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:13:17-108
-79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:14:17-82
-80            <meta-data
-80-->[com.google.firebase:firebase-ml-common:22.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/49641404005b17d8a9e9bb3111f5d3ee/firebase-ml-common-22.0.1/AndroidManifest.xml:11:13-13:85
-81                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
-81-->[com.google.firebase:firebase-ml-common:22.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/49641404005b17d8a9e9bb3111f5d3ee/firebase-ml-common-22.0.1/AndroidManifest.xml:12:17-117
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[com.google.firebase:firebase-ml-common:22.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/49641404005b17d8a9e9bb3111f5d3ee/firebase-ml-common-22.0.1/AndroidManifest.xml:13:17-82
-83            <meta-data
-83-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
-84                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-84-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
-85                android:value="com.google.firebase.components.ComponentRegistrar" />
-85-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
-86            <meta-data
-86-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
-87                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-87-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
-88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
-89        </service>
+60        <service
+60-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:9:9-15:19
+61            android:name="com.google.firebase.components.ComponentDiscoveryService"
+61-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:10:13-84
+62            android:exported="false" >
+62-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:11:13-37
+63            <meta-data
+63-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:12:13-14:85
+64                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+64-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:13:17-108
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-ml-vision:24.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/05601a9d2c7976c6f00c77c0056a5ead/firebase-ml-vision-24.0.1/AndroidManifest.xml:14:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-ml-common:22.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/49641404005b17d8a9e9bb3111f5d3ee/firebase-ml-common-22.0.1/AndroidManifest.xml:11:13-13:85
+67                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+67-->[com.google.firebase:firebase-ml-common:22.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/49641404005b17d8a9e9bb3111f5d3ee/firebase-ml-common-22.0.1/AndroidManifest.xml:12:17-117
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-ml-common:22.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/49641404005b17d8a9e9bb3111f5d3ee/firebase-ml-common-22.0.1/AndroidManifest.xml:13:17-82
+69            <meta-data
+69-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+70                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+70-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/d3b2acb6bc9c0c453c3e1ff6b6602bd3/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+73                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+73-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+75        </service>
+76
+77        <receiver
+77-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+78            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+78-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+79            android:exported="true"
+79-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+80            android:permission="com.google.android.c2dm.permission.SEND" >
+80-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+81            <intent-filter>
+81-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+82                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+82-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+82-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+83            </intent-filter>
+84        </receiver>
+85
+86        <activity
+86-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+87            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+87-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+88            android:exported="false"
+88-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+89-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 90
-91        <receiver
-91-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
-92            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-92-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
-93            android:exported="true"
-93-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
-94            android:permission="com.google.android.c2dm.permission.SEND" >
-94-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
-95            <intent-filter>
-95-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
-96                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-96-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
-96-->[com.google.firebase:firebase-iid:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/24d8c8ae0918dab6f307c1f4d8ca3793/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
-97            </intent-filter>
-98        </receiver>
-99
-100        <activity
-100-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-101-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-102            android:exported="false"
-102-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-103-->[com.google.android.gms:play-services-base:17.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-104
-105        <provider
-105-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
-106            android:name="com.google.firebase.provider.FirebaseInitProvider"
-106-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
-107            android:authorities="org.tensorflow.demo.firebaseinitprovider"
-107-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
-108            android:exported="false"
-108-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
-109            android:initOrder="100" />
-109-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
-110
-111        <receiver
-111-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
-112            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-112-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
-113            android:enabled="true"
-113-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
-114            android:exported="false" >
-114-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
-115        </receiver>
-116        <receiver
-116-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
-117            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-117-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+91        <provider
+91-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
+92            android:name="com.google.firebase.provider.FirebaseInitProvider"
+92-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
+93            android:authorities="org.tensorflow.demo.firebaseinitprovider"
+93-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
+94            android:exported="false"
+94-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
+95            android:initOrder="100" />
+95-->[com.google.firebase:firebase-common:19.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/1c91063484506456af4baa61525e0000/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
+96
+97        <receiver
+97-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+98            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+98-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+99            android:enabled="true"
+99-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+100            android:exported="false" >
+100-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+101        </receiver>
+102        <receiver
+102-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+103            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+103-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+104            android:enabled="true"
+104-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+105            android:exported="true"
+105-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+106            android:permission="android.permission.INSTALL_PACKAGES" >
+106-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+107            <intent-filter>
+107-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+108                <action android:name="com.android.vending.INSTALL_REFERRER" />
+108-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+108-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+109            </intent-filter>
+110        </receiver>
+111
+112        <service
+112-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+113            android:name="com.google.android.gms.measurement.AppMeasurementService"
+113-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+114            android:enabled="true"
+114-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+115            android:exported="false" />
+115-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+116        <service
+116-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+117            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+117-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
 118            android:enabled="true"
-118-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
-119            android:exported="true"
-119-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
-120            android:permission="android.permission.INSTALL_PACKAGES" >
-120-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
-121            <intent-filter>
-121-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
-122                <action android:name="com.android.vending.INSTALL_REFERRER" />
-122-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
-122-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
-123            </intent-filter>
-124        </receiver>
-125
-126        <service
-126-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
-127            android:name="com.google.android.gms.measurement.AppMeasurementService"
-127-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
-128            android:enabled="true"
-128-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
-129            android:exported="false" />
-129-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
-130        <service
-130-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
-131            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-131-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
-132            android:enabled="true"
-132-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
-133            android:exported="false"
-133-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
-134            android:permission="android.permission.BIND_JOB_SERVICE" />
-134-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
-135
-136        <meta-data
-136-->[com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-137            android:name="com.google.android.gms.version"
-137-->[com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-138            android:value="@integer/google_play_services_version" />
-138-->[com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-139    </application>
-140
-141</manifest>
+118-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+119            android:exported="false"
+119-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+120            android:permission="android.permission.BIND_JOB_SERVICE" />
+120-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+121
+122        <meta-data
+122-->[com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+123            android:name="com.google.android.gms.version"
+123-->[com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+124            android:value="@integer/google_play_services_version" />
+124-->[com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+125    </application>
+126
+127</manifest>
