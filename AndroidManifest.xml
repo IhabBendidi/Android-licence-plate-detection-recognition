@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.tensorflow.demo"
-    android:versionCode="1"
-    android:versionName="1">
+    android:versionCode="2"
+    android:versionName="2">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -27,7 +27,7 @@
         <activity android:name=".DetectorActivity" />
         <activity
             android:name=".SplashActivity"
-            android:label="Angel Eyes">
+            android:label="Fusion Rev">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

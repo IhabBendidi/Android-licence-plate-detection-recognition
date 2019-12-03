@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="org.tensorflow.demo"
-4    android:versionCode="1"
-5    android:versionName="1" >
+4    android:versionCode="2"
+5    android:versionName="2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -80,7 +80,7 @@
 39-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:28:9-36:20
 40            android:name="org.tensorflow.demo.SplashActivity"
 40-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:29:13-43
-41            android:label="Angel Eyes" >
+41            android:label="Fusion Rev" >
 41-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:30:13-39
 42            <intent-filter>
 42-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:31:13-35:29
