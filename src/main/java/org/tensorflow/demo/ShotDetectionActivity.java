@@ -77,6 +77,9 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
     Context context = this;
 
 
+    private Speaker speaker;
+
+
 
 
 
@@ -188,6 +191,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
     @Override
     public void onPreviewSizeChosen(final Size size, final int rotation) {
         Log.e(TOG," (onPreviewSizeChosen) ");
+        speaker = new Speaker(this);
         final float textSizePx =
                 TypedValue.applyDimension(
                         TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -363,7 +367,11 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                                 mappedRecognitions.add(result);
                             }
                         }
-
+                        if (mappedRecognitions.size()>0){
+                            speaker.speakOut("Plates detected");
+                        }else{
+                            speaker.speakOut("No plates detected");
+                        }
                         tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
                         try {
                             sleep(500);
@@ -513,7 +521,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
     public void onDestroy() {
         // Don't forget to shutdown tts!
 
-
+        speaker.close();
         try{
             fWriter.close();
         }catch (IOException e){

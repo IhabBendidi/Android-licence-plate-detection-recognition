@@ -16,14 +16,6 @@
 
 package org.tensorflow.demo;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.graphics.Bitmap;
@@ -37,16 +29,13 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.SystemClock;
-import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -55,17 +44,20 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
-
-import org.tensorflow.demo.R;
-
 import org.tensorflow.demo.env.BorderedText;
 import org.tensorflow.demo.env.ImageUtils;
 import org.tensorflow.demo.env.Logger;
 import org.tensorflow.demo.tracking.MultiBoxTracker;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Vector;
 
 import static java.lang.Thread.sleep;
 
@@ -179,6 +171,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
   private BorderedText borderedText;
 
+////////////////////////////
+  private Speaker speaker;
+  /////////////////////////////////////////////////////:
+
 
   /**
    * This method is called after the creation of the CameraActivity, and through this method we initialize
@@ -189,6 +185,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   @Override
   public void onPreviewSizeChosen(final Size size, final int rotation) {
     Log.e(TOG," (onPreviewSizeChosen) ");
+    //////////////////////////////////////
+    speaker = new Speaker(this);
+    ///////////////////////////////
     final float textSizePx =
         TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -364,7 +363,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                     mappedRecognitions.add(result);
                   }
                 }
-
+                if (mappedRecognitions.size()>0){
+                    speaker.speakOut("Plates detected");
+                }
                 tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
                 try {
                     sleep(500);
@@ -387,6 +388,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                         Log.e(TOG,"3");
                         if(crops.size()>0){
                             Log.e(TOG,"3");
+
                             toast.show();
                             for (final Classifier.Recognition r : crops) {
                                 Log.e(TOG,"4");
@@ -512,7 +514,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   /**********************TTS CODE partie 4********************/
   @Override
   public void onDestroy() {
-    // Don't forget to shutdown tts!
+    speaker.close();
 
 
     try{
