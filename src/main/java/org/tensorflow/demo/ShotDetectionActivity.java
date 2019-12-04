@@ -373,9 +373,10 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                             speaker.speakOut("No plates detected");
                         }
                         tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
-                        try {
-                            sleep(500);
-                        } catch (final Exception e){}
+                        //try {
+                            //sleep(300);
+
+                        //} catch (final Exception e){}
                         tracker = new MultiBoxTracker(context);
                         trackingOverlay.postInvalidate();
                         requestRender();
@@ -389,6 +390,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                         Runnable myRunnable =
                                 new Runnable(){
                                     public void run(){
+
                                         Log.e(TOG,"2");
                                         List<Classifier.Recognition> crops = mappedRecognitions;
                                         Log.e(TOG,"3");
@@ -462,7 +464,10 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                                 };
                         myRunnable.run();
 
+
+
                     }
+
                 });
     }
 
