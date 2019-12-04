@@ -344,7 +344,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
                 final Canvas canvas = new Canvas(cropCopyBitmap);
                 final Paint paint = new Paint();
-                paint.setColor(Color.RED);
+                paint.setColor(Color.GREEN);
                 paint.setStyle(Style.STROKE);
                 paint.setStrokeWidth(2.0f);
 

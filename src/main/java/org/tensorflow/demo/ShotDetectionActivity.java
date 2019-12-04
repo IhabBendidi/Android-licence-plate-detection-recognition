@@ -348,7 +348,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                         cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
                         final Canvas canvas = new Canvas(cropCopyBitmap);
                         final Paint paint = new Paint();
-                        paint.setColor(Color.RED);
+                        paint.setColor(Color.GREEN);
                         paint.setStyle(Style.STROKE);
                         paint.setStrokeWidth(2.0f);
 
