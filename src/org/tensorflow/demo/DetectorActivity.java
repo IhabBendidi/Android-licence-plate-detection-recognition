@@ -313,6 +313,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
       return;
     }
 
+
     computingDetection = true;
     LOGGER.i("Preparing image " + currTimestamp + " for detection in bg thread.");
 
@@ -364,12 +365,13 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                   }
                 }
                 if (mappedRecognitions.size()>0){
-                    speaker.speakOut("Plates detected");
+                    speaker.speakOut("Detected");
                 }
+
                 tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
-                //try {
-                    //sleep(500);
-                //} catch (final Exception e){}
+                try {
+                    sleep(1000);
+                } catch (final Exception e){}
                 //tracker = new MultiBoxTracker(context);
                 trackingOverlay.postInvalidate();
                 requestRender();
