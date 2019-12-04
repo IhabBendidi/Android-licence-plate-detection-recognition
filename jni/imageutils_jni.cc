@@ -20,8 +20,8 @@ limitations under the License.
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "android/jni/rgb2yuv.h"
-#include "android/jni/yuv2rgb.h"
+#include "rgb2yuv.h"
+#include "yuv2rgb.h"
 
 #define IMAGEUTILS_METHOD(METHOD_NAME) \
   Java_org_tensorflow_demo_env_ImageUtils_##METHOD_NAME  // NOLINT

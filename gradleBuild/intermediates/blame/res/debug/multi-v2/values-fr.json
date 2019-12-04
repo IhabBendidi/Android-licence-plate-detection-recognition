@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
+            "outputFile": "/home/ihab/ihabgit/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
-                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-fr/strings.xml",
+                    "source": "/home/ihab/ihabgit/android/res/values-fr/strings.xml",
                     "from": {
                         "startLines": "9,50,16,8,71,14,69,20,5,44,23,24,3,39,40,41,42,26,43,25,53,18,28,35,36,29,62,63,56,57,58,60,59,19,46,45,22,48,49,66,65,30,37,38,4,68,31,33,32,67,21,70,34,15,17,47,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

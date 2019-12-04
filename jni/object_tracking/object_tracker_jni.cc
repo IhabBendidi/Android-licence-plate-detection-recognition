@@ -20,13 +20,13 @@ limitations under the License.
 #include <string.h>
 #include <cstdint>
 
-#include "android/jni/object_tracking/image-inl.h"
-#include "android/jni/object_tracking/image.h"
-#include "android/jni/object_tracking/jni_utils.h"
-#include "android/jni/object_tracking/time_log.h"
+#include "image-inl.h"
+#include "image.h"
+#include "jni_utils.h"
+#include "time_log.h"
 
-#include "android/jni/object_tracking/config.h"
-#include "android/jni/object_tracking/object_tracker.h"
+#include "config.h"
+#include "object_tracker.h"
 
 namespace tf_tracking {
 

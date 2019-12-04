@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/home/ihab/ihabgit/android/jni/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/ihab/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/ihab/ihabgit/android/.cxx/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "tensorflow_demo-Debug-armeabi-v7a": {
+      "artifactName": "tensorflow_demo",
+      "buildCommand": "/home/ihab/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/ihab/ihabgit/android/.cxx/cmake/debug/armeabi-v7a --target tensorflow_demo",
+      "abi": "armeabi-v7a",
+      "output": "/home/ihab/ihabgit/android/gradleBuild/intermediates/cmake/debug/obj/armeabi-v7a/libtensorflow_demo.so"
+    }
+  }
+}

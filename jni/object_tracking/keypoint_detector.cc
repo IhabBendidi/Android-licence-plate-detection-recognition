@@ -17,14 +17,15 @@ limitations under the License.
 
 #include <float.h>
 
-#include "android/jni/object_tracking/image-inl.h"
-#include "android/jni/object_tracking/image.h"
-#include "android/jni/object_tracking/time_log.h"
-#include "android/jni/object_tracking/utils.h"
+#include "image-inl.h"
+#include "image.h"
+#include "time_log.h"
+#include "utils.h"
 
-#include "android/jni/object_tracking/config.h"
-#include "android/jni/object_tracking/keypoint.h"
-#include "android/jni/object_tracking/keypoint_detector.h"
+#include "config.h"
+#include "keypoint.h"
+#include "keypoint_detector.h"
+
 
 namespace tf_tracking {
 

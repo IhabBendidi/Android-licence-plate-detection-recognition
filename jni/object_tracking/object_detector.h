@@ -30,18 +30,18 @@ limitations under the License.
 #include <string>
 #include <vector>
 
-#include "android/jni/object_tracking/geom.h"
-#include "android/jni/object_tracking/image-inl.h"
-#include "android/jni/object_tracking/image.h"
-#include "android/jni/object_tracking/integral_image.h"
+#include "geom.h"
+#include "image-inl.h"
+#include "image.h"
+#include "integral_image.h"
 #ifdef __RENDER_OPENGL__
 #include "android/jni/object_tracking/sprite.h"
 #endif
-#include "android/jni/object_tracking/utils.h"
+#include "utils.h"
 
-#include "android/jni/object_tracking/config.h"
-#include "android/jni/object_tracking/image_data.h"
-#include "android/jni/object_tracking/object_model.h"
+#include "config.h"
+#include "image_data.h"
+#include "object_model.h"
 
 namespace tf_tracking {
 

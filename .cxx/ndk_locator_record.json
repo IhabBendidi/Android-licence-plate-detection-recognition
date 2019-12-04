@@ -1,0 +1,41 @@
+{
+  "ndkFolder": "/home/ihab/Android/Sdk/ndk-bundle/android-ndk-r14b",
+  "messages": [
+    {
+      "level": "INFO",
+      "message": "android.ndkVersion from module build.gradle is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "ndk.dir in local.properties is /home/ihab/Android/Sdk/ndk-bundle/android-ndk-r14b"
+    },
+    {
+      "level": "INFO",
+      "message": "ANDROID_NDK_HOME environment variable is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "sdkFolder is /home/ihab/Android/Sdk"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/ihab/Android/Sdk/ndk-bundle/android-ndk-r14b by ndk.dir"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/ihab/Android/Sdk/ndk-bundle in SDK ndk-bundle folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/ihab/Android/Sdk/ndk/20.1.5948944 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /home/ihab/Android/Sdk/ndk-bundle in SDK ndk-bundle folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Found requested ndk.dir (/home/ihab/Android/Sdk/ndk-bundle/android-ndk-r14b) which has version 14.1.3816874"
+    }
+  ]
+}

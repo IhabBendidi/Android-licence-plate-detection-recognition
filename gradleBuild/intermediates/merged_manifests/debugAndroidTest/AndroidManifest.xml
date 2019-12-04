@@ -7,7 +7,7 @@
         android:targetSdkVersion="26" />
 
     <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
+        android:name="android.support.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
         android:label="Tests for org.tensorflow.demo"

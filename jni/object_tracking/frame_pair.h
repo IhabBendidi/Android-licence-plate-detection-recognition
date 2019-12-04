@@ -16,7 +16,7 @@ limitations under the License.
 #ifndef TENSORFLOW_EXAMPLES_ANDROID_JNI_OBJECT_TRACKING_FRAME_PAIR_H_
 #define TENSORFLOW_EXAMPLES_ANDROID_JNI_OBJECT_TRACKING_FRAME_PAIR_H_
 
-#include "android/jni/object_tracking/keypoint.h"
+#include "object_tracking/keypoint.h"
 
 namespace tf_tracking {
 

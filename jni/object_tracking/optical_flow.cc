@@ -15,19 +15,19 @@ limitations under the License.
 
 #include <math.h>
 
-#include "android/jni/object_tracking/geom.h"
-#include "android/jni/object_tracking/image-inl.h"
-#include "android/jni/object_tracking/image.h"
-#include "android/jni/object_tracking/time_log.h"
-#include "android/jni/object_tracking/utils.h"
+#include "geom.h"
+#include "image-inl.h"
+#include "image.h"
+#include "time_log.h"
+#include "utils.h"
 
-#include "android/jni/object_tracking/config.h"
-#include "android/jni/object_tracking/flow_cache.h"
-#include "android/jni/object_tracking/frame_pair.h"
-#include "android/jni/object_tracking/image_data.h"
-#include "android/jni/object_tracking/keypoint.h"
-#include "android/jni/object_tracking/keypoint_detector.h"
-#include "android/jni/object_tracking/optical_flow.h"
+#include "config.h"
+#include "flow_cache.h"
+#include "frame_pair.h"
+#include "image_data.h"
+#include "keypoint.h"
+#include "keypoint_detector.h"
+#include "optical_flow.h"
 
 namespace tf_tracking {
 

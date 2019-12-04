@@ -16,11 +16,17 @@ limitations under the License.
 #ifndef TENSORFLOW_EXAMPLES_ANDROID_JNI_OBJECT_TRACKING_FLOW_CACHE_H_
 #define TENSORFLOW_EXAMPLES_ANDROID_JNI_OBJECT_TRACKING_FLOW_CACHE_H_
 
-#include "android/jni/object_tracking/geom.h"
-#include "android/jni/object_tracking/utils.h"
+#include "geom.h"
+#include "utils.h"
 
-#include "android/jni/object_tracking/config.h"
-#include "android/jni/object_tracking/optical_flow.h"
+#include "config.h"
+#include "optical_flow.h"
+#include "image.h"
+#include "../../../../Android/Sdk/ndk-bundle/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/cwchar"
+#include "image_data.h"
+#include "logging.h"
+#include "../../../../Android/Sdk/ndk-bundle/android-ndk-r14b/platforms/android-21/arch-arm/usr/include/stdlib.h"
+#include "../../../../Android/Sdk/ndk-bundle/android-ndk-r14b/platforms/android-21/arch-arm/usr/include/string.h"
 
 namespace tf_tracking {
 

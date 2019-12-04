@@ -18,10 +18,10 @@ limitations under the License.
 
 #include <stdint.h>
 
-#include "android/jni/object_tracking/geom.h"
-#include "android/jni/object_tracking/image-inl.h"
-#include "android/jni/object_tracking/image.h"
-#include "android/jni/object_tracking/utils.h"
+#include "geom.h"
+#include "image-inl.h"
+#include "image.h"
+#include "utils.h"
 
 
 namespace tf_tracking {

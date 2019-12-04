@@ -367,10 +367,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                     speaker.speakOut("Plates detected");
                 }
                 tracker.trackResults(mappedRecognitions, luminanceCopy, currTimestamp);
-                try {
-                    sleep(500);
-                } catch (final Exception e){}
-                tracker = new MultiBoxTracker(context);
+                //try {
+                    //sleep(500);
+                //} catch (final Exception e){}
+                //tracker = new MultiBoxTracker(context);
                 trackingOverlay.postInvalidate();
                 requestRender();
                 computingDetection = false;

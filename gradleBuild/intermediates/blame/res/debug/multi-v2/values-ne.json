@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml",
+            "outputFile": "/home/ihab/ihabgit/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/faa95a4526b19a303e9ea96273fbfb2b/core-1.1.0/res/values-ne/values-ne.xml",

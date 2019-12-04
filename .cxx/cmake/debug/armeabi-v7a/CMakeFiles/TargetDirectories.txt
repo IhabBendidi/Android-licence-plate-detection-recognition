@@ -1,0 +1,3 @@
+/home/ihab/ihabgit/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/ihab/ihabgit/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/ihab/ihabgit/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/tensorflow_demo.dir

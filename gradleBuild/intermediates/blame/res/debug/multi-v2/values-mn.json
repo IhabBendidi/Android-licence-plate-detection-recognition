@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "/home/ihab/ihabgit/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
             "map": [
                 {
                     "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/res/values-mn/values.xml",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ihab/ihabgit/AngelEyes/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/home/ihab/ihabgit/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-sw600dp/template-dimens.xml",
+                    "source": "/home/ihab/ihabgit/android/res/values-sw600dp/template-dimens.xml",
                     "from": {
                         "startLines": "20,21",
                         "startColumns": "4,4",
@@ -21,7 +21,17 @@
                     }
                 },
                 {
-                    "source": "/home/ihab/ihabgit/AngelEyes/res/values-sw600dp/template-styles.xml",
+                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "/home/ihab/ihabgit/android/res/values-sw600dp/template-styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",
@@ -37,16 +47,6 @@
                         "endLines": "16",
                         "endColumns": "12",
                         "endOffsets": "987"
-                    }
-                },
-                {
-                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
                     }
                 }
             ]

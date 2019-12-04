@@ -1,44 +1,44 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="org.tensorflow.demo"
-4    android:versionCode="2"
-5    android:versionName="2" >
+4    android:versionCode="1"
+5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
+8-->/home/ihab/ihabgit/android/AndroidManifest.xml
 9        android:targetSdkVersion="26" />
-9-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml
+9-->/home/ihab/ihabgit/android/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:7:5-65
-11-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:7:22-62
+11-->/home/ihab/ihabgit/android/AndroidManifest.xml:7:5-65
+11-->/home/ihab/ihabgit/android/AndroidManifest.xml:7:22-62
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:8:5-81
-12-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:8:22-78
+12-->/home/ihab/ihabgit/android/AndroidManifest.xml:8:5-81
+12-->/home/ihab/ihabgit/android/AndroidManifest.xml:8:22-78
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:5-67
-13-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:22-64
+13-->/home/ihab/ihabgit/android/AndroidManifest.xml:9:5-67
+13-->/home/ihab/ihabgit/android/AndroidManifest.xml:9:22-64
 14
 15    <uses-feature android:name="android.hardware.camera" />
-15-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:11:5-60
-15-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:11:19-57
+15-->/home/ihab/ihabgit/android/AndroidManifest.xml:11:5-60
+15-->/home/ihab/ihabgit/android/AndroidManifest.xml:11:19-57
 16    <uses-feature android:name="android.hardware.camera.autofocus" />
-16-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:12:5-70
-16-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:12:19-67
+16-->/home/ihab/ihabgit/android/AndroidManifest.xml:12:5-70
+16-->/home/ihab/ihabgit/android/AndroidManifest.xml:12:19-67
 17
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:5-81
-18-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:14:22-78
+18-->/home/ihab/ihabgit/android/AndroidManifest.xml:14:5-81
+18-->/home/ihab/ihabgit/android/AndroidManifest.xml:14:22-78
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:5-79
-19-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:15:22-76
+19-->/home/ihab/ihabgit/android/AndroidManifest.xml:15:5-79
+19-->/home/ihab/ihabgit/android/AndroidManifest.xml:15:22-76
 20    <uses-permission android:name="android.permission.INTERNET" />
-20-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:5-67
-20-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:9:22-64
+20-->/home/ihab/ihabgit/android/AndroidManifest.xml:9:5-67
+20-->/home/ihab/ihabgit/android/AndroidManifest.xml:9:22-64
 21    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-21-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:5-81
-21-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:17:22-78
+21-->/home/ihab/ihabgit/android/AndroidManifest.xml:17:5-81
+21-->/home/ihab/ihabgit/android/AndroidManifest.xml:17:22-78
 22    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 24    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
@@ -52,55 +52,55 @@
 26-->[com.google.android.gms:play-services-measurement:17.2.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/52fe897fab829da584cf35c1be2dfe3d/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
 27
 28    <application
-28-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:19:5-41:19
+28-->/home/ihab/ihabgit/android/AndroidManifest.xml:19:5-41:19
 29        android:allowBackup="true"
-29-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:20:9-35
+29-->/home/ihab/ihabgit/android/AndroidManifest.xml:20:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 30-->[androidx.core:core:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/faa95a4526b19a303e9ea96273fbfb2b/core-1.1.0/AndroidManifest.xml:24:18-86
 31        android:debuggable="true"
 32        android:icon="@drawable/ic_launcher"
-32-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:21:9-45
+32-->/home/ihab/ihabgit/android/AndroidManifest.xml:21:9-45
 33        android:label="@string/app_name"
-33-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:22:9-41
+33-->/home/ihab/ihabgit/android/AndroidManifest.xml:22:9-41
 34        android:testOnly="true"
 35        android:theme="@style/AppTheme" >
-35-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:23:9-40
+35-->/home/ihab/ihabgit/android/AndroidManifest.xml:23:9-40
 36        <activity android:name="org.tensorflow.demo.HistoryActivity" />
-36-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:24:9-62
-36-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:24:19-50
+36-->/home/ihab/ihabgit/android/AndroidManifest.xml:24:9-62
+36-->/home/ihab/ihabgit/android/AndroidManifest.xml:24:19-50
 37        <activity android:name="org.tensorflow.demo.ShotDetectionActivity" />
-37-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:25:9-59
-37-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:25:19-56
+37-->/home/ihab/ihabgit/android/AndroidManifest.xml:25:9-59
+37-->/home/ihab/ihabgit/android/AndroidManifest.xml:25:19-56
 38        <activity android:name="org.tensorflow.demo.MainActivity" />
-38-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:26:9-50
-38-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:26:19-47
+38-->/home/ihab/ihabgit/android/AndroidManifest.xml:26:9-50
+38-->/home/ihab/ihabgit/android/AndroidManifest.xml:26:19-47
 39        <activity android:name="org.tensorflow.demo.DetectorActivity" />
-39-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:27:9-54
-39-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:27:19-51
+39-->/home/ihab/ihabgit/android/AndroidManifest.xml:27:9-54
+39-->/home/ihab/ihabgit/android/AndroidManifest.xml:27:19-51
 40        <activity
-40-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:28:9-36:20
+40-->/home/ihab/ihabgit/android/AndroidManifest.xml:28:9-36:20
 41            android:name="org.tensorflow.demo.SplashActivity"
-41-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:29:13-43
+41-->/home/ihab/ihabgit/android/AndroidManifest.xml:29:13-43
 42            android:label="Fusion Rev" >
-42-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:30:13-39
+42-->/home/ihab/ihabgit/android/AndroidManifest.xml:30:13-39
 43            <intent-filter>
-43-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:31:13-35:29
+43-->/home/ihab/ihabgit/android/AndroidManifest.xml:31:13-35:29
 44                <action android:name="android.intent.action.MAIN" />
-44-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:32:17-69
-44-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:32:25-66
+44-->/home/ihab/ihabgit/android/AndroidManifest.xml:32:17-69
+44-->/home/ihab/ihabgit/android/AndroidManifest.xml:32:25-66
 45
 46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:17-77
-46-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:34:27-74
+46-->/home/ihab/ihabgit/android/AndroidManifest.xml:34:17-77
+46-->/home/ihab/ihabgit/android/AndroidManifest.xml:34:27-74
 47            </intent-filter>
 48        </activity>
 49
 50        <meta-data
-50-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:38:9-40:35
+50-->/home/ihab/ihabgit/android/AndroidManifest.xml:38:9-40:35
 51            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-51-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:39:13-70
+51-->/home/ihab/ihabgit/android/AndroidManifest.xml:39:13-70
 52            android:value="ocr" />
-52-->/home/ihab/ihabgit/AngelEyes/AndroidManifest.xml:40:13-32
+52-->/home/ihab/ihabgit/android/AndroidManifest.xml:40:13-32
 53
 54        <activity
 54-->[pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:12:9-16:66

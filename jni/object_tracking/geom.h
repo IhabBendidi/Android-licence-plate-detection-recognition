@@ -16,8 +16,8 @@ limitations under the License.
 #ifndef TENSORFLOW_EXAMPLES_ANDROID_JNI_OBJECT_TRACKING_GEOM_H_
 #define TENSORFLOW_EXAMPLES_ANDROID_JNI_OBJECT_TRACKING_GEOM_H_
 
-#include "android/jni/object_tracking/logging.h"
-#include "android/jni/object_tracking/utils.h"
+#include "object_tracking/logging.h"
+#include "object_tracking/utils.h"
 
 namespace tf_tracking {
 

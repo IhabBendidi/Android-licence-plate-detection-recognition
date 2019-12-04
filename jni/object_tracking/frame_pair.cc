@@ -14,9 +14,15 @@ limitations under the License.
 ==============================================================================*/
 
 #include <float.h>
+#include <ihab/Android/Sdk/ndk-bundle/android-ndk-r14b/platforms/android-21/arch-arm/usr/include/time64.h>
+#include <ihab/Android/Sdk/ndk-bundle/android-ndk-r14b/platforms/android-21/arch-arm/usr/include/string.h>
 
-#include "android/jni/object_tracking/config.h"
-#include "android/jni/object_tracking/frame_pair.h"
+#include "object_tracking/config.h"
+#include "object_tracking/frame_pair.h"
+#include "geom.h"
+#include "utils.h"
+#include "keypoint.h"
+#include "logging.h"
 
 namespace tf_tracking {
 
