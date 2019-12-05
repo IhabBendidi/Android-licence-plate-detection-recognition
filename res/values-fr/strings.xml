@@ -6,7 +6,7 @@
     <string name="camera_error">Cet appareil ne supporte pas Camera2 API.</string>
     <!---->
     <!--myapp-->
-    <string name="app_name">Angel Eyes</string>
+    <string name="app_name">Fusion Rev</string>
     <array name="users_v">
         <item>Bénévole</item>
     </array>
