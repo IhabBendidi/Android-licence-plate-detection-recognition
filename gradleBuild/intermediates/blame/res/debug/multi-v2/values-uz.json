@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/res/values-uz/values-uz.xml",
+                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/values-uz/values-uz.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

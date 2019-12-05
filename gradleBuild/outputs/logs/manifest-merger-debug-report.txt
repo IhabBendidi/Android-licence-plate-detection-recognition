@@ -8,7 +8,7 @@ MERGED from [androidx.multidex:multidex:2.0.1] /home/ihab/.gradle/caches/transfo
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:2:1-8:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/ihab/.gradle/caches/transforms-2/files-2.1/e89cc5819b77de1608ca725959f787fd/constraintlayout-2.0.0-beta3/AndroidManifest.xml:2:1-11:12
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:2:1-19:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/5f6a811498f06ba089b72025f7a9ee39/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -40,7 +40,7 @@ MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/ih
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/abec7fed30aba5337b9d5e9594dccecc/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/128ba4776d4a07818e1fa202313f9806/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3cf9c7fe4b77f6bb55bed9e773184c27/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/0f0d8c3361b41b9058d300a1ca1bfdac/appcompat-resources-1.2.0-alpha01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/9270305da0be8905ffe664e64e3fab0f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/29e9ef7ced0a3deb5e3ed5cdb80f14f1/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/577f0268d457424faf0eb97d1754ef57/media-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -258,8 +258,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/ihab/
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/ihab/.gradle/caches/transforms-2/files-2.1/e89cc5819b77de1608ca725959f787fd/constraintlayout-2.0.0-beta3/AndroidManifest.xml:5:5-7:41
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:7:5-9:41
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/469a776761aa94fcfc0c89946a6e793b/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/523672f876f66b377881d34fb7e774dd/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3a038fdcdcafcc295f85b10238aee5fa/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
@@ -322,8 +322,8 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.g
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3c4e53eb5ebf05f8d3db104e2f4b4957/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/128ba4776d4a07818e1fa202313f9806/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/128ba4776d4a07818e1fa202313f9806/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3cf9c7fe4b77f6bb55bed9e773184c27/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/3cf9c7fe4b77f6bb55bed9e773184c27/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/0f0d8c3361b41b9058d300a1ca1bfdac/appcompat-resources-1.2.0-alpha01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/0f0d8c3361b41b9058d300a1ca1bfdac/appcompat-resources-1.2.0-alpha01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/9270305da0be8905ffe664e64e3fab0f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/9270305da0be8905ffe664e64e3fab0f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/29e9ef7ced0a3deb5e3ed5cdb80f14f1/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
