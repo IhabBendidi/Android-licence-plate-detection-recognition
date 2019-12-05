@@ -12,46 +12,46 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int cardBackgroundColor = 0x7f040052;
-        public static final int cardCornerRadius = 0x7f040053;
-        public static final int cardElevation = 0x7f040054;
-        public static final int cardMaxElevation = 0x7f040055;
-        public static final int cardPreventCornerOverlap = 0x7f040056;
-        public static final int cardUseCompatPadding = 0x7f040057;
-        public static final int cardViewStyle = 0x7f040058;
-        public static final int contentPadding = 0x7f04007e;
-        public static final int contentPaddingBottom = 0x7f04007f;
-        public static final int contentPaddingLeft = 0x7f040080;
-        public static final int contentPaddingRight = 0x7f040081;
-        public static final int contentPaddingTop = 0x7f040082;
+        public static final int cardBackgroundColor = 0x7f030052;
+        public static final int cardCornerRadius = 0x7f030053;
+        public static final int cardElevation = 0x7f030054;
+        public static final int cardMaxElevation = 0x7f030055;
+        public static final int cardPreventCornerOverlap = 0x7f030056;
+        public static final int cardUseCompatPadding = 0x7f030057;
+        public static final int cardViewStyle = 0x7f030058;
+        public static final int contentPadding = 0x7f03007e;
+        public static final int contentPaddingBottom = 0x7f03007f;
+        public static final int contentPaddingLeft = 0x7f030080;
+        public static final int contentPaddingRight = 0x7f030081;
+        public static final int contentPaddingTop = 0x7f030082;
     }
     public static final class color {
         private color() {}
 
-        public static final int cardview_dark_background = 0x7f060026;
-        public static final int cardview_light_background = 0x7f060027;
-        public static final int cardview_shadow_end_color = 0x7f060028;
-        public static final int cardview_shadow_start_color = 0x7f060029;
+        public static final int cardview_dark_background = 0x7f050026;
+        public static final int cardview_light_background = 0x7f050027;
+        public static final int cardview_shadow_end_color = 0x7f050028;
+        public static final int cardview_shadow_start_color = 0x7f050029;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int cardview_compat_inset_shadow = 0x7f07004e;
-        public static final int cardview_default_elevation = 0x7f07004f;
-        public static final int cardview_default_radius = 0x7f070050;
+        public static final int cardview_compat_inset_shadow = 0x7f06004e;
+        public static final int cardview_default_elevation = 0x7f06004f;
+        public static final int cardview_default_radius = 0x7f060050;
     }
     public static final class style {
         private style() {}
 
-        public static final int Base_CardView = 0x7f100017;
-        public static final int CardView = 0x7f1000b0;
-        public static final int CardView_Dark = 0x7f1000b1;
-        public static final int CardView_Light = 0x7f1000b2;
+        public static final int Base_CardView = 0x7f0f0017;
+        public static final int CardView = 0x7f0f00b0;
+        public static final int CardView_Dark = 0x7f0f00b1;
+        public static final int CardView_Light = 0x7f0f00b2;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] CardView = { 0x101013f, 0x1010140, 0x7f040052, 0x7f040053, 0x7f040054, 0x7f040055, 0x7f040056, 0x7f040057, 0x7f04007e, 0x7f04007f, 0x7f040080, 0x7f040081, 0x7f040082 };
+        public static final int[] CardView = { 0x101013f, 0x1010140, 0x7f030052, 0x7f030053, 0x7f030054, 0x7f030055, 0x7f030056, 0x7f030057, 0x7f03007e, 0x7f03007f, 0x7f030080, 0x7f030081, 0x7f030082 };
         public static final int CardView_android_minWidth = 0;
         public static final int CardView_android_minHeight = 1;
         public static final int CardView_cardBackgroundColor = 2;

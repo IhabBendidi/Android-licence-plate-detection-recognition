@@ -3,9 +3,8 @@ manifest
 ADDED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
 INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
 INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
-MERGED from [androidx.multidex:multidex:2.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/5e8289268467d4b585aacf5e6d6924c8/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:2:1-8:12
+MERGED from [androidx.multidex:multidex:2.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/5e8289268467d4b585aacf5e6d6924c8/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/ihab/.gradle/caches/transforms-2/files-2.1/e89cc5819b77de1608ca725959f787fd/constraintlayout-2.0.0-beta3/AndroidManifest.xml:2:1-11:12
 MERGED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:2:1-19:12
 MERGED from [androidx.appcompat:appcompat:1.2.0-alpha01] /home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/AndroidManifest.xml:17:1-24:12
@@ -71,11 +70,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ihab/.gradl
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/f1854bf5407f344cf2ac976ec8eb6c07/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
 INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from /home/ihab/ihabgit/android/AndroidManifest.xml:3:5-34
-		INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml
-		INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml
 	android:versionName
 		ADDED from /home/ihab/ihabgit/android/AndroidManifest.xml:5:5-28
 		INJECTED from /home/ihab/ihabgit/android/AndroidManifest.xml

@@ -23,8 +23,6 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
-anim translate_top_to_center
-animator color_animation
 array users_v
 attr actionBarDivider
 attr actionBarItemBackground
@@ -667,12 +665,9 @@ color common_google_signin_btn_tint
 color control_background
 color cpb_blue
 color cpb_blue_dark
-color cpb_complete_state_selector
-color cpb_error_state_selector
 color cpb_green
 color cpb_green_dark
 color cpb_grey
-color cpb_idle_state_selector
 color cpb_red
 color cpb_red_dark
 color cpb_white

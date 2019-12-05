@@ -136,10 +136,6 @@
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/color_cpb_error_state_selector.xml.flat",
-        "source": "/home/ihab/ihabgit/android/res/color/cpb_error_state_selector.xml"
-    },
-    {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/c649eb2c8d6841acdbf77d2940000735/play-services-base-17.1.0/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
@@ -1220,10 +1216,6 @@
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/color_cpb_complete_state_selector.xml.flat",
-        "source": "/home/ihab/ihabgit/android/res/color/cpb_complete_state_selector.xml"
-    },
-    {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
@@ -1384,10 +1376,6 @@
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/anim_translate_top_to_center.xml.flat",
-        "source": "/home/ihab/ihabgit/android/res/anim/translate_top_to_center.xml"
-    },
-    {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -1518,10 +1506,6 @@
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/animator_color_animation.xml.flat",
-        "source": "/home/ihab/ihabgit/android/res/animator/color_animation.xml"
     },
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat",
@@ -1718,10 +1702,6 @@
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/interpolator_fast_out_slow_in.xml.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/interpolator/fast_out_slow_in.xml"
-    },
-    {
-        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/color_cpb_idle_state_selector.xml.flat",
-        "source": "/home/ihab/ihabgit/android/res/color/cpb_idle_state_selector.xml"
     },
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",

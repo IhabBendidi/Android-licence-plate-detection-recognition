@@ -55,7 +55,7 @@ task clean(type: Delete) {
 }*/
 
 // set to 'bazel', 'cmake', 'makefile', 'none'
-def nativeBuildSystem = 'cmake'
+def nativeBuildSystem = 'none'
 
 // Controls output directory in APK and CPU type for Bazel builds.
 // NOTE: Does not affect the Makefile build target API (yet), which currently

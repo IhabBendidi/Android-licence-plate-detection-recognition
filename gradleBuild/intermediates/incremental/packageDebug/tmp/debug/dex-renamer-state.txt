@@ -1,4 +1,4 @@
-#Thu Dec 05 19:57:12 CET 2019
+#Thu Dec 05 21:44:11 CET 2019
 base.0=/home/ihab/ihabgit/android/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

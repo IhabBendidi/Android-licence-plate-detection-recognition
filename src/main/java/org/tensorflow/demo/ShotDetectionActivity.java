@@ -406,6 +406,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                                                 if (temporaryBitmap.getWidth() >= (int)l.right && temporaryBitmap.getHeight()>= (int)l.bottom){
                                                     resultsBitmap = Bitmap.createBitmap(temporaryBitmap, (int) l.left,(int)l.top,(int)l.right - (int) l.left, (int)l.bottom - (int)l.top);
                                                     Log.e(TOG,"6.5");
+                                                    final Bitmap outputBitmap = drawBoxes(temporaryBitmap,l);/////// This is the make the full image with the green boxes inside
                                                     Bitmap scaledBitmap = rescaleBitmap(resultsBitmap,80);
                                                     Matrix matrix = new Matrix();
                                                     matrix.postRotate(90);
@@ -433,8 +434,9 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                                                                             }
                                                                             Log.e(TOG,"7");
                                                                             timeName = "" + System.currentTimeMillis();
-                                                                            imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                                            //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
                                                                             Log.e(TOG,"8");
+                                                                            imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
                                                                             Log.e(TOG,imagePath);
                                                                             time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
                                                                             outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
@@ -499,6 +501,20 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
             }
         }
         return directory.getAbsolutePath() + "/" + fullName;
+    }
+
+
+
+    protected Bitmap drawBoxes(Bitmap bitmap,RectF rect){
+        Paint myPaint = new Paint();
+        Bitmap b = Bitmap.createBitmap(bitmap);
+        myPaint.setColor(Color.GREEN);
+        myPaint.setStyle(Paint.Style.STROKE);
+        myPaint.setStrokeWidth(2);
+        Canvas canvas = new Canvas(b);
+        canvas.drawRect(rect,myPaint);
+        return b;
+
     }
 
 
