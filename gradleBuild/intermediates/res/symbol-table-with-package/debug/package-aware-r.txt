@@ -24,6 +24,7 @@ anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
 array users_v
+array vehicule_types
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1237,6 +1238,7 @@ drawable call_end_white_48x48
 drawable call_white_48x48
 drawable cancel_red
 drawable card_background_white
+drawable checkpoint
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1296,6 +1298,7 @@ drawable star_white
 drawable tile
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable transchecked
 drawable transparent_button_selector
 id ALT
 id CTRL

@@ -4,7 +4,7 @@ import androidx.annotation.Nullable;
 
 public class Plate {
     private String type = "Car";
-    private String validity = "28.12.2019";
+    private String validity = "28-11-2019";
     private String owner = "John Doe";
     private String location;
     private String date;

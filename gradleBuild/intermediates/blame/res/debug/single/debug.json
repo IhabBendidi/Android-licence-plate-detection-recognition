@@ -24,12 +24,12 @@
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-mdpi_edit_text_background_accent.9.png.flat",
@@ -582,6 +582,10 @@
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/faa95a4526b19a303e9ea96273fbfb2b/core-1.1.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable_checkpoint.png.flat",
+        "source": "/home/ihab/ihabgit/android/res/drawable/checkpoint.png"
     },
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
@@ -1186,6 +1190,10 @@
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e635a5a470e49f702293784cff096a62/appcompat-1.2.0-alpha01/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable_transchecked.png.flat",
+        "source": "/home/ihab/ihabgit/android/res/drawable/transchecked.png"
     },
     {
         "merged": "/home/ihab/ihabgit/android/gradleBuild/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",

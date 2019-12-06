@@ -54,7 +54,7 @@ public class PlateDbHelper extends SQLiteOpenHelper {
         SQLiteDatabase writableDb = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_TEXT, plate.getText());
-        String whereClause = "id=?";
+        String whereClause = "_id=?";
         String whereArgs[] = {plate.get_ID()};
         writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
     }
@@ -63,7 +63,7 @@ public class PlateDbHelper extends SQLiteOpenHelper {
         SQLiteDatabase writableDb = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_VALIDITY, plate.getValidity());
-        String whereClause = "id=?";
+        String whereClause = "_id=?";
         String whereArgs[] = {plate.get_ID()};
         writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
     }

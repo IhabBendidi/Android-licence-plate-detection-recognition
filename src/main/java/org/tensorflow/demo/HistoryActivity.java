@@ -11,8 +11,10 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -92,6 +94,12 @@ public class HistoryActivity extends AppCompatActivity {
 
     protected void onResume() {
         super.onResume();
+        setContentView(R.layout.activity_history);
+        //ViewGroup vg = findViewById();
+        getWindow().getDecorView().findViewById(android.R.id.content).invalidate();
+        layout = this.findViewById(R.id.the_layout);
+        dbHelper = new PlateDbHelper(this);
+        createHistoryView(dbHelper);
     }
 
 
