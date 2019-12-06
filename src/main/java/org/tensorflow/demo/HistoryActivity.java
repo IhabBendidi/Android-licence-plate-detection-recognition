@@ -38,7 +38,7 @@ public class HistoryActivity extends AppCompatActivity {
 
     static LinearLayout layout;
     PlateDbHelper dbHelper;
-    public String id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,13 +86,12 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     protected void onPause() {
-
         super.onPause();
+
     }
 
     protected void onResume() {
         super.onResume();
-
     }
 
 
@@ -238,6 +237,7 @@ public class HistoryActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent = new Intent(getBaseContext(), PlateActivity.class);
                     intent.putExtra("ID", id_text.getText());
+                    Log.e(TOG,id_text.getText().toString());
                     startActivity(intent);
 
                 }

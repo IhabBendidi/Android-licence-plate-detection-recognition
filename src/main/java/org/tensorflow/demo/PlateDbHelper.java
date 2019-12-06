@@ -76,7 +76,7 @@ public class PlateDbHelper extends SQLiteOpenHelper {
 
 
         // Filter results WHERE "title" = 'My Title'
-        String selection = "id" + " = ?";
+        String selection = "_id" + " = ?";
         String[] selectionArgs = {plate.get_ID()};
 
         // How you want the results sorted in the resulting Cursor
