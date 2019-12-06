@@ -1682,6 +1682,7 @@ layout activity_camera
 layout activity_history
 layout activity_main
 layout activity_one_shot_camera
+layout activity_plate
 layout activity_splash
 layout camera_connection_fragment_tracking
 layout custom_dialog

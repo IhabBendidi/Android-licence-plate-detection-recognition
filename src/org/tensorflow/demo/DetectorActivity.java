@@ -60,6 +60,7 @@ import java.util.Locale;
 import java.util.Vector;
 
 import static java.lang.Thread.sleep;
+import static java.security.AccessController.getContext;
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker defined in the project
@@ -173,6 +174,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 ////////////////////////////
   private Speaker speaker;
+  PlateDbHelper dbHelper;
   /////////////////////////////////////////////////////:
 
 
@@ -187,7 +189,9 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
     Log.e(TOG," (onPreviewSizeChosen) ");
     //////////////////////////////////////
     speaker = new Speaker(this);
-    ///////////////////////////////
+    dbHelper = new PlateDbHelper(this);
+
+      ///////////////////////////////
     final float textSizePx =
         TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -436,11 +440,13 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                                                         time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
                                                         outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
                                                         // Writing output ( Paths for images, location and time of the detection)
-                                                        try{
-                                                            fWriter.write(outputName);
-                                                        }catch(IOException e){
-                                                            Log.e(TOG,e.toString());
-                                                        }
+                                                        Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath);
+                                                        dbHelper.addPlate(plate);
+                                                        //try{
+                                                            //fWriter.write(outputName);
+                                                        //}catch(IOException e){
+                                                           // Log.e(TOG,e.toString());
+                                                        //}
                                                     }
                                                   })
                                                   .addOnFailureListener(
@@ -537,6 +543,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   @Override
   public void onDestroy() {
     speaker.close();
+    dbHelper.close();
 
 
     try{

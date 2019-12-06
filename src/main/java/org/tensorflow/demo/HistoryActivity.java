@@ -5,12 +5,15 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,6 +25,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class HistoryActivity extends AppCompatActivity {
 
@@ -33,13 +37,18 @@ public class HistoryActivity extends AppCompatActivity {
     BufferedReader reader;
 
     static LinearLayout layout;
+    PlateDbHelper dbHelper;
+    public String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
         layout = this.findViewById(R.id.the_layout);
-        final File file = new File("/data/user/0/org.tensorflow.demo/app_assets/resul.txt");
+        dbHelper = new PlateDbHelper(this);
+        createHistoryView(dbHelper);
+
+        /*final File file = new File("/data/user/0/org.tensorflow.demo/app_assets/resul.txt");
         Log.e(TOG,file.toString());
 
         if (file.exists()) {
@@ -67,12 +76,12 @@ public class HistoryActivity extends AppCompatActivity {
             } catch(IOException e){
                 Log.e(TOG,e.toString());
             }
-        }
+        }*/
     }
 
 
     protected void onDestroy() {
-
+        dbHelper.close();
         super.onDestroy();
     }
 
@@ -108,7 +117,7 @@ public class HistoryActivity extends AppCompatActivity {
         card.setCardBackgroundColor(Color.parseColor("#151515"));
 
         LinearLayout linear = new LinearLayout(this);
-        linear.setOrientation(1);
+        linear.setOrientation(LinearLayout.VERTICAL);
 
         Log.e(TOG,"13");
         //Image handling
@@ -191,6 +200,59 @@ public class HistoryActivity extends AppCompatActivity {
 
         Log.e(TOG,"17");
     }
+
+
+
+    public void createHistoryView(PlateDbHelper dbHelper){
+        ArrayList<Plate> plates = dbHelper.readPlateTexts();
+        for (Plate plate : plates){
+            LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+
+            CardView card = new CardView(this);
+            card.setRadius(0.2f);
+            card.setCardBackgroundColor(Color.parseColor("#151515"));
+
+            LinearLayout linear = new LinearLayout(this);
+            linear.setOrientation(LinearLayout.VERTICAL);
+
+            // Text handling
+            TextView recon_text = new TextView(this);
+            recon_text.setLayoutParams(lparams);
+            recon_text.setText(plate.getText());
+            recon_text.setTextColor(Color.parseColor("#FFFFFF"));
+
+            //ID handling
+
+            String id = plate.get_ID();
+            final TextView id_text = new TextView(this);
+            id_text.setLayoutParams(lparams);
+            id_text.setText(id);
+            id_text.setVisibility(View.GONE);
+
+            //Button for going to the plateactivity for more details
+            Button button= new Button(this);
+            button.setText("More Details");
+            button.setTextColor(Color.parseColor("#FFFFFF"));
+            button.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(getBaseContext(), PlateActivity.class);
+                    intent.putExtra("ID", id_text.getText());
+                    startActivity(intent);
+
+                }
+            });
+            linear.addView(recon_text);
+            linear.addView(id_text);
+            linear.addView(button);
+            card.addView(linear);
+            this.layout.addView(card);
+
+
+        }
+    }
+
+
 
     private Bitmap loadImageFromStorage(String path)
     {

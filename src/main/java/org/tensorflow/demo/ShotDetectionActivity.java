@@ -78,6 +78,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
 
 
     private Speaker speaker;
+    PlateDbHelper dbHelper;
 
 
 
@@ -192,6 +193,8 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
     public void onPreviewSizeChosen(final Size size, final int rotation) {
         Log.e(TOG," (onPreviewSizeChosen) ");
         speaker = new Speaker(this);
+        dbHelper = new PlateDbHelper(this);
+
         final float textSizePx =
                 TypedValue.applyDimension(
                         TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -441,11 +444,13 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                                                                             time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
                                                                             outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
                                                                             // Writing output ( Paths for images, location and time of the detection)
-                                                                            try{
-                                                                                fWriter.write(outputName);
-                                                                            }catch(IOException e){
-                                                                                Log.e(TOG,e.toString());
-                                                                            }
+                                                                            Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath);
+                                                                            dbHelper.addPlate(plate);
+                                                                            //try{
+                                                                                //fWriter.write(outputName);
+                                                                            //}catch(IOException e){
+                                                                                //Log.e(TOG,e.toString());
+                                                                            //}
                                                                         }
                                                                     })
                                                                     .addOnFailureListener(
@@ -543,6 +548,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
         // Don't forget to shutdown tts!
 
         speaker.close();
+        dbHelper.close();
         try{
             fWriter.close();
         }catch (IOException e){
