@@ -1,7 +1,7 @@
-#Fri Dec 06 22:33:39 CET 2019
-base.0=/home/ihab/ihabgit/android/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Mon Dec 30 21:15:51 CET 2019
+base.0=/home/ihab/ihabgit/first UI/gradleBuild/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/ihab/ihabgit/android/gradleBuild/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/home/ihab/ihabgit/first UI/gradleBuild/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

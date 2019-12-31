@@ -120,8 +120,10 @@ public class PlateDbHelper extends SQLiteOpenHelper {
 
 
 // How you want the results sorted in the resulting Cursor
+        //String sortOrder =
+                //PlateContract.PlateEntry.COLUMN_NAME_DATE + " DESC";
         String sortOrder =
-                PlateContract.PlateEntry.COLUMN_NAME_DATE + " DESC";
+                BaseColumns._ID + " DESC";
 
         Cursor cursor = readableDb.query(
                 PlateContract.PlateEntry.TABLE_NAME,   // The table to query

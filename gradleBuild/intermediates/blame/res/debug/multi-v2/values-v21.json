@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ihab/ihabgit/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/ihab/ihabgit/first UI/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/577f0268d457424faf0eb97d1754ef57/media-1.0.0/res/values-v21/values-v21.xml",
@@ -20,6 +20,25 @@
                         "endLines": "276,279,283,287",
                         "endColumns": "12,12,12,12",
                         "endOffsets": "20012,20175,20469,20764"
+                    }
+                },
+                {
+                    "source": "/home/ihab/ihabgit/first UI/res/values-v21/base-template-styles.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "85",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "161"
+                    },
+                    "to": {
+                        "startLines": "320",
+                        "startColumns": "4",
+                        "startOffsets": "22482",
+                        "endLines": "321",
+                        "endColumns": "12",
+                        "endOffsets": "22558"
                     }
                 },
                 {
@@ -42,7 +61,7 @@
                     }
                 },
                 {
-                    "source": "/home/ihab/ihabgit/android/res/values-v21/styles.xml",
+                    "source": "/home/ihab/ihabgit/first UI/res/values-v21/styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -61,25 +80,6 @@
                     }
                 },
                 {
-                    "source": "/home/ihab/ihabgit/android/res/values-v21/base-template-styles.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "85",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "161"
-                    },
-                    "to": {
-                        "startLines": "288",
-                        "startColumns": "4",
-                        "startOffsets": "20769",
-                        "endLines": "289",
-                        "endColumns": "12",
-                        "endOffsets": "20845"
-                    }
-                },
-                {
                     "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/faa95a4526b19a303e9ea96273fbfb2b/core-1.1.0/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
@@ -90,12 +90,31 @@
                         "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,272,273,280,284,290,293",
+                        "startLines": "2,3,4,5,272,273,280,284,322,325",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,19607,19723,20180,20474,20850,21022",
-                        "endLines": "2,3,4,5,272,273,280,284,292,297",
+                        "startOffsets": "55,159,223,290,19607,19723,20180,20474,22563,22735",
+                        "endLines": "2,3,4,5,272,273,280,284,324,329",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,19718,19844,20301,20597,21017,21355"
+                        "endOffsets": "154,218,285,349,19718,19844,20301,20597,22730,23068"
+                    }
+                },
+                {
+                    "source": "/home/ihab/.gradle/caches/transforms-2/files-2.1/e849868d54829bf55ad7137290bb52e6/material-1.0.0/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,10,18,26",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,484,910,1333",
+                        "endLines": "9,17,25,33",
+                        "endColumns": "10,10,10,10",
+                        "endOffsets": "479,905,1328,1763"
+                    },
+                    "to": {
+                        "startLines": "288,296,304,312",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "20769,21198,21624,22047",
+                        "endLines": "295,303,311,319",
+                        "endColumns": "10,10,10,10",
+                        "endOffsets": "21193,21619,22042,22477"
                     }
                 }
             ]

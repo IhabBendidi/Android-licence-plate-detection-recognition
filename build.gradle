@@ -280,9 +280,11 @@ dependencies {
 dependencies {
     implementation 'androidx.appcompat:appcompat:+'
     implementation 'androidx.constraintlayout:constraintlayout:+'
+    implementation 'com.android.support:design:25.0.0'
 }
 
 dependencies {
   implementation 'androidx.appcompat:appcompat:+'
   implementation 'androidx.constraintlayout:constraintlayout:+'
+    implementation 'com.google.android.material:material:1.0.0'
 }

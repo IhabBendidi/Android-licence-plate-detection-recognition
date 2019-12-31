@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ihab/ihabgit/android/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/home/ihab/ihabgit/first UI/gradleBuild/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/home/ihab/ihabgit/android/res/values-v14/styles.xml",
+                    "source": "/home/ihab/ihabgit/first UI/res/values-v14/styles.xml",
                     "from": {
                         "startLines": "7",
                         "startColumns": "2",
