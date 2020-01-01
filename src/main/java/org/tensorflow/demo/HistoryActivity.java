@@ -1,5 +1,6 @@
 package org.tensorflow.demo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -13,12 +14,16 @@ import android.graphics.Matrix;
 import android.os.Bundle;
 import android.text.Layout;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -31,54 +36,21 @@ import java.util.ArrayList;
 
 public class HistoryActivity extends AppCompatActivity {
 
-    FileReader fReader;
+
     static final String TOG = "HistoryActivity";
-    String inputFileName = "resul.txt";
+
 
     FileInputStream is;
-    BufferedReader reader;
+
 
     static LinearLayout layout;
     PlateDbHelper dbHelper;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_history);
-        layout = this.findViewById(R.id.the_layout);
-        dbHelper = new PlateDbHelper(this);
-        createHistoryView(dbHelper);
-
-        /*final File file = new File("/data/user/0/org.tensorflow.demo/app_assets/resul.txt");
-        Log.e(TOG,file.toString());
-
-        if (file.exists()) {
-            Log.e(TOG,"1");
-            try{
-                is = new FileInputStream(file);
-                Log.e(TOG,"2");
-                reader = new BufferedReader(new InputStreamReader(is));
-                Log.e(TOG,"3");
-                String line = "";
-                Log.e(TOG,"4");
-                while(line != null){
-                    Log.e(TOG,"5");
-                    line = reader.readLine();
-                    if (line != null){
-                        Log.e(TOG,"6, line is : " + line);
-                        Log.e(TOG,"7");
-                        createNewHistoryObject(line);
-                        Log.e(TOG,"fin one loop");
-                    }
-
-                }
-            } catch (FileNotFoundException e){
-                Log.e(TOG,e.toString());
-            } catch(IOException e){
-                Log.e(TOG,e.toString());
-            }
-        }*/
     }
 
 
@@ -95,117 +67,42 @@ public class HistoryActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         setContentView(R.layout.activity_history);
-        //ViewGroup vg = findViewById();
         getWindow().getDecorView().findViewById(android.R.id.content).invalidate();
         layout = this.findViewById(R.id.the_layout);
         dbHelper = new PlateDbHelper(this);
         createHistoryView(dbHelper);
-    }
-
-
-
-
-    private void createNewHistoryObject(String line){
-        Log.e(TOG,"8");
-        String[] values = line.split(" ");
-        Log.e(TOG,"9");
-        String imagePath = values[0];
-        String result_text = values[1];
-        Log.e(TOG,"10");
-        String location = values[2];
-        Log.e(TOG,"11");
-        String time = values[3];
-        Log.e(TOG,"12");
-        LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-
-        CardView card = new CardView(this);
-        card.setRadius(0.2f);
-        card.setCardBackgroundColor(Color.parseColor("#151515"));
-
-        LinearLayout linear = new LinearLayout(this);
-        linear.setOrientation(LinearLayout.VERTICAL);
-
-        Log.e(TOG,"13");
-        //Image handling
-        Bitmap b = loadImageFromStorage(imagePath);
-        ImageView img = new ImageView(this);
-        img.setLayoutParams(lparams);
-        img.setImageBitmap(b);
-
-
-        Log.e(TOG,"14");
-
-
-        //Text handling
-        TextView recon_text = new TextView(this);
-        recon_text.setLayoutParams(lparams);
-        recon_text.setText(result_text);
-        recon_text.setTextColor(Color.parseColor("#FFFFFF"));
-
-
-
-        //Location handling
-        TextView locationholder = new TextView(this);
-        locationholder.setLayoutParams(lparams);
-        locationholder.setText("Country of detection : ");
-        locationholder.setTextColor(Color.parseColor("#FFFFFF"));
-
-
-        TextView locationText = new TextView(this);
-        locationText.setLayoutParams(lparams);
-        locationText.setText(location);
-        locationText.setTextColor(Color.parseColor("#FFFFFF"));
-
-
-        Log.e(TOG,"15");
-
-
-
-        //Time handling
-
-        TextView timeholder = new TextView(this);
-        timeholder.setLayoutParams(lparams);
-        timeholder.setText("Time of detection : ");
-        timeholder.setTextColor(Color.parseColor("#FFFFFF"));
-
-        TextView timeText = new TextView(this);
-        timeText.setLayoutParams(lparams);
-        timeText.setText(time);
-        timeText.setTextColor(Color.parseColor("#FFFFFF"));
-
-        Log.e(TOG,"16");
-
-
-        linear.addView(img);
-        linear.addView(recon_text);
-        linear.addView(locationholder);
-        linear.addView(locationText);
-        linear.addView(timeholder);
-        linear.addView(timeText);
-
-        card.addView(linear);
-
-
-        /*
-        card.addView(img);
-        card.addView(recon_text);
-        card.addView(locationholder);
-        card.addView(locationText);
-        card.addView(timeholder);
-        card.addView(timeText);
-
-         */
-
-
-        this.layout.addView(card);
-
-
-
-
-
-
-        Log.e(TOG,"17");
+        BottomNavigationView bottomNavigationViewHistory = (BottomNavigationView) findViewById(R.id.bottom_navigation_history);
+        final Context currentContext = this;
+        bottomNavigationViewHistory.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Log.e(TOG,"0.5");
+                switch (item.getItemId()) {
+                    case R.id.action_home:
+                        Log.e(TOG,"1");
+                        Intent intentHome = new Intent(currentContext, MainActivity.class);
+                        Log.e(TOG,"2");
+                        Log.e(TOG,"3");
+                        startActivity(intentHome);
+                        Log.e(TOG,"4");
+                        break;
+                    case R.id.action_history:
+                        Log.e(TOG,"5");
+                        Intent intentHistory = new Intent(currentContext, HistoryActivity.class);
+                        Log.e(TOG,"6");
+                        Log.e(TOG,"7");
+                        startActivity(intentHistory);
+                        Log.e(TOG,"8");
+                        break;
+                    case R.id.action_settings:
+                        Toast.makeText(currentContext, "Settings", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_renew:
+                        Toast.makeText(currentContext, "Renew", Toast.LENGTH_SHORT).show();
+                        break;          }
+                return true;
+            }
+        });
     }
 
 
@@ -218,7 +115,8 @@ public class HistoryActivity extends AppCompatActivity {
 
             CardView card = new CardView(this);
             card.setRadius(0.2f);
-            card.setCardBackgroundColor(Color.parseColor("#151515"));
+            card.setCardBackgroundColor(Color.parseColor("#ffffff"));
+
 
             LinearLayout linear = new LinearLayout(this);
             linear.setOrientation(LinearLayout.VERTICAL);
@@ -227,7 +125,7 @@ public class HistoryActivity extends AppCompatActivity {
             TextView recon_text = new TextView(this);
             recon_text.setLayoutParams(lparams);
             recon_text.setText(plate.getText());
-            recon_text.setTextColor(Color.parseColor("#FFFFFF"));
+            recon_text.setTextColor(Color.parseColor("#151515"));
 
             //ID handling
 
@@ -260,23 +158,4 @@ public class HistoryActivity extends AppCompatActivity {
         }
     }
 
-
-
-    private Bitmap loadImageFromStorage(String path)
-    {
-        Bitmap rotated = null;
-        try {
-            File f=new File(path);
-            Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
-            Matrix matrix = new Matrix();
-            matrix.postRotate(90);
-            rotated = Bitmap.createBitmap(b, 0, 0, b.getWidth(), b.getHeight(),
-                    matrix, true);
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        return rotated;
-    }
 }

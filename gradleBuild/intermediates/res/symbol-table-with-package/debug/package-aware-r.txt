@@ -1764,6 +1764,7 @@ id blocking
 id bold
 id bottom
 id bottom_navigation
+id bottom_navigation_history
 id bounce
 id btn_takepicture
 id butt
@@ -1942,6 +1943,7 @@ id save_scale_type
 id sawtooth
 id screen
 id scroll
+id scrollHistory
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView

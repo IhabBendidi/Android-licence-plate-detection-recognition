@@ -15,6 +15,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_home:
-                        Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
-                        //item.set
+                        Intent intentHome = new Intent(currentContext, MainActivity.class);
+                        startActivity(intentHome);
                         break;
                     case R.id.action_history:
-                        Intent intent = new Intent(currentContext, HistoryActivity.class);
-                        startActivity(intent);
+                        Intent intentHistory = new Intent(currentContext, HistoryActivity.class);
+                        startActivity(intentHistory);
                         break;
                     case R.id.action_settings:
                         Toast.makeText(MainActivity.this, "Settings", Toast.LENGTH_SHORT).show();

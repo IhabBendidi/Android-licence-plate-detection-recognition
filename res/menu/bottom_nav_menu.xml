@@ -7,7 +7,7 @@
     android:id="@+id/action_home"
     android:enabled="true"
     android:icon="@drawable/ic_action_home"
-    android:title="Recents"
+    android:title="Home"
     app:showAsAction="always" />
 
 
