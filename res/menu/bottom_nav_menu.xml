@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">    <item
-    android:id="@+id/action_recents"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+    android:id="@+id/action_home"
     android:enabled="true"
-    android:icon="@drawable/ic_action_info"
+    android:icon="@drawable/ic_action_home"
     android:title="Recents"
-    app:showAsAction="ifRoom" />    <item
-    android:id="@+id/action_favorites"
+    app:showAsAction="always" />
+
+
+    <item
+    android:id="@+id/action_history"
     android:enabled="true"
-    android:icon="@drawable/ic_action_info"
-    android:title="Favorites"
-    app:showAsAction="ifRoom" />    <item
-    android:id="@+id/action_nearby"
+    android:icon="@drawable/ic_action_history"
+    android:title="History"
+    app:showAsAction="always" />
+
+
+    <item
+    android:id="@+id/action_settings"
     android:enabled="true"
-    android:icon="@drawable/ic_action_info"
-    android:title="Nearby"
-    app:showAsAction="ifRoom" />
+    android:icon="@drawable/ic_action_settings"
+    android:title="Settings"
+    app:showAsAction="always" />
+
+
+    <item
+    android:id="@+id/action_renew"
+    android:enabled="true"
+    android:icon="@drawable/ic_action_renew"
+    android:title="Renew"
+    app:showAsAction="always" />
+
+
 </menu>

@@ -3,11 +3,12 @@
 	<color name="control_background">#cc4285f4</color>
     <color name="colortext">#FFFFFF</color>
     <!--mycolor-->
-    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#151515</color>
     <color name="colorAccent">#FFF</color>
     <color name="colorGreen">#10d71e</color>
-    <!--color name="colorGreen">#01b50e</color-->
+    <color name="color_menu_icon">#0b65ae</color>
+    <color name="colorIconTint">#707070</color>
     <!--/mycolor-->
     <color name="psts_background_tab_pressed">#1AFFFFFF</color>
     <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
