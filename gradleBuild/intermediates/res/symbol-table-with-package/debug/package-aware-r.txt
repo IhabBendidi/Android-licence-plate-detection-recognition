@@ -859,6 +859,7 @@ color colorGreen
 color colorIconTint
 color colorPrimary
 color colorPrimaryDark
+color colorSwitchTint
 color color_menu_icon
 color colortext
 color common_google_signin_btn_text_dark
@@ -1885,7 +1886,6 @@ id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id muter
 id navigation_header_container
 id never
 id none

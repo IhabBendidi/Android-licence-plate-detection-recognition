@@ -7,19 +7,21 @@
     tools:context=".SettingFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:id="@+id/muter"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="320dp"
+        android:text="Mute"
+        android:textSize="22dp"
+        android:switchPadding="25dp"
+        android:thumbTint="@color/color_menu_icon"
+        android:trackTint="@color/colorSwitchTint"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/muter"
-        android:text="Switch" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
