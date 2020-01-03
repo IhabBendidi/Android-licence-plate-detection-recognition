@@ -3,8 +3,9 @@
     <style name="MaterialTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen" />
     <!---->
 	<!-- Default application theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    <!--style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--item name="actionBarStyle">@style/ActionBarStyle</item-->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -19,7 +20,7 @@
     </style>
 
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <!--item name="actionBarStyle">@style/ActionBarStyle</item-->
         <item name="windowActionBar">false</item>
 
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -27,7 +28,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppThemeMenu" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <!--item name="actionBarStyle">@style/ActionBarStyle</item-->
         <item name="colorPrimary">@color/colorGreen</item>
         <item name="colorPrimaryDark">@color/colorGreen</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -38,18 +39,18 @@
     <!-- Default application theme ends here -->
 
     <!-- ActionBar related themes -->
-    <style name="AppTabsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--style name="AppTabsTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="actionBarStyle">@style/ActionBarStyle</item>
         <item name="windowActionBar">false</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    </style-->
 
-    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+    <!--style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="background">@color/main_color_500</item>
         <item name="titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
-    </style>
+    </style-->
 
     <style name="ActionBarStyle.TitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textColor">@android:color/white</item>
@@ -76,13 +77,13 @@
 
     <style name="AppTheme.NoShadow" parent="@style/AppTheme">
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionBarStyle">@style/ActionBarStyle.NoShadow</item>
+        <!--item name="android:actionBarStyle">@style/ActionBarStyle.NoShadow</item-->
     </style>
 
-    <style name="ActionBarStyle.NoShadow" parent="@style/ActionBarStyle">
+    <!--style name="ActionBarStyle.NoShadow" parent="@style/ActionBarStyle">
         <item name="android:background">@color/main_color_600</item>
         <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
-    </style>
+    </style-->
     <!-- ActionBar related themes end here -->
 
 

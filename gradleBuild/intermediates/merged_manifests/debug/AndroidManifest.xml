@@ -33,6 +33,7 @@
         android:label="@string/app_name"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="org.tensorflow.demo.HomeActivity" />
         <activity android:name="org.tensorflow.demo.PlateActivity" />
         <activity android:name="org.tensorflow.demo.HistoryActivity" />
         <activity android:name="org.tensorflow.demo.ShotDetectionActivity" />

@@ -80,5 +80,8 @@
     <string name="main_button_one_scan">Scan</string>
     <string name="main_button_history">History</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

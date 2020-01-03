@@ -1771,6 +1771,7 @@ id butt
 id button
 id button2
 id button3
+id button4
 id buttonPanel
 id cancel_action
 id center
@@ -1838,6 +1839,7 @@ id flagNoExtractUi
 id flagNoFullscreen
 id flip
 id forever
+id fragment_layout
 id ghost_view
 id gone
 id graph
@@ -1873,7 +1875,6 @@ id listMode
 id list_item
 id locationvalue
 id logo
-id logout
 id masked
 id media_actions
 id message
@@ -1884,6 +1885,7 @@ id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id muter
 id navigation_header_container
 id never
 id none
@@ -1993,6 +1995,7 @@ id stretch
 id stroke
 id submenuarrow
 id submit_area
+id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2121,6 +2124,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_camera
 layout activity_history
+layout activity_home
 layout activity_main
 layout activity_one_shot_camera
 layout activity_plate
@@ -2141,6 +2145,10 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_history
+layout fragment_home
+layout fragment_renew
+layout fragment_setting
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -2163,7 +2171,6 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
-menu main
 raw a
 raw heart
 raw like
@@ -2251,6 +2258,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string home_msg
 string location
@@ -2307,8 +2315,6 @@ string yes
 string your_email
 style ActionBarOverlay_Transparent
 style ActionBarOverlay_Transparent_TitleTextStyle
-style ActionBarStyle
-style ActionBarStyle_NoShadow
 style ActionBarStyle_TitleTextStyle
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -2316,8 +2322,6 @@ style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
-style AppBaseTheme
-style AppTabsTheme
 style AppTheme
 style AppTheme_NoActionBar
 style AppTheme_NoShadow
@@ -2523,8 +2527,6 @@ style CustomDialogTheme
 style DividerStyle
 style EasyPermissions
 style EasyPermissions_Transparent
-style FullscreenActionBarStyle
-style FullscreenTheme
 style ListViewStyle
 style MaterialTheme
 style NoTitleDialog

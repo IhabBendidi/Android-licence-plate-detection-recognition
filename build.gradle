@@ -165,7 +165,7 @@ android {
 
 task buildNativeBazel(type: Exec) {
     workingDir '../../..'
-    commandLine bazelLocation, 'build', '-c', 'opt', 'tensorflow/examples/android:tensorflow_native_libs', '--crosstool_top=//externa l:android/crosstool', '--cpu=' + cpuType , '--host_cross tool_top=@baz el_tools//tools/cpp:toolchain'
+    commandLine bazelLocation, 'build', '-c', 'opt', 'tensorflow/examples/android:tensorflow_native_libs', '--crosstool_top=//externa l:android/crosstool', '--cpu=' + cpuType, '--host_cross tool_top=@baz el_tools//tools/cpp:toolchain'
 }
 
 task buildNativeMake(type: Exec) {
@@ -174,12 +174,8 @@ task buildNativeMake(type: Exec) {
     // builds significantly.
     environment "CC_PREFIX", 'ccache'
     workingDir '../../..'
-    commandLine 'tensorflow/contrib/makefile/build_all_android.sh',  \
-         '-s',  \
-         'tensorf low/c ontrib/makefi le/sub_makefiles/android/Makefile.in',  \
-         '-t',  \
-         'libtens orflo w_inference.s o libtensorflow_demo.so'  \
-         , '-T'  // Un comment to skip protobuf and speed up subsequent builds.
+    commandLine 'tensorflow/contrib/makefile/build_all_android.sh', '-s', 'tensorf low/c ontrib/make fi le/sub_makefiles/android/Makefile.in', '-t', 'libtens  orfl o w_inferen ce .s o libtensorflow_demo.so'  \
+         , '-T'  // Un   comment to skip protobuf and speed up subsequent builds.
 }
 
 task copyNativeLibs(type: Copy) {
@@ -280,11 +276,32 @@ dependencies {
 dependencies {
     implementation 'androidx.appcompat:appcompat:+'
     implementation 'androidx.constraintlayout:constraintlayout:+'
-    implementation 'com.android.support:design:25.0.0'
+
 }
 
 dependencies {
-  implementation 'androidx.appcompat:appcompat:+'
-  implementation 'androidx.constraintlayout:constraintlayout:+'
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
     implementation 'com.google.android.material:material:1.0.0'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:+'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:+'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:+'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:+'
 }
