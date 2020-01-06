@@ -132,15 +132,24 @@ public class HistoryFragment extends Fragment  {
 
 
 
-    public SearchView createSearchView(){
+    public CardView createSearchView(){
         // Setting up the search view
-
+        CardView card = new CardView(getActivity());
         SearchView search = new SearchView(getActivity());
         search.setBackgroundColor(getResources().getColor(R.color.colorSearch));
         search.setIconifiedByDefault(false);
-        search.setQueryHint("Your license plate here");
-        search.setId(View.generateViewId());
-        return search;
+        search.setQueryHint("Search for a license plate");
+        card.setId(View.generateViewId());
+        //search.setElevation(0.3f);
+        card.addView(search);
+        card.setRadius(10f);
+        card.setCardElevation(8f);
+
+
+
+
+
+        return card;
     }
 
 
@@ -160,7 +169,7 @@ public class HistoryFragment extends Fragment  {
 
 
         // Setting up the search view
-        SearchView search = createSearchView();
+        CardView search = createSearchView();
         constraint.addView(search);
 
 
@@ -187,19 +196,20 @@ public class HistoryFragment extends Fragment  {
         constraint.addView(scroller);
         set.constrainHeight(scroller.getId(), ConstraintSet.WRAP_CONTENT);
         set.constrainWidth(scroller.getId(), ConstraintSet.MATCH_CONSTRAINT);
+
         int px60 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
-        set.connect(scroller.getId(), ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, 0);
+        set.connect(scroller.getId(), ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, px60);
         set.connect(scroller.getId(), ConstraintSet.RIGHT, ConstraintSet.PARENT_ID, ConstraintSet.RIGHT, 0);
-        //int px60 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
-        set.connect(scroller.getId(), ConstraintSet.TOP, search.getId(), ConstraintSet.BOTTOM, px60);
+        int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15, this.getResources().getDisplayMetrics());
+        set.connect(scroller.getId(), ConstraintSet.TOP, search.getId(), ConstraintSet.BOTTOM, px);
 
 
 
 
 
         // Setting up the constraints for the search view
-        int px40 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, this.getResources().getDisplayMetrics());
-        set.constrainHeight(search.getId(), px40);
+        int px50 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, this.getResources().getDisplayMetrics());
+        set.constrainHeight(search.getId(), px50);
         set.constrainWidth(search.getId(), ConstraintSet.MATCH_CONSTRAINT);
         int px25 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 25, this.getResources().getDisplayMetrics());
         set.connect(search.getId(), ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, px25);
@@ -243,9 +253,10 @@ public class HistoryFragment extends Fragment  {
 
         // Designing the shape of the text
         plateText.setTextColor(getResources().getColor(R.color.colorIconTint));
-        int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15, this.getResources().getDisplayMetrics());
+        //plateText.setTextColor(Color.BLACK);
+        int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12, this.getResources().getDisplayMetrics());
         plateText.setTextSize(px15);
-        int px80 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, this.getResources().getDisplayMetrics());
+        int px80 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
         plateText.setHeight(px80);
         int px300 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, this.getResources().getDisplayMetrics());
         plateText.setWidth(px300);
