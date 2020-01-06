@@ -859,6 +859,7 @@ color colorGreen
 color colorIconTint
 color colorPrimary
 color colorPrimaryDark
+color colorSearch
 color colorSwitchTint
 color color_menu_icon
 color colortext
@@ -1657,6 +1658,7 @@ drawable ok_green
 drawable psts_background_tab
 drawable selector_background_empty
 drawable selector_dialog_warning
+drawable setting_background
 drawable splash_screen_background
 drawable splash_screen_option_three
 drawable star_red
@@ -1772,7 +1774,6 @@ id butt
 id button
 id button2
 id button3
-id button4
 id buttonPanel
 id cancel_action
 id center
@@ -2211,7 +2212,6 @@ string ai_btn
 string app_name
 string appbar_scrolling_view_behavior
 string audio
-string blind_btn
 string bottom_sheet_behavior
 string buttonText
 string calling
@@ -2281,6 +2281,7 @@ string material_icon_share
 string material_icon_star_outline
 string menu_msg
 string mtrl_chip_close_icon_content_description
+string mute
 string no
 string ok
 string password
@@ -2326,6 +2327,7 @@ style AppTheme
 style AppTheme_NoActionBar
 style AppTheme_NoShadow
 style AppTheme_Overlay
+style AppTheme_SearchView
 style AppTheme_Title
 style AppThemeMenu
 style Base_AlertDialog_AppCompat

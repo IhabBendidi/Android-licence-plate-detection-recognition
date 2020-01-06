@@ -1,17 +1,31 @@
 package org.tensorflow.demo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.vision.text.Line;
+
+import java.util.ArrayList;
 
 
 /**
@@ -31,6 +45,8 @@ public class HistoryFragment extends Fragment  {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    public TextView plateID;
 
     private OnFragmentInteractionListener mListener;
 
@@ -69,13 +85,9 @@ public class HistoryFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_history, container, false);
-        ScrollView scroller = new ScrollView(getActivity());
-        TextView text = new TextView(getActivity());
-        text.setText("This is history");
-        text.setTextColor(Color.GREEN);
-        scroller.addView(text);
-        return scroller;
+
+        //View finalLayout = (ViewGroup) inflater.inflate(R.layout.fragment_history, container, false);
+        return createHistoryLayout();
 
     }
 
@@ -117,4 +129,182 @@ public class HistoryFragment extends Fragment  {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+
+
+    public SearchView createSearchView(){
+        // Setting up the search view
+
+        SearchView search = new SearchView(getActivity());
+        search.setBackgroundColor(getResources().getColor(R.color.colorSearch));
+        search.setIconifiedByDefault(false);
+        search.setQueryHint("Your license plate here");
+        search.setId(View.generateViewId());
+        return search;
+    }
+
+
+
+    public ConstraintLayout createHistoryLayout(){
+
+        // Setting up the parent constraint layout parameters
+        ConstraintLayout constraint = new ConstraintLayout(getActivity());
+        constraint.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.MATCH_PARENT, ConstraintLayout.LayoutParams.MATCH_PARENT);
+        constraint.setLayoutParams(lparams);
+
+
+        // Setting up the constraints of the components of the layout
+        ConstraintSet set = new ConstraintSet();
+
+
+        // Setting up the search view
+        SearchView search = createSearchView();
+        constraint.addView(search);
+
+
+        // Getting the data of history
+        PlateDbHelper dbHelper = new PlateDbHelper(getActivity());
+        ArrayList<Plate> plates = dbHelper.readPlateTexts();
+
+
+        // Setting up the linear layout used for the multitude of plate texts
+        ScrollView scroller = new ScrollView(getActivity());
+        scroller.setId(View.generateViewId());
+
+
+
+
+
+
+        LinearLayout innerConstraint = createAllPlateEntries(plates);
+
+
+
+        // Setting up the constraints of the scrollview
+        scroller.addView(innerConstraint);
+        constraint.addView(scroller);
+        set.constrainHeight(scroller.getId(), ConstraintSet.WRAP_CONTENT);
+        set.constrainWidth(scroller.getId(), ConstraintSet.MATCH_CONSTRAINT);
+        int px60 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
+        set.connect(scroller.getId(), ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, 0);
+        set.connect(scroller.getId(), ConstraintSet.RIGHT, ConstraintSet.PARENT_ID, ConstraintSet.RIGHT, 0);
+        //int px60 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
+        set.connect(scroller.getId(), ConstraintSet.TOP, search.getId(), ConstraintSet.BOTTOM, px60);
+
+
+
+
+
+        // Setting up the constraints for the search view
+        int px40 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, this.getResources().getDisplayMetrics());
+        set.constrainHeight(search.getId(), px40);
+        set.constrainWidth(search.getId(), ConstraintSet.MATCH_CONSTRAINT);
+        int px25 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 25, this.getResources().getDisplayMetrics());
+        set.connect(search.getId(), ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, px25);
+        int px30 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, this.getResources().getDisplayMetrics());
+        set.connect(search.getId(), ConstraintSet.RIGHT, ConstraintSet.PARENT_ID, ConstraintSet.RIGHT, px30);
+        int px100 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100, this.getResources().getDisplayMetrics());
+        set.connect(search.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, px100);
+
+
+
+        // Applying the constraints to the constraintlayout
+        set.applyTo(constraint);
+        return constraint;
+
+    }
+
+
+    public TextView createPlateIDEntry(Plate plate){
+        LinearLayout.LayoutParams linearparams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        String id = plate.get_ID();
+        final TextView id_text = new TextView(getActivity());
+        id_text.setLayoutParams(linearparams);
+        id_text.setText(id);
+        id_text.setVisibility(View.GONE);
+        id_text.setId(View.generateViewId());
+        return id_text;
+    }
+
+    public LinearLayout createHistoryEntry(Plate plate){
+        // Text handling
+        LinearLayout.LayoutParams linearparams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+
+
+        TextView plateText = new TextView(getActivity());
+        plateText.setLayoutParams(linearparams);
+        plateText.setText(plate.getText());
+
+
+
+        // Designing the shape of the text
+        plateText.setTextColor(getResources().getColor(R.color.colorIconTint));
+        int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15, this.getResources().getDisplayMetrics());
+        plateText.setTextSize(px15);
+        int px80 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, this.getResources().getDisplayMetrics());
+        plateText.setHeight(px80);
+        int px300 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, this.getResources().getDisplayMetrics());
+        plateText.setWidth(px300);
+
+
+
+        // Create the invisible Text View of the plate ID
+        plateID = createPlateIDEntry(plate);
+        plateText.setId(Integer.parseInt(plateID.getText().toString()));
+
+
+        // TODO : ELEVATION AND DESIGN SHOULD BE DONE
+        //Setting the onclicklistener to go to the renewal fragment using the id of each entry
+        plateText.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Renewal for this plate", Toast.LENGTH_SHORT).show();
+                //String id = plateID.getText().toString();
+
+            }
+        });
+
+
+        // Adding the linear layout wrapping each entry
+        LinearLayout plateLayout = new LinearLayout(getActivity());
+        plateLayout.setLayoutParams(linearparams);
+        plateLayout.setId(View.generateViewId());
+        plateLayout.addView(plateID);
+        plateLayout.addView(plateText);
+
+
+
+        return plateLayout;
+    }
+
+
+    public LinearLayout createAllPlateEntries(ArrayList<Plate> plates){
+
+        // Creating the constraint layout that will hold all historical entries
+        LinearLayout innerConstraint = new LinearLayout(getActivity());
+        LinearLayout.LayoutParams lparams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        innerConstraint.setLayoutParams(lparams);
+        innerConstraint.setOrientation(LinearLayout.VERTICAL);
+        //innerConstraint.setId(View.generateViewId());
+
+
+
+            // Generating the multiple linear layouts each holding the plate texts (in the case of having only one entry, or no entry at all)
+            for (Plate plate : plates){
+                LinearLayout linear = createHistoryEntry(plate);
+                innerConstraint.addView(linear);
+                //innerSet.connect(linear.getId(), ConstraintSet.LEFT, innerConstraint.getId(), ConstraintSet.LEFT, 0);
+                //innerSet.connect(linear.getId(), ConstraintSet.RIGHT, innerConstraint.getId(), ConstraintSet.RIGHT, 0);
+            }
+
+
+
+        return innerConstraint;
+    }
+
+
 }

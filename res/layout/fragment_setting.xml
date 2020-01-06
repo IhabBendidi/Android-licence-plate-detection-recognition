@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/setting_background"
     tools:context=".SettingFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="180dp"
         android:layout_marginBottom="320dp"
-        android:text="Mute"
+        android:text="@string/mute"
         android:textSize="22dp"
         android:switchPadding="25dp"
         android:thumbTint="@color/color_menu_icon"

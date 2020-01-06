@@ -12,7 +12,7 @@
     </array>
 
     <!--App Butons text-->
-    <string name="blind_btn">Visually impaired</string>
+    <string name="mute">Mute</string>
     <string name="volunteer_btn">I am a Volunteer</string>
     <string name="ai_btn">AI</string>
     <string name="welcome">Welcome!</string>

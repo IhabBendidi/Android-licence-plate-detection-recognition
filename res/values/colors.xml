@@ -10,6 +10,7 @@
     <color name="color_menu_icon">#0b65ae</color>
     <color name="colorIconTint">#707070</color>e1e1e1
     <color name="colorSwitchTint">#c1b1b1</color>
+    <color name="colorSearch">#ffffff</color>
     <!--/mycolor-->
     <color name="psts_background_tab_pressed">#1AFFFFFF</color>
     <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
