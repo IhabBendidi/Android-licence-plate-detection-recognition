@@ -135,10 +135,34 @@ public class HistoryFragment extends Fragment  {
     public CardView createSearchView(){
         // Setting up the search view
         CardView card = new CardView(getActivity());
-        SearchView search = new SearchView(getActivity());
+        final SearchView search = new SearchView(getActivity());
         search.setBackgroundColor(getResources().getColor(R.color.colorSearch));
         search.setIconifiedByDefault(false);
         search.setQueryHint("Search for a license plate");
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                //Toast.makeText(getContext(), query, Toast.LENGTH_SHORT).show();
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+
+                //Toast.makeText(getContext(), newText, Toast.LENGTH_SHORT).show();
+                LinearLayout initialConstraint = getView().findViewById(R.id.withText);
+                //initialConstraint.setVisibility(View.GONE);
+                if (newText.length() > 0) {
+                    initialConstraint.setVisibility(View.GONE);
+                } else {
+                    initialConstraint.setVisibility(View.VISIBLE);
+                }
+
+                return false;
+            }
+        });
         card.setId(View.generateViewId());
         //search.setElevation(0.3f);
         card.addView(search);
@@ -162,6 +186,7 @@ public class HistoryFragment extends Fragment  {
         ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
                 ConstraintLayout.LayoutParams.MATCH_PARENT, ConstraintLayout.LayoutParams.MATCH_PARENT);
         constraint.setLayoutParams(lparams);
+
 
 
         // Setting up the constraints of the components of the layout
@@ -188,6 +213,7 @@ public class HistoryFragment extends Fragment  {
 
 
         LinearLayout innerConstraint = createAllPlateEntries(plates);
+        innerConstraint.setId(R.id.withText);
 
 
 
