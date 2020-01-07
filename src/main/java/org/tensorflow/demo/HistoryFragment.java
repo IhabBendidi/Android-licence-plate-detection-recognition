@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.vision.text.Line;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
@@ -47,6 +48,7 @@ public class HistoryFragment extends Fragment  {
     private String mParam2;
 
     public TextView plateID;
+    ArrayList<Plate> plates;
 
     private OnFragmentInteractionListener mListener;
 
@@ -87,7 +89,10 @@ public class HistoryFragment extends Fragment  {
         // Inflate the layout for this fragment
 
         //View finalLayout = (ViewGroup) inflater.inflate(R.layout.fragment_history, container, false);
-        return createHistoryLayout();
+        // Getting the data of history
+        PlateDbHelper dbHelper = new PlateDbHelper(getActivity());
+        plates = dbHelper.readPlateTexts();
+        return createHistoryLayout(plates);
 
     }
 
@@ -151,13 +156,22 @@ public class HistoryFragment extends Fragment  {
             public boolean onQueryTextChange(String newText) {
 
 
-                //Toast.makeText(getContext(), newText, Toast.LENGTH_SHORT).show();
+
                 LinearLayout initialConstraint = getView().findViewById(R.id.withText);
-                //initialConstraint.setVisibility(View.GONE);
+                LinearLayout wrapper = getView().findViewById(R.id.sawtooth);
+
+
+
                 if (newText.length() > 0) {
+                    wrapper.removeView(getView().findViewById(R.id.triangle));
                     initialConstraint.setVisibility(View.GONE);
+                    LinearLayout searchLinearLayout = createSearchHistoryLayout(plates,newText);
+                    wrapper.addView(searchLinearLayout);
+
                 } else {
+                    wrapper.removeView(getView().findViewById(R.id.triangle));
                     initialConstraint.setVisibility(View.VISIBLE);
+
                 }
 
                 return false;
@@ -177,8 +191,40 @@ public class HistoryFragment extends Fragment  {
     }
 
 
+    public ArrayList<Plate> filterPlates(ArrayList<Plate> plates, String newText){
+        ArrayList<Plate> filteredPlates = new ArrayList<Plate>();
 
-    public ConstraintLayout createHistoryLayout(){
+        for (Plate plate : plates){
+            String existingLicense = plate.getText();
+            String[] results = existingLicense.split(newText);
+            if (results.length>1){
+                filteredPlates.add(plate);
+            }
+        }
+
+        return filteredPlates;
+    }
+
+    public LinearLayout createSearchHistoryLayout(ArrayList<Plate> plates, String newText){
+        // Setting up the linear layout used for the multitude of plate texts
+        //ScrollView scroller = new ScrollView(getActivity());
+        //scroller.setId(View.generateViewId());
+
+
+        ArrayList<Plate> filteredPlates= filterPlates(plates,newText);
+
+
+        LinearLayout innerLayout= createAllPlateEntries(filteredPlates);
+        innerLayout.setId(R.id.triangle);
+        //scroller.addView(innerLayout);
+
+
+        return innerLayout;
+    }
+
+
+
+    public ConstraintLayout createHistoryLayout(ArrayList<Plate> plates){
 
         // Setting up the parent constraint layout parameters
         ConstraintLayout constraint = new ConstraintLayout(getActivity());
@@ -198,9 +244,7 @@ public class HistoryFragment extends Fragment  {
         constraint.addView(search);
 
 
-        // Getting the data of history
-        PlateDbHelper dbHelper = new PlateDbHelper(getActivity());
-        ArrayList<Plate> plates = dbHelper.readPlateTexts();
+
 
 
         // Setting up the linear layout used for the multitude of plate texts
@@ -212,13 +256,19 @@ public class HistoryFragment extends Fragment  {
 
 
 
+
         LinearLayout innerConstraint = createAllPlateEntries(plates);
         innerConstraint.setId(R.id.withText);
+
+        LinearLayout wrapperLayout = new LinearLayout(getActivity());
+        wrapperLayout.setOrientation(LinearLayout.VERTICAL);
+        wrapperLayout.setId(R.id.sawtooth);
+        wrapperLayout.addView(innerConstraint);
 
 
 
         // Setting up the constraints of the scrollview
-        scroller.addView(innerConstraint);
+        scroller.addView(wrapperLayout);
         constraint.addView(scroller);
         set.constrainHeight(scroller.getId(), ConstraintSet.WRAP_CONTENT);
         set.constrainWidth(scroller.getId(), ConstraintSet.MATCH_CONSTRAINT);
