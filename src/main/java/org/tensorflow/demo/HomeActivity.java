@@ -30,11 +30,19 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
     public void onBackPressed(){
 
         Fragment homeFragment = new HomeFragment();
+        Fragment historyFragment = new HistoryFragment();
         transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_layout, homeFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-        bottomNavigationView.setSelectedItemId(R.id.action_home);
+        if (bottomNavigationView.getSelectedItemId()== R.id.action_renew){
+            transaction.replace(R.id.fragment_layout, historyFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+            bottomNavigationView.setSelectedItemId(R.id.action_history);
+        }else{
+            transaction.replace(R.id.fragment_layout, homeFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+            bottomNavigationView.setSelectedItemId(R.id.action_home);
+        }
         super.onBackPressed();
 
     }

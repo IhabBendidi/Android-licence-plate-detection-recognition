@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -66,7 +67,17 @@ public class RenewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_renew, container, false);
+        Bundle bundle = this.getArguments();
+        TextView text = new TextView(getActivity());
+
+        if(bundle != null){
+            // handle your code here.
+
+            String id = bundle.get("ID").toString();
+            text.setText(id);
+        }
+        //return inflater.inflate(R.layout.fragment_renew, container, false);
+        return text;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

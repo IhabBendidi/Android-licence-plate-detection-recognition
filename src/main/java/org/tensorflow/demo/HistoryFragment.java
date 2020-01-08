@@ -24,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.vision.text.Line;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ import java.util.ArrayList;
  * Use the {@link HistoryFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HistoryFragment extends Fragment  {
+public class HistoryFragment extends Fragment{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -47,10 +48,14 @@ public class HistoryFragment extends Fragment  {
     private String mParam1;
     private String mParam2;
 
-    public TextView plateID;
+
+
+    //public TextView plateID;
     ArrayList<Plate> plates;
 
     private OnFragmentInteractionListener mListener;
+
+
 
     public HistoryFragment() {
         // Required empty public constructor
@@ -340,7 +345,8 @@ public class HistoryFragment extends Fragment  {
 
 
         // Create the invisible Text View of the plate ID
-        plateID = createPlateIDEntry(plate);
+        TextView plateID = createPlateIDEntry(plate);
+        final String id = plateID.getText().toString();
         plateText.setId(Integer.parseInt(plateID.getText().toString()));
 
 
@@ -350,6 +356,21 @@ public class HistoryFragment extends Fragment  {
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Renewal for this plate", Toast.LENGTH_SHORT).show();
                 //String id = plateID.getText().toString();
+                Log.e("The id is : ", id);
+                RenewFragment renewFragment= new RenewFragment();
+
+                Bundle bundle = new Bundle();
+                bundle.putString("ID",id);
+
+                renewFragment.setArguments(bundle);
+
+
+                BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
+                bottomNavigationView.setSelectedItemId(R.id.action_renew);
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_layout, renewFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
 
             }
         });
