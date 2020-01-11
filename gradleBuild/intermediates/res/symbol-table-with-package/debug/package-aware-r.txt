@@ -1673,6 +1673,9 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id PlateText
+id PlateTextCardView
+id PlateTextConstraint
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -1860,6 +1863,7 @@ id ignoreRequest
 id image
 id imageView2
 id info
+id initialContainer
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1912,6 +1916,7 @@ id pathRelative
 id percent
 id phone
 id pin
+id plateImageView
 id position
 id postLayout
 id progress_circular

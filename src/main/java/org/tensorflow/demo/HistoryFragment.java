@@ -47,7 +47,7 @@ public class HistoryFragment extends Fragment{
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    PlateDbHelper dbHelper;
 
 
     //public TextView plateID;
@@ -95,7 +95,7 @@ public class HistoryFragment extends Fragment{
 
         //View finalLayout = (ViewGroup) inflater.inflate(R.layout.fragment_history, container, false);
         // Getting the data of history
-        PlateDbHelper dbHelper = new PlateDbHelper(getActivity());
+        dbHelper = new PlateDbHelper(getActivity());
         plates = dbHelper.readPlateTexts();
         return createHistoryLayout(plates);
 
@@ -354,7 +354,7 @@ public class HistoryFragment extends Fragment{
         //Setting the onclicklistener to go to the renewal fragment using the id of each entry
         plateText.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Renewal for this plate", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "Renewal for this plate", Toast.LENGTH_SHORT).show();
                 //String id = plateID.getText().toString();
                 Log.e("The id is : ", id);
                 RenewFragment renewFragment= new RenewFragment();
@@ -412,6 +412,12 @@ public class HistoryFragment extends Fragment{
 
 
         return innerConstraint;
+    }
+
+    @Override
+    public void onDestroy() {
+        dbHelper.close();
+        super.onDestroy();
     }
 
 

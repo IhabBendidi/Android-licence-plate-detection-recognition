@@ -37,6 +37,9 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
             transaction.addToBackStack(null);
             transaction.commit();
             bottomNavigationView.setSelectedItemId(R.id.action_history);
+        }else if(bottomNavigationView.getSelectedItemId()== R.id.action_home){
+            onPause();
+            onDestroy();
         }else{
             transaction.replace(R.id.fragment_layout, homeFragment);
             transaction.addToBackStack(null);
@@ -98,5 +101,7 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
             }
         });
     }
+
+
 
 }

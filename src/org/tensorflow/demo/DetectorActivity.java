@@ -118,7 +118,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
 
-  private enum DetectorMode {
+  public enum DetectorMode {
     TF_OD_API
   }
   private static final DetectorMode MODE = DetectorMode.TF_OD_API;
