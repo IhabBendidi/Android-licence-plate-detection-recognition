@@ -1612,6 +1612,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable default_image
+drawable design_blue_car
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1624,11 +1625,14 @@ drawable edit_text_background_main
 drawable fragment_social_background_image
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_action_bue_car
 drawable ic_action_checker
 drawable ic_action_editer
 drawable ic_action_history
 drawable ic_action_home
 drawable ic_action_info
+drawable ic_action_pencil
+drawable ic_action_pencil_black
 drawable ic_action_print
 drawable ic_action_renew
 drawable ic_action_settings
@@ -1673,6 +1677,7 @@ drawable star_white
 drawable tile
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tran_dark_pencil
 drawable transchecked
 drawable transparent_button_selector
 id ALT
@@ -1783,6 +1788,7 @@ id bottom_navigation
 id bottom_navigation_history
 id bounce
 id btn_takepicture
+id bueCar
 id butt
 id button
 id button2
@@ -1790,6 +1796,8 @@ id button3
 id buttonPanel
 id cancel_action
 id cardView
+id cardView2
+id cardView3
 id center
 id center_horizontal
 id center_vertical
@@ -1843,6 +1851,8 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id expiration
+id expirationDate
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1868,6 +1878,10 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id homePlateCard
+id homePlateEditIcon
+id homePlateText
+id homePlateTextLayout
 id honorRequest
 id icon
 id icon_group
@@ -1906,6 +1920,7 @@ id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name
 id navigation_header_container
 id never
 id none
@@ -2099,6 +2114,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id vehicule
+id vehiculeIcon
 id view_offset_helper
 id visible
 id wide

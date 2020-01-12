@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/home/ihab/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_print_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/home/ihab/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_directions_car_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -58,9 +58,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="imageAsset" value="$USER_HOME$/Documents/imageedit_1_6412113044.png" />
-                                      <entry key="outputName" value="ic_action_print" />
+                                      <entry key="outputName" value="ic_action_bue_car" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="707070" />
+                                      <entry key="themeColor" value="0b65ae" />
                                     </map>
                                   </option>
                                 </PersistentState>

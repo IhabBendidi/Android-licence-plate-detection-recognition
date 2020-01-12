@@ -120,6 +120,9 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     static boolean oneShotScan = false;
 
 
+    TextView plateTextView ;
+
+
 
     /**
      * Configuration values for tensorflow Detection API Model. It is using the CoCo dataset Labels
@@ -390,6 +393,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
         }
         final HomeFragment hFragment = this;
         Button activeScan = cameraView.findViewById(R.id.activeScan);
+        plateTextView = cameraView.findViewById(R.id.homePlateText);
         activeScan.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -954,6 +958,10 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                             Log.e(TOG,imagePath);
                                                                             time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
                                                                             outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+
+                                                                            //Writing the detection text on the plateTextView
+                                                                            plateTextView.setText(text_recon);
+
                                                                             // Writing output ( Paths for images, location and time of the detection)
                                                                             Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath);
                                                                             dbHelper.addPlate(plate);

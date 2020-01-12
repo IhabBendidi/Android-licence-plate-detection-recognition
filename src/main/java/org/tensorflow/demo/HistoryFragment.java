@@ -333,7 +333,7 @@ public class HistoryFragment extends Fragment{
 
 
         // Designing the shape of the text
-        plateText.setTextColor(getResources().getColor(R.color.colorIconTint));
+        plateText.setTextColor(getResources().getColor(R.color.black));
         //plateText.setTextColor(Color.BLACK);
         int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12, this.getResources().getDisplayMetrics());
         plateText.setTextSize(px15);
