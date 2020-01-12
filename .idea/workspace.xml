@@ -4,15 +4,15 @@
     <shared>
       <config>
         <device id="pixel" />
+        <device id="Nexus 7" />
+        <device id="pixel_2" />
         <device id="wear_square" />
         <device id="Nexus 10" />
         <device id="pixel_c" />
         <device id="Nexus 9" />
         <device id="Nexus 7 2013" />
-        <device id="Nexus 7" />
         <device id="pixel_3_xl" />
         <device id="pixel_3a_xl" />
-        <device id="pixel_2_xl" />
         <target>android-29</target>
       </config>
     </shared>
@@ -23,34 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea0bd35d-5d8e-4aa3-ae7e-db39beb6fafa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/resources/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/appcompat/resources/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/core/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/androidx/core/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/android/material/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/android/material/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/android/material/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/com/google/android/material/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$interpolator.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$interpolator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$raw.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$raw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/javac/debug/classes/org/tensorflow/demo/R$styleable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradleBuild/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/gradleBuild/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/activity_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/layout/fragment_renew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/fragment_renew.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/HomeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tensorflow/demo/SplashActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/gradleBuild/android-profile/" />
@@ -101,8 +74,8 @@
         <entry file="file://$PROJECT_DIR$/res/layout/fragment_renew.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+            <state relative-caret-position="211">
+              <caret line="44" column="46" lean-forward="true" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -478,7 +451,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4876033" visible="true" weight="0.2857143" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4876033" visible="true" weight="0.2857143" />
       <window_info id="Structure" order="2" sideWeight="0.5123967" side_tool="true" weight="0.2857143" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -924,8 +897,8 @@
     <entry file="file://$PROJECT_DIR$/res/layout/fragment_renew.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+        <state relative-caret-position="211">
+          <caret line="44" column="46" lean-forward="true" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
         </state>
       </provider>
     </entry>
