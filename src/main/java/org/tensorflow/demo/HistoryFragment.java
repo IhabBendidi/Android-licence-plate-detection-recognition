@@ -17,6 +17,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.SearchView;
@@ -326,7 +327,7 @@ public class HistoryFragment extends Fragment{
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
 
 
-        TextView plateText = new TextView(getActivity());
+        final TextView plateText = new TextView(getActivity());
         plateText.setLayoutParams(linearparams);
         plateText.setText(plate.getText());
 
@@ -356,6 +357,8 @@ public class HistoryFragment extends Fragment{
             public void onClick(View v) {
                 //Toast.makeText(getActivity(), "Renewal for this plate", Toast.LENGTH_SHORT).show();
                 //String id = plateID.getText().toString();
+
+                //plateText.setBackgroundColor(getResources().getColor(R.color.history_clicked_background));
                 Log.e("The id is : ", id);
                 RenewFragment renewFragment= new RenewFragment();
 
@@ -376,12 +379,15 @@ public class HistoryFragment extends Fragment{
         });
 
 
+
+
         // Adding the linear layout wrapping each entry
         LinearLayout plateLayout = new LinearLayout(getActivity());
         plateLayout.setLayoutParams(linearparams);
         plateLayout.setId(View.generateViewId());
-        plateLayout.addView(plateID);
+        //plateLayout.addView(plateID);
         plateLayout.addView(plateText);
+
 
 
 

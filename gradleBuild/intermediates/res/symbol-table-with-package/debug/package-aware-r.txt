@@ -909,6 +909,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color history_clicked_background
 color main_color_100
 color main_color_200
 color main_color_300
