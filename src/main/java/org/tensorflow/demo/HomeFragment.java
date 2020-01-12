@@ -115,7 +115,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     Bitmap rotatedBitmap;
     Context context = getContext();
 
-    boolean continuousScan = false;
+    static boolean continuousScan = false;
 
 
 
@@ -386,6 +386,16 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                 setFragment(container,inflater);
             }
         }
+        final HomeFragment hFragment = this;
+        Button activeScan = cameraView.findViewById(R.id.activeScan);
+        activeScan.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        hFragment.continuousScan=true;
+                    }
+                }
+        );
         //return inflater.inflate(R.layout.fragment_home, container, false);
         return cameraView;
 
@@ -440,24 +450,31 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     @Override
     public void onImageAvailable(final ImageReader reader) {
         //We need wait until we have some size from onPreviewSizeChosen
+        Log.e(TOG,"OnImageAvailable");
         if (previewWidth == 0 || previewHeight == 0) {
+            Log.e(TOG,"wallou");
             return;
         }
         if (rgbBytes == null) {
+            Log.e(TOG,"wallou 2");
             rgbBytes = new int[previewWidth * previewHeight];
+            Log.e(TOG,"wallou 3");
         }
         try {
             final Image image = reader.acquireLatestImage();
 
             if (image == null) {
+                Log.e(TOG,"wallou 4");
                 return;
             }
 
             if (isProcessingFrame) {
+                Log.e(TOG,"wallou 5");
                 image.close();
+                Log.e(TOG,"wallou 6");
                 return;
             }
-
+            Log.e(TOG,"wallou 7");
             isProcessingFrame = true;
             Trace.beginSection("imageAvailable");
             final Image.Plane[] planes = image.getPlanes();
@@ -483,6 +500,10 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                         }
                     };
 
+            Log.e(TOG,"wallou 8");
+            //isProcessingFrame = false;
+            //image.close();
+
             postInferenceCallback =
                     new Runnable() {
                         @Override
@@ -492,15 +513,30 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                         }
                     };
 
-            if(continuousScan){
+            //processImage();
+
+            if(this.continuousScan == true){
+                Log.e("Continu STATE:::","1");
                 processImage();
+            }else{
+                Log.e("Continu STATE:::","0");
+                postInferenceCallback.run();
             }
 
 
         } catch (final Exception e) {
+            Log.e(TOG,"wallou 9");
+            Log.e(TOG,e.getMessage());
+
             Trace.endSection();
             return;
         }
+        /*if(this.continuousScan == true){
+            Log.e("Continu STATE:::","1");
+            processImage();
+        }else{
+            Log.e("Continu STATE:::","0");
+        }*/
         Trace.endSection();
     }
 
@@ -1151,6 +1187,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
         super.onPause();
     }
+
 
 
 }

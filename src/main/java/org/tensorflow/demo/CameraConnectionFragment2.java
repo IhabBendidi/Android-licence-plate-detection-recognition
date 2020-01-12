@@ -414,12 +414,12 @@ public class CameraConnectionFragment2 extends Fragment{
       // Danger, W.R.! Attempting to use too large a preview size could  exceed the camera
       // bus' bandwidth limitation, resulting in gorgeous previews but the storage of
       // garbage capture data.
-      /*previewSize =
+      previewSize =
           chooseOptimalSize(map.getOutputSizes(SurfaceTexture.class),
               inputSize.getWidth(),
-              inputSize.getHeight());*/
+              inputSize.getHeight());
 
-      previewSize = new Size(inputSize.getWidth(),inputSize.getHeight());
+      //previewSize = new Size(inputSize.getWidth(),inputSize.getHeight());
 
       // We fit the aspect ratio of TextureView to the size of preview we picked.
       final int orientation = getResources().getConfiguration().orientation;

@@ -1747,6 +1747,7 @@ id action_renew
 id action_settings
 id action_text
 id actions
+id activeScan
 id activity_chooser_view_content
 id add
 id adjust_height
@@ -1770,6 +1771,7 @@ id bevel
 id blocking
 id bold
 id bottom
+id bottom_buttons
 id bottom_navigation
 id bottom_navigation_history
 id bounce
