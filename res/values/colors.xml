@@ -2,6 +2,7 @@
 <resources>
 	<color name="control_background">#cc4285f4</color>
     <color name="colortext">#FFFFFF</color>
+    <color name="black">#000</color>
     <!--mycolor-->
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#151515</color>

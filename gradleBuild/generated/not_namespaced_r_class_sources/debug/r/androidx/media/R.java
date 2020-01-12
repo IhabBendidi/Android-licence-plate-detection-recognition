@@ -28,13 +28,13 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f060196;
-        public static final int notification_icon_bg_color = 0x7f060197;
-        public static final int notification_material_background_media_default_color = 0x7f060198;
-        public static final int primary_text_default_material_dark = 0x7f06019d;
-        public static final int ripple_material_light = 0x7f0601a4;
-        public static final int secondary_text_default_material_dark = 0x7f0601a5;
-        public static final int secondary_text_default_material_light = 0x7f0601a6;
+        public static final int notification_action_color_filter = 0x7f060197;
+        public static final int notification_icon_bg_color = 0x7f060198;
+        public static final int notification_material_background_media_default_color = 0x7f060199;
+        public static final int primary_text_default_material_dark = 0x7f06019e;
+        public static final int ripple_material_light = 0x7f0601a5;
+        public static final int secondary_text_default_material_dark = 0x7f0601a6;
+        public static final int secondary_text_default_material_light = 0x7f0601a7;
     }
     public static final class dimen {
         private dimen() {}

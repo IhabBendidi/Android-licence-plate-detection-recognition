@@ -57,7 +57,7 @@ public class CameraConnectionFragment2 extends Fragment{
    * The camera preview size will be chosen to be the smallest frame by pixel size capable of
    * containing a DESIRED_SIZE x DESIRED_SIZE square.
    */
-  private static final int MINIMUM_PREVIEW_SIZE = 320;
+  private static final int MINIMUM_PREVIEW_SIZE = 0;
 
   /**
    * Conversion from screen rotation to JPEG orientation.
@@ -414,10 +414,12 @@ public class CameraConnectionFragment2 extends Fragment{
       // Danger, W.R.! Attempting to use too large a preview size could  exceed the camera
       // bus' bandwidth limitation, resulting in gorgeous previews but the storage of
       // garbage capture data.
-      previewSize =
+      /*previewSize =
           chooseOptimalSize(map.getOutputSizes(SurfaceTexture.class),
               inputSize.getWidth(),
-              inputSize.getHeight());
+              inputSize.getHeight());*/
+
+      previewSize = new Size(inputSize.getWidth(),inputSize.getHeight());
 
       // We fit the aspect ratio of TextureView to the size of preview we picked.
       final int orientation = getResources().getConfiguration().orientation;

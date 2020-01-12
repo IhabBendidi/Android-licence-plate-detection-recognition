@@ -24,6 +24,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -34,6 +35,7 @@ import android.os.SystemClock;
 import android.os.Trace;
 import android.provider.MediaStore;
 import android.telephony.TelephonyManager;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
@@ -44,6 +46,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -112,6 +115,8 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     Bitmap rotatedBitmap;
     Context context = getContext();
 
+    boolean continuousScan = false;
+
 
 
     /**
@@ -152,7 +157,10 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
     private static final boolean MAINTAIN_ASPECT = false;
 
-    private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
+
+
+    //private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
+    private static final Size DESIRED_PREVIEW_SIZE = new Size(700, 600);
 
     private static final boolean SAVE_PREVIEW_BITMAP = false;
     private static final float TEXT_SIZE_DIP = 10;
@@ -257,6 +265,9 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
         speaker = new Speaker(getActivity());
         dbHelper = new PlateDbHelper(getContext());
         cw = new ContextWrapper(getActivity());
@@ -290,18 +301,10 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
         locationText.setText(country);
 
-        /*if (hasPermission()) {
-            setFragment();
-        } else {
-            requestPermission();
-            if (hasPermission()) {
-                setFragment();
-            }
-        }*/
     }
 
     // Sets the camera Connection Fragment
-    protected  void setFragment() {
+    protected  void setFragment(ViewGroup container,LayoutInflater inflater) {
         String cameraId = chooseCamera();
         androidx.fragment.app.Fragment fragment;
         //if (useCamera2API) {
@@ -318,7 +321,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                             },
                         this,
                         getLayoutId(),
-                        getDesiredPreviewFrameSize());
+                        getDesiredPreviewFrameSize(container,inflater));
 
         camera2Fragment.setCamera(cameraId);
         fragment = camera2Fragment;
@@ -370,11 +373,17 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
         // Inflate the layout for this fragment
         View cameraView = inflater.inflate(R.layout.fragment_home, container, false);
         if (hasPermission()) {
-            setFragment();
+            setFragment(container,inflater);
+            /*if (continuousScan){
+                setFragment();
+            }*/
         } else {
             requestPermission();
             if (hasPermission()) {
-                setFragment();
+                /*if (continuousScan){
+                    setFragment();
+                }*/
+                setFragment(container,inflater);
             }
         }
         //return inflater.inflate(R.layout.fragment_home, container, false);
@@ -482,7 +491,11 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                             isProcessingFrame = false;
                         }
                     };
-            processImage();
+
+            if(continuousScan){
+                processImage();
+            }
+
 
         } catch (final Exception e) {
             Trace.endSection();
@@ -950,6 +963,8 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
         previewWidth = size.getWidth();
         previewHeight = size.getHeight();
 
+        Log.e(TOG,Integer.toString(previewHeight));
+
         sensorOrientation = rotation - getScreenOrientation();
         LOGGER.i("Camera orientation relative to screen canvas: %d", sensorOrientation);
 
@@ -1052,9 +1067,32 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     }
 
 
-    protected Size getDesiredPreviewFrameSize() {
+    protected Size getDesiredPreviewFrameSize(ViewGroup group,LayoutInflater inflater) {
         Log.e(TOG," (getDesiredPreviewFrameSize) ");
-        return DESIRED_PREVIEW_SIZE;
+
+        double heightPercent = 0.6;
+
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        double height = displayMetrics.heightPixels;
+        int width = displayMetrics.widthPixels;
+
+        Log.e("MACHINEWIDTH",Double.toString(height));
+
+
+
+
+        int desiredWidth = width;
+        double doubledesiredHeight =  height*heightPercent + 1;
+        int desiredHeight = (int) doubledesiredHeight;
+
+        Log.e("GETDESIREDPREVIEW",Integer.toString(desiredHeight));
+
+
+        Size previewDesireSize = new Size(desiredHeight,desiredWidth);
+        return previewDesireSize;
+
+        //return DESIRED_PREVIEW_SIZE;
     }
 
 
