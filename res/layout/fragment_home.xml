@@ -63,15 +63,27 @@
 
             <Button
                 android:id="@+id/activeScan"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@color/color_menu_icon"
-
                 android:text="Active Scan"
+                app:layout_constraintStart_toEndOf="@+id/oneShotScan"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".3" />
+
+            <Button
+                android:id="@+id/oneShotScan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/color_menu_icon"
+                android:text="Scan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/activeScan"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

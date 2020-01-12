@@ -1907,6 +1907,7 @@ id numberPassword
 id numberSigned
 id off
 id on
+id oneShotScan
 id outline
 id packed
 id parallax

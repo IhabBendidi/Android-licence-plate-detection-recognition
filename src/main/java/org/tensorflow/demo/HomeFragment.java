@@ -116,6 +116,8 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     Context context = getContext();
 
     static boolean continuousScan = false;
+    static boolean oneShotActivated = false;
+    static boolean oneShotScan = false;
 
 
 
@@ -304,7 +306,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     }
 
     // Sets the camera Connection Fragment
-    protected  void setFragment(ViewGroup container,LayoutInflater inflater) {
+    protected  void setFragment() {
         String cameraId = chooseCamera();
         androidx.fragment.app.Fragment fragment;
         //if (useCamera2API) {
@@ -321,7 +323,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                             },
                         this,
                         getLayoutId(),
-                        getDesiredPreviewFrameSize(container,inflater));
+                        getDesiredPreviewFrameSize());
 
         camera2Fragment.setCamera(cameraId);
         fragment = camera2Fragment;
@@ -373,7 +375,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
         // Inflate the layout for this fragment
         View cameraView = inflater.inflate(R.layout.fragment_home, container, false);
         if (hasPermission()) {
-            setFragment(container,inflater);
+            setFragment();
             /*if (continuousScan){
                 setFragment();
             }*/
@@ -383,7 +385,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                 /*if (continuousScan){
                     setFragment();
                 }*/
-                setFragment(container,inflater);
+                setFragment();
             }
         }
         final HomeFragment hFragment = this;
@@ -393,6 +395,29 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                     @Override
                     public void onClick(View v) {
                         hFragment.continuousScan=true;
+                        hFragment.oneShotActivated=false;
+                        hFragment.oneShotScan=false;
+                        //setFragment();
+                    }
+                }
+        );
+
+
+        Button oneShotScanner = cameraView.findViewById(R.id.oneShotScan);
+        oneShotScanner.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        hFragment.continuousScan=false;
+                        if(hFragment.oneShotActivated){
+                            processImage();
+                        }else{
+                            hFragment.oneShotActivated=true;
+                        }
+
+
+                        //hFragment.oneShotScan=false;
+                        //setFragment();
                     }
                 }
         );
@@ -776,6 +801,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
     protected void processImage() {
         Log.e(TOG," (processImage) ");
+        final HomeFragment hfrag = this;
         ++timestamp;
         final long currTimestamp = timestamp;
         byte[] originalLuminance = getLuminance();
@@ -854,10 +880,22 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                         //sleep(1000);
                         //} catch (final Exception e){}
                         //tracker = new MultiBoxTracker(context);
+
+                        if(hfrag.oneShotActivated){
+                            tracker = new MultiBoxTracker(getContext());
+                        }
                         trackingOverlay.postInvalidate();
                         requestRender();
                         //computingDetection = false;
                         Log.e(TOG,"1");
+                        if(hfrag.oneShotActivated){
+                            computingDetection = false;
+                        }
+
+
+
+
+
 
 
 
@@ -943,14 +981,22 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                     }
                                 };
                         myRunnable.run();
-                        try {
-                            sleep(300);
-                        } catch (final Exception e){}
-                        tracker = new MultiBoxTracker(getContext());
-                        try {
-                            sleep(1000);
-                        } catch (final Exception e){}
-                        computingDetection = false;
+
+
+
+
+
+                        if (hfrag.continuousScan){
+                            try {
+                                sleep(300);
+                            } catch (final Exception e){}
+                            tracker = new MultiBoxTracker(getContext());
+                            try {
+                                sleep(1000);
+                            } catch (final Exception e){}
+                            computingDetection = false;
+                        }
+
 
                     }
                 });
@@ -1103,7 +1149,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     }
 
 
-    protected Size getDesiredPreviewFrameSize(ViewGroup group,LayoutInflater inflater) {
+    protected Size getDesiredPreviewFrameSize() {
         Log.e(TOG," (getDesiredPreviewFrameSize) ");
 
         double heightPercent = 0.6;

@@ -380,11 +380,7 @@ public class ShotDetectionActivity extends OneShotCameraActivity implements OnIm
                             //sleep(300);
 
                         //} catch (final Exception e){}
-                        tracker = new MultiBoxTracker(context);
-                        trackingOverlay.postInvalidate();
-                        requestRender();
-                        computingDetection = false;
-                        Log.e(TOG,"1");
+
 
 
 
