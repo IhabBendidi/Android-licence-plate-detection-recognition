@@ -1637,6 +1637,8 @@ drawable ic_settings
 drawable ic_transparent
 drawable icon_notification
 drawable icon_notification_white
+drawable line
+drawable line_white
 drawable logo
 drawable logo2
 drawable mtrl_snackbar_background
@@ -1782,6 +1784,7 @@ id button2
 id button3
 id buttonPanel
 id cancel_action
+id cardView
 id center
 id center_horizontal
 id center_vertical
@@ -1837,6 +1840,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firstLine
 id fixed
 id flagForceAscii
 id flagNavigateNext
@@ -1928,6 +1932,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id renew_menu
 id reverseSawtooth
 id right
 id right_icon
@@ -1972,6 +1977,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secondLine
 id select_dialog_listview
 id selected
 id shortcut
@@ -2051,7 +2057,9 @@ id texture
 id the_layout
 id time
 id title
+id titleCountry
 id titleDividerNoCustom
+id titleTime
 id title_template
 id toggle
 id top

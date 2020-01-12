@@ -212,7 +212,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ihab/
 	android:theme
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:23:9-40
 activity#org.tensorflow.demo.HomeActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-59
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-50
 	android:name
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:19-47
 activity#org.tensorflow.demo.PlateActivity

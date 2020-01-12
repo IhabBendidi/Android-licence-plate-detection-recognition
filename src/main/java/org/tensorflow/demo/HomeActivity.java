@@ -2,6 +2,7 @@ package org.tensorflow.demo;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -9,17 +10,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import static java.lang.Thread.sleep;
+
 
 public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,HistoryFragment.OnFragmentInteractionListener, SettingFragment.OnFragmentInteractionListener, RenewFragment.OnFragmentInteractionListener {
 
     FragmentTransaction transaction;
     BottomNavigationView bottomNavigationView;
+
 
     @Override
     public void onFragmentInteraction(Uri uri){
@@ -100,7 +106,11 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
                 return true;
             }
         });
+
+
     }
+
+
 
 
 

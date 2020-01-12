@@ -66,7 +66,7 @@
 35        android:theme="@style/AppTheme" >
 35-->/home/ihab/ihabgit/first UI/AndroidManifest.xml:23:9-40
 36        <activity android:name="org.tensorflow.demo.HomeActivity" />
-36-->/home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-59
+36-->/home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-50
 36-->/home/ihab/ihabgit/first UI/AndroidManifest.xml:24:19-47
 37        <activity android:name="org.tensorflow.demo.PlateActivity" />
 37-->/home/ihab/ihabgit/first UI/AndroidManifest.xml:25:9-51
