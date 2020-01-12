@@ -30,6 +30,17 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="clipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="jar:file:/home/ihab/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_print_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="image">
                                         <value>
                                           <PersistentState>
@@ -46,9 +57,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Documents/home.png" />
-                                      <entry key="outputName" value="ic_action_home" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Documents/imageedit_1_6412113044.png" />
+                                      <entry key="outputName" value="ic_action_print" />
                                       <entry key="theme" value="CUSTOM" />
                                       <entry key="themeColor" value="707070" />
                                     </map>

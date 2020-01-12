@@ -13,6 +13,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +22,9 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 
 /**
@@ -83,7 +88,7 @@ public class RenewFragment extends Fragment {
         Bundle bundle = this.getArguments();
         //TextView text = new TextView(getActivity());textView3
         View renewView = inflater.inflate(R.layout.fragment_renew, container, false);
-        TextView text = renewView.findViewById(R.id.PlateText);
+
 
         //Log.e("The size of bundle : ",bundle.toString());
         Log.e("Renew CreateView : ","created");
@@ -96,11 +101,73 @@ public class RenewFragment extends Fragment {
 
             Log.e("The size of bundle : ","not null");
 
+            final TextView text = renewView.findViewById(R.id.PlateText);
+            final EditText editPlateText = renewView.findViewById(R.id.editPlateText);
+            TextView responseCountry = renewView.findViewById(R.id.responseCountry);
+            TextView responseTime = renewView.findViewById(R.id.responseTime);
+            TextView responseVehicule = renewView.findViewById(R.id.responseVehicule);
+            TextView responseOwner = renewView.findViewById(R.id.responseOwner);
+            final TextView responseLicense = renewView.findViewById(R.id.responseLicense);
+
+            // Setting up all values of data
+
             String id = bundle.get("ID").toString();
             plate = new Plate(id);
             plate = dbHelper.readPlate(plate);
             setPlateImageView(plate,renewView);
             text.setText(plate.getText());
+            editPlateText.setText(plate.getText());
+            responseCountry.setText(plate.getLocation());
+            responseTime.setText(plate.getDate());
+            responseVehicule.setText(plate.getType());
+            responseOwner.setText(plate.getOwner());
+            responseLicense.setText(processValidity(plate.getValidity()));
+
+
+            // Setting up logic of modification of plate text
+
+            final ImageView editingButton = renewView.findViewById(R.id.edit_icon);
+            final ImageView checkingValidationButton = renewView.findViewById(R.id.PlateValidationIcon);
+            Button renewalButton = renewView.findViewById(R.id.renewalButton);
+
+            editingButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    editPlateText.setVisibility(View.VISIBLE);
+                    checkingValidationButton.setVisibility(View.VISIBLE);
+                    editingButton.setVisibility(View.GONE);
+                    text.setVisibility(View.GONE);
+                }
+            });
+
+            checkingValidationButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    String modificationResult = editPlateText.getText().toString();
+                    plate.setText(modificationResult);
+                    dbHelper.updatePlateText(plate);
+                    text.setText(modificationResult);
+                    editPlateText.setVisibility(View.GONE);
+                    checkingValidationButton.setVisibility(View.GONE);
+                    editingButton.setVisibility(View.VISIBLE);
+                    text.setVisibility(View.VISIBLE);
+                }
+            });
+
+            renewalButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plate.setValidity(addToValidity(plate.getValidity()));
+                    dbHelper.updatePlateValidity(plate);
+
+                    responseLicense.setText(processValidity(plate.getValidity()));
+                }
+            });
+
+
+
+
         }
         //return inflater.inflate(R.layout.fragment_renew, container, false);
         return renewView;
@@ -174,4 +241,66 @@ public class RenewFragment extends Fragment {
         dbHelper.close();
         super.onDestroy();
     }
+
+    private String processValidity(String validity){
+        long validitydays = dateToDays(validity);
+        String validitySentence;
+        String time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        long todayDays = dateToDays(time);
+        long difference = validitydays - todayDays;
+        if (difference >= 0){
+            validitySentence = "Expires on " + validity + "\n" + difference + " days left";
+        }else {
+            difference = - difference;
+            validitySentence = "Expired on " + validity + "\n" + difference + " days ago";
+        }
+        return validitySentence;
+
+    }
+
+    private long dateToDays(String date){
+        String[] dates = date.split("-");
+        long monthdays = monthToDays(Long.parseLong(dates[1]));
+        long daydays = Long.parseLong(dates[0]);
+        long yeardays = (Long.parseLong(dates[2]) - 1)*365;
+        long days = monthdays + daydays + yeardays;
+        return days;
+
+    }
+
+    private long monthToDays(long month){
+        long days = 0;
+        for (int i = 1;i<month;i++){
+            if (i == 2){
+                days += 28;
+            } else if (i%2==1 && i<=7){
+                days += 31;
+            } else if (i%2 == 0 && i<=7){
+                days += 30;
+            } else if (i%2 == 0 && i>7){
+                days += 31;
+            } else {
+                days += 30;
+            }
+        }
+        return days;
+    }
+
+
+
+    private String addToValidity(String validity){
+        String[] dates = validity.split("-");
+        long month = Long.parseLong(dates[1]);
+        long year = Long.parseLong(dates[2]);
+        if (month == 12){
+            year += 1;
+            month = 1;
+        } else {
+            month += 1;
+        }
+        String date = dates[0] + "-" + month + "-" + year;
+        return date;
+
+    }
+
 }

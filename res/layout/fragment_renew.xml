@@ -55,22 +55,23 @@
 
             <TextView
                 android:id="@+id/titleCountry"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:text="Country of detection : "
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".45" />
 
             <TextView
                 android:id="@+id/responseCountry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="45dp"
-                android:text="United States"
+                android:text=""
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -89,14 +90,15 @@
 
             <TextView
                 android:id="@+id/titleTime"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="35dp"
                 android:text="Time of detection :"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/firstLine" />
+                app:layout_constraintTop_toTopOf="@+id/firstLine"
+                app:layout_constraintWidth_percent=".45" />
 
             <TextView
                 android:id="@+id/responseTime"
@@ -104,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="45dp"
-                android:text="United States"
+                android:text=""
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/firstLine" />
@@ -119,23 +121,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/titleTime" />
+
             <TextView
                 android:id="@+id/titleVehicule"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="35dp"
                 android:text="Type of vehicule :"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/secondLine" />
+                app:layout_constraintTop_toTopOf="@+id/secondLine"
+                app:layout_constraintWidth_percent=".45" />
+
             <TextView
                 android:id="@+id/responseVehicule"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="45dp"
-                android:text="United States"
+                android:text=""
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/secondLine" />
@@ -150,23 +155,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/titleVehicule" />
+
             <TextView
                 android:id="@+id/titleOwner"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="35dp"
                 android:text="Owner of Vehicule :"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/thirdLine" />
+                app:layout_constraintTop_toTopOf="@+id/thirdLine"
+                app:layout_constraintWidth_percent=".45" />
+
             <TextView
                 android:id="@+id/responseOwner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="45dp"
-                android:text="United States"
+                android:text=""
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/thirdLine" />
@@ -181,26 +189,65 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/titleOwner" />
+
             <TextView
                 android:id="@+id/titleLicense"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="35dp"
-                android:text="Owner of Vehicule :"
+                android:text="License status :"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/fourthLine" />
+                app:layout_constraintTop_toTopOf="@+id/fourthLine"
+                app:layout_constraintWidth_percent=".45" />
+
             <TextView
                 android:id="@+id/responseLicense"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="45dp"
-                android:text="United States"
+                android:text=""
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/fourthLine" />
+
+            <ImageView
+                android:id="@+id/printer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_action_print"
+                app:layout_constraintBottom_toTopOf="@+id/responseCountry"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/renewalButtonCard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent=".12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/responseLicense"
+                app:layout_constraintWidth_percent=".45">
+
+                <Button
+                    android:id="@+id/renewalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bluebackground"
+                    android:text="Renew License"
+                    android:textColor="@color/colorPrimary"
+
+                    />
+            </androidx.cardview.widget.CardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -225,17 +272,59 @@
             android:layout_height="match_parent">
 
 
+            <EditText
+                android:id="@+id/editPlateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:ems="10"
+                android:textSize="14dp"
+
+                android:inputType="textPersonName"
+                android:text="Plate Text"
+                android:textColor="@color/colorIconTint"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/PlateValidationIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".7" />
+
             <TextView
                 android:id="@+id/PlateText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
+                android:layout_marginEnd="30dp"
                 android:text="Plate Text"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edit_icon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_percent=".6" />
+
+            <ImageView
+                android:id="@+id/PlateValidationIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_action_checker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_action_editer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
