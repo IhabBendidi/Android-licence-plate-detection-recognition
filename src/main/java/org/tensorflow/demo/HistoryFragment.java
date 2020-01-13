@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -321,15 +322,15 @@ public class HistoryFragment extends Fragment{
         return id_text;
     }
 
-    public LinearLayout createHistoryEntry(Plate plate){
+    public ConstraintLayout createHistoryEntry(Plate plate){
         // Text handling
-        LinearLayout.LayoutParams linearparams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+        ConstraintLayout.LayoutParams linearparams = new ConstraintLayout.LayoutParams(
+                ConstraintLayout.LayoutParams.MATCH_PARENT, ConstraintLayout.LayoutParams.MATCH_PARENT);
 
 
         final TextView plateText = new TextView(getActivity());
-        plateText.setLayoutParams(linearparams);
-        plateText.setText(plate.getText());
+        //plateText.setLayoutParams(linearparams);
+        plateText.setText("      " + plate.getText());
 
 
 
@@ -343,12 +344,17 @@ public class HistoryFragment extends Fragment{
         int px300 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, this.getResources().getDisplayMetrics());
         plateText.setWidth(px300);
 
+        plateText.setGravity(Gravity.CENTER_VERTICAL);
+
+
+
 
 
         // Create the invisible Text View of the plate ID
         TextView plateID = createPlateIDEntry(plate);
         final String id = plateID.getText().toString();
         plateText.setId(Integer.parseInt(plateID.getText().toString()));
+
 
 
         // TODO : ELEVATION AND DESIGN SHOULD BE DONE
@@ -358,7 +364,7 @@ public class HistoryFragment extends Fragment{
                 //Toast.makeText(getActivity(), "Renewal for this plate", Toast.LENGTH_SHORT).show();
                 //String id = plateID.getText().toString();
 
-                //plateText.setBackgroundColor(getResources().getColor(R.color.history_clicked_background));
+                plateText.setBackgroundColor(getResources().getColor(R.color.history_clicked_background));
                 Log.e("The id is : ", id);
                 RenewFragment renewFragment= new RenewFragment();
 
@@ -382,11 +388,20 @@ public class HistoryFragment extends Fragment{
 
 
         // Adding the linear layout wrapping each entry
-        LinearLayout plateLayout = new LinearLayout(getActivity());
+        ConstraintLayout plateLayout = new ConstraintLayout(getActivity());
         plateLayout.setLayoutParams(linearparams);
         plateLayout.setId(View.generateViewId());
+
+
+
+
+
+
         //plateLayout.addView(plateID);
         plateLayout.addView(plateText);
+
+
+
 
 
 
@@ -409,7 +424,7 @@ public class HistoryFragment extends Fragment{
 
             // Generating the multiple linear layouts each holding the plate texts (in the case of having only one entry, or no entry at all)
             for (Plate plate : plates){
-                LinearLayout linear = createHistoryEntry(plate);
+                ConstraintLayout linear = createHistoryEntry(plate);
                 innerConstraint.addView(linear);
                 //innerSet.connect(linear.getId(), ConstraintSet.LEFT, innerConstraint.getId(), ConstraintSet.LEFT, 0);
                 //innerSet.connect(linear.getId(), ConstraintSet.RIGHT, innerConstraint.getId(), ConstraintSet.RIGHT, 0);
