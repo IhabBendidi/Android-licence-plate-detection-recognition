@@ -58,7 +58,15 @@ import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.tensorflow.demo.env.BorderedText;
 import org.tensorflow.demo.env.ImageUtils;
 import org.tensorflow.demo.env.Logger;
@@ -78,6 +86,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Vector;
+
+import cz.msebera.android.httpclient.entity.mime.Header;
 
 import static android.app.Activity.RESULT_CANCELED;
 import static android.app.Activity.RESULT_OK;
@@ -121,6 +131,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
 
     TextView plateTextView ;
+    TextView registration;
 
 
 
@@ -241,6 +252,8 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
     private static final String TOG ="HomeCameraFragment";
 
 
+
+
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -275,6 +288,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
         speaker = new Speaker(getActivity());
         dbHelper = new PlateDbHelper(getContext());
+
         cw = new ContextWrapper(getActivity());
         toast = Toast.makeText(getContext(), "Saving the detection results", Toast.LENGTH_SHORT);
         try{
@@ -394,6 +408,8 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
         final HomeFragment hFragment = this;
         Button activeScan = cameraView.findViewById(R.id.activeScan);
         plateTextView = cameraView.findViewById(R.id.homePlateText);
+        registration = cameraView.findViewById(R.id.registration);
+        registration.setVisibility(View.GONE);
         activeScan.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -950,6 +966,52 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                     }
                                                                                 }
                                                                             }
+                                                                            //Sending the API request to the server
+                                                                            AsyncHttpClient client = new AsyncHttpClient();
+                                                                            RequestParams params = new RequestParams();
+                                                                            params.put("plateText", text_recon);
+
+                                                                            client.get("http://15.188.76.142:5000/revolution/existence", params, new AsyncHttpResponseHandler(){
+                                                                                @Override
+                                                                                public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                                                                                    Log.e("TAG", "Success");
+
+
+                                                                                    try{
+                                                                                        String str = new String(responseBody, "UTF-8");
+
+                                                                                        JSONParser parser = new JSONParser();
+                                                                                        JSONObject json = (JSONObject) parser.parse(str);
+                                                                                        String existence = json.get("exist").toString();
+                                                                                        if (existence.equals("0")){
+                                                                                            registration.setVisibility(View.VISIBLE);
+                                                                                            Log.e("TAG", "non existence");
+                                                                                        }else {
+                                                                                            registration.setVisibility(View.GONE);
+                                                                                            Log.e("TAG", "existence");
+                                                                                        }
+                                                                                        Log.e("TAG", existence);
+                                                                                    }catch(Exception e){
+                                                                                        Log.e("TAG",e.toString());
+                                                                                    }
+
+                                                                                }
+
+                                                                                @Override
+                                                                                public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                                                                                    Log.e("TAG", "Failure");
+                                                                                    Toast toast = Toast.makeText(
+                                                                                            getContext(), "Error connecting to internet", Toast.LENGTH_SHORT);
+                                                                                    toast.show();
+                                                                                }
+
+
+
+
+                                                                            });
+
+
+
                                                                             Log.e(TOG,"7");
                                                                             timeName = "" + System.currentTimeMillis();
                                                                             //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg

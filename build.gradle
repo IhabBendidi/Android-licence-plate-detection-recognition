@@ -305,5 +305,7 @@ dependencies {
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:+'
     implementation 'com.android.support:design:28.0.0'
-    implementation 'org.mongodb:mongo-java-driver:2.13.2'
+
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
 }
