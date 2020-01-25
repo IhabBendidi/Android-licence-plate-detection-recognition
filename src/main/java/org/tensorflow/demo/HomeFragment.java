@@ -978,6 +978,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                 public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
                                                                                     Log.e("TAG", "Success");
                                                                                     int exist = 2;
+                                                                                    Plate plate;
 
 
                                                                                     try{
@@ -986,34 +987,65 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                         JSONParser parser = new JSONParser();
                                                                                         JSONObject json = (JSONObject) parser.parse(str);
                                                                                         String existence = json.get("exist").toString();
+
                                                                                         if (existence.equals("0")){
                                                                                             registration.setVisibility(View.VISIBLE);
                                                                                             exist = 0;
                                                                                             Log.e("TAG", "non existence");
+                                                                                            timeName = "" + System.currentTimeMillis();
+                                                                                            //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                                                            Log.e(TOG,"8");
+                                                                                            imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
+                                                                                            Log.e(TOG,imagePath);
+                                                                                            time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                                                                            outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+
+                                                                                            //Writing the detection text on the plateTextView
+                                                                                            plateTextView.setText(text_recon);
+                                                                                            plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath,exist);
                                                                                         }else {
                                                                                             registration.setVisibility(View.GONE);
                                                                                             exist = 1;
+                                                                                            String plateType = json.get("plateType").toString();
+                                                                                            String plateValidity = json.get("plateValidity").toString();
+                                                                                            String plateOwner = json.get("plateOwner").toString();
+                                                                                            String mongoid = json.get("mongoid").toString();
                                                                                             Log.e("TAG", "existence");
+                                                                                            timeName = "" + System.currentTimeMillis();
+                                                                                            //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                                                            Log.e(TOG,"8");
+                                                                                            imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
+                                                                                            Log.e(TOG,imagePath);
+                                                                                            time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                                                                            outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+                                                                                            //Writing the detection text on the plateTextView
+                                                                                            plateTextView.setText(text_recon);
+                                                                                            plate = new Plate(exist,locationText.getText().toString(), time, text_recon, imagePath,plateOwner, plateValidity, plateType, mongoid);
+
+
+
                                                                                         }
                                                                                         Log.e("TAG", existence);
                                                                                     }catch(Exception e){
                                                                                         Log.e("TAG",e.toString());
+                                                                                        timeName = "" + System.currentTimeMillis();
+                                                                                        //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                                                        Log.e(TOG,"8");
+                                                                                        imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
+                                                                                        Log.e(TOG,imagePath);
+                                                                                        time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                                                                        outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+
+                                                                                        //Writing the detection text on the plateTextView
+                                                                                        plateTextView.setText(text_recon);
+                                                                                        plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath,exist);
                                                                                     }
                                                                                     Log.e(TOG,"7");
-                                                                                    timeName = "" + System.currentTimeMillis();
-                                                                                    //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
-                                                                                    Log.e(TOG,"8");
-                                                                                    imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
-                                                                                    Log.e(TOG,imagePath);
-                                                                                    time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-                                                                                    outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
 
-                                                                                    //Writing the detection text on the plateTextView
-                                                                                    plateTextView.setText(text_recon);
 
 
                                                                                     // Writing output ( Paths for images, location and time of the detection)
-                                                                                    Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath,exist);
+
                                                                                     dbHelper.addPlate(plate);
 
                                                                                 }
@@ -1049,27 +1081,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
 
 
-                                                                            /*Log.e(TOG,"7");
-                                                                            timeName = "" + System.currentTimeMillis();
-                                                                            //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
-                                                                            Log.e(TOG,"8");
-                                                                            imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
-                                                                            Log.e(TOG,imagePath);
-                                                                            time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-                                                                            outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
 
-                                                                            //Writing the detection text on the plateTextView
-                                                                            plateTextView.setText(text_recon);
-
-
-                                                                            // Writing output ( Paths for images, location and time of the detection)
-                                                                            Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath);
-                                                                            dbHelper.addPlate(plate);
-                                                                            //try{
-                                                                            //fWriter.write(outputName);
-                                                                            //}catch(IOException e){
-                                                                            // Log.e(TOG,e.toString());
-                                                                            //}*/
                                                                         }
                                                                     })
                                                                     .addOnFailureListener(

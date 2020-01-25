@@ -49,6 +49,7 @@ public class PlateDbHelper extends SQLiteOpenHelper {
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_OWNER, plate.getOwner());
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_TEXT, plate.getText());
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_VALIDITY, plate.getValidity());
+        contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_MONGOID, plate.getMongoid());
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_EXISTENCE, plate.getExistence().toString());
         long newRowId = writableDb.insert(PlateContract.PlateEntry.TABLE_NAME, null, contentValues);
         return newRowId;

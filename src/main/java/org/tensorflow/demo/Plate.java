@@ -78,6 +78,18 @@ public class Plate {
         this.existence = existence;
     }
 
+    public Plate(int existence,String location, String date, String text, String imagePath,String owner, String validity, String type, String mongoid){
+        this.location = location;
+        this.date = date;
+        this.text = text;
+        this.imagePath = imagePath;
+        this.owner = owner;
+        this.validity = validity;
+        this.type = type;
+        this.mongoid = mongoid;
+        this.existence = existence;
+    }
+
 
 
     public String get_ID() {
