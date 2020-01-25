@@ -1686,6 +1686,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id OwnerRegistration
 id PlateText
 id PlateTextCardView
 id PlateTextConstraint
@@ -1959,6 +1960,9 @@ id radio
 id ratio
 id rectangles
 id registration
+id registrationButton
+id registrationButtonCard
+id registrationtitleValiditydate
 id renew_menu
 id renewalButton
 id renewalButtonCard
@@ -2117,6 +2121,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id validityRegistration
 id vehicule
 id vehiculeIcon
 id view_offset_helper

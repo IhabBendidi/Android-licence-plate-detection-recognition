@@ -6,13 +6,16 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
+import android.util.Log;
 
 import java.util.ArrayList;
+
+import static java.lang.Integer.parseInt;
 
 
 public class PlateDbHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String DATABASE_NAME = "PlateReader.db";
     //private SQLiteDatabase writableDb = getWritableDatabase();
     //private SQLiteDatabase readableDb = getReadableDatabase();
@@ -46,6 +49,7 @@ public class PlateDbHelper extends SQLiteOpenHelper {
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_OWNER, plate.getOwner());
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_TEXT, plate.getText());
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_VALIDITY, plate.getValidity());
+        contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_EXISTENCE, plate.getExistence().toString());
         long newRowId = writableDb.insert(PlateContract.PlateEntry.TABLE_NAME, null, contentValues);
         return newRowId;
     }
@@ -59,10 +63,39 @@ public class PlateDbHelper extends SQLiteOpenHelper {
         writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
     }
 
+    public void updatePlateMongo(Plate plate,String plateID) {
+        SQLiteDatabase writableDb = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        //Log.e("DBHELPER",plateID);
+        contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_MONGOID, plateID);
+        String whereClause = "_id=?";
+        //Log.e("DBHELPER",plate.get_ID());
+        String whereArgs[] = {plate.get_ID()};
+        writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
+    }
+
+    public void updatePlateExistence(Plate plate) {
+        SQLiteDatabase writableDb = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_EXISTENCE, plate.getExistence().toString());
+        String whereClause = "_id=?";
+        String whereArgs[] = {plate.get_ID()};
+        writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
+    }
+
     public void updatePlateValidity(Plate plate) {
         SQLiteDatabase writableDb = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_VALIDITY, plate.getValidity());
+        String whereClause = "_id=?";
+        String whereArgs[] = {plate.get_ID()};
+        writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
+    }
+
+    public void updatePlateOwner(Plate plate) {
+        SQLiteDatabase writableDb = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(PlateContract.PlateEntry.COLUMN_NAME_OWNER, plate.getOwner());
         String whereClause = "_id=?";
         String whereArgs[] = {plate.get_ID()};
         writableDb.update(PlateContract.PlateEntry.TABLE_NAME, contentValues, whereClause, whereArgs);
@@ -148,7 +181,6 @@ public class PlateDbHelper extends SQLiteOpenHelper {
 
 
     private Plate readItem(Cursor cursor) {
-
         String id = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry._ID));
         String type = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_TYPE));
         String validity = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_VALIDITY));
@@ -157,7 +189,9 @@ public class PlateDbHelper extends SQLiteOpenHelper {
         String date = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_DATE));
         String text = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_TEXT));
         String imagePath = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_IMAGE));
-        Plate plate = new Plate(id, location,  date,  text,  imagePath, owner, validity, type);
+        String mongoid = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_MONGOID));
+        String existence = cursor.getString(cursor.getColumnIndex(PlateContract.PlateEntry.COLUMN_NAME_EXISTENCE));
+        Plate plate = new Plate(id, location,  date,  text,  imagePath, owner, validity, type,mongoid,parseInt(existence));
         return plate;
     }
 }

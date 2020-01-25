@@ -54,6 +54,55 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
+                android:id="@+id/registrationtitleValiditydate"
+                android:text="Expiration date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="gone"
+
+                app:layout_constraintTop_toTopOf="@+id/fourthLine"
+                app:layout_constraintWidth_percent=".45" />
+
+            <EditText
+                android:id="@+id/OwnerRegistration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+
+                android:textSize="14dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/titleOwner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/titleOwner"
+                app:layout_constraintTop_toTopOf="@+id/titleOwner" />
+
+
+            <EditText
+                android:id="@+id/validityRegistration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="DD-MM-YYYY"
+
+                android:textSize="14dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/registrationtitleValiditydate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/registrationtitleValiditydate"
+                app:layout_constraintTop_toTopOf="@+id/registrationtitleValiditydate" />
+
+            <TextView
                 android:id="@+id/titleCountry"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -144,6 +193,7 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/secondLine" />
+
             <ImageView
                 android:id="@+id/thirdLine"
                 android:layout_width="0dp"
@@ -222,6 +272,33 @@
                 android:src="@drawable/ic_action_print"
                 app:layout_constraintBottom_toTopOf="@+id/responseCountry"
                 app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/registrationButtonCard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent=".12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/validityRegistration"
+                app:layout_constraintWidth_percent=".45">
+
+                <Button
+                    android:id="@+id/registrationButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bluebackground"
+                    android:text="Register License"
+                    android:textColor="@color/colorPrimary"
+
+                    />
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/renewalButtonCard"

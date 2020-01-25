@@ -17,6 +17,9 @@ public final class PlateContract {
         public static final String COLUMN_NAME_DATE = "date";
         public static final String COLUMN_NAME_TEXT = "text";
         public static final String COLUMN_NAME_IMAGE = "image";
+        public static final String COLUMN_NAME_MONGOID = "mongoid";
+        public static final String COLUMN_NAME_EXISTENCE = "existence";
+
 
     }
 
@@ -29,7 +32,9 @@ public final class PlateContract {
                     PlateEntry.COLUMN_NAME_LOCATION + " TEXT," +
                     PlateEntry.COLUMN_NAME_DATE + " TEXT," +
                     PlateEntry.COLUMN_NAME_TEXT + " TEXT," +
-                    PlateEntry.COLUMN_NAME_IMAGE + " TEXT)";
+                    PlateEntry.COLUMN_NAME_IMAGE + " TEXT," +
+                    PlateEntry.COLUMN_NAME_MONGOID + " TEXT," +
+                    PlateEntry.COLUMN_NAME_EXISTENCE + " TEXT)";
 
     public static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + PlateEntry.TABLE_NAME;

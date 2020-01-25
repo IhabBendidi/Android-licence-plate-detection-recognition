@@ -7,6 +7,7 @@ import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -18,6 +19,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -108,12 +117,37 @@ public class RenewFragment extends Fragment {
             TextView responseVehicule = renewView.findViewById(R.id.responseVehicule);
             TextView responseOwner = renewView.findViewById(R.id.responseOwner);
             final TextView responseLicense = renewView.findViewById(R.id.responseLicense);
+            final EditText ownerRegistration = renewView.findViewById(R.id.OwnerRegistration);
+            final EditText validityRegistration = renewView.findViewById(R.id.validityRegistration);
+            TextView registrationTitleValidityDate = renewView.findViewById(R.id.registrationtitleValiditydate);
+            CardView registrationButtonCard = renewView.findViewById(R.id.registrationButtonCard);
+            CardView renewalButtonCard = renewView.findViewById(R.id.renewalButtonCard);
+            TextView titleLicense = renewView.findViewById(R.id.titleLicense);
+            Button renewalButton = renewView.findViewById(R.id.renewalButton);
+            Button registrationButton = renewView.findViewById(R.id.registrationButton);
 
             // Setting up all values of data
 
             String id = bundle.get("ID").toString();
             plate = new Plate(id);
             plate = dbHelper.readPlate(plate);
+
+            int existence = plate.getExistence();
+            if (existence == 0){
+                responseOwner.setVisibility(View.GONE);
+                renewalButtonCard.setVisibility(View.GONE);
+                responseLicense.setVisibility(View.GONE);
+                titleLicense.setVisibility(View.GONE);
+
+
+                registrationButtonCard.setVisibility(View.VISIBLE);
+                registrationTitleValidityDate.setVisibility(View.VISIBLE);
+                validityRegistration.setVisibility(View.VISIBLE);
+                ownerRegistration.setVisibility(View.VISIBLE);
+
+            } else { //// Add case for when existence got a value of 2, that happens when we cant succesfully check the existence of the plate in the server because of some sort of error of any kind
+
+            }
             setPlateImageView(plate,renewView);
             text.setText(plate.getText());
             editPlateText.setText(plate.getText());
@@ -128,7 +162,7 @@ public class RenewFragment extends Fragment {
 
             final ImageView editingButton = renewView.findViewById(R.id.edit_icon);
             final ImageView checkingValidationButton = renewView.findViewById(R.id.PlateValidationIcon);
-            Button renewalButton = renewView.findViewById(R.id.renewalButton);
+
 
             editingButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -145,6 +179,28 @@ public class RenewFragment extends Fragment {
                 public void onClick(View v) {
 
                     String modificationResult = editPlateText.getText().toString();
+                    if (plate.getExistence()==1){
+                        //Sending the API request to the server
+                        AsyncHttpClient client = new AsyncHttpClient();
+                        RequestParams params = new RequestParams();
+                        params.put("plateID", plate.getMongoid());
+                        Log.e("MONGOID",plate.getMongoid());
+                        params.put("plateText", modificationResult);
+
+                        client.get("http://15.188.76.142:5000/revolution/update", params, new AsyncHttpResponseHandler(){
+                            @Override
+                            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                                Log.e("TAG", "Success");
+                            }
+                            @Override
+                            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                                Log.e("TAG", "Failure");
+                                Toast toast = Toast.makeText(
+                                        getContext(), "Internet Sychronization Error", Toast.LENGTH_SHORT);
+                                toast.show();
+                            }
+                        });
+                    }
                     plate.setText(modificationResult);
                     dbHelper.updatePlateText(plate);
                     text.setText(modificationResult);
@@ -158,12 +214,129 @@ public class RenewFragment extends Fragment {
             renewalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    plate.setValidity(addToValidity(plate.getValidity()));
-                    dbHelper.updatePlateValidity(plate);
+                    String newValidity = addToValidity(plate.getValidity());
+                    plate.setValidity(newValidity);
+                    //Sending the API request to the server
+                    AsyncHttpClient client = new AsyncHttpClient();
+                    RequestParams params = new RequestParams();
+                    params.put("plateID", plate.getMongoid());
+                    params.put("plateValidity", newValidity);
 
+                    client.get("http://15.188.76.142:5000/revolution/update", params, new AsyncHttpResponseHandler(){
+                        @Override
+                        public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                            Log.e("TAG", "Success");
+                        }
+                        @Override
+                        public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                            Log.e("TAG", "Failure");
+                            Toast toast = Toast.makeText(
+                                    getContext(), "Internet Sychronization Error", Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+                    });
+                    dbHelper.updatePlateValidity(plate);
                     responseLicense.setText(processValidity(plate.getValidity()));
                 }
             });
+
+
+            registrationButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String owner = ownerRegistration.getText().toString();
+                    String expiration = validityRegistration.getText().toString();
+                    if (checkTyping(expiration)){
+                        plate.setValidity(expiration);
+                        plate.setOwner(owner);
+                        //Sending the API request to the server
+                        AsyncHttpClient client = new AsyncHttpClient();
+                        RequestParams params = new RequestParams();
+                        params.put("plateText", plate.getText());
+                        params.put("plateType", plate.getType());
+                        params.put("plateValidity", expiration);
+                        params.put("plateOwner", owner);
+
+                        Log.e("TAG", owner);
+                        Log.e("TAG", expiration);
+                        Log.e("TAG", plate.getType());
+                        Log.e("TAG", plate.getText());
+
+                        client.get("http://15.188.76.142:5000/revolution/register", params, new AsyncHttpResponseHandler(){
+                            @Override
+                            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                                Log.e("TAG", "Success");
+                                Toast toast = Toast.makeText(
+                                        getContext(), "Saved in the system", Toast.LENGTH_SHORT);
+                                toast.show();
+                                // If success, don't forget to save plate with new id also in sqlite, and make existence = 1
+                                try{
+                                    String plateID = new String(responseBody, "UTF-8");
+
+                                    plate.setExistence(1);
+                                    plate.setMongoid(plateID);
+
+
+                                    dbHelper.updatePlateExistence(plate);
+                                    dbHelper.updatePlateValidity(plate);
+                                    dbHelper.updatePlateOwner(plate);
+                                    dbHelper.updatePlateMongo(plate,plateID);
+
+
+
+                                    Log.e("MONGOID REGISTRATION",plate.getMongoid());
+
+
+
+
+                                    RenewFragment renewFragment= new RenewFragment();
+
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("ID",plate.get_ID());
+
+                                    renewFragment.setArguments(bundle);
+
+
+                                    BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
+                                    bottomNavigationView.setSelectedItemId(R.id.action_renew);
+                                    getActivity().getSupportFragmentManager().beginTransaction()
+                                            .replace(R.id.fragment_layout, renewFragment, "findThisFragment")
+                                            .commit();
+
+
+
+
+                                }catch(Exception e){
+                                    Log.e("TAG",e.toString());
+                                }
+
+
+
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                                Log.e("TAG", "Failure");
+                                Toast toast = Toast.makeText(
+                                        getContext(), "Please check your internet connection and try again", Toast.LENGTH_SHORT);
+                                toast.show();
+
+                            }
+
+
+
+
+                        });
+
+                    }else{
+                        Toast toast = Toast.makeText(
+                                getContext(), "Expiration Date should be in the DD-MM-YYYY format", Toast.LENGTH_SHORT);
+                        toast.show();
+                    }
+
+                }
+            });
+
 
 
 
@@ -301,6 +474,28 @@ public class RenewFragment extends Fragment {
         String date = dates[0] + "-" + month + "-" + year;
         return date;
 
+    }
+
+    private boolean checkTyping(String expiration){
+        String[] dates = expiration.split("-");
+        if(dates.length==3){
+            try{
+                long month = Long.parseLong(dates[1]);
+                long year = Long.parseLong(dates[2]);
+                long days = Long.parseLong(dates[0]);
+                if (days>0 && month >0 && year > 0){
+                    return true;
+                }else{
+                    return false;
+                }
+            }catch(Exception e){
+                Log.e("Expiration Typing", e.toString());
+                return false;
+            }
+
+        }else{
+            return false;
+        }
     }
 
 }

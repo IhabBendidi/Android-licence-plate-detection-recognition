@@ -966,6 +966,8 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                     }
                                                                                 }
                                                                             }
+
+
                                                                             //Sending the API request to the server
                                                                             AsyncHttpClient client = new AsyncHttpClient();
                                                                             RequestParams params = new RequestParams();
@@ -975,6 +977,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                 @Override
                                                                                 public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
                                                                                     Log.e("TAG", "Success");
+                                                                                    int exist = 2;
 
 
                                                                                     try{
@@ -985,15 +988,33 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                         String existence = json.get("exist").toString();
                                                                                         if (existence.equals("0")){
                                                                                             registration.setVisibility(View.VISIBLE);
+                                                                                            exist = 0;
                                                                                             Log.e("TAG", "non existence");
                                                                                         }else {
                                                                                             registration.setVisibility(View.GONE);
+                                                                                            exist = 1;
                                                                                             Log.e("TAG", "existence");
                                                                                         }
                                                                                         Log.e("TAG", existence);
                                                                                     }catch(Exception e){
                                                                                         Log.e("TAG",e.toString());
                                                                                     }
+                                                                                    Log.e(TOG,"7");
+                                                                                    timeName = "" + System.currentTimeMillis();
+                                                                                    //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                                                    Log.e(TOG,"8");
+                                                                                    imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
+                                                                                    Log.e(TOG,imagePath);
+                                                                                    time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                                                                    outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+
+                                                                                    //Writing the detection text on the plateTextView
+                                                                                    plateTextView.setText(text_recon);
+
+
+                                                                                    // Writing output ( Paths for images, location and time of the detection)
+                                                                                    Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath,exist);
+                                                                                    dbHelper.addPlate(plate);
 
                                                                                 }
 
@@ -1003,6 +1024,22 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                                     Toast toast = Toast.makeText(
                                                                                             getContext(), "Error connecting to internet", Toast.LENGTH_SHORT);
                                                                                     toast.show();
+                                                                                    Log.e(TOG,"7");
+                                                                                    timeName = "" + System.currentTimeMillis();
+                                                                                    //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
+                                                                                    Log.e(TOG,"8");
+                                                                                    imagePath = saveToInternalStorage(outputBitmap,timeName); // this is to save the full image with the green boxes inside
+                                                                                    Log.e(TOG,imagePath);
+                                                                                    time = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                                                                    outputName = imagePath + " " + text_recon + " " + locationText.getText() + " " + time + "\r\n";
+
+                                                                                    //Writing the detection text on the plateTextView
+                                                                                    plateTextView.setText(text_recon);
+
+
+                                                                                    // Writing output ( Paths for images, location and time of the detection)
+                                                                                    Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath);
+                                                                                    dbHelper.addPlate(plate);
                                                                                 }
 
 
@@ -1012,7 +1049,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
 
 
 
-                                                                            Log.e(TOG,"7");
+                                                                            /*Log.e(TOG,"7");
                                                                             timeName = "" + System.currentTimeMillis();
                                                                             //imagePath = saveToInternalStorage(resultsBitmap,timeName);// /data/user/0/org.tensorflow.demo/app_imageDir/1574040156601.jpg
                                                                             Log.e(TOG,"8");
@@ -1024,6 +1061,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                             //Writing the detection text on the plateTextView
                                                                             plateTextView.setText(text_recon);
 
+
                                                                             // Writing output ( Paths for images, location and time of the detection)
                                                                             Plate plate = new Plate( locationText.getText().toString(),  time,  text_recon,  imagePath);
                                                                             dbHelper.addPlate(plate);
@@ -1031,7 +1069,7 @@ public class HomeFragment extends Fragment implements ImageReader.OnImageAvailab
                                                                             //fWriter.write(outputName);
                                                                             //}catch(IOException e){
                                                                             // Log.e(TOG,e.toString());
-                                                                            //}
+                                                                            //}*/
                                                                         }
                                                                     })
                                                                     .addOnFailureListener(
