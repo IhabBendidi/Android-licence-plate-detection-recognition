@@ -115,7 +115,7 @@ public class RenewFragment extends Fragment {
             TextView responseCountry = renewView.findViewById(R.id.responseCountry);
             TextView responseTime = renewView.findViewById(R.id.responseTime);
             TextView responseVehicule = renewView.findViewById(R.id.responseVehicule);
-            TextView responseOwner = renewView.findViewById(R.id.responseOwner);
+            final TextView responseOwner = renewView.findViewById(R.id.responseOwner);
             final TextView responseLicense = renewView.findViewById(R.id.responseLicense);
             final EditText ownerRegistration = renewView.findViewById(R.id.OwnerRegistration);
             final EditText validityRegistration = renewView.findViewById(R.id.validityRegistration);
@@ -145,8 +145,67 @@ public class RenewFragment extends Fragment {
                 validityRegistration.setVisibility(View.VISIBLE);
                 ownerRegistration.setVisibility(View.VISIBLE);
 
-            } else { //// Add case for when existence got a value of 2, that happens when we cant succesfully check the existence of the plate in the server because of some sort of error of any kind
+            } else if (existence == 1){ //// Add case for when existence got a value of 2, that happens when we cant succesfully check the existence of the plate in the server because of some sort of error of any kind
+                //Sending the API request to the server
+                AsyncHttpClient client = new AsyncHttpClient();
+                RequestParams params = new RequestParams();
+                params.put("plateID", plate.getMongoid());
 
+                Toast toast = Toast.makeText(
+                        getContext(), "Updating", Toast.LENGTH_SHORT);
+                toast.show();
+
+
+                client.get("http://15.188.76.142:5000/revolution/get", params, new AsyncHttpResponseHandler(){
+                    @Override
+                    public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                        Log.e("TAG", "Success");
+                        try{
+                            String str = new String(responseBody, "UTF-8");
+
+                            JSONParser parser = new JSONParser();
+                            JSONObject json = (JSONObject) parser.parse(str);
+                            String plateType = json.get("plateType").toString();
+                            String plateText = json.get("plateText").toString();
+                            String plateValidity = json.get("plateValidity").toString();
+                            String plateOwner = json.get("plateOwner").toString();
+                            String mongoid = json.get("mongoid").toString();
+                            plate.setMongoid(mongoid);
+                            plate.setOwner(plateOwner);
+                            plate.setValidity(plateValidity);
+                            plate.setType(plateType);
+                            plate.setText(plateText);
+                            dbHelper.updatePlateText(plate);
+                            dbHelper.updatePlateValidity(plate);
+                            dbHelper.updatePlateMongo(plate,mongoid);
+                            dbHelper.updatePlateText(plate);
+                            text.setText(plate.getText());
+                            editPlateText.setText(plate.getText());
+                            responseOwner.setText(plate.getOwner());
+                            responseLicense.setText(processValidity(plate.getValidity()));
+                            Toast toast = Toast.makeText(
+                                    getContext(), "Update Complete", Toast.LENGTH_SHORT);
+                            toast.show();
+
+
+                        }catch (Exception e){
+                            Log.e("TAG",e.toString());
+                            Toast toast = Toast.makeText(
+                                    getContext(), "Internet Connection Error", Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+
+                    }
+                    @Override
+                    public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                        Log.e("TAG", "Failure");
+                        Toast toast = Toast.makeText(
+                                getContext(), "Internet Sychronization Error", Toast.LENGTH_SHORT);
+                        toast.show();
+                    }
+                });
+            }else {
+                // this is the case of having a value of 2 (when we still dont know whether it exists or not in the database because of internet errors)
             }
             setPlateImageView(plate,renewView);
             text.setText(plate.getText());
