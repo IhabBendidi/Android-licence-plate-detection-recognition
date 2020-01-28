@@ -1,5 +1,7 @@
 package org.tensorflow.demo;
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,15 +10,24 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,6 +66,9 @@ public class RenewFragment extends Fragment {
     private String mParam2;
     PlateDbHelper dbHelper;
     Plate plate;
+    PopupWindow popUp;
+    ConstraintLayout popupLayout;
+    boolean click = true;
 
     private OnFragmentInteractionListener mListener;
 
@@ -91,12 +105,12 @@ public class RenewFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         Bundle bundle = this.getArguments();
         //TextView text = new TextView(getActivity());textView3
-        View renewView = inflater.inflate(R.layout.fragment_renew, container, false);
+        final View renewView = inflater.inflate(R.layout.fragment_renew, container, false);
 
 
         //Log.e("The size of bundle : ",bundle.toString());
@@ -125,6 +139,8 @@ public class RenewFragment extends Fragment {
             TextView titleLicense = renewView.findViewById(R.id.titleLicense);
             Button renewalButton = renewView.findViewById(R.id.renewalButton);
             Button registrationButton = renewView.findViewById(R.id.registrationButton);
+
+
 
             // Setting up all values of data
 
@@ -270,10 +286,69 @@ public class RenewFragment extends Fragment {
                 }
             });
 
+
+
+
+
+
+            // getting metrics of the screen :
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            ((Activity) getContext()).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+            int screenheight = displayMetrics.heightPixels;
+            int screenwidth = displayMetrics.widthPixels;
+            final int popupWidth =  (2*screenwidth)/3;
+            final int popupHeight =  (2*screenheight)/7;
+
+
             renewalButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String newValidity = addToValidity(plate.getValidity());
+                    final Dialog dialog = new Dialog(getActivity());
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    final View popUpLayout = inflater.inflate(R.layout.renewal_popup,
+                            null);
+                    Button paymentButton = popUpLayout.findViewById(R.id.button4);
+                    paymentButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            RadioGroup priceGroup = popUpLayout.findViewById(R.id.priceGroup);
+                            RadioButton checkedbutton = popUpLayout.findViewById(priceGroup.getCheckedRadioButtonId());
+                            String numberMonthsPaid = checkedbutton.getText().toString().split(" ")[0];
+                            String newValidity = addToValidity(plate.getValidity(),Integer.parseInt(numberMonthsPaid));
+                            plate.setValidity(newValidity);
+                            //Sending the API request to the server
+                            AsyncHttpClient client = new AsyncHttpClient();
+                            RequestParams params = new RequestParams();
+                            params.put("plateID", plate.getMongoid());
+                            params.put("plateValidity", newValidity);
+
+                            client.get("http://15.188.76.142:5000/revolution/update", params, new AsyncHttpResponseHandler(){
+                                @Override
+                                public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
+                                    Log.e("TAG", "Success");
+                                }
+                                @Override
+                                public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
+                                    Log.e("TAG", "Failure");
+                                    Toast toast = Toast.makeText(
+                                            getContext(), "Internet Sychronization Error", Toast.LENGTH_SHORT);
+                                    toast.show();
+                                }
+                            });
+                            dbHelper.updatePlateValidity(plate);
+                            responseLicense.setText(processValidity(plate.getValidity()));
+                            dialog.dismiss();
+                        }
+                    });
+                    dialog.setContentView(popUpLayout);
+                    dialog.getWindow().setLayout(popupWidth, popupHeight);
+                    dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+                    dialog.show();
+
+
+
+
+                    /*String newValidity = addToValidity(plate.getValidity());
                     plate.setValidity(newValidity);
                     //Sending the API request to the server
                     AsyncHttpClient client = new AsyncHttpClient();
@@ -295,8 +370,10 @@ public class RenewFragment extends Fragment {
                         }
                     });
                     dbHelper.updatePlateValidity(plate);
-                    responseLicense.setText(processValidity(plate.getValidity()));
+                    responseLicense.setText(processValidity(plate.getValidity()));*/
                 }
+
+
             });
 
 
@@ -520,15 +597,15 @@ public class RenewFragment extends Fragment {
 
 
 
-    private String addToValidity(String validity){
+    private String addToValidity(String validity,Integer number){
         String[] dates = validity.split("-");
         long month = Long.parseLong(dates[1]);
         long year = Long.parseLong(dates[2]);
-        if (month == 12){
+        if (month + number > 12){
             year += 1;
-            month = 1;
+            month = (month + number )- 12;
         } else {
-            month += 1;
+            month += number;
         }
         String date = dates[0] + "-" + month + "-" + year;
         return date;

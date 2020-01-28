@@ -1667,6 +1667,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable ok_green
+drawable popup_round_corners
 drawable psts_background_tab
 drawable selector_background_empty
 drawable selector_dialog_warning
@@ -1795,6 +1796,7 @@ id butt
 id button
 id button2
 id button3
+id button4
 id buttonPanel
 id cancel_action
 id cardView
@@ -1953,10 +1955,14 @@ id pin
 id plateImageView
 id position
 id postLayout
+id priceGroup
 id printer
 id progress_circular
 id progress_horizontal
 id radio
+id radioButton1
+id radioButton2
+id radioButton3
 id ratio
 id rectangles
 id registration
@@ -2229,6 +2235,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout renewal_popup
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2391,6 +2398,7 @@ style AppTheme_NoShadow
 style AppTheme_Overlay
 style AppTheme_SearchView
 style AppTheme_Title
+style AppTheme_roundCornersPopup
 style AppThemeMenu
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
