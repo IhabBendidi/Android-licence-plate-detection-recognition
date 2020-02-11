@@ -2229,6 +2229,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_history
 layout fragment_home
+layout fragment_hotel_history
 layout fragment_hotel_home
 layout fragment_renew
 layout fragment_setting

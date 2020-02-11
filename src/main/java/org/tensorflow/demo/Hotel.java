@@ -26,6 +26,17 @@ public class Hotel {
         this.license = license;
     }
 
+    public Hotel(String _ID,String name,String imagePath,String manager,String phone,String location, String type,String license){
+        this.imagePath = imagePath;
+        this.name = name;
+        this.manager = manager;
+        this.phone = phone;
+        this.location = location;
+        this.type = type;
+        this.license = license;
+        this._ID = _ID;
+    }
+
 
     public String get_ID() {
         return _ID;
