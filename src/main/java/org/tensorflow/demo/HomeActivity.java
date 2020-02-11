@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
         transaction = getSupportFragmentManager().beginTransaction();
         if (bottomNavigationView.getSelectedItemId()== R.id.action_renew){
             transaction.replace(R.id.fragment_layout, historyFragment);
-            //transaction.addToBackStack(null);
+            transaction.addToBackStack(null);
             transaction.commit();
             bottomNavigationView.setSelectedItemId(R.id.action_history);
         }else if(bottomNavigationView.getSelectedItemId()== R.id.action_home){
@@ -48,7 +48,7 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
             //onDestroy();
         }else{
             transaction.replace(R.id.fragment_layout, homeFragment);
-            //transaction.addToBackStack(null);
+            transaction.addToBackStack(null);
             transaction.commit();
             bottomNavigationView.setSelectedItemId(R.id.action_home);
         }

@@ -318,7 +318,7 @@ public class HotelHomeFragment extends Fragment {
 
         final TextView hotelName = new TextView(getActivity());
         //plateText.setLayoutParams(linearparams);
-        hotelName.setText("      " + hotel.getName());
+        hotelName.setText("" + hotel.getName());
 
 
 
@@ -354,18 +354,18 @@ public class HotelHomeFragment extends Fragment {
 
                 hotelName.setBackgroundColor(getResources().getColor(R.color.history_clicked_background));
                 Log.e("The id is : ", id);
-                RenewFragment renewFragment= new RenewFragment();
+                HotelRenewFragment hotelRenewFragment= new HotelRenewFragment();
 
                 Bundle bundle = new Bundle();
                 bundle.putString("ID",id);
 
-                renewFragment.setArguments(bundle);
+                hotelRenewFragment.setArguments(bundle);
 
 
                 //BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
                 //bottomNavigationView.setSelectedItemId(R.id.action_renew);
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.hotel_fragment_layout, renewFragment, "findThisFragment")
+                        .replace(R.id.hotel_fragment_layout, hotelRenewFragment, "findThisFragment")
                         .addToBackStack(null)
                         .commit();
 

@@ -344,33 +344,6 @@ public class RenewFragment extends Fragment {
                     dialog.getWindow().setLayout(popupWidth, popupHeight);
                     dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                     dialog.show();
-
-
-
-
-                    /*String newValidity = addToValidity(plate.getValidity());
-                    plate.setValidity(newValidity);
-                    //Sending the API request to the server
-                    AsyncHttpClient client = new AsyncHttpClient();
-                    RequestParams params = new RequestParams();
-                    params.put("plateID", plate.getMongoid());
-                    params.put("plateValidity", newValidity);
-
-                    client.get("http://15.188.76.142:5000/revolution/update", params, new AsyncHttpResponseHandler(){
-                        @Override
-                        public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody) {
-                            Log.e("TAG", "Success");
-                        }
-                        @Override
-                        public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, byte[] responseBody, Throwable error) {
-                            Log.e("TAG", "Failure");
-                            Toast toast = Toast.makeText(
-                                    getContext(), "Internet Sychronization Error", Toast.LENGTH_SHORT);
-                            toast.show();
-                        }
-                    });
-                    dbHelper.updatePlateValidity(plate);
-                    responseLicense.setText(processValidity(plate.getValidity()));*/
                 }
 
 

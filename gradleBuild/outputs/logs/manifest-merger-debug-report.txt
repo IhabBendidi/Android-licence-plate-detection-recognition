@@ -215,10 +215,10 @@ activity#org.tensorflow.demo.HotelHomeActivity
 ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-64
 	android:name
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:19-52
-activity#org.tensorflow.demo.SplitActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:9-51
+activity#org.tensorflow.demo.SplashActivity
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:9-52
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:19-48
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:19-49
 activity#org.tensorflow.demo.HomeActivity
 ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:26:9-50
 	android:name
@@ -243,12 +243,12 @@ activity#org.tensorflow.demo.DetectorActivity
 ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:31:9-54
 	android:name
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:31:19-51
-activity#org.tensorflow.demo.SplashActivity
+activity#org.tensorflow.demo.SplitActivity
 ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:32:9-40:20
 	android:label
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:34:13-39
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:33:13-43
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:33:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN

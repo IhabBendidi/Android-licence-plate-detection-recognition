@@ -1687,8 +1687,11 @@ drawable transparent_button_selector
 id ALT
 id CTRL
 id FUNCTION
+id HotelImageView
+id LicenseValue
 id META
 id NO_DEBUG
+id NameValue
 id OwnerRegistration
 id PlateText
 id PlateTextCardView
@@ -1800,6 +1803,7 @@ id button
 id button2
 id button3
 id button4
+id buttonHotelPayment
 id buttonPanel
 id cancel_action
 id car_icon
@@ -1808,6 +1812,7 @@ id cardView
 id cardView2
 id cardView3
 id cardView4
+id cardView5
 id center
 id center_horizontal
 id center_vertical
@@ -1852,6 +1857,7 @@ id easeIn
 id easeInOut
 id easeOut
 id editPlateText
+id editText
 id edit_icon
 id edit_query
 id end
@@ -1894,6 +1900,15 @@ id homePlateEditIcon
 id homePlateText
 id homePlateTextLayout
 id honorRequest
+id hotelLicense
+id hotelLocation
+id hotelManager
+id hotelName
+id hotelPayment
+id hotelPaymentButton
+id hotelPhone
+id hotelType
+id hotelValue
 id hotel_bottom_navigation
 id hotel_fragment_layout
 id hotel_icon
@@ -1926,6 +1941,7 @@ id listMode
 id list_item
 id locationvalue
 id logo
+id managerValue
 id masked
 id media_actions
 id message
@@ -1960,8 +1976,10 @@ id parentRelative
 id parent_matrix
 id path
 id pathRelative
+id paymentValueCard
 id percent
 id phone
+id phoneValue
 id pin
 id plateImageView
 id position
@@ -1975,6 +1993,8 @@ id radioButton1
 id radioButton2
 id radioButton3
 id ratio
+id receiptButton
+id receipts
 id rectangles
 id registration
 id registrationButton
@@ -2100,6 +2120,9 @@ id textSpacerNoTitle
 id textStart
 id textUri
 id textView
+id textView2
+id textView3
+id textView4
 id textVisiblePassword
 id textWebEditText
 id textWebEmailAddress
@@ -2133,6 +2156,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id typeValue
 id unchecked
 id uniform
 id unlabeled
@@ -2231,8 +2255,10 @@ layout fragment_history
 layout fragment_home
 layout fragment_hotel_history
 layout fragment_hotel_home
+layout fragment_hotel_renew
 layout fragment_renew
 layout fragment_setting
+layout hotel_payment_popup
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

@@ -17,7 +17,7 @@ public class SplitActivity extends AppCompatActivity {
         CardView carCard = findViewById(R.id.carcard);
         CardView hotelCard = findViewById(R.id.hotelcard);
 
-        final Intent carIntent = new Intent(this, HomeActivity.class);
+        final Intent carIntent = new Intent(this, SplashActivity.class);
         final Intent hotelIntent = new Intent(this, HotelHomeActivity.class);
 
         carCard.setOnClickListener(new View.OnClickListener() {

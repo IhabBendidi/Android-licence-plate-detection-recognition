@@ -32,9 +32,10 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="org.tensorflow.demo.HotelHomeActivity" />
-        <activity android:name="org.tensorflow.demo.SplitActivity" />
+        <activity android:name="org.tensorflow.demo.SplashActivity" />
         <activity android:name="org.tensorflow.demo.HomeActivity" />
         <activity android:name="org.tensorflow.demo.PlateActivity" />
         <activity android:name="org.tensorflow.demo.HistoryActivity" />
@@ -42,7 +43,7 @@
         <activity android:name="org.tensorflow.demo.MainActivity" />
         <activity android:name="org.tensorflow.demo.DetectorActivity" />
         <activity
-            android:name="org.tensorflow.demo.SplashActivity"
+            android:name="org.tensorflow.demo.SplitActivity"
             android:label="Fusion Rev" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class HotelHomeActivity extends AppCompatActivity implements HotelHomeFragment.OnFragmentInteractionListener,HotelHistoryFragment.OnFragmentInteractionListener, SettingFragment.OnFragmentInteractionListener{
+public class HotelHomeActivity extends AppCompatActivity implements HotelRenewFragment.OnFragmentInteractionListener,HotelHomeFragment.OnFragmentInteractionListener,HotelHistoryFragment.OnFragmentInteractionListener, SettingFragment.OnFragmentInteractionListener{
     FragmentTransaction transaction;
     BottomNavigationView bottomNavigationView;
 
