@@ -36,7 +36,7 @@ public class HotelHomeActivity extends AppCompatActivity implements HotelHomeFra
             //onDestroy();
         }else{
             transaction.replace(R.id.hotel_fragment_layout, hotelHomeFragment);
-            transaction.addToBackStack(null);
+            //transaction.addToBackStack(null);
             transaction.commit();
             bottomNavigationView.setSelectedItemId(R.id.action_home);
         }

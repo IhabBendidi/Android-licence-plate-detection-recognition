@@ -365,7 +365,7 @@ public class HotelHomeFragment extends Fragment {
                 //BottomNavigationView bottomNavigationView = getActivity().findViewById(R.id.bottom_navigation);
                 //bottomNavigationView.setSelectedItemId(R.id.action_renew);
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_layout, renewFragment, "findThisFragment")
+                        .replace(R.id.hotel_fragment_layout, renewFragment, "findThisFragment")
                         .addToBackStack(null)
                         .commit();
 
