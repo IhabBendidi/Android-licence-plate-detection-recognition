@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12
-INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12
-INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12
+INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12
+INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:2:1-8:12
 MERGED from [androidx.multidex:multidex:2.0.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/5e8289268467d4b585aacf5e6d6924c8/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta4] /home/ihab/.gradle/caches/transforms-2/files-2.1/7bcccfd51bdba07ad520e5057f6ed2eb/constraintlayout-2.0.0-beta4/AndroidManifest.xml:2:1-11:12
@@ -71,8 +71,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ihab/.gradle/caches/tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/b7f99d2049d8e95a72a64b509d678174/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/e58905d0a3817fdf9c3872db09121968/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/f1854bf5407f344cf2ac976ec8eb6c07/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12
-INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12
+INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:3:5-34
 	android:versionName
@@ -138,7 +138,7 @@ ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:17:5-81
 	android:name
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:17:22-78
 application
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:19:5-44:19
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:19:5-45:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.13.1] /home/ihab/.gradle/caches/transforms-2/files-2.1/9fe4302e58d3e58e7693ff18d7714ef6/tensorflow-android-1.13.1/AndroidManifest.xml:5:5-6:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta4] /home/ihab/.gradle/caches/transforms-2/files-2.1/7bcccfd51bdba07ad520e5057f6ed2eb/constraintlayout-2.0.0-beta4/AndroidManifest.xml:9:5-20
@@ -211,56 +211,60 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ihab/
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:20:9-35
 	android:theme
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:23:9-40
+activity#org.tensorflow.demo.HotelHomeActivity
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-64
+	android:name
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:19-52
 activity#org.tensorflow.demo.SplitActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:9-60
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:9-51
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:24:19-48
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:19-48
 activity#org.tensorflow.demo.HomeActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:9-50
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:26:9-50
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:25:19-47
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:26:19-47
 activity#org.tensorflow.demo.PlateActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:26:9-51
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:27:9-51
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:26:19-48
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:27:19-48
 activity#org.tensorflow.demo.HistoryActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:27:9-53
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:28:9-53
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:27:19-50
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:28:19-50
 activity#org.tensorflow.demo.ShotDetectionActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:28:9-59
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:29:9-59
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:28:19-56
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:29:19-56
 activity#org.tensorflow.demo.MainActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:29:9-50
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:30:9-50
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:29:19-47
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:30:19-47
 activity#org.tensorflow.demo.DetectorActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:30:9-54
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:30:19-51
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:31:19-51
 activity#org.tensorflow.demo.SplashActivity
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:31:9-39:20
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:32:9-40:20
 	android:label
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:33:13-39
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:34:13-39
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:32:13-43
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:33:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:34:13-38:29
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:35:17-69
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:35:25-66
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:37:17-77
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:37:27-74
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:38:27-74
 meta-data#com.google.firebase.ml.vision.DEPENDENCIES
-ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:41:9-43:35
+ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:42:9-44:35
 	android:value
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:43:13-32
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:44:13-32
 	android:name
-		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:42:13-70
+		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:43:13-70
 uses-sdk
 INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml
@@ -410,9 +414,9 @@ INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml
 		ADDED from /home/ihab/ihabgit/first UI/AndroidManifest.xml
 		INJECTED from /home/ihab/ihabgit/first UI/AndroidManifest.xml
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
+IMPLIED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12 reason: tensorflow.contrib.android has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-46:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/ihab/ihabgit/first UI/AndroidManifest.xml:2:1-47:12 reason: tensorflow.contrib.android requested WRITE_EXTERNAL_STORAGE
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
 ADDED from [pub.devrel:easypermissions:0.4.0] /home/ihab/.gradle/caches/transforms-2/files-2.1/4b2cf23d01ca3ff39ff42788f9749569/jetified-easypermissions-0.4.0/AndroidManifest.xml:12:9-16:66
 	android:label

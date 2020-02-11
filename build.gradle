@@ -314,3 +314,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:+'
     implementation 'androidx.constraintlayout:constraintlayout:+'
 }
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:+'
+}

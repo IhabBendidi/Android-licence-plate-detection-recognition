@@ -32,7 +32,9 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="org.tensorflow.demo.HotelHomeActivity" />
         <activity android:name="org.tensorflow.demo.SplitActivity" />
         <activity android:name="org.tensorflow.demo.HomeActivity" />
         <activity android:name="org.tensorflow.demo.PlateActivity" />

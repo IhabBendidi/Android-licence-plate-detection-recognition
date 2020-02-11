@@ -21,7 +21,8 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplitActivity"></activity>
+        <activity android:name=".HotelHomeActivity"></activity>
+        <activity android:name=".SplitActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".PlateActivity" />
         <activity android:name=".HistoryActivity" />

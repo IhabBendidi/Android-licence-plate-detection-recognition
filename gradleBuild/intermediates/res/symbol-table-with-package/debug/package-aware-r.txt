@@ -1626,11 +1626,13 @@ drawable edit_text_background_main
 drawable fragment_social_background_image
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable hotel
 drawable ic_action_bue_car
 drawable ic_action_checker
 drawable ic_action_editer
 drawable ic_action_history
 drawable ic_action_home
+drawable ic_action_hotel
 drawable ic_action_info
 drawable ic_action_pencil
 drawable ic_action_pencil_black
@@ -1773,6 +1775,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id appcontainer
 id asConfigured
 id async
 id auto
@@ -1799,6 +1802,8 @@ id button3
 id button4
 id buttonPanel
 id cancel_action
+id car_icon
+id carcard
 id cardView
 id cardView2
 id cardView3
@@ -1875,6 +1880,7 @@ id flip
 id forever
 id fourthLine
 id fragment_layout
+id fusionname
 id ghost_view
 id gone
 id graph
@@ -1888,6 +1894,11 @@ id homePlateEditIcon
 id homePlateText
 id homePlateTextLayout
 id honorRequest
+id hotel_bottom_navigation
+id hotel_fragment_layout
+id hotel_icon
+id hotelcard
+id hoteltaxName
 id icon
 id icon_group
 id icon_only
@@ -2194,10 +2205,12 @@ layout abc_tooltip
 layout activity_camera
 layout activity_history
 layout activity_home
+layout activity_hotel_home
 layout activity_main
 layout activity_one_shot_camera
 layout activity_plate
 layout activity_splash
+layout activity_split
 layout camera_connection_fragment_tracking
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2216,6 +2229,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_history
 layout fragment_home
+layout fragment_hotel_home
 layout fragment_renew
 layout fragment_setting
 layout mtrl_layout_snackbar
@@ -2240,6 +2254,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu bottom_hotel_nav_menu
 menu bottom_nav_menu
 raw a
 raw heart
