@@ -126,7 +126,7 @@ public class HotelHistoryFragment extends Fragment {
         final SearchView search = new SearchView(getActivity());
         search.setBackgroundColor(getResources().getColor(R.color.colorSearch));
         search.setIconifiedByDefault(false);
-        search.setQueryHint("Search for a license plate");
+        search.setQueryHint("Search for hotels");
 
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -242,7 +242,7 @@ public class HotelHistoryFragment extends Fragment {
         int px30 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, this.getResources().getDisplayMetrics());
         set.connect(search.getId(), ConstraintSet.RIGHT, ConstraintSet.PARENT_ID, ConstraintSet.RIGHT, px30);
         int px100 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100, this.getResources().getDisplayMetrics());
-        set.connect(search.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, px100);
+        set.connect(search.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 100);
 
 
 
@@ -298,8 +298,8 @@ public class HotelHistoryFragment extends Fragment {
         // Designing the shape of the text
         hotelName.setTextColor(getResources().getColor(R.color.black));
         //plateText.setTextColor(Color.BLACK);
-        int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12, this.getResources().getDisplayMetrics());
-        hotelName.setTextSize(px15);
+        int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 11, this.getResources().getDisplayMetrics());
+        hotelName.setTextSize(15);
         int px80 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
         hotelName.setHeight(px80);
         int px300 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, this.getResources().getDisplayMetrics());

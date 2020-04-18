@@ -299,7 +299,7 @@ public class HistoryFragment extends Fragment{
         int px30 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, this.getResources().getDisplayMetrics());
         set.connect(search.getId(), ConstraintSet.RIGHT, ConstraintSet.PARENT_ID, ConstraintSet.RIGHT, px30);
         int px100 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 100, this.getResources().getDisplayMetrics());
-        set.connect(search.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, px100);
+        set.connect(search.getId(), ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 100);
 
 
 
@@ -330,7 +330,7 @@ public class HistoryFragment extends Fragment{
 
         final TextView plateText = new TextView(getActivity());
         //plateText.setLayoutParams(linearparams);
-        plateText.setText("      " + plate.getText());
+        plateText.setText("" + plate.getText());
 
 
 
@@ -338,7 +338,7 @@ public class HistoryFragment extends Fragment{
         plateText.setTextColor(getResources().getColor(R.color.black));
         //plateText.setTextColor(Color.BLACK);
         int px15 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12, this.getResources().getDisplayMetrics());
-        plateText.setTextSize(px15);
+        plateText.setTextSize(15);
         int px80 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, this.getResources().getDisplayMetrics());
         plateText.setHeight(px80);
         int px300 = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, this.getResources().getDisplayMetrics());

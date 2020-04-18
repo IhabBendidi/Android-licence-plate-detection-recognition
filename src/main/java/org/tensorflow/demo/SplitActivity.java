@@ -17,8 +17,13 @@ public class SplitActivity extends AppCompatActivity {
         CardView carCard = findViewById(R.id.carcard);
         CardView hotelCard = findViewById(R.id.hotelcard);
 
+        CardView shopCard = findViewById(R.id.shopcard);
+
+
         final Intent carIntent = new Intent(this, SplashActivity.class);
         final Intent hotelIntent = new Intent(this, HotelHomeActivity.class);
+        final Intent shopIntent = new Intent(this, ShopHomeActivity.class);
+
 
         carCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +36,13 @@ public class SplitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(hotelIntent);
+            }
+        });
+
+        shopCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(shopIntent);
             }
         });
 

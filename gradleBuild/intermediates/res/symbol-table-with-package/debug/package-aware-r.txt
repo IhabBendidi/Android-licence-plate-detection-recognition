@@ -1674,6 +1674,7 @@ drawable psts_background_tab
 drawable selector_background_empty
 drawable selector_dialog_warning
 drawable setting_background
+drawable shops
 drawable splash_screen_background
 drawable splash_screen_option_three
 drawable star_red
@@ -1702,6 +1703,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id ShopImageView
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2055,6 +2057,20 @@ id search_voice_btn
 id secondLine
 id select_dialog_listview
 id selected
+id shopLicense
+id shopLocation
+id shopManager
+id shopName
+id shopPayment
+id shopPaymentButton
+id shopPhone
+id shopType
+id shopValue
+id shop_bottom_navigation
+id shop_fragment_layout
+id shop_icon
+id shopcard
+id shoptaxname
 id shortcut
 id showCustom
 id showHome
@@ -2233,6 +2249,7 @@ layout activity_hotel_home
 layout activity_main
 layout activity_one_shot_camera
 layout activity_plate
+layout activity_shop_home
 layout activity_splash
 layout activity_split
 layout camera_connection_fragment_tracking
@@ -2258,6 +2275,9 @@ layout fragment_hotel_home
 layout fragment_hotel_renew
 layout fragment_renew
 layout fragment_setting
+layout fragment_shop_history
+layout fragment_shop_home
+layout fragment_shop_renew
 layout hotel_payment_popup
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

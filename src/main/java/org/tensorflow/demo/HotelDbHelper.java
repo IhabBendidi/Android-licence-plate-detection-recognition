@@ -15,7 +15,7 @@ import static java.lang.Integer.parseInt;
 
 public class HotelDbHelper extends SQLiteOpenHelper{
     // If you change the database schema, you must increment the database version.
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 5;
     public static final String DATABASE_NAME = "HotelReader.db";
 
     public HotelDbHelper(Context context) {
@@ -26,49 +26,27 @@ public class HotelDbHelper extends SQLiteOpenHelper{
         db.execSQL(HotelContract.SQL_DELETE_ENTRIES);
         db.execSQL(HotelContract.SQL_CREATE_ENTRIES);
         Log.e("1", "gets to here");
-        Hotel hotel = new Hotel("Novotel Paris Les Halles","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        Hotel hotel = new Hotel("Rock Classic Hotel","9.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Paris Gare de Lyon","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Hotel Africana","4.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Astotel","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Sharaton","6.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Hotel la Manufacture","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Mamikki Hotel Apartements","8.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Pullman Paris Tour Eiffel","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Golden Tripod Hotel","10.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Paris Gare de Lyon","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Meritoria Hotel Tororo","5.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Hotel Eiffel Blomet","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Kanfi Hotel","7.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Hotel Gare Montparnasse","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Fairway Hotel","1.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Hyatt Regency Paris Etoile","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Grand Imperial Hotel","2.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Mercure Paris Hotel","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Piedmont Hotel Tororo","11.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
-        hotel = new Hotel("Hotel Saint Germain de Pres","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Malte","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Darcis","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Saint Petersbourg","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Saint Severin","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Molière","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Le Mareuil","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel la Nouvelle République","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Fabric","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Relais de Bousquet de Paris","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel de Bercy","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
-        addHotel(hotel,db);
-        hotel = new Hotel("Hotel Marais Home","file:///android_asset/imghotel.jpg","John Doe","+47 6 65 54 43 32","France","Luxury","Expired");
+        hotel = new Hotel("Town Guesthouse","12.jpeg","Thomas Doe","0772773458","Uganda","Luxury","Expired");
         addHotel(hotel,db);
         Log.e("2", "gets to here");
 

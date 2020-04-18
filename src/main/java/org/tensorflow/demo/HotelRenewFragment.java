@@ -123,7 +123,7 @@ public class HotelRenewFragment extends Fragment {
             }
             String[] words = hotel.getName().split(" ");
             String name;
-            if (words.length > 3){
+            if (words.length > 2){
                 name = words[0] + " " + words[1] +"\n";
                 for (int i=2;i<words.length;i++){
                     name += words[i] + " ";
@@ -259,7 +259,7 @@ public class HotelRenewFragment extends Fragment {
         try {
             //File f=new File(path);
             //Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
-            InputStream is = getResources().getAssets().open("imghotel.jpg");
+            InputStream is = getResources().getAssets().open(path);
             Bitmap b = BitmapFactory.decodeStream(is);
             //Matrix matrix = new Matrix();
             //matrix.postRotate(90);
